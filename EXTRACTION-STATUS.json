@@ -1,0 +1,28 @@
+{
+  "stage": "Shared migration CI gate; no Fubini proof files moved yet",
+  "planned_local_modules": 1786,
+  "baseline_public_types": 10566,
+  "upstream_prerequisite_baseline": 69,
+  "planned_subject_module_counts": {
+    "FubiniTheorems.Prerequisites.Definability": 37,
+    "FubiniTheorems.Prerequisites.Grothendieck": 613,
+    "FubiniTheorems.Prerequisites.Euler": 432,
+    "FubiniTheorems.Decomposition": 347,
+    "FubiniTheorems.Comparison": 120,
+    "FubiniTheorems.Fubini": 187,
+    "FubiniTheorems.Corollaries": 23,
+    "FubiniTheorems.Comparison.PuiseuxModels": 26,
+    "FubiniTheorems": 1
+  },
+  "shared_library": "daviddhilbert/hilbert-mathlib",
+  "shared_library_commit": "a26c12d71f83356ad48442b782be67ff01bd3f18",
+  "prerequisite_adapter_repair_ci": {
+    "run": 43904799373,
+    "status": "PASS"
+  },
+  "pending_shared_ci": {
+    "integration-in-ACVF": 43920998115,
+    "diamond-integral": 43931987273
+  },
+  "namespace_policy": "Preserve original public declaration names; change module providers and imports."
+}
