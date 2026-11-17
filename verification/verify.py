@@ -9,6 +9,7 @@ import subprocess
 import sys
 
 from lean_source import code_only, declarations
+from check_shared_foundation import verify as verify_shared
 
 ROOT = Path(__file__).resolve().parents[1]
 HERE = Path(__file__).resolve().parent
@@ -25,6 +26,7 @@ def digest(path):
 
 def main():
     manifest = json.loads((ROOT / 'SOURCE-MANIFEST.json').read_text())
+    verify_shared(ROOT)
     contract = json.loads((HERE / 'public-contract.json').read_text())['declarations']
     owned = json.loads((HERE / 'owned-declarations.json').read_text())
     pins = json.loads((ROOT / 'lake-manifest.json').read_text())
@@ -99,6 +101,7 @@ def main():
         signature = hashlib.sha256(after['signature'].encode()).hexdigest()
         check(signature == before['signature_sha256'], 'Changed public type: ' + before['name'])
         check(before['axioms'] == after['axioms'], 'Changed axiom inventory: ' + before['name'])
+    verify_shared(ROOT)
     check(sources == {p: digest(ROOT / p) for p in sources}, 'Source changed during the audit')
     check(entry_points == {p: digest(ROOT / p) for p in entry_points}, 'Entry point changed during the audit')
     receipt = {'status': 'PASS', 'modules': len(sources), 'owned_declarations': len(names),

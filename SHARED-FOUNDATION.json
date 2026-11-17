@@ -1,0 +1,487 @@
+{
+  "provider": "daviddhilbert/hilbert-mathlib",
+  "revision": "88bb3386f616779bfd87eb453d8a7c899ad63961",
+  "public_names": "Original namespaces and hypotheses retained.",
+  "modules": [
+    {
+      "path": "FubiniTheorems/Decomposition/ElementaryNamedDefinableSets.lean",
+      "module": "FubiniTheorems.Decomposition.ElementaryNamedDefinableSets",
+      "target_module": "HilbertMathlib.Foundation.Definability.ElementaryNamedDefinableSets",
+      "target_path": "HilbertMathlib/Foundation/Definability/ElementaryNamedDefinableSets.lean",
+      "extracted_sha256": "0343d46f3ecb52e1b19b97b46f620ffcbffa383f3a2325cad760119124c73033",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Decomposition/ElementaryNamedDefinableSets.lean",
+      "compatibility_sha256": "6dae87be00ab0de0752cd09edc8d07a86e32ad21534e15e30c427dc0f00fd71e",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Decomposition/FiniteFormulaCovers.lean",
+      "module": "FubiniTheorems.Decomposition.FiniteFormulaCovers",
+      "target_module": "HilbertMathlib.Foundation.ModelTheory.FiniteFormulaCovers",
+      "target_path": "HilbertMathlib/Foundation/ModelTheory/FiniteFormulaCovers.lean",
+      "extracted_sha256": "f19f91e9798c233d69d4dc35ebb4c56aa949d694f01e543a9f634ae138ac5bab",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Decomposition/FiniteFormulaCovers.lean",
+      "compatibility_sha256": "77843bc42cac7fb6b3337805604fc0d07a7f0b88bfcc862f95cc0898eb6a7273",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Decomposition/FiniteWitnessFormulas.lean",
+      "module": "FubiniTheorems.Decomposition.FiniteWitnessFormulas",
+      "target_module": "HilbertMathlib.Foundation.ModelTheory.FiniteWitnessFormulas",
+      "target_path": "HilbertMathlib/Foundation/ModelTheory/FiniteWitnessFormulas.lean",
+      "extracted_sha256": "68421b9583d74c386bdccb435a31f32237c4ecbdedd6095b1fb5e0f2a70ad303",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Decomposition/FiniteWitnessFormulas.lean",
+      "compatibility_sha256": "d9afa895aa9911a0811cc34de926c86155578734d25caad6aeaac41d83be3d83",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Decomposition/PolynomialTerms.lean",
+      "module": "FubiniTheorems.Decomposition.PolynomialTerms",
+      "target_module": "HilbertMathlib.Foundation.ModelTheory.PolynomialTerms",
+      "target_path": "HilbertMathlib/Foundation/ModelTheory/PolynomialTerms.lean",
+      "extracted_sha256": "c129eb049d09103ef2f82ca7a2812fd79000961e277998667714f45fe9a777b8",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Decomposition/PolynomialTerms.lean",
+      "compatibility_sha256": "1f0b7594fbbfe5d7fb7f523420780552cd12b5f33e9031d1b352c15c92f54ea5",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Prerequisites/Grothendieck/PresentedPredicateLogic.lean",
+      "module": "FubiniTheorems.Prerequisites.Grothendieck.PresentedPredicateLogic",
+      "target_module": "HilbertMathlib.Foundation.Definability.PresentedPredicateLogic",
+      "target_path": "HilbertMathlib/Foundation/Definability/PresentedPredicateLogic.lean",
+      "extracted_sha256": "5f6e88c6f58da25ae926e9dae249796c7d383e106f55694626e770c4856bfa86",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Prerequisites/Grothendieck/PresentedPredicateLogic.lean",
+      "compatibility_sha256": "54750c064b8564ab872d6b056d6b55cedc9556f4730a1d6922f7821b6997a256",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Prerequisites/Grothendieck/DefinableBijections.lean",
+      "module": "FubiniTheorems.Prerequisites.Grothendieck.DefinableBijections",
+      "target_module": "HilbertMathlib.Foundation.Definability.DefinableBijections",
+      "target_path": "HilbertMathlib/Foundation/Definability/DefinableBijections.lean",
+      "extracted_sha256": "2be55b83e84cc1b8ada3fb5789b3cbfe0452c31e17e5108e46353a343cb8a172",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Prerequisites/Grothendieck/DefinableBijections.lean",
+      "compatibility_sha256": "570d8b092a74cf4a3321c6b8700ea4ad0f054dbefe8f75549169fd93678b2e1c",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Prerequisites/Grothendieck/ImaginaryParameters.lean",
+      "module": "FubiniTheorems.Prerequisites.Grothendieck.ImaginaryParameters",
+      "target_module": "HilbertMathlib.Foundation.Definability.ImaginaryParameters",
+      "target_path": "HilbertMathlib/Foundation/Definability/ImaginaryParameters.lean",
+      "extracted_sha256": "589bc0da16d70c055fc29f4db995c5fb7bf8ca6e6ddeec76ad0d26341f2e7be7",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Prerequisites/Grothendieck/ImaginaryParameters.lean",
+      "compatibility_sha256": "7274a786c135923b4f815a492e6b5193a6d77e479f97a08ab48046973f5c3938",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Decomposition/AdditivePresentationMultiplication.lean",
+      "module": "FubiniTheorems.Decomposition.AdditivePresentationMultiplication",
+      "target_module": "HilbertMathlib.Foundation.Grothendieck.AdditivePresentationMultiplication",
+      "target_path": "HilbertMathlib/Foundation/Grothendieck/AdditivePresentationMultiplication.lean",
+      "extracted_sha256": "cdb52a56865ce4491a170042efcee0d756748edfbe5b7fbcf7e832ec039cdc06",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Decomposition/AdditivePresentationMultiplication.lean",
+      "compatibility_sha256": "fedef831dab3a05d7a69c407c8d370de41371df20d132fc02c76e0fa51f4f067",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Prerequisites/Grothendieck/PositivePresentationSurjectivity.lean",
+      "module": "FubiniTheorems.Prerequisites.Grothendieck.PositivePresentationSurjectivity",
+      "target_module": "HilbertMathlib.Foundation.Grothendieck.PositivePresentationSurjectivity",
+      "target_path": "HilbertMathlib/Foundation/Grothendieck/PositivePresentationSurjectivity.lean",
+      "extracted_sha256": "46b9521d4a7d001106f4b8986cb7e3c9468366a5cc351c50b4138caf8925ae44",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Prerequisites/Grothendieck/PositivePresentationSurjectivity.lean",
+      "compatibility_sha256": "3c8fd52e101e77886fca83c375f9a5d7abb78ac3b03543efa91b4c71d66e6295",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Prerequisites/Grothendieck/PresentationHomExt.lean",
+      "module": "FubiniTheorems.Prerequisites.Grothendieck.PresentationHomExt",
+      "target_module": "HilbertMathlib.Foundation.Grothendieck.PresentationHomExt",
+      "target_path": "HilbertMathlib/Foundation/Grothendieck/PresentationHomExt.lean",
+      "extracted_sha256": "382bba005a67d59e1487d95bd4fa6e803569e678fbc257c650e8e757d6ef0f38",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Prerequisites/Grothendieck/PresentationHomExt.lean",
+      "compatibility_sha256": "60a740efc3e91b8b221a79057f87d67a0b960cdc26e0ec480bb39f41d82dc525",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Prerequisites/Grothendieck/Grothendieck.lean",
+      "module": "FubiniTheorems.Prerequisites.Grothendieck.Grothendieck",
+      "target_module": "HilbertMathlib.Foundation.Grothendieck.ScissorGroupification",
+      "target_path": "HilbertMathlib/Foundation/Grothendieck/ScissorGroupification.lean",
+      "extracted_sha256": "3753198d56889fda788c9684313c89e9916d016de81ba46486b74a3af1f05b93",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Prerequisites/Grothendieck/Grothendieck.lean",
+      "compatibility_sha256": "e709d5e5cddd26d6128559117d7c47e98ac1ef5708ec011ab5841a4f04a85fa7",
+      "split_generic_core": true
+    },
+    {
+      "path": "FubiniTheorems/Prerequisites/Grothendieck/BalancedSquare.lean",
+      "module": "FubiniTheorems.Prerequisites.Grothendieck.BalancedSquare",
+      "target_module": "HilbertMathlib.Foundation.Algebra.BalancedSquare",
+      "target_path": "HilbertMathlib/Foundation/Algebra/BalancedSquare.lean",
+      "extracted_sha256": "5f6d7d8256fc2ec9bce2e679f0a26e357d2adc9f47cfd0891e9e1870c303d07e",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Prerequisites/Grothendieck/BalancedSquare.lean",
+      "compatibility_sha256": "56690a68aa69f21b1f432f8d707733136ea7bec2e51cf4de3051b7b97bc5cd1c",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Prerequisites/Euler/TensorGradedMaps.lean",
+      "module": "FubiniTheorems.Prerequisites.Euler.TensorGradedMaps",
+      "target_module": "HilbertMathlib.Foundation.Grading.TensorGradedMaps",
+      "target_path": "HilbertMathlib/Foundation/Grading/TensorGradedMaps.lean",
+      "extracted_sha256": "5af37b449b3306e9cef6c0bbacf1cfb2fc23e47168ed0ff692737f0bf6bf5ccf",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Prerequisites/Euler/TensorGradedMaps.lean",
+      "compatibility_sha256": "055657afb6acf83b9f47a023b0b51428a46df82bc5579ea3c1f7f6d8258be0c1",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Prerequisites/Euler/RestrictedPolynomialGrading.lean",
+      "module": "FubiniTheorems.Prerequisites.Euler.RestrictedPolynomialGrading",
+      "target_module": "HilbertMathlib.Foundation.Grading.RestrictedPolynomialGrading",
+      "target_path": "HilbertMathlib/Foundation/Grading/RestrictedPolynomialGrading.lean",
+      "extracted_sha256": "a982854e562b2818e513b9efc8050a91c3425f9cc62d6e80d8da9bb08028e87b",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Prerequisites/Euler/RestrictedPolynomialGrading.lean",
+      "compatibility_sha256": "1065b9505522dae79215d0d39c96f60bc74ca2f60d5bfcc3fe361914c91c3c37",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Prerequisites/Euler/PointLocalizationNormalization.lean",
+      "module": "FubiniTheorems.Prerequisites.Euler.PointLocalizationNormalization",
+      "target_module": "HilbertMathlib.Foundation.Grading.PointLocalizationNormalization",
+      "target_path": "HilbertMathlib/Foundation/Grading/PointLocalizationNormalization.lean",
+      "extracted_sha256": "d5042aeadc40692cf9fb07bad5d51f31814c6aa87088319b669254af6cedd3fb",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Prerequisites/Euler/PointLocalizationNormalization.lean",
+      "compatibility_sha256": "8022a2801c904ebe90beea8e762ac584e0067b1b26bd7c1f9c8f319d8a9848f9",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Prerequisites/Euler/ObjectClassAdditiveGeneration.lean",
+      "module": "FubiniTheorems.Prerequisites.Euler.ObjectClassAdditiveGeneration",
+      "target_module": "HilbertMathlib.Foundation.Grothendieck.ObjectClassAdditiveGeneration",
+      "target_path": "HilbertMathlib/Foundation/Grothendieck/ObjectClassAdditiveGeneration.lean",
+      "extracted_sha256": "12e916452c626cacb2096564dc49234e5a7944f7a2294d9ea9d93a7d0219942b",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Prerequisites/Euler/ObjectClassAdditiveGeneration.lean",
+      "compatibility_sha256": "8814b868697c263d0cb57023c6a089548f54c79e8c4e3b58b4ded0867bb29724",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Prerequisites/Euler/FiniteFamilyBijections.lean",
+      "module": "FubiniTheorems.Prerequisites.Euler.FiniteFamilyBijections",
+      "target_module": "HilbertMathlib.Foundation.FiniteSets.FiniteFamilyBijections",
+      "target_path": "HilbertMathlib/Foundation/FiniteSets/FiniteFamilyBijections.lean",
+      "extracted_sha256": "f5904dbab5716e017d9ce478486aba7a0fa2079ccf7845afd25d985889d9049d",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Prerequisites/Euler/FiniteFamilyBijections.lean",
+      "compatibility_sha256": "040d128bf4cce0c1265155c9d8c132170668c85f8172e8a16ab2d6724b59dc23",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Decomposition/InjectiveImagePartitions.lean",
+      "module": "FubiniTheorems.Decomposition.InjectiveImagePartitions",
+      "target_module": "HilbertMathlib.Foundation.FiniteSets.InjectiveImagePartitions",
+      "target_path": "HilbertMathlib/Foundation/FiniteSets/InjectiveImagePartitions.lean",
+      "extracted_sha256": "81d450986c210b10d2aff2017a2533931dd57c5d8f18299741d7f69a93551f1b",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Decomposition/InjectiveImagePartitions.lean",
+      "compatibility_sha256": "1399dd5dd801dcba1bdae9dfa48fbde4f4d0a469df8f77fa262719f17e1cc1fd",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Prerequisites/Grothendieck/MixedValueQuotient.lean",
+      "module": "FubiniTheorems.Prerequisites.Grothendieck.MixedValueQuotient",
+      "target_module": "HilbertMathlib.Foundation.FiniteSets.MixedValueQuotient",
+      "target_path": "HilbertMathlib/Foundation/FiniteSets/MixedValueQuotient.lean",
+      "extracted_sha256": "ed36f8e84ddcb09b8154cd3829bfe56f1fa8878093f0a6be8661e51008829813",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Prerequisites/Grothendieck/MixedValueQuotient.lean",
+      "compatibility_sha256": "9b49d0b5ecc1ebbfc5f38b5a41f1b554d0b0c7bb72d31871c2c0336585a75fea",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Prerequisites/Grothendieck/ValueFibrePartition.lean",
+      "module": "FubiniTheorems.Prerequisites.Grothendieck.ValueFibrePartition",
+      "target_module": "HilbertMathlib.Foundation.FiniteSets.ValueFibrePartition",
+      "target_path": "HilbertMathlib/Foundation/FiniteSets/ValueFibrePartition.lean",
+      "extracted_sha256": "f3e5267c434809f9b189f45cccdad1aadef44bd1b5cf282502995d3eef8d7812",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Prerequisites/Grothendieck/ValueFibrePartition.lean",
+      "compatibility_sha256": "96111862b395510f941888f0dbbab3aafadfa18b843534a0b36a800728cb1ffc",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Decomposition/ValueInducedRectangles.lean",
+      "module": "FubiniTheorems.Decomposition.ValueInducedRectangles",
+      "target_module": "HilbertMathlib.Foundation.FiniteSets.ValueInducedRectangles",
+      "target_path": "HilbertMathlib/Foundation/FiniteSets/ValueInducedRectangles.lean",
+      "extracted_sha256": "099f07d5d5cc5ab797b95f0332132d4253081306d3709e1a39051c2c97a93ddb",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Decomposition/ValueInducedRectangles.lean",
+      "compatibility_sha256": "0f6660167b9fdf525b78eb68f6bc960875dcc085841ca5912ede8a5d75628675",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Prerequisites/Grothendieck/IntegerMonomialBasis.lean",
+      "module": "FubiniTheorems.Prerequisites.Grothendieck.IntegerMonomialBasis",
+      "target_module": "HilbertMathlib.Foundation.FiniteCoordinates.IntegerMonomialBasis",
+      "target_path": "HilbertMathlib/Foundation/FiniteCoordinates/IntegerMonomialBasis.lean",
+      "extracted_sha256": "f7a6e1bd6a4c786aa81f5208eff3d06d3f0f2566164ac3b806dc33385eb78a4b",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Prerequisites/Grothendieck/IntegerMonomialBasis.lean",
+      "compatibility_sha256": "9061d3504592ae9f17649c843e39919162c240c2ec76fc09fc4eabc9bd46d94c",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Prerequisites/Grothendieck/IntegerMonomialElimination.lean",
+      "module": "FubiniTheorems.Prerequisites.Grothendieck.IntegerMonomialElimination",
+      "target_module": "HilbertMathlib.Foundation.FiniteCoordinates.IntegerMonomialElimination",
+      "target_path": "HilbertMathlib/Foundation/FiniteCoordinates/IntegerMonomialElimination.lean",
+      "extracted_sha256": "fef75681a873dec6b4f6fa5a3504702e591423b04f960db5dfbee99bf8d09bc3",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Prerequisites/Grothendieck/IntegerMonomialElimination.lean",
+      "compatibility_sha256": "592f362498828104d11348b6a7226ddcfcca0a77bf44544e181acfc1564abf69",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Prerequisites/Grothendieck/IntegerMonomialReindexing.lean",
+      "module": "FubiniTheorems.Prerequisites.Grothendieck.IntegerMonomialReindexing",
+      "target_module": "HilbertMathlib.Foundation.FiniteCoordinates.IntegerMonomialReindexing",
+      "target_path": "HilbertMathlib/Foundation/FiniteCoordinates/IntegerMonomialReindexing.lean",
+      "extracted_sha256": "0ffb06090ce192b6035d8fcba6330f2b8869bd1a3f54edcf3c0e393d2b00ddd0",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Prerequisites/Grothendieck/IntegerMonomialReindexing.lean",
+      "compatibility_sha256": "d6470d47cb9dbaa7548fb33aed60ac606929a968633f2a570ed9eb9564bf6532",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Prerequisites/Euler/EulerBreakpoints.lean",
+      "module": "FubiniTheorems.Prerequisites.Euler.EulerBreakpoints",
+      "target_module": "HilbertMathlib.Foundation.Euler.EulerBreakpoints",
+      "target_path": "HilbertMathlib/Foundation/Euler/EulerBreakpoints.lean",
+      "extracted_sha256": "88b4397c4a92817c3da287da5d55f78d5cecbcf2976b326af5e6e14c09fd74bc",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Prerequisites/Euler/EulerBreakpoints.lean",
+      "compatibility_sha256": "d334d005c880f88665b7648e198c1149bc55f0c5ef6413e607d7994aba8c8455",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Prerequisites/Euler/EulerCutCellValues.lean",
+      "module": "FubiniTheorems.Prerequisites.Euler.EulerCutCellValues",
+      "target_module": "HilbertMathlib.Foundation.Euler.EulerCutCellValues",
+      "target_path": "HilbertMathlib/Foundation/Euler/EulerCutCellValues.lean",
+      "extracted_sha256": "d187119646af638a8699410b573acc35ecace0b43377cb1417246f2ee23724ae",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Prerequisites/Euler/EulerCutCellValues.lean",
+      "compatibility_sha256": "1ebf460c30ae69ea8e0479e42a00bb86228649dfaeffe0ec4884140893aa2a38",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Prerequisites/Euler/EulerEndpointProjection.lean",
+      "module": "FubiniTheorems.Prerequisites.Euler.EulerEndpointProjection",
+      "target_module": "HilbertMathlib.Foundation.Euler.EulerEndpointProjection",
+      "target_path": "HilbertMathlib/Foundation/Euler/EulerEndpointProjection.lean",
+      "extracted_sha256": "dfe9fe6fdb5d952057f2d416f59ee1d529e7e6de0bd570108072b9e64f12ba31",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Prerequisites/Euler/EulerEndpointProjection.lean",
+      "compatibility_sha256": "88776e7aedb8827a823e584190c2d85d72bdda55e66d29ef13901263e7c6a9c3",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Prerequisites/Euler/EulerFiniteSets.lean",
+      "module": "FubiniTheorems.Prerequisites.Euler.EulerFiniteSets",
+      "target_module": "HilbertMathlib.Foundation.Euler.EulerFiniteSets",
+      "target_path": "HilbertMathlib/Foundation/Euler/EulerFiniteSets.lean",
+      "extracted_sha256": "15a41babb5812ece9b9ba55afad4ff9ee75ccfca4ef91c8d42fe874d075e9f27",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Prerequisites/Euler/EulerFiniteSets.lean",
+      "compatibility_sha256": "28c0da8f499cdad75663f2ca14406209838d9f97714d334c70f33fd47b3c7559",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Prerequisites/Euler/EulerIntervalProducts.lean",
+      "module": "FubiniTheorems.Prerequisites.Euler.EulerIntervalProducts",
+      "target_module": "HilbertMathlib.Foundation.Euler.EulerIntervalProducts",
+      "target_path": "HilbertMathlib/Foundation/Euler/EulerIntervalProducts.lean",
+      "extracted_sha256": "7114eb66535d6f870d22c541be8f2ecd33748c1014b1ac70ed5a6bd302a6549c",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Prerequisites/Euler/EulerIntervalProducts.lean",
+      "compatibility_sha256": "2a617594f76d2ee06756e6db354f964353c4b656305d210f485e74f4bcb1d944",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Prerequisites/Euler/EulerTruncation.lean",
+      "module": "FubiniTheorems.Prerequisites.Euler.EulerTruncation",
+      "target_module": "HilbertMathlib.Foundation.Euler.EulerTruncation",
+      "target_path": "HilbertMathlib/Foundation/Euler/EulerTruncation.lean",
+      "extracted_sha256": "d60652621ed4d390a890420e7c50176f99334b556e11aebea9f82370b8afac47",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Prerequisites/Euler/EulerTruncation.lean",
+      "compatibility_sha256": "aea89839d5a504981b4c18724a4d2d9e3f2b7c8e95469d9d9ea39848bf0c6e67",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Comparison/GeometricDegreeClearing.lean",
+      "module": "FubiniTheorems.Comparison.GeometricDegreeClearing",
+      "target_module": "HilbertMathlib.Foundation.Grading.GeometricDegreeClearing",
+      "target_path": "HilbertMathlib/Foundation/Grading/GeometricDegreeClearing.lean",
+      "extracted_sha256": "6f9efcc84535d795556725bee3de83d36a036bbf1ec3a34858ee492318a30903",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Comparison/GeometricDegreeClearing.lean",
+      "compatibility_sha256": "e114a9a8b4d4adfa4d09f5fbd90fbd29231386b49ed51b7c5a4e3b688d28cc09",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Comparison/PuiseuxModels/RationalRVAutomorphisms.lean",
+      "module": "FubiniTheorems.Comparison.PuiseuxModels.RationalRVAutomorphisms",
+      "target_module": "HilbertMathlib.Foundation.Series.RationalRVAutomorphisms",
+      "target_path": "HilbertMathlib/Foundation/Series/RationalRVAutomorphisms.lean",
+      "extracted_sha256": "193be3c3839b1f583d11656931c65fc873a2496505d54b2c41fb3b971be2db8b",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Comparison/PuiseuxModels/RationalRVAutomorphisms.lean",
+      "compatibility_sha256": "f15f413b6727ae6d09a1d77e2898868a0b1f982abb54719b489f629f49af01c9",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Comparison/RingLanguageEmbeddings.lean",
+      "module": "FubiniTheorems.Comparison.RingLanguageEmbeddings",
+      "target_module": "HilbertMathlib.Foundation.ModelTheory.RingLanguageEmbeddings",
+      "target_path": "HilbertMathlib/Foundation/ModelTheory/RingLanguageEmbeddings.lean",
+      "extracted_sha256": "711f3f41117c36bb1b6b39395ffb2210897bf341d7459ee73df8ee59486efc44",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Comparison/RingLanguageEmbeddings.lean",
+      "compatibility_sha256": "41dd4de8ae585bd069fa25774e063a9daacf5a138caf4da44de49f65cf7d0c44",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Decomposition/ClosedFamilyStrata.lean",
+      "module": "FubiniTheorems.Decomposition.ClosedFamilyStrata",
+      "target_module": "HilbertMathlib.Foundation.Topology.ClosedFamilyStrata",
+      "target_path": "HilbertMathlib/Foundation/Topology/ClosedFamilyStrata.lean",
+      "extracted_sha256": "f4f7f98516c760296dddf35acb020db95137e50a8b5fbf90d67505a602eedf70",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Decomposition/ClosedFamilyStrata.lean",
+      "compatibility_sha256": "2ed78116a651b53b253c2e4de78585bb028c57f02115d09b9ecd238713762670",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Decomposition/ComplexPointsSeparate.lean",
+      "module": "FubiniTheorems.Decomposition.ComplexPointsSeparate",
+      "target_module": "HilbertMathlib.Foundation.AlgebraicGeometry.ComplexPointsSeparate",
+      "target_path": "HilbertMathlib/Foundation/AlgebraicGeometry/ComplexPointsSeparate.lean",
+      "extracted_sha256": "11635f3f5350449bfbb8ddd2ad0084eddd09cfe4a39ac80d45bbae01903e0be3",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Decomposition/ComplexPointsSeparate.lean",
+      "compatibility_sha256": "45b19a36d31e46e1b96e3f708d15d899da71ed500caa0ab55728f31a755a55e6",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Decomposition/ConstructibleClosedGenerators.lean",
+      "module": "FubiniTheorems.Decomposition.ConstructibleClosedGenerators",
+      "target_module": "HilbertMathlib.Foundation.Topology.ConstructibleClosedGenerators",
+      "target_path": "HilbertMathlib/Foundation/Topology/ConstructibleClosedGenerators.lean",
+      "extracted_sha256": "a9b51f4c335a14a0ea092bd9d514d4632d1131875e03ac806ca0fda751be0b55",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Decomposition/ConstructibleClosedGenerators.lean",
+      "compatibility_sha256": "367f0008ed7d0fbd7466b5730aa00ae18f85c89dd9197236230d14e3a86a22a5",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Decomposition/FinitePointAffineNeighborhoods.lean",
+      "module": "FubiniTheorems.Decomposition.FinitePointAffineNeighborhoods",
+      "target_module": "HilbertMathlib.Foundation.AlgebraicGeometry.FinitePointAffineNeighborhoods",
+      "target_path": "HilbertMathlib/Foundation/AlgebraicGeometry/FinitePointAffineNeighborhoods.lean",
+      "extracted_sha256": "2fd5bd5bb64c80272b088f86a8a51199fe5f8fec45626ca1e85d8455e96ed2c5",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Decomposition/FinitePointAffineNeighborhoods.lean",
+      "compatibility_sha256": "503742d3bd6acdbc875f3d902ecb20da7490655347328a0a48682752e55109ba",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Decomposition/FiniteRootProjection.lean",
+      "module": "FubiniTheorems.Decomposition.FiniteRootProjection",
+      "target_module": "HilbertMathlib.Foundation.Series.FiniteRootProjection",
+      "target_path": "HilbertMathlib/Foundation/Series/FiniteRootProjection.lean",
+      "extracted_sha256": "6979302a45635786a2ab582648d9fa6d00c09582ae7b17b5546522ecaacf6b99",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Decomposition/FiniteRootProjection.lean",
+      "compatibility_sha256": "5162e665cd48534e9095072aafec5986cb5151c1ef958e66f24654ccee8da429",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Decomposition/InvariantAffineCover.lean",
+      "module": "FubiniTheorems.Decomposition.InvariantAffineCover",
+      "target_module": "HilbertMathlib.Foundation.AlgebraicGeometry.InvariantAffineCover",
+      "target_path": "HilbertMathlib/Foundation/AlgebraicGeometry/InvariantAffineCover.lean",
+      "extracted_sha256": "08db72395a9d35a1d7f638935b99b3eb1d8267b48720959d9ced8bac2ab1728c",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Decomposition/InvariantAffineCover.lean",
+      "compatibility_sha256": "50363b5d2485d76431fc1afd96c1120d8b9920485dd940d7b1855a08268d1d28",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Decomposition/InvariantAffineQuotients.lean",
+      "module": "FubiniTheorems.Decomposition.InvariantAffineQuotients",
+      "target_module": "HilbertMathlib.Foundation.AlgebraicGeometry.InvariantAffineQuotients",
+      "target_path": "HilbertMathlib/Foundation/AlgebraicGeometry/InvariantAffineQuotients.lean",
+      "extracted_sha256": "7678916792f2abcc17726ef8d26533e8616d84ffc4e4a5b6dc5c1ae9185e7e93",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Decomposition/InvariantAffineQuotients.lean",
+      "compatibility_sha256": "73d63df08716f6ef0d55e92e40cb979f535c6b714d73862cf60abadbb6a00de2",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Decomposition/LocallyClosedScissorAdditivity.lean",
+      "module": "FubiniTheorems.Decomposition.LocallyClosedScissorAdditivity",
+      "target_module": "HilbertMathlib.Foundation.Topology.LocallyClosedScissorAdditivity",
+      "target_path": "HilbertMathlib/Foundation/Topology/LocallyClosedScissorAdditivity.lean",
+      "extracted_sha256": "b62ec8e84ca7526425ecf66393c1ce0f8eb5dc637b5a17f3e99e47fdfc8e915e",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Decomposition/LocallyClosedScissorAdditivity.lean",
+      "compatibility_sha256": "d273f9f1b5f86a5573d86a32a38ca9c72eca8ceae48c3d18aa517acea29e5671",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Decomposition/OverlapAlgebras.lean",
+      "module": "FubiniTheorems.Decomposition.OverlapAlgebras",
+      "target_module": "HilbertMathlib.Foundation.AlgebraicGeometry.OverlapAlgebras",
+      "target_path": "HilbertMathlib/Foundation/AlgebraicGeometry/OverlapAlgebras.lean",
+      "extracted_sha256": "8de5571464a74ecbc943efd8040548371415b604b22ba29696e37e0f1f90a4f3",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Decomposition/OverlapAlgebras.lean",
+      "compatibility_sha256": "336e09398fd4520606ec38c398b02f21b80bdc1b75a883b42d13557f6ff4bb68",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Decomposition/PrimeSignAtoms.lean",
+      "module": "FubiniTheorems.Decomposition.PrimeSignAtoms",
+      "target_module": "HilbertMathlib.Foundation.AlgebraicGeometry.PrimeSignAtoms",
+      "target_path": "HilbertMathlib/Foundation/AlgebraicGeometry/PrimeSignAtoms.lean",
+      "extracted_sha256": "c533e07ae0f3d66fe8dfad574790296d45632de39f5560e698115b78bdd94d42",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Decomposition/PrimeSignAtoms.lean",
+      "compatibility_sha256": "a6b2c053a8e1410405aea0843011bf1b34334b45393c075c33876f7af65a05ca",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Decomposition/PrincipalRationalMaps.lean",
+      "module": "FubiniTheorems.Decomposition.PrincipalRationalMaps",
+      "target_module": "HilbertMathlib.Foundation.AlgebraicGeometry.PrincipalRationalMaps",
+      "target_path": "HilbertMathlib/Foundation/AlgebraicGeometry/PrincipalRationalMaps.lean",
+      "extracted_sha256": "6c438b41f2576c0c2e737aabdddab0b6fd8280f84e68b48524c5e68d73665c13",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Decomposition/PrincipalRationalMaps.lean",
+      "compatibility_sha256": "4985e9f39ae6e5e79ef49afa688be177a56667ce24641552bec1a505fb499428",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Decomposition/ReducedImmersionLifts.lean",
+      "module": "FubiniTheorems.Decomposition.ReducedImmersionLifts",
+      "target_module": "HilbertMathlib.Foundation.AlgebraicGeometry.ReducedImmersionLifts",
+      "target_path": "HilbertMathlib/Foundation/AlgebraicGeometry/ReducedImmersionLifts.lean",
+      "extracted_sha256": "c0ea913ea42bacc2cf51773059d924d85f639f00ce6048aec1e895387eabbfc9",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Decomposition/ReducedImmersionLifts.lean",
+      "compatibility_sha256": "57e6c37e52ba6875bf9c0d5c5106036b6a9ec0d36b3197a4adb081ae689233b8",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Decomposition/SchemeActionsOverBase.lean",
+      "module": "FubiniTheorems.Decomposition.SchemeActionsOverBase",
+      "target_module": "HilbertMathlib.Foundation.AlgebraicGeometry.SchemeActionsOverBase",
+      "target_path": "HilbertMathlib/Foundation/AlgebraicGeometry/SchemeActionsOverBase.lean",
+      "extracted_sha256": "e4120030bb72d81a5a72a88359c9bb405e35fd1b0621a9d19ffe998222854e70",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Decomposition/SchemeActionsOverBase.lean",
+      "compatibility_sha256": "70e89a9b721e261f2dee9a9ef0c66a7b0acc605b861a89336c8b171676965e6e",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Prerequisites/Grothendieck/FieldUnitPowerKernels.lean",
+      "module": "FubiniTheorems.Prerequisites.Grothendieck.FieldUnitPowerKernels",
+      "target_module": "HilbertMathlib.Foundation.Algebra.FieldUnitPowerKernels",
+      "target_path": "HilbertMathlib/Foundation/Algebra/FieldUnitPowerKernels.lean",
+      "extracted_sha256": "b79f46c4882d6fac2540f83e6efc7436d39e06fa1aaa5737dc362794495ff8e6",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Prerequisites/Grothendieck/FieldUnitPowerKernels.lean",
+      "compatibility_sha256": "31e3a34fa3845d2cf71c368c0ed43e516ad02ff101d5d16e939795f47268b4b0",
+      "split_generic_core": false
+    },
+    {
+      "path": "FubiniTheorems/Prerequisites/Grothendieck/RelationPullbacks.lean",
+      "module": "FubiniTheorems.Prerequisites.Grothendieck.RelationPullbacks",
+      "target_module": "HilbertMathlib.Foundation.Definability.RelationPullbacks",
+      "target_path": "HilbertMathlib/Foundation/Definability/RelationPullbacks.lean",
+      "extracted_sha256": "90ba4e83fb1e080c340634334ac8acb9b211f332dda6af554ea312446689dead",
+      "source_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290/FubiniTheorems/Prerequisites/Grothendieck/RelationPullbacks.lean",
+      "compatibility_sha256": "7a7a39184ab9961a42189d4247805bd17b8a2ac10eceb68dd534f3426dcde8ca",
+      "split_generic_core": false
+    }
+  ]
+}

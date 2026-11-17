@@ -78,3 +78,4 @@ jobs:
             .scratch/PublicSignatures.lean
             .scratch/public-signatures.txt
             .scratch/verification-status.json
+            .scratch/shared-foundation.json

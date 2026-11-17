@@ -80,3 +80,9 @@ See `WORKFLOW.md` and `AGENTS.md`. Source comments and original notices are
 retained; dependencies retain their own licenses. In particular, the
 Newton–Puiseux and Grothendieck-ring adaptations remain in hilbert-mathlib
 with their Apache 2.0 notices and license texts.
+
+The approved shared-foundation extraction moves 333 supporting declarations
+to hilbert-mathlib, retaining 48 original module paths and the complete 10,566-type
+public contract. The remaining 10,232 locally implemented declarations and 334
+inherited declarations have explicit owners; SHARED-FOUNDATION.json records
+the new provider bodies and compatibility fingerprints.
