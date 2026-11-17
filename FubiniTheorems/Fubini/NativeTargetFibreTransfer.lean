@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeTargetFibreTransfer.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeMapParameterTransfer
-import FubiniTheorems.Decomposition.OriginalFibreIntegralVanishing
-import FubiniTheorems.Decomposition.VFBoundedGroundNaturality
-import FubiniTheorems.Decomposition.VFAdjoinedParameterTransfer
+public import FubiniTheorems.Fubini.NativeMapParameterTransfer
+public import FubiniTheorems.Decomposition.OriginalFibreIntegralVanishing
+public import FubiniTheorems.Decomposition.VFBoundedGroundNaturality
+public import FubiniTheorems.Decomposition.VFAdjoinedParameterTransfer
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A definable change of target coordinates transports the literal
 fibre and its intrinsic bounded integral across equivalent raw bases. -/

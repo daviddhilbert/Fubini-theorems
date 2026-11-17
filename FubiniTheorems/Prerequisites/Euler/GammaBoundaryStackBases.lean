@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaBoundaryStackBases.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaPartialCellDefinability
-import FubiniTheorems.Prerequisites.Euler.GammaFamilyBoundary
+public import FubiniTheorems.Prerequisites.Euler.GammaPartialCellDefinability
+public import FubiniTheorems.Prerequisites.Euler.GammaFamilyBoundary
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Definable base sets selecting nonempty boundary-free fibre shapes.
 Only Gamma coordinate projection is used. No endpoint representatives or

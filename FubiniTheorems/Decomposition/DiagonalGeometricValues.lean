@@ -1,14 +1,20 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/DiagonalGeometricValues.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.RationalAffineVarieties
-import FubiniTheorems.Decomposition.ConstructibleClassScissors
-import FubiniTheorems.Decomposition.ComplexSpectrumConstructibility
-import FubiniTheorems.Decomposition.ComplexAffinePointLifts
-import FubiniTheorems.Decomposition.RationalSpectrumGraphs
-import FubiniTheorems.Decomposition.DiagonalConstructibleRing
+public import FubiniTheorems.Decomposition.RationalAffineVarieties
+public import FubiniTheorems.Decomposition.ConstructibleClassScissors
+public import FubiniTheorems.Decomposition.ComplexSpectrumConstructibility
+public import FubiniTheorems.Decomposition.ComplexAffinePointLifts
+public import FubiniTheorems.Decomposition.RationalSpectrumGraphs
+public import FubiniTheorems.Decomposition.DiagonalConstructibleRing
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Invariant constructible complex tuple sets have intrinsic geometric
 classes. Their spectrum extensions, rational actions and constructible

@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RESBoundedPsi.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RESOrdinaryReduction
-import FubiniTheorems.Prerequisites.Euler.GammaBoundedSpecialization
-import FubiniTheorems.Prerequisites.Euler.GammaBoundedChartComparison
+public import FubiniTheorems.Prerequisites.Euler.RESOrdinaryReduction
+public import FubiniTheorems.Prerequisites.Euler.GammaBoundedSpecialization
+public import FubiniTheorems.Prerequisites.Euler.GammaBoundedChartComparison
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The bounded polynomial source and bounded Gamma chart subring map to
 the concrete ordinary RES quotient, with the actual torus class as T.

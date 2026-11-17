@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/ClosedFamilyStrata.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import Mathlib.Topology.Constructible
-import Mathlib.Topology.LocallyClosed
-import Mathlib.Topology.Clopen
-import Mathlib.Data.Finset.Card
+public import Mathlib.Topology.Constructible
+public import Mathlib.Topology.LocallyClosed
+public import Mathlib.Topology.Clopen
+public import Mathlib.Data.Finset.Card
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A finite closed family gives locally closed strata by counting
 membership. Each generator becomes clopen on a stratum. This construction

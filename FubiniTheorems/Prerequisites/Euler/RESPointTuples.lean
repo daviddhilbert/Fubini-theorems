@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RESPointTuples.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVUnderlyingIsomorphisms
-import FubiniTheorems.Prerequisites.Euler.RESOrdinaryRing
-import FubiniTheorems.Prerequisites.Euler.RVRadiusGenerators
+public import FubiniTheorems.Prerequisites.Euler.RVUnderlyingIsomorphisms
+public import FubiniTheorems.Prerequisites.Euler.RESOrdinaryRing
+public import FubiniTheorems.Prerequisites.Euler.RVRadiusGenerators
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Concrete definable point objects in every grade, including grade
 zero, and their underlying bijections and ordinary product classes. -/

@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/PointLocalizationNormalization.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import HilbertMathlib.Foundation.Algebra.PolynomialCoactionGrading
-import Mathlib.RingTheory.GradedAlgebra.HomogeneousLocalization
+public import HilbertMathlib.Foundation.Algebra.PolynomialCoactionGrading
+public import Mathlib.RingTheory.GradedAlgebra.HomogeneousLocalization
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A polynomial grading coaction normalizes every homogeneous element
 of degree n to x/q^n in the degree-zero localization at a degree-one

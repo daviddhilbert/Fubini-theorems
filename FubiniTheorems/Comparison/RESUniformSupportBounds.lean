@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RESUniformSupportBounds.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Comparison.RESValueBoundDefinability
-import IntegrationSection6.GammaWitnessUniformity
+public import FubiniTheorems.Comparison.RESValueBoundDefinability
+public import IntegrationSection6.GammaWitnessUniformity
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Genuine saturation gives a uniform finite bound on full value
 patterns whenever every row in an original-base definable family is RES. -/

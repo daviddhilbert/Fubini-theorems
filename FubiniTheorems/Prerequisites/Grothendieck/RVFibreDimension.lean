@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/RVFibreDimension.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.RVDimensionBridge
-import FubiniTheorems.Prerequisites.Grothendieck.DefinableBijections
-import Section4.RVFibreInvariance
+public import FubiniTheorems.Prerequisites.Grothendieck.RVDimensionBridge
+public import FubiniTheorems.Prerequisites.Grothendieck.DefinableBijections
+public import Section4.RVFibreInvariance
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Definition 3.2 and Lemma 3.3 (`RV:fiber:dim:same`). The value on the
 empty set is bottom. The maximum is compared with the actual section 2

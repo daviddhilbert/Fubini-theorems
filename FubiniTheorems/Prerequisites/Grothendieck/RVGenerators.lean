@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/RVGenerators.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.RVGradedComparison
-import FubiniTheorems.Prerequisites.Grothendieck.GroupifiedCongruences
-import FubiniTheorems.Prerequisites.Grothendieck.MeasuredRVProducts
-import Section3.GammaRVSeparation
+public import FubiniTheorems.Prerequisites.Grothendieck.RVGradedComparison
+public import FubiniTheorems.Prerequisites.Grothendieck.GroupifiedCongruences
+public import FubiniTheorems.Prerequisites.Grothendieck.MeasuredRVProducts
+public import Section3.GammaRVSeparation
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The elementary relation uses the actual degree-one point and the
 strictly positive value domain. Infinity contributes the degree-zero unit. -/

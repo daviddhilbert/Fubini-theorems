@@ -1,9 +1,15 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RawRVGammaEulerConstructibility.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.RawRVGammaFibreEuler
+public import FubiniTheorems.Decomposition.RawRVGammaFibreEuler
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual Gamma fibre Euler values have finite range and original-ground
 level sets on all RV bases, including tuples with zero coordinates. -/

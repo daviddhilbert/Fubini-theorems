@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaBoundaryConstancy.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaWeightedBoundary
-import FubiniTheorems.Prerequisites.Euler.GammaIndicators
-import FubiniTheorems.Prerequisites.Euler.EulerConstantRegions
+public import FubiniTheorems.Prerequisites.Euler.GammaWeightedBoundary
+public import FubiniTheorems.Prerequisites.Euler.GammaIndicators
+public import FubiniTheorems.Prerequisites.Euler.EulerConstantRegions
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A definable unary Gamma fibre has constant membership between its
 intrinsic boundary points. The proof uses its actual finite-jump function,

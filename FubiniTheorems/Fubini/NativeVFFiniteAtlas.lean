@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeVFFiniteAtlas.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeVFCoproductRealization
-import FubiniTheorems.Fubini.NativeGroundRVLabels
+public import FubiniTheorems.Fubini.NativeVFCoproductRealization
+public import FubiniTheorems.Fubini.NativeGroundRVLabels
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Finite native VF charts have one actual tagged realization, with
 original-ground definable inclusions and no added chart parameters. -/

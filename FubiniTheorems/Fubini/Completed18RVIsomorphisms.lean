@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/Completed18RVIsomorphisms.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.Completed18RVGraphs
-import IntegrationSection6.GammaNativeRawIsomorphisms
+public import FubiniTheorems.Fubini.Completed18RVGraphs
+public import IntegrationSection6.GammaNativeRawIsomorphisms
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Both object conversions preserve all actual original-Gamma domain
 bijections. No labels are required to be preserved by such a bijection. -/

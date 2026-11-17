@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundGammaRESLift.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaRVLift
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVFamilySupport
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaRVLift
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVFamilySupport
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 /-! Finite Gamma objects lift to the full RES subcategory: support is
 measured on the entire tagged RV source, including its zero tags. -/
 

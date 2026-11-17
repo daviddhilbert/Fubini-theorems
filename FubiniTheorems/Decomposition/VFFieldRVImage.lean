@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/VFFieldRVImage.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Definability.Bases
-import ValuedModelMap
+public import FubiniTheorems.Prerequisites.Definability.Bases
+public import ValuedModelMap
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The RV image of an actual VF subfield is closed under every RV
 function in the paper's language. No algebraic closure is taken. -/

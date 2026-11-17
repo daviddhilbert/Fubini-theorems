@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaBoundaryStacks.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaBoundaryStackBases
-import FubiniTheorems.Prerequisites.Euler.GammaBoundaryComponents
+public import FubiniTheorems.Prerequisites.Euler.GammaBoundaryStackBases
+public import FubiniTheorems.Prerequisites.Euler.GammaBoundaryComponents
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Definable cylindrical stacks selected by an interior member and absence
 of boundary points. Each stack is proved to lie in the original definable

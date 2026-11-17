@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaParameterExtension.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaBaseExtension
-import FubiniTheorems.Prerequisites.Definability.AtomicBaseChange
-import Mathlib.Data.Set.Finite.Range
+public import FubiniTheorems.Prerequisites.Euler.GammaBaseExtension
+public import FubiniTheorems.Prerequisites.Definability.AtomicBaseChange
+public import Mathlib.Data.Set.Finite.Range
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Naming a finite tuple of actual Gamma parameters preserves base
 smallness and nontrivial definable Gamma. No RV lifts are asserted. -/

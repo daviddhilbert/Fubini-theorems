@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RESLayoutPreparation.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Comparison.RESLayoutPredicates
-import FubiniTheorems.Decomposition.FiniteMixedGraphPreparation
+public import FubiniTheorems.Comparison.RESLayoutPredicates
+public import FubiniTheorems.Decomposition.FiniteMixedGraphPreparation
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! One genuine original-base special bijection prepares a finite catalog
 of entire native equality witnesses with mixed VF/RV base coordinates. -/

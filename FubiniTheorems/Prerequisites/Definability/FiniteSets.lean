@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%202/FiniteSets.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Definability.Continuity
-import FubiniTheorems.Prerequisites.Definability.Bases
-import Section3.FiniteCoding
-import Section3.VFAlgebraicity
+public import FubiniTheorems.Prerequisites.Definability.Continuity
+public import FubiniTheorems.Prerequisites.Definability.Bases
+public import Section3.FiniteCoding
+public import Section3.VFAlgebraicity
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Lemmas 2.12 and 2.13, with the original base and the nonzero RV target. -/
 

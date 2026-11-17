@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/GlobalAngularPartition.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.AngularValuePartition
-import FubiniTheorems.Prerequisites.Grothendieck.RVGroundAngularPartition
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVUnitDomains
+public import FubiniTheorems.Decomposition.AngularValuePartition
+public import FubiniTheorems.Prerequisites.Grothendieck.RVGroundAngularPartition
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVUnitDomains
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The initial angular partition is itself induced by original values.
 The finite guarded-DNF patterns are Gamma predicates over the original

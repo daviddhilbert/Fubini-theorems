@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaCoordinateIsomorphisms.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryCharts
-import FubiniTheorems.Prerequisites.Euler.RVCoordinateMaps
+public import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryCharts
+public import FubiniTheorems.Prerequisites.Euler.RVCoordinateMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Coordinate permutations lift on the complete proper RV preimage over
 the original base. No representative section is chosen. -/

@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/PuiseuxRV.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import HilbertMathlib.Foundation.Series.PuiseuxGalois
-import Mathlib.RingTheory.HahnSeries.Valuation
-import RVClassEquality
+public import HilbertMathlib.Foundation.Series.PuiseuxGalois
+public import Mathlib.RingTheory.HahnSeries.Valuation
+public import RVClassEquality
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual principal-unit RV quotient of the concrete Puiseux field.
 Its normal form is the rational exponent together with a nonzero leading

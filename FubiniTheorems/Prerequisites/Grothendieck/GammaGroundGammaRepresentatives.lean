@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundGammaRepresentatives.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import HilbertMathlib.Foundation.Grothendieck.PositiveAdditiveRepresentatives
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaPartitions
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFamilyEmptyCoproducts
+public import HilbertMathlib.Foundation.Grothendieck.PositiveAdditiveRepresentatives
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaPartitions
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFamilyEmptyCoproducts
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 /-! Every fixed-degree positive Gamma class is represented by an actual
 tagged Gamma object. Addition is the genuine disjoint union. -/
 set_option backward.isDefEq.respectTransparency false

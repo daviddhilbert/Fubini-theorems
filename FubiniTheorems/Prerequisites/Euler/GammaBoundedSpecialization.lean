@@ -1,9 +1,15 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaBoundedSpecialization.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaBoundedObjectPolynomial
+public import FubiniTheorems.Prerequisites.Euler.GammaBoundedObjectPolynomial
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual specialization of the bounded restricted polynomial source.
 Its point/interval assignments are T^n and -T^n, and its value on an actual

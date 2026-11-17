@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVOrdinaryMaps.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVOrdinaryRing
-import FubiniTheorems.Prerequisites.Euler.RESOrdinaryUniversal
-import FubiniTheorems.Prerequisites.Euler.RVBoundedMaps
+public import FubiniTheorems.Prerequisites.Euler.RVOrdinaryRing
+public import FubiniTheorems.Prerequisites.Euler.RESOrdinaryUniversal
+public import FubiniTheorems.Prerequisites.Euler.RVBoundedMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Original-base ordinary RES inclusion and measured-to-ordinary RV
 maps, with their actual forgetful square. No Euler descent is assumed. -/

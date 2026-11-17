@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/Completed18VFObjects.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeGammaPointBridge
-import FubiniTheorems.Fubini.Completed18GroundCodeGraphs
-import FubiniTheorems.Fubini.NativeVFGroundTransfer
-import IntegrationSection6.GammaVFAllScissorDomains
+public import FubiniTheorems.Fubini.NativeGammaPointBridge
+public import FubiniTheorems.Fubini.Completed18GroundCodeGraphs
+public import FubiniTheorems.Fubini.NativeVFGroundTransfer
+public import IntegrationSection6.GammaVFAllScissorDomains
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual mixed VF objects and bijections in the completed [18]
 presentation and the local Gamma-ground presentation. -/

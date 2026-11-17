@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/InvariantGraphProjectionImages.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.GraphProjectionImages
-import FubiniTheorems.Decomposition.DiagonalPolynomialActions
+public import FubiniTheorems.Decomposition.GraphProjectionImages
+public import FubiniTheorems.Decomposition.DiagonalPolynomialActions
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Invariance of a complex graph makes the actual union of its affine
 projection images invariant on all scheme points. -/

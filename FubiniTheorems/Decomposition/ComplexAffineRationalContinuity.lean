@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/ComplexAffineRationalContinuity.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.ComplexZariskiConstructibility
-import FubiniTheorems.Decomposition.PrincipalRationalMaps
+public import FubiniTheorems.Decomposition.ComplexZariskiConstructibility
+public import FubiniTheorems.Decomposition.PrincipalRationalMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The original rational expressions are continuous for the actual
 Zariski topology on their principal domains. The proof uses the checked

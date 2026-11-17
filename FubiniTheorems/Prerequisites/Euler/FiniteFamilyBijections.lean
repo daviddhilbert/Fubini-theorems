@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/FiniteFamilyBijections.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import Mathlib.Data.Set.Function
-import Mathlib.Data.Set.Lattice
-import Mathlib.Data.Fintype.Basic
+public import Mathlib.Data.Set.Function
+public import Mathlib.Data.Set.Lattice
+public import Mathlib.Data.Fintype.Basic
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A bijection of finitely labelled unions decomposes into bijections
 between its source/target component slices. This is a set-level result;

@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RESPsiGradings.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaPolynomialGradings
-import FubiniTheorems.Prerequisites.Euler.RESReductionGradings
-import FubiniTheorems.Prerequisites.Euler.RESUnboundedPsi
-import FubiniTheorems.Prerequisites.Euler.RESBoundedPsi
-import Mathlib.RingTheory.GradedAlgebra.RingHom
+public import FubiniTheorems.Prerequisites.Euler.GammaPolynomialGradings
+public import FubiniTheorems.Prerequisites.Euler.RESReductionGradings
+public import FubiniTheorems.Prerequisites.Euler.RESUnboundedPsi
+public import FubiniTheorems.Prerequisites.Euler.RESBoundedPsi
+public import Mathlib.RingTheory.GradedAlgebra.RingHom
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Both constructed psi homomorphisms preserve the actual gradings on
 their whole polynomial sources. No RV tensor descent is assumed here. -/

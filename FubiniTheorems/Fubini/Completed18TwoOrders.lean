@@ -1,14 +1,20 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/Completed18TwoOrders.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.Completed18RelativeComparison
-import IntegrationSection6.GeneratedBase.NativeContractionComparison
-import IntegrationSection6.GeneratedBase.NativeBaseTransfer
-import IntegrationSection6.GeneratedBase.ProgramBaseTransfer
-import IntegrationSection6.GammaContractionExtensionIsomorphisms
-import IntegrationSection6.Section5TwoOrderInput
+public import FubiniTheorems.Fubini.Completed18RelativeComparison
+public import IntegrationSection6.GeneratedBase.NativeContractionComparison
+public import IntegrationSection6.GeneratedBase.NativeBaseTransfer
+public import IntegrationSection6.GeneratedBase.ProgramBaseTransfer
+public import IntegrationSection6.GammaContractionExtensionIsomorphisms
+public import IntegrationSection6.Section5TwoOrderInput
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The completed Section 5 producer discharges the actual two-coordinate
 input of Section 6 over arbitrary original parameter bases. -/

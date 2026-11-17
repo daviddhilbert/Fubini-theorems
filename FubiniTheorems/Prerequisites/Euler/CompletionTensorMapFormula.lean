@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/CompletionTensorMapFormula.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.CompletionTensor
-import FubiniTheorems.Prerequisites.Grothendieck.CompletionDirectSum
-import HilbertMathlib.Foundation.Algebra.RingTensorCongruence
+public import FubiniTheorems.Prerequisites.Grothendieck.CompletionTensor
+public import FubiniTheorems.Prerequisites.Grothendieck.CompletionDirectSum
+public import HilbertMathlib.Foundation.Algebra.RingTensorCongruence
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Completing a balanced product comparison retains its pure-tensor
 formula on arbitrary differences of positive classes. -/

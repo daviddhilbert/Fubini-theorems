@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaOrdinarySharpRingMap.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaOrdinarySharpObjects
-import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryGrading
-import FubiniTheorems.Prerequisites.Euler.RVOrdinaryGrading
-import FubiniTheorems.Prerequisites.Euler.RVSharpRingMap
+public import FubiniTheorems.Prerequisites.Euler.GammaOrdinarySharpObjects
+public import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryGrading
+public import FubiniTheorems.Prerequisites.Euler.RVOrdinaryGrading
+public import FubiniTheorems.Prerequisites.Euler.RVSharpRingMap
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual sharp ring map from ordinary Gamma objects to ordinary
 RV objects is graded and commutes with forgetting measured forms on the

@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/FamilySigmaProducts.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.FiniteFamilies
-import Mathlib.Logic.Equiv.Set
+public import FubiniTheorems.Prerequisites.Grothendieck.FiniteFamilies
+public import Mathlib.Logic.Equiv.Set
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The underlying tagged carrier of a family product separates into
 the two original tagged carriers, without selecting model elements. -/

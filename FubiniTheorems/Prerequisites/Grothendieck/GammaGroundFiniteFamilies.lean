@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundFiniteFamilies.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRelations
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapRestrictions
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRelations
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapRestrictions
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Finite disjoint unions retain their tags. Definability of a map means
 definability of every branch of its complete graph. Composition quantifies

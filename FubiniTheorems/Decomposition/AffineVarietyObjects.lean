@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/AffineVarietyObjects.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Corollaries.EquivariantVarietyRing
-import FubiniTheorems.Decomposition.AffineSchemeActions
+public import FubiniTheorems.Corollaries.EquivariantVarietyRing
+public import FubiniTheorems.Decomposition.AffineSchemeActions
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual reduced finite-type complex affine schemes with finite root
 actions are objects of the geometric equivariant variety presentation. -/

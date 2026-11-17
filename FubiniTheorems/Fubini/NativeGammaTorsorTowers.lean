@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeGammaTorsorTowers.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeScalarTorsorFubini
-import FubiniTheorems.Decomposition.GammaFunctionGraphProjection
+public import FubiniTheorems.Fubini.NativeScalarTorsorFubini
+public import FubiniTheorems.Decomposition.GammaFunctionGraphProjection
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Successively adjoining full value torsors keeps the literal RV input
 projection and contributes one residue-torus factor at every step. -/

@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundGammaProductMorphisms.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaProductCodeFunctions
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaCodeDescent
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaProductCodeFunctions
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaCodeDescent
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 /-! Actual Gamma morphisms are closed under cartesian products. Their
 full RV witnesses are multiplied before definability is descended. -/
 set_option backward.isDefEq.respectTransparency false

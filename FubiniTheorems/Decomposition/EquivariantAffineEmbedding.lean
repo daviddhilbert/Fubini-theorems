@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/EquivariantAffineEmbedding.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.EquivariantAlgebraGenerators
-import Mathlib.AlgebraicGeometry.Morphisms.ClosedImmersion
+public import FubiniTheorems.Decomposition.EquivariantAlgebraGenerators
+public import Mathlib.AlgebraicGeometry.Morphisms.ClosedImmersion
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! An actual equivariant closed affine embedding for every finite-type
 complex algebra with finite cyclic action. Equivariance is the full

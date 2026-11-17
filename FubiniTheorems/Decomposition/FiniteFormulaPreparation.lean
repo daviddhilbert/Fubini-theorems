@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/FiniteFormulaPreparation.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import IntegrationSection6.GammaPreparedRowAgreements
-import IntegrationSection6.GammaWitnessVFCodesInBase
-import IntegrationSection6.GammaFieldBaseReduction
-import IntegrationSection6.GammaSpecialBaseReduction
-import IntegrationSection6.GammaVFCodePreparation
+public import IntegrationSection6.GammaPreparedRowAgreements
+public import IntegrationSection6.GammaWitnessVFCodesInBase
+public import IntegrationSection6.GammaFieldBaseReduction
+public import IntegrationSection6.GammaSpecialBaseReduction
+public import IntegrationSection6.GammaVFCodePreparation
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A single genuine special bijection prepares an arbitrary finite family
 of full RV predicates. The temporary generated coefficient field is internal;

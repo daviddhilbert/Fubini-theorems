@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/Completed18VFComparison.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.Completed18VFObjects
-import FubiniTheorems.Prerequisites.Grothendieck.PresentationHomExt
-import IntegrationSection6.GammaMixedEmptyIsomorphisms
+public import FubiniTheorems.Fubini.Completed18VFObjects
+public import FubiniTheorems.Prerequisites.Grothendieck.PresentationHomExt
+public import IntegrationSection6.GammaMixedEmptyIsomorphisms
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual positive VF presentations agree. Union/intersection
 relations are obtained from partitions, including empty sets in every arity. -/

@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVMeasuredScaling.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVScaledRays
-import FubiniTheorems.Prerequisites.Euler.RVWeightScaling
-import FubiniTheorems.Prerequisites.Euler.RESOrdinaryPoints
+public import FubiniTheorems.Prerequisites.Euler.RVScaledRays
+public import FubiniTheorems.Prerequisites.Euler.RVWeightScaling
+public import FubiniTheorems.Prerequisites.Euler.RESOrdinaryPoints
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The measured form of named RV scaling. The degree-zero volume weight
 is retained, so the resulting identities hold in the actual measured RV

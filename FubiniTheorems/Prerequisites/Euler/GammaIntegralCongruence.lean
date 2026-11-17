@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaIntegralCongruence.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaFibreIntegralCongruence
-import FubiniTheorems.Prerequisites.Euler.GammaIteratedIntegral
+public import FubiniTheorems.Prerequisites.Euler.GammaFibreIntegralCongruence
+public import FubiniTheorems.Prerequisites.Euler.GammaIteratedIntegral
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Finite-dimensional actual integration is independent of the base
 presentation of its integer function. All smallness premises are explicit. -/

@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%202/RVMapGraphs.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Definability.RVDimension
-import Section3.GammaBaseTools
+public import FubiniTheorems.Prerequisites.Definability.RVDimension
+public import Section3.GammaBaseTools
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Full graphs of original-base RV maps built from definable raw maps.
 Inputs retain RV-infinity coordinates; targets have only nonzero RV entries. -/

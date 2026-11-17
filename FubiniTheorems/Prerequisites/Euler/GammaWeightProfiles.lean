@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaWeightProfiles.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaHigherPushforward
-import FubiniTheorems.Prerequisites.Euler.GammaDefinableMaps
+public import FubiniTheorems.Prerequisites.Euler.GammaHigherPushforward
+public import FubiniTheorems.Prerequisites.Euler.GammaDefinableMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Corrected weight profiles for actual definable Gamma sets. The native
 Gamma product is the manuscript's sum of coordinates. These are actual

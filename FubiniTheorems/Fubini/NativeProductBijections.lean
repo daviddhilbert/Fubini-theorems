@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeProductBijections.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeUnderlyingBijections
-import FubiniTheorems.Fubini.NativeSetBijections
-import FubiniTheorems.Comparison.RESSetProductClasses
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVProductMorphisms
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVProductLaws
+public import FubiniTheorems.Fubini.NativeUnderlyingBijections
+public import FubiniTheorems.Fubini.NativeSetBijections
+public import FubiniTheorems.Comparison.RESSetProductClasses
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVProductMorphisms
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVProductLaws
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Literal native schema products carry actual original-base bijections
 to native cartesian products, independently of the chosen label degrees. -/

@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%202/ZeroFaces.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Definability.Conventions
-import Mathlib.Data.Fintype.EquivFin
-import Mathlib.Logic.Equiv.Set
-import HilbertMathlib.Foundation.Definability.DefinableConstants
+public import FubiniTheorems.Prerequisites.Definability.Conventions
+public import Mathlib.Data.Fintype.EquivFin
+public import Mathlib.Logic.Equiv.Set
+public import HilbertMathlib.Foundation.Definability.DefinableConstants
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Finite coordinate charts for the zero-pattern split in 2.35.
 Fixed coordinates are listed first; free coordinates retain their order

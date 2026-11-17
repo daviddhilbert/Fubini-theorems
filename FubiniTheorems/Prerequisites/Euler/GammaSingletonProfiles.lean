@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaSingletonProfiles.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaPushforwardCongruence
-import FubiniTheorems.Prerequisites.Euler.GammaConstantPushforward
-import FubiniTheorems.Prerequisites.Euler.GammaObjectPolynomial
-import FubiniTheorems.Prerequisites.Euler.GammaMeasuredProfileInvariance
-import FubiniTheorems.Prerequisites.Euler.GammaUnboundedSpecialization
+public import FubiniTheorems.Prerequisites.Euler.GammaPushforwardCongruence
+public import FubiniTheorems.Prerequisites.Euler.GammaConstantPushforward
+public import FubiniTheorems.Prerequisites.Euler.GammaObjectPolynomial
+public import FubiniTheorems.Prerequisites.Euler.GammaMeasuredProfileInvariance
+public import FubiniTheorems.Prerequisites.Euler.GammaUnboundedSpecialization
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual profile and homogeneous polynomial of a weighted Gamma
 singleton. This computes the finite Gamma coefficient used in balancing,

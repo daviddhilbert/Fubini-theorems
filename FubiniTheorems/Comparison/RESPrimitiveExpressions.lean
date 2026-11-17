@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RESPrimitiveExpressions.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Comparison.RESExpressionSchemata
-import FubiniTheorems.Comparison.RESPrimitiveSchemata
-import FubiniTheorems.Decomposition.GammaConstantValueSchemata
+public import FubiniTheorems.Comparison.RESExpressionSchemata
+public import FubiniTheorems.Comparison.RESPrimitiveSchemata
+public import FubiniTheorems.Decomposition.GammaConstantValueSchemata
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Every primitive native ideal witness supplies two literal finite
 RES expressions with equal actual native values. -/

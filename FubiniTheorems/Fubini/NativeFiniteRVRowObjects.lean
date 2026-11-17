@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeFiniteRVRowObjects.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeRectangleRowValues
-import IntegrationSection6.GammaSchemaRowValues
+public import FubiniTheorems.Fubini.NativeRectangleRowValues
+public import IntegrationSection6.GammaSchemaRowValues
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Valid finite label schemata realize actual native RV objects over
 the exact parameter base. Their full original label graphs are retained. -/

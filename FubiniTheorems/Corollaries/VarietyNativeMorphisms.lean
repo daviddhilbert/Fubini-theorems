@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/VarietyNativeMorphisms.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Corollaries.VarietyNativeChartMaps
-import FubiniTheorems.Decomposition.AffineMorphismRefinement
-import FubiniTheorems.Fubini.NativeVFPullbackValues
+public import FubiniTheorems.Corollaries.VarietyNativeChartMaps
+public import FubiniTheorems.Decomposition.AffineMorphismRefinement
+public import FubiniTheorems.Fubini.NativeVFPullbackValues
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Arbitrary regular maps between varieties are actual native maps
 over the original field. The finite affine refinement is constructed. -/

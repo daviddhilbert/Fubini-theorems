@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeRVValuePatterns.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.FiniteValueDomainValidity
-import FubiniTheorems.Decomposition.QuotientDomainSyntax
-import FubiniTheorems.Decomposition.GammaRVSetObjects
-import FubiniTheorems.Prerequisites.Euler.Section3RVCodeBridge
+public import FubiniTheorems.Decomposition.FiniteValueDomainValidity
+public import FubiniTheorems.Decomposition.QuotientDomainSyntax
+public import FubiniTheorems.Decomposition.GammaRVSetObjects
+public import FubiniTheorems.Prerequisites.Euler.Section3RVCodeBridge
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Literal original-language bounds for full native RV value patterns.
 Zero coordinates are retained. A valid bound produces an actual native

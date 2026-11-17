@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RelativePointPresentation.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.RelativeRVFamilyPresentation
-import FubiniTheorems.Decomposition.OriginalRVRowProducts
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundEmptyBijections
+public import FubiniTheorems.Decomposition.RelativeRVFamilyPresentation
+public import FubiniTheorems.Decomposition.OriginalRVRowProducts
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundEmptyBijections
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual bijections over every displayed RV parameter define the
 relative positive presentation. Canonical products share that parameter. -/

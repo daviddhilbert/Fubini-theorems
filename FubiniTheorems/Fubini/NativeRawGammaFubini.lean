@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeRawGammaFubini.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeRelativeGammaFubini
-import FubiniTheorems.Decomposition.RawRVGammaEulerConstructibility
-import FubiniTheorems.Decomposition.RawRVUnitPartitions
-import FubiniTheorems.Fubini.NativeRawWeightedValues
+public import FubiniTheorems.Fubini.NativeRelativeGammaFubini
+public import FubiniTheorems.Decomposition.RawRVGammaEulerConstructibility
+public import FubiniTheorems.Decomposition.RawRVUnitPartitions
+public import FubiniTheorems.Fubini.NativeRawWeightedValues
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Relative Gamma Fubini for all raw RV bases, including zeros. The
 actual original-base nonzero coding retains every output representative;

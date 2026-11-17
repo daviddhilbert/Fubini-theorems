@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeGeometricVFFubini.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeFixedGeometricWitnessVFFubini
-import FubiniTheorems.Fubini.NativeGeometricVFMapWitnesses
-import FubiniTheorems.Fubini.NativeWitnessVFMapTotals
-import FubiniTheorems.Fubini.NativeVFFubini
+public import FubiniTheorems.Fubini.NativeFixedGeometricWitnessVFFubini
+public import FubiniTheorems.Fubini.NativeGeometricVFMapWitnesses
+public import FubiniTheorems.Fubini.NativeWitnessVFMapTotals
+public import FubiniTheorems.Fubini.NativeVFFubini
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The approved geometric version of Theorem 5.17 for actual native VF
 maps. Fibre equality is in the intrinsic ungraded affine localization.

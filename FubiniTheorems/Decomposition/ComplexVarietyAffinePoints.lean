@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/ComplexVarietyAffinePoints.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.ComplexVarietyCharts
-import FubiniTheorems.Decomposition.AffineCoordinateAlgebras
-import FubiniTheorems.Decomposition.AffinePointFiniteEquations
+public import FubiniTheorems.Decomposition.ComplexVarietyCharts
+public import FubiniTheorems.Decomposition.AffineCoordinateAlgebras
+public import FubiniTheorems.Decomposition.AffinePointFiniteEquations
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual K-valued scheme points over C are identified with algebra
 points on every affine chart, before encoding them as VF tuples. -/

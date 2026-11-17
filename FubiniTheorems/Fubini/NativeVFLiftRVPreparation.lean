@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeVFLiftRVPreparation.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeVFLiftEqualitySchemata
-import FubiniTheorems.Fubini.NativeFiniteRVSchemaRecoding
-import FubiniTheorems.Comparison.RVEvaluationEqualityExtraPreparation
+public import FubiniTheorems.Fubini.NativeVFLiftEqualitySchemata
+public import FubiniTheorems.Fubini.NativeFiniteRVSchemaRecoding
+public import FubiniTheorems.Comparison.RVEvaluationEqualityExtraPreparation
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! One genuine preparation transports both complete RV label graphs,
 the base predicate and the whole stabilized equality witness together.

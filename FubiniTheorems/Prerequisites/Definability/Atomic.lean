@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%202/Atomic.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Definability.Conventions
-import Section3.GammaBaseTools
-import Section3.GammaClosureLaws
+public import FubiniTheorems.Prerequisites.Definability.Conventions
+public import Section3.GammaBaseTools
+public import Section3.GammaClosureLaws
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Definition 2.22 uses complete types throughout. All formulas are over
 the indicated ground base, including genuine Gamma names. Referee notes

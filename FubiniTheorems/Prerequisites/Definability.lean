@@ -1,38 +1,44 @@
+module
+
 /- Subject entry point for the extracted Fubini development. -/
-import FubiniTheorems.Prerequisites.Definability.Atomic
-import FubiniTheorems.Prerequisites.Definability.AtomicBaseChange
-import FubiniTheorems.Prerequisites.Definability.Bases
-import FubiniTheorems.Prerequisites.Definability.Boundedness
-import FubiniTheorems.Prerequisites.Definability.CitedGammaLinearity
-import FubiniTheorems.Prerequisites.Definability.Continuity
-import FubiniTheorems.Prerequisites.Definability.Conventions
-import FubiniTheorems.Prerequisites.Definability.Differentiation
-import FubiniTheorems.Prerequisites.Definability.Dimension
-import FubiniTheorems.Prerequisites.Definability.Discs
-import FubiniTheorems.Prerequisites.Definability.FiniteSets
-import FubiniTheorems.Prerequisites.Definability.GammaAbsoluteValues
-import FubiniTheorems.Prerequisites.Definability.GammaAffineBounds
-import FubiniTheorems.Prerequisites.Definability.GammaDomainSuprema
-import FubiniTheorems.Prerequisites.Definability.GammaFamilyFibres
-import FubiniTheorems.Prerequisites.Definability.GammaFamilyMaps
-import FubiniTheorems.Prerequisites.Definability.GammaFamilyProjections
-import FubiniTheorems.Prerequisites.Definability.GammaFamilyRestrictions
-import FubiniTheorems.Prerequisites.Definability.GammaHeadFamilies
-import FubiniTheorems.Prerequisites.Definability.GammaJacobian
-import FubiniTheorems.Prerequisites.Definability.GammaPowerRadii
-import FubiniTheorems.Prerequisites.Definability.GammaRelationMaps
-import FubiniTheorems.Prerequisites.Definability.GammaSuprema
-import FubiniTheorems.Prerequisites.Definability.GeneralDiscPoints
-import FubiniTheorems.Prerequisites.Definability.RVDimension
-import FubiniTheorems.Prerequisites.Definability.RVGammaBounds
-import FubiniTheorems.Prerequisites.Definability.RVGammaCuts
-import FubiniTheorems.Prerequisites.Definability.RVMapGraphs
-import FubiniTheorems.Prerequisites.Definability.RVValueFamilies
-import FubiniTheorems.Prerequisites.Definability.RVValueFinite
-import FubiniTheorems.Prerequisites.Definability.RawFibreComparisons
-import FubiniTheorems.Prerequisites.Definability.RawFibreRelationalImages
-import FubiniTheorems.Prerequisites.Definability.RawMapImages
-import FubiniTheorems.Prerequisites.Definability.UnaryRVGammaBounds
-import FubiniTheorems.Prerequisites.Definability.UnaryValueGerms
-import FubiniTheorems.Prerequisites.Definability.UniformGammaSuprema
-import FubiniTheorems.Prerequisites.Definability.ZeroFaces
+public import FubiniTheorems.Prerequisites.Definability.Atomic
+public import FubiniTheorems.Prerequisites.Definability.AtomicBaseChange
+public import FubiniTheorems.Prerequisites.Definability.Bases
+public import FubiniTheorems.Prerequisites.Definability.Boundedness
+public import FubiniTheorems.Prerequisites.Definability.CitedGammaLinearity
+public import FubiniTheorems.Prerequisites.Definability.Continuity
+public import FubiniTheorems.Prerequisites.Definability.Conventions
+public import FubiniTheorems.Prerequisites.Definability.Differentiation
+public import FubiniTheorems.Prerequisites.Definability.Dimension
+public import FubiniTheorems.Prerequisites.Definability.Discs
+public import FubiniTheorems.Prerequisites.Definability.FiniteSets
+public import FubiniTheorems.Prerequisites.Definability.GammaAbsoluteValues
+public import FubiniTheorems.Prerequisites.Definability.GammaAffineBounds
+public import FubiniTheorems.Prerequisites.Definability.GammaDomainSuprema
+public import FubiniTheorems.Prerequisites.Definability.GammaFamilyFibres
+public import FubiniTheorems.Prerequisites.Definability.GammaFamilyMaps
+public import FubiniTheorems.Prerequisites.Definability.GammaFamilyProjections
+public import FubiniTheorems.Prerequisites.Definability.GammaFamilyRestrictions
+public import FubiniTheorems.Prerequisites.Definability.GammaHeadFamilies
+public import FubiniTheorems.Prerequisites.Definability.GammaJacobian
+public import FubiniTheorems.Prerequisites.Definability.GammaPowerRadii
+public import FubiniTheorems.Prerequisites.Definability.GammaRelationMaps
+public import FubiniTheorems.Prerequisites.Definability.GammaSuprema
+public import FubiniTheorems.Prerequisites.Definability.GeneralDiscPoints
+public import FubiniTheorems.Prerequisites.Definability.RVDimension
+public import FubiniTheorems.Prerequisites.Definability.RVGammaBounds
+public import FubiniTheorems.Prerequisites.Definability.RVGammaCuts
+public import FubiniTheorems.Prerequisites.Definability.RVMapGraphs
+public import FubiniTheorems.Prerequisites.Definability.RVValueFamilies
+public import FubiniTheorems.Prerequisites.Definability.RVValueFinite
+public import FubiniTheorems.Prerequisites.Definability.RawFibreComparisons
+public import FubiniTheorems.Prerequisites.Definability.RawFibreRelationalImages
+public import FubiniTheorems.Prerequisites.Definability.RawMapImages
+public import FubiniTheorems.Prerequisites.Definability.UnaryRVGammaBounds
+public import FubiniTheorems.Prerequisites.Definability.UnaryValueGerms
+public import FubiniTheorems.Prerequisites.Definability.UniformGammaSuprema
+public import FubiniTheorems.Prerequisites.Definability.ZeroFaces
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section

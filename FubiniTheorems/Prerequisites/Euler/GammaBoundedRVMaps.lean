@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaBoundedRVMaps.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaBoundedRVPresentation
-import FubiniTheorems.Prerequisites.Euler.GammaBoundedChartMap
-import FubiniTheorems.Prerequisites.Euler.RVSharpRingMap
-import FubiniTheorems.Prerequisites.Euler.RVBoundedMaps
+public import FubiniTheorems.Prerequisites.Euler.GammaBoundedRVPresentation
+public import FubiniTheorems.Prerequisites.Euler.GammaBoundedChartMap
+public import FubiniTheorems.Prerequisites.Euler.RVSharpRingMap
+public import FubiniTheorems.Prerequisites.Euler.RVBoundedMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Maps from the intrinsic bounded Gamma presentation to the actual
 bounded RV ring and to the auxiliary bounded chart subring used to

@@ -1,14 +1,20 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/DefinableTestColumns.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.FiniteColumnPartition
-import Section4.FiniteCover
-import Mathlib.Data.Set.Finite.Range
-import Mathlib.Data.Fintype.Powerset
-import Mathlib.Data.Fintype.Pi
-import Mathlib.Data.Fintype.Prod
+public import FubiniTheorems.Prerequisites.Grothendieck.FiniteColumnPartition
+public import Section4.FiniteCover
+public import Mathlib.Data.Set.Finite.Range
+public import Mathlib.Data.Fintype.Powerset
+public import Mathlib.Data.Fintype.Pi
+public import Mathlib.Data.Fintype.Prod
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 set_option autoImplicit false
 open Classical FirstOrder FirstOrder.Language
 open SpecialTransformations.Milestone0 SpecialTransformations.Section3 SpecialTransformations.Section4

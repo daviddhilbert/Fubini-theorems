@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVT001OrdinaryNormalization.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVT001OrdinaryDescent
-import FubiniTheorems.Prerequisites.Euler.RVOrdinaryTensorNormalization
+public import FubiniTheorems.Prerequisites.Euler.RVT001OrdinaryDescent
+public import FubiniTheorems.Prerequisites.Euler.RVOrdinaryTensorNormalization
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual ordinary RV maps normalized by the point and affine-line
 classes, relative to the transported approved T001 presentation. Both

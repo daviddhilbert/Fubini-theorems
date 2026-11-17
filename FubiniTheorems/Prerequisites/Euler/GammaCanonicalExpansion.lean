@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaCanonicalExpansion.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaWeightedBoundary
-import FubiniTheorems.Prerequisites.Euler.GammaPartialEvaluation
-import FubiniTheorems.Prerequisites.Euler.EulerEnumeratedExpansion
+public import FubiniTheorems.Prerequisites.Euler.GammaWeightedBoundary
+public import FubiniTheorems.Prerequisites.Euler.GammaPartialEvaluation
+public import FubiniTheorems.Prerequisites.Euler.EulerEnumeratedExpansion
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Uniform canonical point-and-ray decomposition of an actual weighted
 Gamma family. The finite boundary graphs carry original-base definable

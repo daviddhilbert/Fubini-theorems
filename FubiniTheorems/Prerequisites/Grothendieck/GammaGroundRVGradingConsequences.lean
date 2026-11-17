@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundRVGradingConsequences.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVGradedComparison
-import FubiniTheorems.Prerequisites.Grothendieck.CompletionDirectSum
-import FubiniTheorems.Prerequisites.Grothendieck.CompletionEquivalences
-import FubiniTheorems.Prerequisites.Grothendieck.PresentationHomExt
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVGradedComparison
+public import FubiniTheorems.Prerequisites.Grothendieck.CompletionDirectSum
+public import FubiniTheorems.Prerequisites.Grothendieck.CompletionEquivalences
+public import FubiniTheorems.Prerequisites.Grothendieck.PresentationHomExt
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual fixed-degree inclusions and group gradings after the checked
 Gamma-ground RV semiring/direct-sum comparison. -/

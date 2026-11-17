@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RESFiniteUnitBalancing.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaFiniteGenerators
-import FubiniTheorems.Prerequisites.Euler.GammaFiniteRVMaps
-import FubiniTheorems.Prerequisites.Euler.GammaRVMapGradings
-import FubiniTheorems.Prerequisites.Euler.RVCoordinateMaps
+public import FubiniTheorems.Prerequisites.Euler.GammaFiniteGenerators
+public import FubiniTheorems.Prerequisites.Euler.GammaFiniteRVMaps
+public import FubiniTheorems.Prerequisites.Euler.GammaRVMapGradings
+public import FubiniTheorems.Prerequisites.Euler.RVCoordinateMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The degree-zero finite-Gamma balancing calculation uses actual
 weighted RES units for all original-base definable Gamma weights. -/

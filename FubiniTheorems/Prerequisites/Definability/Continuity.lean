@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%202/Continuity.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Definability.Conventions
-import Section3.MeanInBalls
-import Section3.ValuedNeighbourhood
-import ValuedFieldExtension
+public import FubiniTheorems.Prerequisites.Definability.Conventions
+public import Section3.MeanInBalls
+public import Section3.ValuedNeighbourhood
+public import ValuedFieldExtension
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 set_option backward.isDefEq.respectTransparency false
 

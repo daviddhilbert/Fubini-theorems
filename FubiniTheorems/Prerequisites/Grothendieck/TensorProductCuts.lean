@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/TensorProductCuts.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.TensorPieceNormalForm
-import FubiniTheorems.Prerequisites.Grothendieck.RESUnitCoordinates
-import FubiniTheorems.Prerequisites.Grothendieck.TensorCoefficientRelations
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRESPositiveComparison
+public import FubiniTheorems.Prerequisites.Grothendieck.TensorPieceNormalForm
+public import FubiniTheorems.Prerequisites.Grothendieck.RESUnitCoordinates
+public import FubiniTheorems.Prerequisites.Grothendieck.TensorCoefficientRelations
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRESPositiveComparison
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 set_option backward.isDefEq.respectTransparency false
 set_option autoImplicit false
 open Classical FirstOrder FirstOrder.Language

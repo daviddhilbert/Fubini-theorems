@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/GammaQEFiniteLaws.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import Section3.GammaQEFiniteLaws
-import Section3.GammaQEGraphCritical
-import HilbertMathlib.Foundation.Euler.GammaQEPositiveLaw
-import FubiniTheorems.Prerequisites.Definability.CitedGammaLinearity
+public import Section3.GammaQEFiniteLaws
+public import Section3.GammaQEGraphCritical
+public import HilbertMathlib.Foundation.Euler.GammaQEPositiveLaw
+public import FubiniTheorems.Prerequisites.Definability.CitedGammaLinearity
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The exact unary Gamma rational-affine input is proved from original
 RV quantifier elimination. No saturation or additional parameters occur. -/

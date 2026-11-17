@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/RVDimensionBridge.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Definability.RVMapGraphs
-import Section4.RVDimension
-import Section4.RVCoordinates
-import HilbertMathlib.Foundation.Definability.CodeMaps
+public import FubiniTheorems.Prerequisites.Definability.RVMapGraphs
+public import Section4.RVDimension
+public import Section4.RVCoordinates
+public import HilbertMathlib.Foundation.Definability.CodeMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The RV-dimension interface in §§2 and 3. Replacing the unique RV zero
 by RV one is finite-to-one in the same arity. Consequently allowing zero

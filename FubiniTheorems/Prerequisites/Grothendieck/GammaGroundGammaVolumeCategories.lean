@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundGammaVolumeCategories.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaCategories
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredRVCategories
-import FubiniTheorems.Prerequisites.Grothendieck.GammaVolumeCategories
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaCategories
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredRVCategories
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaVolumeCategories
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Definition 3.16 and the Gamma part of Notation 3.17. Gamma is written
 multiplicatively in Lean: sums of coordinates become finite products. -/

@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaTupleCounting.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaFibreCounting
-import FubiniTheorems.Prerequisites.Euler.GammaIntegerFamilies
+public import FubiniTheorems.Prerequisites.Euler.GammaFibreCounting
+public import FubiniTheorems.Prerequisites.Euler.GammaIntegerFamilies
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Bounded counting in unary Gamma fibres with arbitrary finite Gamma
 parameter tuples. Distinctness is imposed on Gamma values themselves. -/

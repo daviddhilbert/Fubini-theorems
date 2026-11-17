@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RawParameterProjectionRecoding.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.OriginalEulerRecoding
-import FubiniTheorems.Decomposition.OriginalEulerRowValues
-import FubiniTheorems.Decomposition.OriginalSortedPredicates
+public import FubiniTheorems.Decomposition.OriginalEulerRecoding
+public import FubiniTheorems.Decomposition.OriginalEulerRowValues
+public import FubiniTheorems.Decomposition.OriginalSortedPredicates
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Pulling original schemata back along arbitrary raw RV parameter
 coordinate maps retains all domain, graph and whole Euler rows. -/

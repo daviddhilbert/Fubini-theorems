@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeDegreeTaggedLayouts.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeDegreePresentations
-import FubiniTheorems.Fubini.NativeTaggedFormalValues
+public import FubiniTheorems.Fubini.NativeDegreePresentations
+public import FubiniTheorems.Fubini.NativeTaggedFormalValues
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The old finite degree-grouped total has an original-base expression
 presentation with the formal sum of every original component exactly once. -/

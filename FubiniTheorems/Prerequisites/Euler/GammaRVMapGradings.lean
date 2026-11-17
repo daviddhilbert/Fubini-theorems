@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaRVMapGradings.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaRVGrading
-import FubiniTheorems.Prerequisites.Euler.GammaPolynomialGradings
-import FubiniTheorems.Prerequisites.Euler.RVSharpRingMap
-import FubiniTheorems.Prerequisites.Euler.RESPsiGradings
+public import FubiniTheorems.Prerequisites.Euler.GammaRVGrading
+public import FubiniTheorems.Prerequisites.Euler.GammaPolynomialGradings
+public import FubiniTheorems.Prerequisites.Euler.RVSharpRingMap
+public import FubiniTheorems.Prerequisites.Euler.RESPsiGradings
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual Gamma profile maps and sharp map preserve the full grading
 of the RV-lift-restricted Gamma presentation. Their composite with psi is

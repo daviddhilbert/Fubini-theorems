@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/MeasuredNativeGammaPartitions.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.MeasuredGammaPieceSums
-import FubiniTheorems.Prerequisites.Grothendieck.MeasuredGammaWeightTranslations
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaPartitions
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaRepresentatives
-import FubiniTheorems.Prerequisites.Grothendieck.GammaNativeFinitePartitions
+public import FubiniTheorems.Prerequisites.Grothendieck.MeasuredGammaPieceSums
+public import FubiniTheorems.Prerequisites.Grothendieck.MeasuredGammaWeightTranslations
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaPartitions
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaRepresentatives
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaNativeFinitePartitions
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 set_option backward.isDefEq.respectTransparency false
 set_option autoImplicit false
 open Classical FirstOrder FirstOrder.Language CategoryTheory

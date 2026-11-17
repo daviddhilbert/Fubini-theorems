@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/ElementaryRESFibreQuotient.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.ElementaryRESRestrictionRing
-import FubiniTheorems.Decomposition.ElementaryValueFibreDescent
-import FubiniTheorems.Prerequisites.Euler.RESDimensionFreeReduction
+public import FubiniTheorems.Decomposition.ElementaryRESRestrictionRing
+public import FubiniTheorems.Decomposition.ElementaryValueFibreDescent
+public import FubiniTheorems.Prerequisites.Euler.RESDimensionFreeReduction
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual elementary restriction descends to the intrinsic reduced
 ungraded RES ring, since every definable full value fibre descends over

@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/InvariantConstructibleStrata.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.ClosedFamilyStrata
-import FubiniTheorems.Decomposition.ConstructibleClosedGenerators
-import Mathlib.Topology.Homeomorph.Defs
-import Mathlib.Algebra.Group.Units.Equiv
+public import FubiniTheorems.Decomposition.ClosedFamilyStrata
+public import FubiniTheorems.Decomposition.ConstructibleClosedGenerators
+public import Mathlib.Topology.Homeomorph.Defs
+public import Mathlib.Algebra.Group.Units.Equiv
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Finite invariant locally closed strata adapted to any prescribed
 finite family of constructible subsets. Each prescribed subset restricts

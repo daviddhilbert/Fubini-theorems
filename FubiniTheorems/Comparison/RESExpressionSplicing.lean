@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RESExpressionSplicing.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Comparison.RESWholeCertificateSums
-import FubiniTheorems.Decomposition.OriginalRVRowBijections
-import FubiniTheorems.Decomposition.OriginalTaggedRowPresentations
-import FubiniTheorems.Comparison.RESFixedBijectionPromotion
+public import FubiniTheorems.Comparison.RESWholeCertificateSums
+public import FubiniTheorems.Decomposition.OriginalRVRowBijections
+public import FubiniTheorems.Decomposition.OriginalTaggedRowPresentations
+public import FubiniTheorems.Comparison.RESFixedBijectionPromotion
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual whole-expression identity and coproduct graphs allow a finite
 native equality witness to retain the positive contribution expressions

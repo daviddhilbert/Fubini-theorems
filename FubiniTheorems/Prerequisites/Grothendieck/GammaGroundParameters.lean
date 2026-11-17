@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundParameters.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.ImaginaryParameterChange
-import FubiniTheorems.Prerequisites.Grothendieck.PowerProjectionMaps
-import FubiniTheorems.Prerequisites.Grothendieck.GammaVolumeForms
+public import FubiniTheorems.Prerequisites.Grothendieck.ImaginaryParameterChange
+public import FubiniTheorems.Prerequisites.Grothendieck.PowerProjectionMaps
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaVolumeForms
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Definability over a real base and an arbitrary collection of actual
 Gamma names. Each defining formula uses finitely many of those names;

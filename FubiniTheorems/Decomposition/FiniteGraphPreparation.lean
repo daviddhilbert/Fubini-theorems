@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/FiniteGraphPreparation.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.FiniteFormulaPreparation
-import FubiniTheorems.Comparison.RESBijectionSchemata
+public import FubiniTheorems.Decomposition.FiniteFormulaPreparation
+public import FubiniTheorems.Comparison.RESBijectionSchemata
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! One genuine special bijection prepares a finite family of domains and
 full relation graphs. Native RES validity is preserved as one whole package. -/

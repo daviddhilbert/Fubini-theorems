@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaBoundaryComponents.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaBoundaryConstancy
-import FubiniTheorems.Prerequisites.Euler.GammaCellUnboundedSections
+public import FubiniTheorems.Prerequisites.Euler.GammaBoundaryConstancy
+public import FubiniTheorems.Prerequisites.Euler.GammaCellUnboundedSections
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Boundary-free open bands, rays and lines in a definable Gamma fibre
 have constant membership. A single member of such a component makes the

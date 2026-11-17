@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundMeasuredGammaRVScissors.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaRestrictions
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaRVMorphisms
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredRVScissors
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundCarrierBijections
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundEmptyBijections
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaRestrictions
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaRVMorphisms
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredRVScissors
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundCarrierBijections
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundEmptyBijections
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 /-! The measured Gamma lift descends to the actual pointwise measured
 RV positive scissor quotient. Forms are inherited through every cut. -/
 

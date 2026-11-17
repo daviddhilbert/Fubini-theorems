@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/ComplexConstructiblePoints.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.ComplexPointsSeparate
-import Mathlib.RingTheory.Spectrum.Prime.ConstructibleSet
-import Mathlib.RingTheory.Ideal.Quotient.Nilpotent
+public import FubiniTheorems.Decomposition.ComplexPointsSeparate
+public import Mathlib.RingTheory.Spectrum.Prime.ConstructibleSet
+public import Mathlib.RingTheory.Ideal.Quotient.Nilpotent
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Every nonempty constructible subset of a finite-type complex
 affine scheme contains an actual complex point. Consequently complex

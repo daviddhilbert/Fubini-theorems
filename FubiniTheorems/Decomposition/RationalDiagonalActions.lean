@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RationalDiagonalActions.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.FiniteFrameCompatibility
-import FubiniTheorems.Decomposition.FiniteValuePatterns
+public import FubiniTheorems.Decomposition.FiniteFrameCompatibility
+public import FubiniTheorems.Decomposition.FiniteValuePatterns
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Rational weights give finite diagonal actions of the compatible-root
 group. Their definition is independent of any common denominator. -/

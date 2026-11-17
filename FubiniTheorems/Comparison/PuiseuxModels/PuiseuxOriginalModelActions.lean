@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/PuiseuxOriginalModelActions.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Comparison.PuiseuxModels.PuiseuxRVBase
-import FubiniTheorems.Decomposition.OriginalRVTransport
+public import FubiniTheorems.Comparison.PuiseuxModels.PuiseuxRVBase
+public import FubiniTheorems.Decomposition.OriginalRVTransport
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Transport the proved concrete Puiseux actions into a presented canonical
 ACVF model. The field presentation and its valuation compatibility are

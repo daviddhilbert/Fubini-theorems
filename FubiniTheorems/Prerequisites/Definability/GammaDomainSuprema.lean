@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%202/GammaDomainSuprema.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Definability.UniformGammaSuprema
-import Section4.GammaPredicates
-import Section8.GammaRadiusBase
+public import FubiniTheorems.Prerequisites.Definability.UniformGammaSuprema
+public import Section4.GammaPredicates
+public import Section8.GammaRadiusBase
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A uniformly definable family indexed by actual Gamma values has a
 definable supremum function when every indicated supremum exists. -/

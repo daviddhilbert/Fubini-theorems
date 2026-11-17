@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVBalancedMapGradings.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVBalancedGradings
-import FubiniTheorems.Prerequisites.Euler.TensorGradedMaps
+public import FubiniTheorems.Prerequisites.Euler.RVBalancedGradings
+public import FubiniTheorems.Prerequisites.Euler.TensorGradedMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual finite-Gamma-balanced comparison and evaluation maps are
 graded on their whole tensor sources. Global RV descent remains separate. -/

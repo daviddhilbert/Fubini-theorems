@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/OriginalConstantRVDomains.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.OriginalRVRowProducts
-import FubiniTheorems.Decomposition.OriginalSortedPredicates
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRealExtensions
+public import FubiniTheorems.Decomposition.OriginalRVRowProducts
+public import FubiniTheorems.Decomposition.OriginalSortedPredicates
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRealExtensions
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Literal original-ground RV domains give constant families over any
 mixed parameter sort. Their rows are actual real-parameter extensions of

@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeVFCoproductRealization.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteVFCoproducts
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapFiniteGluing
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteVFCoproducts
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapFiniteGluing
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The genuine native VF coproduct realizes an actual disjoint sum of
 its domains, with all tagged inclusion maps over the original ground. -/

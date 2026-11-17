@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/NamedMapImages.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.NamedMapProducts
-import FubiniTheorems.Prerequisites.Grothendieck.NamedBijections
+public import FubiniTheorems.Prerequisites.Grothendieck.NamedMapProducts
+public import FubiniTheorems.Prerequisites.Grothendieck.NamedBijections
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Images and finite-fibre maps over the original imaginary names. -/
 set_option backward.isDefEq.respectTransparency false

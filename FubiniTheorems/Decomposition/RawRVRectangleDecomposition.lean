@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RawRVRectangleDecomposition.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.MonomialSourcePartitions
-import FubiniTheorems.Decomposition.RawRVGammaFamilies
-import FubiniTheorems.Decomposition.RawRVUnitPartitions
-import FubiniTheorems.Decomposition.MonomialTorsorEvaluation
+public import FubiniTheorems.Decomposition.MonomialSourcePartitions
+public import FubiniTheorems.Decomposition.RawRVGammaFamilies
+public import FubiniTheorems.Decomposition.RawRVUnitPartitions
+public import FubiniTheorems.Decomposition.MonomialTorsorEvaluation
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Finite original-ground RV rectangles for every raw RV domain,
 including zeros. Every source-to-product map is an actual bijection. -/

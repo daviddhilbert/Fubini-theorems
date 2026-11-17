@@ -1,16 +1,22 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/Section3RVCodeBridge.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundSyntaxBridge
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundSortedSyntax
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRawGraphs
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapImages
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRawDescent
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundBijections
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapRestrictions
-import FubiniTheorems.Prerequisites.Euler.RVRealProducts
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundSyntaxBridge
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundSortedSyntax
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRawGraphs
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapImages
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRawDescent
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundBijections
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapRestrictions
+public import FubiniTheorems.Prerequisites.Euler.RVRealProducts
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Exact original-base conversion between native Section 3 RV domains
 and the raw RV tuple charts of Section 4. No parameter is added. -/

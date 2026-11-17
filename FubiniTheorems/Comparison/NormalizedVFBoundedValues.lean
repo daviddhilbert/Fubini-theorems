@@ -1,9 +1,15 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NormalizedVFBoundedValues.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeArbitraryWeakRVPresentation
+public import FubiniTheorems.Fubini.NativeArbitraryWeakRVPresentation
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Bounded values normalized on the genuine Section 3 lifts compute
 arbitrary zero strata and RV[<=k] presentations over the exact given base. -/

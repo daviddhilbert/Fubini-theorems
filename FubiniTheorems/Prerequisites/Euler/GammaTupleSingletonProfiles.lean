@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaTupleSingletonProfiles.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaFiniteNames
-import FubiniTheorems.Prerequisites.Euler.GammaSingletonProfiles
+public import FubiniTheorems.Prerequisites.Euler.GammaFiniteNames
+public import FubiniTheorems.Prerequisites.Euler.GammaSingletonProfiles
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual weighted Gamma singleton profiles in every finite arity,
 including degree zero. Only Gamma names are used, without RV lifts. -/

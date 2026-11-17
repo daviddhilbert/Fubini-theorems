@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundGammaProductDistributivity.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaProductLaws
-import HilbertMathlib.Foundation.Algebra.ProductTagDistributivity
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaProductLaws
+public import HilbertMathlib.Foundation.Algebra.ProductTagDistributivity
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 /-! Gamma cartesian products distribute over the actual tagged disjoint
 unions through an explicit definable tag permutation. -/
 set_option backward.isDefEq.respectTransparency false

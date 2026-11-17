@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/Completed18RelativeComparison.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.Completed18RelativeCells
-import IntegrationSection6.GeneratedBase.FiniteBases
-import IntegrationSection6.GammaRVParameterFieldBase
+public import FubiniTheorems.Fubini.Completed18RelativeCells
+public import IntegrationSection6.GeneratedBase.FiniteBases
+public import IntegrationSection6.GammaRVParameterFieldBase
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Completed [18] two-order comparison over a definable extension of an
 arbitrary original base. The extension consists only of definable names. -/

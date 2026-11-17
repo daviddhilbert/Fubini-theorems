@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/OriginalEulerUniformity.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.OriginalEulerValidityLoci
-import FubiniTheorems.Decomposition.EulerCertificateCongruence
-import IntegrationSection6.GammaWitnessUniformity
+public import FubiniTheorems.Decomposition.OriginalEulerValidityLoci
+public import FubiniTheorems.Decomposition.EulerCertificateCongruence
+public import IntegrationSection6.GammaWitnessUniformity
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Genuine original-base compactness selects a finite catalog of whole
 Euler certificates, retaining every tree shape and computed integer. -/

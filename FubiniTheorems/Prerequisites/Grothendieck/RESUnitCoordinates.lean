@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/RESUnitCoordinates.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.RVNonzeroTupleCoding
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVCategories
-import FubiniTheorems.Prerequisites.Grothendieck.RVAngularQuotient
-import FubiniTheorems.Prerequisites.Grothendieck.TensorLocalMonomialCongruence
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundBijectionRestrictions
+public import FubiniTheorems.Prerequisites.Grothendieck.RVNonzeroTupleCoding
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVCategories
+public import FubiniTheorems.Prerequisites.Grothendieck.RVAngularQuotient
+public import FubiniTheorems.Prerequisites.Grothendieck.TensorLocalMonomialCongruence
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundBijectionRestrictions
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 set_option backward.isDefEq.respectTransparency false
 set_option autoImplicit false
 open Classical FirstOrder FirstOrder.Language

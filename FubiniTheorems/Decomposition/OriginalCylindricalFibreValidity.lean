@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/OriginalCylindricalFibreValidity.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.OriginalSortedPredicates
-import FubiniTheorems.Fubini.NativeGammaRelationSyntax
-import FubiniTheorems.Decomposition.OriginalPredicateSyntax
-import FubiniTheorems.Decomposition.CylindricalFormulaCongruence
+public import FubiniTheorems.Decomposition.OriginalSortedPredicates
+public import FubiniTheorems.Fubini.NativeGammaRelationSyntax
+public import FubiniTheorems.Decomposition.OriginalPredicateSyntax
+public import FubiniTheorems.Decomposition.CylindricalFormulaCongruence
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Existence of a full cylindrical fibre description has an original-base
 validity locus. All endpoint codes are bound inside that locus. -/

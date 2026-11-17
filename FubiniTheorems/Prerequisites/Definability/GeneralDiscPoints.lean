@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%202/GeneralDiscPoints.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Definability.Bases
-import FubiniTheorems.Prerequisites.Definability.Discs
-import Section3.GeneratedBaseLifting
-import Section3.GeneralBallCenters
+public import FubiniTheorems.Prerequisites.Definability.Bases
+public import FubiniTheorems.Prerequisites.Definability.Discs
+public import Section3.GeneratedBaseLifting
+public import Section3.GeneralBallCenters
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The generation bridge for Lemma 2.20. Passing temporarily to definable
 closure does not change the original parameter base of the conclusion.

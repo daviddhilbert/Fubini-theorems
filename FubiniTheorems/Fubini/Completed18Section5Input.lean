@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/Completed18Section5Input.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.Completed18TwoOrders
-import IntegrationSection6.ContractionOrderComparison
+public import FubiniTheorems.Fubini.Completed18TwoOrders
+public import IntegrationSection6.ContractionOrderComparison
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The completed [18] Section 5 proofs instantiate the precise scoped
 two-order registry used throughout its Section 6 kernel proof. -/

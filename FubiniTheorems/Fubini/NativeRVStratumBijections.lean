@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeRVStratumBijections.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeRVZeroPatternBases
-import FubiniTheorems.Decomposition.OriginalRVTotalFamilies
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundBijectionRestrictions
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundCarrierBijections
+public import FubiniTheorems.Fubini.NativeRVZeroPatternBases
+public import FubiniTheorems.Decomposition.OriginalRVTotalFamilies
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundBijectionRestrictions
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundCarrierBijections
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual RV bijections preserving selected coordinates restrict to the
 corresponding zero strata. Stratifying retained base coordinates commutes

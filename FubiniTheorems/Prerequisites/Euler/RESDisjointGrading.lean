@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RESDisjointGrading.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RESDisjointPresentation
-import FubiniTheorems.Prerequisites.Euler.RVFamilyDisjointGrading
+public import FubiniTheorems.Prerequisites.Euler.RESDisjointPresentation
+public import FubiniTheorems.Prerequisites.Euler.RVFamilyDisjointGrading
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The measured RES disjoint-union/scissor equivalence preserves the
 full object-degree grading in both directions. -/

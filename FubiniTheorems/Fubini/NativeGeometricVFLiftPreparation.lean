@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeGeometricVFLiftPreparation.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeGeometricVFLiftSchemata
-import FubiniTheorems.Fubini.NativeFiniteRVSchemaRecoding
-import FubiniTheorems.Comparison.RVEvaluationEqualityExtraPreparation
+public import FubiniTheorems.Fubini.NativeGeometricVFLiftSchemata
+public import FubiniTheorems.Fubini.NativeFiniteRVSchemaRecoding
+public import FubiniTheorems.Comparison.RVEvaluationEqualityExtraPreparation
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! One genuine preparation handles the geometric denominator witness,
 both positive RV domains and full label graphs, and the base predicate.

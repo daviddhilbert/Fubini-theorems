@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RVEvaluationEqualityExistence.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Comparison.RVEvaluationEqualitySchemata
-import FubiniTheorems.Comparison.RESExpressionSplicing
-import FubiniTheorems.Comparison.RESLayoutUniformity
-import FubiniTheorems.Comparison.RVRectangleDecompositionExistence
+public import FubiniTheorems.Comparison.RVEvaluationEqualitySchemata
+public import FubiniTheorems.Comparison.RESExpressionSplicing
+public import FubiniTheorems.Comparison.RESLayoutUniformity
+public import FubiniTheorems.Comparison.RVRectangleDecompositionExistence
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual equality of native RV rows supplies an entire original-base
 finite equality package, including both rectangles and its full graph.

@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVFiniteWeightedCounts.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVMeasuredProductProperties
-import FubiniTheorems.Prerequisites.Euler.RVMeasuredGroup
-import Mathlib.Algebra.MonoidAlgebra.Basic
-import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+public import FubiniTheorems.Prerequisites.Euler.RVMeasuredProductProperties
+public import FubiniTheorems.Prerequisites.Euler.RVMeasuredGroup
+public import Mathlib.Algebra.MonoidAlgebra.Basic
+public import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Finite actual RV domains admit a weighted cardinality in the full
 Gamma group ring. This is a numerical invariant of finite sets, not a

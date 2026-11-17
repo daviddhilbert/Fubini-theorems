@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundRVProducts.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVScissors
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteProducts
-import FubiniTheorems.Prerequisites.Grothendieck.RVSemiring
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVScissors
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteProducts
+public import FubiniTheorems.Prerequisites.Grothendieck.RVSemiring
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual cartesian RV products over the entire Gamma ground retain
 nonzero labels and finite fibres in the summed degree. -/

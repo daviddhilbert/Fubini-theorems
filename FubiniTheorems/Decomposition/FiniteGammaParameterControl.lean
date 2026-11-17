@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/FiniteGammaParameterControl.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.ScalarGammaParameterControl
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapTuples
-import FubiniTheorems.Prerequisites.Grothendieck.RVUnitGammaMaps
-import HilbertMathlib.Foundation.Definability.MapProduct
+public import FubiniTheorems.Decomposition.ScalarGammaParameterControl
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapTuples
+public import FubiniTheorems.Prerequisites.Grothendieck.RVUnitGammaMaps
+public import HilbertMathlib.Foundation.Definability.MapProduct
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual scalar Gamma functions on arbitrary nonzero RV domains become
 value functions after a finite partition over the original ground. -/

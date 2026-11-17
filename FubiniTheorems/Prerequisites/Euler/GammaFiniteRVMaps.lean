@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaFiniteRVMaps.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaFiniteRVPresentation
-import FubiniTheorems.Prerequisites.Euler.GammaBoundedRVMaps
-import FubiniTheorems.Prerequisites.Euler.RVChartMaps
+public import FubiniTheorems.Prerequisites.Euler.GammaFiniteRVPresentation
+public import FubiniTheorems.Prerequisites.Euler.GammaBoundedRVMaps
+public import FubiniTheorems.Prerequisites.Euler.RVChartMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The intrinsic finite Gamma ring maps to RES, bounded Gamma and full
 Gamma rings through actual objects. The product comparison squares

@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundMeasuredFiniteGammaSemiring.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import HilbertMathlib.Foundation.Grothendieck.PositivePresentation
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaProducts
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredFiniteGammaScissors
+public import HilbertMathlib.Foundation.Grothendieck.PositivePresentation
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaProducts
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredFiniteGammaScissors
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 /-! The finite measured Gamma positive semiring is presented by the actual tagged
 objects, genuine contraction arrows, scissors and cartesian products. -/
 

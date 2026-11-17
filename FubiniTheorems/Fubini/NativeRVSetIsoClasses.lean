@@ -1,15 +1,21 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeRVSetIsoClasses.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.GammaRVSetObjects
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVMapCategory
-import Mathlib.CategoryTheory.Limits.Shapes.BinaryProducts.ProdComparison
-import Mathlib.CategoryTheory.Limits.Shapes.IsTerminal
-import Mathlib.CategoryTheory.Monoidal.OfHasFiniteProducts
-import Mathlib.CategoryTheory.Monoidal.Skeleton
-import Mathlib.Algebra.Group.TypeTags.Basic
+public import FubiniTheorems.Decomposition.GammaRVSetObjects
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVMapCategory
+public import Mathlib.CategoryTheory.Limits.Shapes.BinaryProducts.ProdComparison
+public import Mathlib.CategoryTheory.Limits.Shapes.IsTerminal
+public import Mathlib.CategoryTheory.Monoidal.OfHasFiniteProducts
+public import Mathlib.CategoryTheory.Monoidal.Skeleton
+public import Mathlib.Algebra.Group.TypeTags.Basic
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Literal RV domains, forgetting all finite label degrees, form a category
 with actual tagged coproducts. Its isomorphism classes form a positive

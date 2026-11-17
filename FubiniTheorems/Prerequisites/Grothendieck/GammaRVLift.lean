@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaRVLift.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaRVCodeLift
-import FubiniTheorems.Prerequisites.Grothendieck.FamilyPieceMaps
-import FubiniTheorems.Prerequisites.Grothendieck.RVFamilyObjects
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaRVCodeLift
+public import FubiniTheorems.Prerequisites.Grothendieck.FamilyPieceMaps
+public import FubiniTheorems.Prerequisites.Grothendieck.RVFamilyObjects
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual Gamma-to-RV object lift for every finite tagged family.
 A Gamma arrow supplies a genuine RV isomorphism of these lifts. -/

@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/OriginalRVBijectionPromotion.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.OriginalPredicateSyntax
-import IntegrationSection6.GammaRowBijectionPromotion
-import FubiniTheorems.Comparison.RESBijectionPromotion
+public import FubiniTheorems.Decomposition.OriginalPredicateSyntax
+public import IntegrationSection6.GammaRowBijectionPromotion
+public import FubiniTheorems.Comparison.RESBijectionPromotion
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Arbitrary actual RV row bijections promote to complete original-base
 graph schemata. No finite-value assumption is imposed on either domain. -/

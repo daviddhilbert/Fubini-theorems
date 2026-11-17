@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVT001OrdinaryDescent.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.ApprovedT001Presentation
-import HilbertMathlib.Foundation.Coaction.CoactionSurjectiveDescent
-import FubiniTheorems.Prerequisites.Euler.RVOrdinaryMapGradings
+public import FubiniTheorems.Prerequisites.Euler.ApprovedT001Presentation
+public import HilbertMathlib.Foundation.Coaction.CoactionSurjectiveDescent
+public import FubiniTheorems.Prerequisites.Euler.RVOrdinaryMapGradings
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual graded ordinary RV Euler maps relative to the transported
 author-approved T001 presentation. Restricting along bounded measured RV

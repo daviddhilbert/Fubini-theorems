@@ -1,9 +1,15 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/GammaIntegralBaseIndependence.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaIteratedIntegral
+public import FubiniTheorems.Prerequisites.Euler.GammaIteratedIntegral
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Iterated Euler integrals depend on the actual integer-valued
 function, independently of an equivalent presentation of its parameters. -/

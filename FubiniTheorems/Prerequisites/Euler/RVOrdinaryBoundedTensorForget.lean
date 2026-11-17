@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVOrdinaryBoundedTensorForget.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVOrdinaryTensorForget
-import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryRadius
-import FubiniTheorems.Prerequisites.Euler.RVBalancedRadiusChoices
-import FubiniTheorems.Prerequisites.Euler.RVBalancedRadiusQuotient
-import FubiniTheorems.Prerequisites.Euler.RVBoundedOrdinaryEvaluation
+public import FubiniTheorems.Prerequisites.Euler.RVOrdinaryTensorForget
+public import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryRadius
+public import FubiniTheorems.Prerequisites.Euler.RVBalancedRadiusChoices
+public import FubiniTheorems.Prerequisites.Euler.RVBalancedRadiusQuotient
+public import FubiniTheorems.Prerequisites.Euler.RVBoundedOrdinaryEvaluation
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The bounded measured tensor maps to the actual full ordinary tensor.
 All accepted radius preimages vanish there already, by ordinary Gamma

@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RESUngradedPositiveFamilies.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeRVSetIsoClasses
-import FubiniTheorems.Comparison.RESLiteralFamilyCriterion
-import FubiniTheorems.Fubini.NativeUnderlyingBijections
-import FubiniTheorems.Fubini.NativeProductBijections
+public import FubiniTheorems.Fubini.NativeRVSetIsoClasses
+public import FubiniTheorems.Comparison.RESLiteralFamilyCriterion
+public import FubiniTheorems.Fubini.NativeUnderlyingBijections
+public import FubiniTheorems.Fubini.NativeProductBijections
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Forgetting the finite label degree gives an actual positive additive
 monoid of underlying domains. Finite families have literal tagged domains;

@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RESExpressionRelations.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Comparison.RESExpressionBijections
-import FubiniTheorems.Decomposition.GammaValueNativeFibres
+public import FubiniTheorems.Comparison.RESExpressionBijections
+public import FubiniTheorems.Decomposition.GammaValueNativeFibres
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual native RES relation certificates are stable under arbitrary
 finite coefficient expressions and reversal. A fibre pair uses two full

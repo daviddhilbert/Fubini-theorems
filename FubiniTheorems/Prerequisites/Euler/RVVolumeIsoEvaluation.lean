@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVVolumeIsoEvaluation.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVFiniteBalancedTensor
-import FubiniTheorems.Prerequisites.Euler.RVBoundedBalancedTensor
+public import FubiniTheorems.Prerequisites.Euler.RVFiniteBalancedTensor
+public import FubiniTheorems.Prerequisites.Euler.RVBoundedBalancedTensor
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Both constructed evaluations identify Gamma charts related by an
 actual definable volume-preserving bijection, without assuming that this

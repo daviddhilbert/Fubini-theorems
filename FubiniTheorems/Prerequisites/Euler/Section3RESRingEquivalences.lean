@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/Section3RESRingEquivalences.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.Section3RESNativeRingMaps
-import FubiniTheorems.Prerequisites.Euler.Section3RESChartAddMaps
-import FubiniTheorems.Prerequisites.Euler.ObjectClassAdditiveGeneration
+public import FubiniTheorems.Prerequisites.Euler.Section3RESNativeRingMaps
+public import FubiniTheorems.Prerequisites.Euler.Section3RESChartAddMaps
+public import FubiniTheorems.Prerequisites.Euler.ObjectClassAdditiveGeneration
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual ordinary and measured RES ring equivalences, proved through
 their class formulas and additive inverses. No groupified inclusion is

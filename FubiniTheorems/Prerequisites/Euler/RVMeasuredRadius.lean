@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVMeasuredRadius.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVMeasuredScaling
-import FubiniTheorems.Prerequisites.Euler.RVRadiusIdeal
-import FubiniTheorems.Prerequisites.Euler.GammaRVIdentityIso
-import FubiniTheorems.Prerequisites.Euler.RVSharpScissors
+public import FubiniTheorems.Prerequisites.Euler.RVMeasuredScaling
+public import FubiniTheorems.Prerequisites.Euler.RVRadiusIdeal
+public import FubiniTheorems.Prerequisites.Euler.GammaRVIdentityIso
+public import FubiniTheorems.Prerequisites.Euler.RVSharpScissors
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The measured forgetful image of every accepted radius generator is
 an explicit degree-zero volume-weight multiple of the actual full-RV

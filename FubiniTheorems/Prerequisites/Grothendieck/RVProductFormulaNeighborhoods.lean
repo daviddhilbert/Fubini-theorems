@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/RVProductFormulaNeighborhoods.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.ResidueGammaProductNeighborhoods
-import FubiniTheorems.Prerequisites.Grothendieck.RVUnitRectangularMonomials
-import FubiniTheorems.Prerequisites.Grothendieck.RVUnitTupleOperations
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapPreimages
-import FubiniTheorems.Prerequisites.Grothendieck.NamedBijections
+public import FubiniTheorems.Prerequisites.Grothendieck.ResidueGammaProductNeighborhoods
+public import FubiniTheorems.Prerequisites.Grothendieck.RVUnitRectangularMonomials
+public import FubiniTheorems.Prerequisites.Grothendieck.RVUnitTupleOperations
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapPreimages
+public import FubiniTheorems.Prerequisites.Grothendieck.NamedBijections
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 set_option backward.isDefEq.respectTransparency false
 set_option autoImplicit false
 open Classical FirstOrder FirstOrder.Language

@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/OriginalFixedRVBijectionPromotion.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.OriginalRVBijectionPromotion
-import FubiniTheorems.Fubini.NativeRVSetValues
-import FubiniTheorems.Comparison.RESFixedBijectionPromotion
+public import FubiniTheorems.Decomposition.OriginalRVBijectionPromotion
+public import FubiniTheorems.Fubini.NativeRVSetValues
+public import FubiniTheorems.Comparison.RESFixedBijectionPromotion
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A fixed pair of original-domain schemata retains any actual native
 RV bijection at the displayed parameter as a full original-base graph. -/

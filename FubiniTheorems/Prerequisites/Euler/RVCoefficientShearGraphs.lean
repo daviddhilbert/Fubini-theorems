@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVCoefficientShearGraphs.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVDefinableTupleMaps
-import FubiniTheorems.Prerequisites.Euler.RVVariableMultiplication
-import FubiniTheorems.Prerequisites.Euler.RVScaledRays
+public import FubiniTheorems.Prerequisites.Euler.RVDefinableTupleMaps
+public import FubiniTheorems.Prerequisites.Euler.RVVariableMultiplication
+public import FubiniTheorems.Prerequisites.Euler.RVScaledRays
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Multiplication of a free proper RV coordinate by a retained coefficient
 coordinate has a definable graph over the original base. The coefficient

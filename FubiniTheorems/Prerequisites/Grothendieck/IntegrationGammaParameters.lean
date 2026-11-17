@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/IntegrationGammaParameters.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import IntegrationSection3ACVF.FullGammaAtomicity
-import IntegrationSection3ACVF.AdjoinGamma
-import FubiniTheorems.Prerequisites.Definability.AtomicBaseChange
+public import IntegrationSection3ACVF.FullGammaAtomicity
+public import IntegrationSection3ACVF.AdjoinGamma
+public import FubiniTheorems.Prerequisites.Definability.AtomicBaseChange
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 set_option backward.isDefEq.respectTransparency false
 set_option autoImplicit false
 /-! Parameter-preserving reuse of [18, Lemma 3.3] from the pinned

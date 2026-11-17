@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RationalSpectrumGraphs.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.ComplexSpectrumConstructibility
-import FubiniTheorems.Decomposition.RationalGraphBijections
-import FubiniTheorems.Decomposition.ComplexConstructiblePoints
+public import FubiniTheorems.Decomposition.ComplexSpectrumConstructibility
+public import FubiniTheorems.Decomposition.RationalGraphBijections
+public import FubiniTheorems.Decomposition.ComplexConstructiblePoints
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Rational matching loci as actual basic constructible subsets of
 the graph spectrum, with exact original complex-point semantics. -/

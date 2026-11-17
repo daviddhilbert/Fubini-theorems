@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/Section3GammaChartBridge.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.Section3GammaCodeBridge
-import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryCharts
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaSinglePiece
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaVolumeCategories
+public import FubiniTheorems.Prerequisites.Euler.Section3GammaCodeBridge
+public import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryCharts
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaSinglePiece
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaVolumeCategories
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual Gamma pieces and partial volume forms in both encodings.
 Totalization is by one outside the domain and adds no ground parameters. -/

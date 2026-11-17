@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/Completed18LocalLift.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.Completed18RVGradedComparison
-import FubiniTheorems.Fubini.Completed18VFComparison
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundCitedUnmeasuredIntegral
-import IntegrationSection6.GammaNonzeroGlobalLift
+public import FubiniTheorems.Fubini.Completed18RVGradedComparison
+public import FubiniTheorems.Fubini.Completed18VFComparison
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundCitedUnmeasuredIntegral
+public import IntegrationSection6.GammaNonzeroGlobalLift
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The completed [18] lift is a semiring map on the exact local
 positive presentations and sends every object to its actual full-label lift. -/

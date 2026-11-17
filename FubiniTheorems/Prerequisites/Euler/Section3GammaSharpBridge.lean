@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/Section3GammaSharpBridge.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.Section3GammaRVCodeBridge
-import FubiniTheorems.Prerequisites.Euler.Section3RVRingEquivalences
-import FubiniTheorems.Prerequisites.Euler.Section3GammaChartBridge
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaRVLift
+public import FubiniTheorems.Prerequisites.Euler.Section3GammaRVCodeBridge
+public import FubiniTheorems.Prerequisites.Euler.Section3RVRingEquivalences
+public import FubiniTheorems.Prerequisites.Euler.Section3GammaChartBridge
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaRVLift
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The chart sharp construction agrees with the native full RV-code
 lift. The explicit one-piece tag is transported by a genuine bijection. -/

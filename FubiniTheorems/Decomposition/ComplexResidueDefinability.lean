@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/ComplexResidueDefinability.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.FramedResidueConstructibility
-import FubiniTheorems.Decomposition.ConstructibleFieldDefinability
-import Section4.ResidueFieldInterpretation
+public import FubiniTheorems.Decomposition.FramedResidueConstructibility
+public import FubiniTheorems.Decomposition.ConstructibleFieldDefinability
+public import Section4.ResidueFieldInterpretation
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Complex constructible coordinates translate into the original RV
 language over the full Laurent base, without naming any Kummer root. -/

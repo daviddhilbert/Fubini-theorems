@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/BasicGraphProjectionImmersions.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.GraphProjectionImmersions
-import FubiniTheorems.Decomposition.RationalSpectrumGraphs
-import FubiniTheorems.Decomposition.BasicConstructibleSchemes
-import FubiniTheorems.Decomposition.ComplexPointUnits
+public import FubiniTheorems.Decomposition.GraphProjectionImmersions
+public import FubiniTheorems.Decomposition.RationalSpectrumGraphs
+public import FubiniTheorems.Decomposition.BasicConstructibleSchemes
+public import FubiniTheorems.Decomposition.ComplexPointUnits
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The coordinate projection of an actual basic rational graph piece
 is an immersion. Nonvanishing and polynomial identities are derived

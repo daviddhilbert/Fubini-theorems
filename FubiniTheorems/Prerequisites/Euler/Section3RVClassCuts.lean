@@ -1,14 +1,20 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/Section3RVClassCuts.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.Section3RVRestrictionBridge
-import FubiniTheorems.Prerequisites.Euler.RVRestrictionInvariants
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredRVSemiring
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVSemiring
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundCarrierBijections
-import FubiniTheorems.Prerequisites.Grothendieck.CompletionFunctor
+public import FubiniTheorems.Prerequisites.Euler.Section3RVRestrictionBridge
+public import FubiniTheorems.Prerequisites.Euler.RVRestrictionInvariants
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredRVSemiring
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVSemiring
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundCarrierBijections
+public import FubiniTheorems.Prerequisites.Grothendieck.CompletionFunctor
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual native ordinary and measured classes satisfy every chart
 scissor relation. No presentation equivalence is assumed here. -/

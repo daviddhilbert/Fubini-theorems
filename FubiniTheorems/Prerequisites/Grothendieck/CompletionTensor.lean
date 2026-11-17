@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/CompletionTensor.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.BalancedSquare
-import FubiniTheorems.Prerequisites.Grothendieck.CompletionEquivalences
+public import FubiniTheorems.Prerequisites.Grothendieck.BalancedSquare
+public import FubiniTheorems.Prerequisites.Grothendieck.CompletionEquivalences
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Ring completion commutes with the balanced tensor of commutative
 semirings. Both directions are the canonical maps on actual generators. -/

@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/IntrinsicQuotientGradings.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import HilbertMathlib.Foundation.Coaction.CoactionQuotientEquivalence
-import FubiniTheorems.Prerequisites.Euler.IntrinsicPresentationGradings
-import FubiniTheorems.Prerequisites.Euler.RVDisjointRadiusQuotient
-import FubiniTheorems.Prerequisites.Euler.RVDisjointPQuotients
-import FubiniTheorems.Prerequisites.Euler.RESDisjointReduction
+public import HilbertMathlib.Foundation.Coaction.CoactionQuotientEquivalence
+public import FubiniTheorems.Prerequisites.Euler.IntrinsicPresentationGradings
+public import FubiniTheorems.Prerequisites.Euler.RVDisjointRadiusQuotient
+public import FubiniTheorems.Prerequisites.Euler.RVDisjointPQuotients
+public import FubiniTheorems.Prerequisites.Euler.RESDisjointReduction
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Full gradings on the intrinsic homogeneous P and RES reductions.
 Their quotient equivalences preserve degrees in both directions, as does

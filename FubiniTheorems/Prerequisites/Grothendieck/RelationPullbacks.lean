@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/RelationPullbacks.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import HilbertMathlib.Foundation.Definability.MapCorestrict
-import HilbertMathlib.Foundation.Definability.Products
+public import HilbertMathlib.Foundation.Definability.MapCorestrict
+public import HilbertMathlib.Foundation.Definability.Products
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Pulling a full definable relation back along two actual definable
 maps preserves its complete graph over the original parameter set. -/

@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/ElementaryNativeRVMaps.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.ElementaryNativeRVDomains
-import FubiniTheorems.Fubini.NativeRawGraphMaps
-import FubiniTheorems.Decomposition.RawGraphNativeRealization
-import FubiniTheorems.Decomposition.ElementaryRawGraphBijections
+public import FubiniTheorems.Decomposition.ElementaryNativeRVDomains
+public import FubiniTheorems.Fubini.NativeRawGraphMaps
+public import FubiniTheorems.Decomposition.RawGraphNativeRealization
+public import FubiniTheorems.Decomposition.ElementaryRawGraphBijections
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Restriction along an elementary embedding gives actual native RV
 maps and bijections over precisely the original named real ground. -/

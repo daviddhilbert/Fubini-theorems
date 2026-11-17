@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/VFAdjoinedParameterTransfer.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.VFAdjoinedFieldNames
-import FubiniTheorems.Decomposition.VFFieldGammaNames
-import FubiniTheorems.Decomposition.VFFieldContext
-import FubiniTheorems.Fubini.NativeLiftGroundTransfer
-import FubiniTheorems.Decomposition.RealGammaGroundElimination
+public import FubiniTheorems.Decomposition.VFAdjoinedFieldNames
+public import FubiniTheorems.Decomposition.VFFieldGammaNames
+public import FubiniTheorems.Decomposition.VFFieldContext
+public import FubiniTheorems.Fubini.NativeLiftGroundTransfer
+public import FubiniTheorems.Decomposition.RealGammaGroundElimination
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The exact F(b) field presentation and the raw original parameters
 F together with the displayed VF tuple define the same categories.

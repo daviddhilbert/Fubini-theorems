@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundContext.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundParameters
-import FubiniTheorems.Prerequisites.Definability.Bases
-import FubiniTheorems.Prerequisites.Definability.GammaJacobian
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundParameters
+public import FubiniTheorems.Prerequisites.Definability.Bases
+public import FubiniTheorems.Prerequisites.Definability.GammaJacobian
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The model and ground hypotheses for the full VF/Gamma-generated
 context. Genuine real-language VF generation remains separate from dcl.

@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%202/GammaJacobian.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Definability.Conventions
-import Section9.GammaJacobian
+public import FubiniTheorems.Prerequisites.Definability.Conventions
+public import Section9.GammaJacobian
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Notation 2.8 for RV/Gamma coordinates of possibly different arities.
 The paper's difference of total values is a quotient in the released

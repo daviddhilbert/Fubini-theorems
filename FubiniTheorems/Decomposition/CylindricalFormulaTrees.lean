@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/CylindricalFormulaTrees.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.QuotientDomainSyntax
-import FubiniTheorems.Decomposition.CylindricalFibreCertificates
+public import FubiniTheorems.Decomposition.QuotientDomainSyntax
+public import FubiniTheorems.Decomposition.CylindricalFibreCertificates
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Complete finite first-order validity formulas for cylindrical cell
 certificates. Every recursive domain is checked as a full quotient preimage. -/

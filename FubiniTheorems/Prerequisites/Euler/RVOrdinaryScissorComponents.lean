@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVOrdinaryScissorComponents.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVTaggedPartitionIsomorphisms
-import FubiniTheorems.Prerequisites.Euler.RVForgetScissors
+public import FubiniTheorems.Prerequisites.Euler.RVTaggedPartitionIsomorphisms
+public import FubiniTheorems.Prerequisites.Euler.RVForgetScissors
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual original-base bijections for ordinary scissor partitions.
 The argument uses only domains and imposes no condition on volume forms. -/

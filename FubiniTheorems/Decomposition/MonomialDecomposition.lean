@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/MonomialDecomposition.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.GlobalAngularPartition
-import Mathlib.Data.Fintype.Sigma
+public import FubiniTheorems.Decomposition.GlobalAngularPartition
+public import Mathlib.Data.Fintype.Sigma
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Global original-ground monomial charts in unimodular-basis form.
 Each coordinate map is an integer monomial basis equivalence followed by

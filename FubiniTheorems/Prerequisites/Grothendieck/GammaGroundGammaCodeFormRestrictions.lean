@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundGammaCodeFormRestrictions.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaRVCodeLift
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaCodeRestrictions
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredRVCategories
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaRVCodeLift
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaCodeRestrictions
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredRVCategories
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 /-! Pulling a Gamma form back to all its RV codes commutes with every
 source restriction. The comparison uses actual code inclusions. -/
 

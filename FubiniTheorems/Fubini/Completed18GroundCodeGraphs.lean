@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/Completed18GroundCodeGraphs.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeRVLabelGraphs
-import FubiniTheorems.Fubini.NativeMixedCodeRealization
-import IntegrationSection6.GammaTupleCodes
+public import FubiniTheorems.Fubini.NativeRVLabelGraphs
+public import FubiniTheorems.Fubini.NativeMixedCodeRealization
+public import IntegrationSection6.GammaTupleCodes
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The local full imaginary-name predicates give precisely the original
 Gamma domain and volume graphs used by the completed [18] RV categories. -/

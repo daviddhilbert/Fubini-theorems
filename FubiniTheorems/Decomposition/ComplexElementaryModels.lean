@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/ComplexElementaryModels.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Comparison.RingLanguageEmbeddings
-import Mathlib.ModelTheory.Algebra.Field.IsAlgClosed
-import Mathlib.Analysis.Complex.Polynomial.Basic
+public import FubiniTheorems.Comparison.RingLanguageEmbeddings
+public import Mathlib.ModelTheory.Algebra.Field.IsAlgClosed
+public import Mathlib.Analysis.Complex.Polynomial.Basic
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Every actual model of the elementary diagram of the complex field
 has a compatible algebraically closed field structure of characteristic

@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeFiniteRVLiftDomains.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeFiniteRVSchemaValidity
-import FubiniTheorems.Fubini.NativeMixedCodeBridge
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundLifting
-import Section3.GammaRealMap
+public import FubiniTheorems.Fubini.NativeFiniteRVSchemaValidity
+public import FubiniTheorems.Fubini.NativeMixedCodeBridge
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundLifting
+public import Section3.GammaRealMap
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual VF lift of a finite native RV row has a fixed full
 original-language domain formula, including every old RV representative.

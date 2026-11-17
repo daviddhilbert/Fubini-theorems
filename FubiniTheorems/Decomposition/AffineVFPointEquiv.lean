@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/AffineVFPointEquiv.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.AffineVFNativePoints
-import FubiniTheorems.Decomposition.ComplexAffineCoordinates
+public import FubiniTheorems.Decomposition.AffineVFNativePoints
+public import FubiniTheorems.Decomposition.ComplexAffineCoordinates
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual ambient-field points of every affine variety are identified
 with the native VF object cut out by its original complex equations. -/

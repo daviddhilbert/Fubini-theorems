@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaPointAlgebra.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaNamesSubgroup
-import FubiniTheorems.Prerequisites.Euler.GammaDefinableConvolution
-import HilbertMathlib.Foundation.Euler.EulerBoundedSupport
+public import FubiniTheorems.Prerequisites.Euler.GammaNamesSubgroup
+public import FubiniTheorems.Prerequisites.Euler.GammaDefinableConvolution
+public import HilbertMathlib.Foundation.Euler.EulerBoundedSupport
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The group ring of actual base-definable Gamma constants embeds as
 the point-function convolution algebra. Coefficients are recovered by

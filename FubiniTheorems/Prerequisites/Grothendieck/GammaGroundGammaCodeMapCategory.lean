@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundGammaCodeMapCategory.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaCodeDescent
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaProducts
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFamilyMaps
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaCodeDescent
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaProducts
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFamilyMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 /-! An auxiliary category retains actual full-code maps and their
 quotient compatibility. Its isomorphisms supply the original Gamma
 morphisms whenever the two recorded degrees agree. -/

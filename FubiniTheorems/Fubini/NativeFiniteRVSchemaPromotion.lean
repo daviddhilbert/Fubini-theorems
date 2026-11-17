@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeFiniteRVSchemaPromotion.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeFiniteRVSchemaValidity
-import FubiniTheorems.Fubini.NativeRVLabelGraphs
-import FubiniTheorems.Decomposition.OriginalFixedRVBijectionPromotion
+public import FubiniTheorems.Fubini.NativeFiniteRVSchemaValidity
+public import FubiniTheorems.Fubini.NativeRVLabelGraphs
+public import FubiniTheorems.Decomposition.OriginalFixedRVBijectionPromotion
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Every actual native RV object at a sorted parameter admits a full
 original-base finite schema with its literal domain, nonzero labels,

@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeRectangleRowValues.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.OriginalRVRowBijections
-import FubiniTheorems.Decomposition.RelativeRESProductClasses
-import FubiniTheorems.Comparison.RVRectangleTotalValues
-import FubiniTheorems.Decomposition.OriginalGammaRVRowPresentations
-import FubiniTheorems.Fubini.NativeUnitGammaValues
+public import FubiniTheorems.Decomposition.OriginalRVRowBijections
+public import FubiniTheorems.Decomposition.RelativeRESProductClasses
+public import FubiniTheorems.Comparison.RVRectangleTotalValues
+public import FubiniTheorems.Decomposition.OriginalGammaRVRowPresentations
+public import FubiniTheorems.Fubini.NativeUnitGammaValues
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Complete rectangle schemata compute the actual native value of each
 row over its exact parameter base, retaining all RV representatives. -/

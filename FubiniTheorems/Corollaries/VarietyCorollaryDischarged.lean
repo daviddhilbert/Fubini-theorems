@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/VarietyCorollaryDischarged.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.Section5DischargedInputs
-import FubiniTheorems.Corollaries.VarietyGlobalVanishing
+public import FubiniTheorems.Fubini.Section5DischargedInputs
+public import FubiniTheorems.Corollaries.VarietyGlobalVanishing
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual-variety corollary with the ground and every intrinsic
 F(b) lifting/kernel input constructed, and Gamma-linearity proved. -/

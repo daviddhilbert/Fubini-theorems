@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/GammaValueCoefficientTotals.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.GammaValueTotalFamilies
-import FubiniTheorems.Decomposition.OriginalProductTotalBijections
-import FubiniTheorems.Decomposition.RelativeRVTotalInvariant
+public import FubiniTheorems.Decomposition.GammaValueTotalFamilies
+public import FubiniTheorems.Decomposition.OriginalProductTotalBijections
+public import FubiniTheorems.Decomposition.RelativeRVTotalInvariant
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The varying value-torsor relation survives multiplication by every
 actual relative RV coefficient family. The entire coefficient total is

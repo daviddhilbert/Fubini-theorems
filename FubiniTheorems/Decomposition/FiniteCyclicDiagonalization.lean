@@ -1,14 +1,20 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/FiniteCyclicDiagonalization.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.FiniteRootProjection
-import Mathlib.LinearAlgebra.Eigenspace.Semisimple
-import Mathlib.Algebra.DirectSum.Module
-import Mathlib.RepresentationTheory.Basic
-import Mathlib.FieldTheory.Separable
-import Mathlib.Analysis.Complex.Polynomial.Basic
+public import FubiniTheorems.Decomposition.FiniteRootProjection
+public import Mathlib.LinearAlgebra.Eigenspace.Semisimple
+public import Mathlib.Algebra.DirectSum.Module
+public import Mathlib.RepresentationTheory.Basic
+public import Mathlib.FieldTheory.Separable
+public import Mathlib.Analysis.Complex.Polynomial.Basic
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Every finite complex cyclic representation has actual character
 coordinates. This supplies the linear-algebra step in the comparison,

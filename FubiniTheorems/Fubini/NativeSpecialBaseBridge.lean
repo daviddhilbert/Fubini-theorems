@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeSpecialBaseBridge.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeGammaPointBridge
-import IntegrationSection6.GammaPreparedRowAgreements
+public import FubiniTheorems.Fubini.NativeGammaPointBridge
+public import IntegrationSection6.GammaPreparedRowAgreements
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A genuine original-ground special preparation induces the native
 base bijection, with its inverse parameter code exactly equal to the

@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/ImmersedProductCoordinateClasses.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.AffineImmersedProductPresentations
-import FubiniTheorems.Decomposition.DiagonalGeometricProducts
-import FubiniTheorems.Decomposition.ConstructibleSpectrumObjects
-import FubiniTheorems.Decomposition.DiagonalFinitePartitions
+public import FubiniTheorems.Decomposition.AffineImmersedProductPresentations
+public import FubiniTheorems.Decomposition.DiagonalGeometricProducts
+public import FubiniTheorems.Decomposition.ConstructibleSpectrumObjects
+public import FubiniTheorems.Decomposition.DiagonalFinitePartitions
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The complex coordinate image of an actual immersed reduced product
 is the literal product of its two complex coordinate images. -/

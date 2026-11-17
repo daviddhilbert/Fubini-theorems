@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeGeometricVFMapWitnesses.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeGeometricVFLiftSchemata
-import FubiniTheorems.Fubini.NativeMixedMapFibres
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteCoverPartition
+public import FubiniTheorems.Fubini.NativeGeometricVFLiftSchemata
+public import FubiniTheorems.Fubini.NativeMixedMapFibres
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteCoverPartition
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Pointwise geometric fibre equalities supply a finite original-ground
 catalogue, and then a finite disjoint base partition, of complete geometric

@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/QuasiAffineGoodActions.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.FinitePointAffineNeighborhoods
-import FubiniTheorems.Decomposition.LocallyClosedAffineSchemes
-import FubiniTheorems.Decomposition.ReducedImmersionIsomorphisms
-import FubiniTheorems.Decomposition.InvariantAffineCover
-import FubiniTheorems.Decomposition.ReducedInducedSchemes
+public import FubiniTheorems.Decomposition.FinitePointAffineNeighborhoods
+public import FubiniTheorems.Decomposition.LocallyClosedAffineSchemes
+public import FubiniTheorems.Decomposition.ReducedImmersionIsomorphisms
+public import FubiniTheorems.Decomposition.InvariantAffineCover
+public import FubiniTheorems.Decomposition.ReducedInducedSchemes
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Finite group actions on reduced schemes immersed in a complex
 affine scheme are good: every orbit has an actual affine open neighborhood.

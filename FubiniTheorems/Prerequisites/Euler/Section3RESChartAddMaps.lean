@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/Section3RESChartAddMaps.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.Section3RESChartCuts
-import FubiniTheorems.Prerequisites.Euler.Section3RESClassCuts
+public import FubiniTheorems.Prerequisites.Euler.Section3RESChartCuts
+public import FubiniTheorems.Prerequisites.Euler.Section3RESClassCuts
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual native RES scissor classes give additive maps from their
 graded group completions to the chart rings. -/

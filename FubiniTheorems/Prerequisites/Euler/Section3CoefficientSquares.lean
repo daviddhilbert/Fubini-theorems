@@ -1,14 +1,20 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/Section3CoefficientSquares.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.Section3FiniteGammaRingEquivalences
-import FubiniTheorems.Prerequisites.Euler.Section3RESRingEquivalences
-import FubiniTheorems.Prerequisites.Euler.Section3GammaSharpBridge
-import FubiniTheorems.Prerequisites.Euler.RVOrdinaryBalancedTensor
-import FubiniTheorems.Prerequisites.Euler.RVFiniteBalancedTensor
-import FubiniTheorems.Prerequisites.Grothendieck.TensorRingKernelPresentations
+public import FubiniTheorems.Prerequisites.Euler.Section3FiniteGammaRingEquivalences
+public import FubiniTheorems.Prerequisites.Euler.Section3RESRingEquivalences
+public import FubiniTheorems.Prerequisites.Euler.Section3GammaSharpBridge
+public import FubiniTheorems.Prerequisites.Euler.RVOrdinaryBalancedTensor
+public import FubiniTheorems.Prerequisites.Euler.RVFiniteBalancedTensor
+public import FubiniTheorems.Prerequisites.Grothendieck.TensorRingKernelPresentations
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual factor equivalences commute with both finite-Gamma
 coefficient maps. These are squares on the whole rings. -/

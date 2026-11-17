@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RESBijectionRealization.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Comparison.RESBijectionSchemata
-import FubiniTheorems.Decomposition.GammaJoinedRowGraphs
-import FubiniTheorems.Prerequisites.Euler.Section3RVChartBridge
-import FubiniTheorems.Prerequisites.Euler.RESDimensionFreeReduction
-import IntegrationSection6.GammaSortedBijectionRealization
+public import FubiniTheorems.Comparison.RESBijectionSchemata
+public import FubiniTheorems.Decomposition.GammaJoinedRowGraphs
+public import FubiniTheorems.Prerequisites.Euler.Section3RVChartBridge
+public import FubiniTheorems.Prerequisites.Euler.RESDimensionFreeReduction
+public import IntegrationSection6.GammaSortedBijectionRealization
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A valid native RES graph schema realizes an actual underlying chart
 bijection and therefore an equality in the actual ungraded RES quotient. -/

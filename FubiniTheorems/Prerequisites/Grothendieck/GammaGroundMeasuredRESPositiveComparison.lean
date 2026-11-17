@@ -1,9 +1,15 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundMeasuredRESPositiveComparison.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredRESScissors
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredRESScissors
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Finite source-value support is closed under measured disjoint union.
 The fixed-degree measured RES positive quotient injects into measured RV. -/

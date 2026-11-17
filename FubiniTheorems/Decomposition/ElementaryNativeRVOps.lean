@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/ElementaryNativeRVOps.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.ElementaryNativeRVDomains
-import FubiniTheorems.Fubini.NativeRESClasses
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVProductScissors
+public import FubiniTheorems.Decomposition.ElementaryNativeRVDomains
+public import FubiniTheorems.Fubini.NativeRESClasses
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVProductScissors
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Literal elementary restriction commutes with cuts and cartesian RV
 products; these statements concern the full native domains. -/

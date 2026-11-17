@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaGraphPartitionEndpoints.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaFiniteGraphPartition
-import FubiniTheorems.Prerequisites.Euler.GammaPartialCellDefinability
+public import FubiniTheorems.Prerequisites.Euler.GammaFiniteGraphPartition
+public import FubiniTheorems.Prerequisites.Euler.GammaPartialCellDefinability
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Finite partial Gamma graph partitions have total definable endpoint
 extensions. On each active domain the endpoint retains its exact value;

@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeGeometricWeightedRows.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeGeometricVFLiftPreparation
-import FubiniTheorems.Comparison.GeometricPaddedRecoding
+public import FubiniTheorems.Fubini.NativeGeometricVFLiftPreparation
+public import FubiniTheorems.Comparison.GeometricPaddedRecoding
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A prepared geometric fibre witness gives actual affine-weighted raw
 row equalities over the exact prepared RV parameter base. Both original

@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/InvariantBranchStratifications.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.FiniteCertifiedBranchPieces
-import FubiniTheorems.Decomposition.InvariantConstructibleSubstrata
-import FubiniTheorems.Decomposition.ReducedImmersionSchemeActions
-import FubiniTheorems.Decomposition.EquivariantBranchGluing
-import FubiniTheorems.Decomposition.GraphStratumMorphisms
+public import FubiniTheorems.Decomposition.FiniteCertifiedBranchPieces
+public import FubiniTheorems.Decomposition.InvariantConstructibleSubstrata
+public import FubiniTheorems.Decomposition.ReducedImmersionSchemeActions
+public import FubiniTheorems.Decomposition.EquivariantBranchGluing
+public import FubiniTheorems.Decomposition.GraphStratumMorphisms
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Every finite reduced affine branch presentation has certified
 regular strata adapted to a finite action on its input. The certificates

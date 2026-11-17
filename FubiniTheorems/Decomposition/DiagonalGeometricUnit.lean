@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/DiagonalGeometricUnit.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.DiagonalGeometricValues
-import FubiniTheorems.Corollaries.VarietyMorphisms
-import FubiniTheorems.Decomposition.ImmersedPresentationLoci
-import Mathlib.Algebra.MvPolynomial.Equiv
+public import FubiniTheorems.Decomposition.DiagonalGeometricValues
+public import FubiniTheorems.Corollaries.VarietyMorphisms
+public import FubiniTheorems.Decomposition.ImmersedPresentationLoci
+public import Mathlib.Algebra.MvPolynomial.Equiv
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The geometric value of the zero-coordinate one-point object is
 the actual multiplicative unit in the variety presentation. -/

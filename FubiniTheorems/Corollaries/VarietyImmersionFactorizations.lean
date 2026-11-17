@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/VarietyImmersionFactorizations.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Corollaries.VarietyMorphisms
-import FubiniTheorems.Decomposition.ReducedImmersionLifts
+public import FubiniTheorems.Corollaries.VarietyMorphisms
+public import FubiniTheorems.Decomposition.ReducedImmersionLifts
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A geometric equivariant morphism whose image lies in a reduced
 immersion factors through it as an actual equivariant complex morphism. -/

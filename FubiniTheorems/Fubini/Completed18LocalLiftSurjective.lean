@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/Completed18LocalLiftSurjective.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.Completed18LocalLift
-import FubiniTheorems.Fubini.NativeArbitraryVFPullbackPreparation
-import FubiniTheorems.Fubini.NativeZeroStrataPullbacks
-import FubiniTheorems.Fubini.NativeVFFinitePartitions
+public import FubiniTheorems.Fubini.Completed18LocalLift
+public import FubiniTheorems.Fubini.NativeArbitraryVFPullbackPreparation
+public import FubiniTheorems.Fubini.NativeZeroStrataPullbacks
+public import FubiniTheorems.Fubini.NativeVFFinitePartitions
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual RV-pullback preparation and the finite zero-stratum partition
 prove surjectivity on the local positive semiring, before groupification. -/

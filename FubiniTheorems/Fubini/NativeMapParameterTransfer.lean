@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeMapParameterTransfer.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeMixedMapFibres
-import FubiniTheorems.Fubini.NativeSortedGroundTransfer
-import Section3.GammaClosureLaws
+public import FubiniTheorems.Fubini.NativeMixedMapFibres
+public import FubiniTheorems.Fubini.NativeSortedGroundTransfer
+public import Section3.GammaClosureLaws
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Evaluating an actual native map adds only definable parameters.+Bijective chart changes therefore give equivalent exact raw bases. -/
 set_option autoImplicit false

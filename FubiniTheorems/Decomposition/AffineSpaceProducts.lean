@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/AffineSpaceProducts.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.RationalAffineVarieties
-import FubiniTheorems.Decomposition.ReducedSchemeProducts
-import Mathlib.RingTheory.TensorProduct.MvPolynomial
-import Mathlib.Algebra.Category.Ring.Constructions
+public import FubiniTheorems.Decomposition.RationalAffineVarieties
+public import FubiniTheorems.Decomposition.ReducedSchemeProducts
+public import Mathlib.RingTheory.TensorProduct.MvPolynomial
+public import Mathlib.Algebra.Category.Ring.Constructions
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual polynomial affine products over the complex base. -/
 set_option autoImplicit false

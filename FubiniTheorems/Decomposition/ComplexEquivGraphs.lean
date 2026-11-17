@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/ComplexEquivGraphs.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.DiagonalConstructibleRing
-import FubiniTheorems.Decomposition.EquivariantGraphDecomposition
+public import FubiniTheorems.Decomposition.DiagonalConstructibleRing
+public import FubiniTheorems.Decomposition.EquivariantGraphDecomposition
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! An actual constructible equivariant bijection, in sum coordinates,
 with both uniqueness assertions and its exact source and target. -/

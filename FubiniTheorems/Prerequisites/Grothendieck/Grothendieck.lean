@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/Grothendieck.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import HilbertMathlib.Foundation.Grothendieck.PositiveAdditivePresentation
-import HilbertMathlib.Foundation.Grothendieck.GrothendieckRing
+public import HilbertMathlib.Foundation.Grothendieck.PositiveAdditivePresentation
+public import HilbertMathlib.Foundation.Grothendieck.GrothendieckRing
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Definition 3.1 (`def:Kgroup`): reuse the positive scissor presentation,
 then groupify. No cancellation or injectivity of groupification is assumed.

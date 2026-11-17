@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%202/UnaryRVGammaBounds.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Definability.RVValueFinite
-import FubiniTheorems.Prerequisites.Definability.GammaAbsoluteValues
-import FubiniTheorems.Prerequisites.Definability.GammaFamilyFibres
-import FubiniTheorems.Prerequisites.Definability.CitedGammaLinearity
+public import FubiniTheorems.Prerequisites.Definability.RVValueFinite
+public import FubiniTheorems.Prerequisites.Definability.GammaAbsoluteValues
+public import FubiniTheorems.Prerequisites.Definability.GammaFamilyFibres
+public import FubiniTheorems.Prerequisites.Definability.CitedGammaLinearity
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The unary RV-to-Gamma case in the author's proof of 2.41. The
 finite output set over each input value has a definable supremum of its

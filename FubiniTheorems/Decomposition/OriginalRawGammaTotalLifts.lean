@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/OriginalRawGammaTotalLifts.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.OriginalRawGammaFamilies
-import FubiniTheorems.Decomposition.RawGammaLiftRepresentatives
-import FubiniTheorems.Fubini.NativeSetBijections
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVProductMorphisms
+public import FubiniTheorems.Decomposition.OriginalRawGammaFamilies
+public import FubiniTheorems.Decomposition.RawGammaLiftRepresentatives
+public import FubiniTheorems.Fubini.NativeSetBijections
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVProductMorphisms
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Literal total RV domains of full Gamma schemata are bijective to the
 encoded lifts used by relative Fubini. Every representative is retained. -/

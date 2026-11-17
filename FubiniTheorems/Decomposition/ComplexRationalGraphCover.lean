@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/ComplexRationalGraphCover.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.ACFComplexRationalWitnesses
-import FubiniTheorems.Decomposition.UniqueGraphSentences
-import FubiniTheorems.Decomposition.RationalGraphFormulas
-import FubiniTheorems.Decomposition.FiniteFormulaCovers
+public import FubiniTheorems.Decomposition.ACFComplexRationalWitnesses
+public import FubiniTheorems.Decomposition.UniqueGraphSentences
+public import FubiniTheorems.Decomposition.RationalGraphFormulas
+public import FubiniTheorems.Decomposition.FiniteFormulaCovers
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A scalar complex-definable graph is covered by finitely many rational
 graphs with original complex coefficients and nonzero denominators. The

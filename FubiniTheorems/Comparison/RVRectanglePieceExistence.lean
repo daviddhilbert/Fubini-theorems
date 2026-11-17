@@ -1,14 +1,20 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RVRectanglePieceExistence.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Comparison.RVRectanglePieceSchemata
-import FubiniTheorems.Decomposition.RawRVRectangleDecomposition
-import FubiniTheorems.Decomposition.OriginalGammaRVRowPresentations
-import FubiniTheorems.Decomposition.OriginalFixedRVBijectionPromotion
-import FubiniTheorems.Fubini.NativeSchemaPresentations
-import FubiniTheorems.Fubini.NativeUnitRESObjects
+public import FubiniTheorems.Comparison.RVRectanglePieceSchemata
+public import FubiniTheorems.Decomposition.RawRVRectangleDecomposition
+public import FubiniTheorems.Decomposition.OriginalGammaRVRowPresentations
+public import FubiniTheorems.Decomposition.OriginalFixedRVBijectionPromotion
+public import FubiniTheorems.Fubini.NativeSchemaPresentations
+public import FubiniTheorems.Fubini.NativeUnitRESObjects
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Every actual RV rectangle at a mixed parameter promotes to a whole
 valid original-base package, including the actual product map graph and

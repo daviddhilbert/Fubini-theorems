@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/GraphDecompositionClasses.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.GraphDecompositionVarieties
-import FubiniTheorems.Corollaries.VarietyImmersionPartitions
+public import FubiniTheorems.Decomposition.GraphDecompositionVarieties
+public import FubiniTheorems.Corollaries.VarietyImmersionPartitions
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual equivariant graph decomposition gives equal geometric
 classes on its two sides. Both finite partition identities are derived

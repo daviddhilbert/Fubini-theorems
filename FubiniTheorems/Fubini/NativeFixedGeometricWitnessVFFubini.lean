@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeFixedGeometricWitnessVFFubini.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativePreparedLiftGeometricComparison
-import FubiniTheorems.Fubini.NativePreparedGeometricRVValues
-import FubiniTheorems.Fubini.NativeSpecialBaseBridge
+public import FubiniTheorems.Fubini.NativePreparedLiftGeometricComparison
+public import FubiniTheorems.Fubini.NativePreparedGeometricRVValues
+public import FubiniTheorems.Fubini.NativeSpecialBaseBridge
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A complete fixed geometric witness proves equality of the actual VF
 lift-family geometric values. The denominator degree is chosen before one

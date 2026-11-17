@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaBoundedProfiles.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaMeasuredProfileInvariance
-import FubiniTheorems.Prerequisites.Euler.GammaPushforwardSupport
-import FubiniTheorems.Prerequisites.Euler.GammaBoundedFamilies
+public import FubiniTheorems.Prerequisites.Euler.GammaMeasuredProfileInvariance
+public import FubiniTheorems.Prerequisites.Euler.GammaPushforwardSupport
+public import FubiniTheorems.Prerequisites.Euler.GammaBoundedFamilies
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Explicit bounded-support and comparison results for actual corrected
 weight profiles. The bound on a definable volume form remains an explicit

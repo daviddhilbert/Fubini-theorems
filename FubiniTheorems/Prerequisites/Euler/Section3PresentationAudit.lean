@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/Section3PresentationAudit.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.TensorRingDescent
-import FubiniTheorems.Prerequisites.Euler.ApprovedT001Presentation
+public import FubiniTheorems.Prerequisites.Grothendieck.TensorRingDescent
+public import FubiniTheorems.Prerequisites.Euler.ApprovedT001Presentation
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Audit boundary between the finalized Section 3 categorical rings and
 the independently constructed Section 4 chart rings. The upstream kernel

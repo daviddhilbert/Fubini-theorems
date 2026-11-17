@@ -1,9 +1,15 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/PuiseuxRVBase.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Comparison.PuiseuxModels.PuiseuxRVActions
+public import FubiniTheorems.Comparison.PuiseuxModels.PuiseuxRVActions
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The integral-value/constant subgroup is exactly the actual RV image of
 the entire Laurent base. This identifies the base in the quotient result. -/

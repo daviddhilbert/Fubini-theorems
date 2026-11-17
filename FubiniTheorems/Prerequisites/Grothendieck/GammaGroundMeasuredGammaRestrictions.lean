@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundMeasuredGammaRestrictions.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaCodeFormRestrictions
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaRVLift
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaRVScissors
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVFamilyDescRestrictions
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaScissors
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaCodeFormRestrictions
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaRVLift
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaRVScissors
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVFamilyDescRestrictions
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaScissors
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 /-! The full measured Gamma lift commutes with restricting every tagged
 piece and inheriting its original Gamma form. -/
 

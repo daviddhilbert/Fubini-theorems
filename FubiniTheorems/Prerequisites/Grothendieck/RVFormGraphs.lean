@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/RVFormGraphs.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.RVVolumeForms
-import FubiniTheorems.Prerequisites.Grothendieck.GammaVolumeForms
-import Section4.CanonicalNormalization
-import Section4.RVCoordinates
+public import FubiniTheorems.Prerequisites.Grothendieck.RVVolumeForms
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaVolumeForms
+public import Section4.CanonicalNormalization
+public import Section4.RVCoordinates
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The invariant relation used for RV volume forms is exactly a genuine
 definable map to the Gamma imaginary. This comparison keeps all real codes

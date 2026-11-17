@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaRVLifts.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaNamesSubgroup
-import Section3.GammaDefinableClosureField
-import Section3.GammaFullDescent
-import Section3.RVOperations
+public import FubiniTheorems.Prerequisites.Euler.GammaNamesSubgroup
+public import Section3.GammaDefinableClosureField
+public import Section3.GammaFullDescent
+public import Section3.RVOperations
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Original-base definable RV lifts, as accepted for Notation 4.13.
 Their values form a subgroup of the definable Gamma constants. No

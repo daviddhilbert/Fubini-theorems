@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/Section3RVChartBridge.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.Section3RVCodeBridge
-import FubiniTheorems.Prerequisites.Euler.RVForgetScissors
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVCategories
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundBijections
+public import FubiniTheorems.Prerequisites.Euler.Section3RVCodeBridge
+public import FubiniTheorems.Prerequisites.Euler.RVForgetScissors
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVCategories
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundBijections
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual RV object and isomorphism conversions, retaining the original
 base, all domain coordinates (including zero), and the object degree. -/

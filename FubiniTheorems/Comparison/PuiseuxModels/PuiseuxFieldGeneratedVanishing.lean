@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/PuiseuxFieldGeneratedVanishing.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeFieldGeneratedVFFubini
-import FubiniTheorems.Comparison.PuiseuxModels.PuiseuxLaurentNontrivial
-import FubiniTheorems.Comparison.PuiseuxModels.PuiseuxAmbientWeakVanishing
+public import FubiniTheorems.Fubini.NativeFieldGeneratedVFFubini
+public import FubiniTheorems.Comparison.PuiseuxModels.PuiseuxLaurentNontrivial
+public import FubiniTheorems.Comparison.PuiseuxModels.PuiseuxAmbientWeakVanishing
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual Laurent-base ambient comparison vanishes for a VF-tuple
 map whenever its genuine F(b) intrinsic fibre integrals vanish. -/

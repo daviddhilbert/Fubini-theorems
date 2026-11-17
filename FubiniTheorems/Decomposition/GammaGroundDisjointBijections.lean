@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/GammaGroundDisjointBijections.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundBijections
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapUnions
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVTags
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundBijections
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapUnions
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVTags
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual same-base definable bijections assemble on disjoint unions,
 including the literal RV zero/one tagged coproducts. -/

@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeGammaPointBridge.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeMixedSortedRealization
-import IntegrationSection6.GammaPointSortedIsomorphisms
+public import FubiniTheorems.Fubini.NativeMixedSortedRealization
+public import IntegrationSection6.GammaPointSortedIsomorphisms
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual original-Gamma point sets and special-map graphs realize native
 mixed domains and bijections with exactly the same parameters. -/

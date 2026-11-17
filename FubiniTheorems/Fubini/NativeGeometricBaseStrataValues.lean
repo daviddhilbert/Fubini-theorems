@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeGeometricBaseStrataValues.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeVFBaseStratumSelection
-import FubiniTheorems.Fubini.NativeGeometricLiftValues
+public import FubiniTheorems.Fubini.NativeVFBaseStratumSelection
+public import FubiniTheorems.Fubini.NativeGeometricLiftValues
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A prepared RV-pullback with k nonzero fibre VF coordinates has
 geometric value equal to the sum over base zero strata of its raw RV key

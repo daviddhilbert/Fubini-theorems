@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/GammaLastCylinderEuler.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.GammaCylindricalFamilyEuler
-import FubiniTheorems.Decomposition.GammaSingletonGraphEuler
+public import FubiniTheorems.Decomposition.GammaCylindricalFamilyEuler
+public import FubiniTheorems.Decomposition.GammaSingletonGraphEuler
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Cylindrical fibre integration with the fibre in the last coordinate. -/
 set_option autoImplicit false

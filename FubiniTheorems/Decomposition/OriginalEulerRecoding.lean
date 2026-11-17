@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/OriginalEulerRecoding.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.OriginalEulerCertificateExistence
-import FubiniTheorems.Decomposition.OriginalGammaTreeRecoding
-import FubiniTheorems.Decomposition.EulerCertificateCongruence
+public import FubiniTheorems.Decomposition.OriginalEulerCertificateExistence
+public import FubiniTheorems.Decomposition.OriginalGammaTreeRecoding
+public import FubiniTheorems.Decomposition.EulerCertificateCongruence
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Recoding a finite original Euler package retains every tree and source
 row, so its validity and both fixed integer values descend together. -/

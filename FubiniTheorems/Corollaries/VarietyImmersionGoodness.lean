@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/VarietyImmersionGoodness.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Corollaries.EquivariantVarietyRing
-import FubiniTheorems.Decomposition.QuasiAffineGoodActions
+public import FubiniTheorems.Corollaries.EquivariantVarietyRing
+public import FubiniTheorems.Decomposition.QuasiAffineGoodActions
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The affine-orbit condition is inherited by invariant reduced immersed
 subschemes. The finite orbit is first put over an affine open of the ambient

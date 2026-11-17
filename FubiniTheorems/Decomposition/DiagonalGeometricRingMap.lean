@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/DiagonalGeometricRingMap.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.DiagonalGeometricProducts
-import FubiniTheorems.Decomposition.DiagonalGeometricBijections
-import FubiniTheorems.Decomposition.DiagonalGeometricUnit
-import FubiniTheorems.Comparison.RESRawComparisonEquivalence
+public import FubiniTheorems.Decomposition.DiagonalGeometricProducts
+public import FubiniTheorems.Decomposition.DiagonalGeometricBijections
+public import FubiniTheorems.Decomposition.DiagonalGeometricUnit
+public import FubiniTheorems.Comparison.RESRawComparisonEquivalence
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The forward geometric comparison is an actual ring homomorphism.
 The native RES composite retains the explicit original Puiseux-model

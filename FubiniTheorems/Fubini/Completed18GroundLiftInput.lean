@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/Completed18GroundLiftInput.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.Completed18LocalLiftSurjective
-import FubiniTheorems.Fubini.Completed18LocalKernel
-import FubiniTheorems.Fubini.NativeLiftGroundTransfer
-import FubiniTheorems.Prerequisites.Definability.GeneralDiscPoints
-import IntegrationSection6.VFParameterCoefficientBases
+public import FubiniTheorems.Fubini.Completed18LocalLiftSurjective
+public import FubiniTheorems.Fubini.Completed18LocalKernel
+public import FubiniTheorems.Fubini.NativeLiftGroundTransfer
+public import FubiniTheorems.Prerequisites.Definability.GeneralDiscPoints
+public import IntegrationSection6.VFParameterCoefficientBases
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The exact earlier-section lifting/kernel record is constructed over
 the original ground. Definable closure is only an equivalent parameter

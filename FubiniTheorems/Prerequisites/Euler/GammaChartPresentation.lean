@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaChartPresentation.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaChartOperations
-import Mathlib.RingTheory.FreeCommRing
-import Mathlib.RingTheory.Ideal.Quotient.Defs
+public import FubiniTheorems.Prerequisites.Euler.GammaChartOperations
+public import Mathlib.RingTheory.FreeCommRing
+public import Mathlib.RingTheory.Ideal.Quotient.Defs
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! An explicit ring presentation of actual weighted Gamma charts, using
 all volume-preserving definable bijections. Both proved Euler profiles

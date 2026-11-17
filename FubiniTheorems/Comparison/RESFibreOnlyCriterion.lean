@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RESFibreOnlyCriterion.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Comparison.RESFibreOnlyWitness
-import FubiniTheorems.Comparison.RESFamilyUngradedClasses
+public import FubiniTheorems.Comparison.RESFibreOnlyWitness
+public import FubiniTheorems.Comparison.RESFamilyUngradedClasses
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The finite stabilized object-bijection criterion in the paper's exact
 form: all primitive relation pairs are value-fibre versus torus pairs.

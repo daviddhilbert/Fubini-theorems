@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaOrdinaryAlgebras.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryFiniteMaps
-import FubiniTheorems.Prerequisites.Euler.RESOrdinaryReduction
-import FubiniTheorems.Prerequisites.Euler.RVOrdinaryMaps
+public import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryFiniteMaps
+public import FubiniTheorems.Prerequisites.Euler.RESOrdinaryReduction
+public import FubiniTheorems.Prerequisites.Euler.RVOrdinaryMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual ordinary finite-Gamma coefficient algebras for the ordinary
 RES/Gamma tensor and its RV comparison and RES target. -/

@@ -1,15 +1,21 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/FiniteFibreValidity.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.FiniteWitnessFormulas
-import Mathlib.Data.Fintype.Prod
-import Mathlib.Data.Fintype.Sum
-import Mathlib.Basic.Finite.Prod
-import Mathlib.Basic.Finite.Sum
-import Mathlib.Data.Set.Card
-import Mathlib.Data.Fintype.EquivFin
+public import FubiniTheorems.Decomposition.FiniteWitnessFormulas
+public import Mathlib.Data.Fintype.Prod
+public import Mathlib.Data.Fintype.Sum
+public import Mathlib.Basic.Finite.Prod
+public import Mathlib.Basic.Finite.Sum
+public import Mathlib.Data.Set.Card
+public import Mathlib.Data.Fintype.EquivFin
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Fixed finite fibre bounds are first-order conditions on an actual
 relation graph. The formula forbids a tuple of N+1 distinct source points

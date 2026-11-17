@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/VarietyNativeChartMaps.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Corollaries.VarietyNativeInclusions
-import FubiniTheorems.Corollaries.VarietyAffineNativeMaps
+public import FubiniTheorems.Corollaries.VarietyNativeInclusions
+public import FubiniTheorems.Corollaries.VarietyAffineNativeMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Regular maps subordinate to two actual affine atlases glue to a
 native map whose point action is the original scheme morphism. -/

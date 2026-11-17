@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaUniformFiniteFibres.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaTupleCounting
-import FubiniTheorems.Prerequisites.Euler.GammaBaseExtension
-import Section3.NormalizationSaturation
+public import FubiniTheorems.Prerequisites.Euler.GammaTupleCounting
+public import FubiniTheorems.Prerequisites.Euler.GammaBaseExtension
+public import Section3.NormalizationSaturation
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A genuine saturation proof of a uniform finite bound on actual Gamma
 fibres. Counting is performed in Gamma; raw RV code fibres may be infinite.

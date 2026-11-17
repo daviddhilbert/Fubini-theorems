@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/OriginalProductTotalValues.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.OriginalProductTotalBijections
-import FubiniTheorems.Decomposition.OriginalGammaTotalValues
+public import FubiniTheorems.Decomposition.OriginalProductTotalBijections
+public import FubiniTheorems.Decomposition.OriginalGammaTotalValues
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Relative Gamma Fubini evaluates literal total product families over
 the full first-factor total domain, without selecting any value lifts. -/

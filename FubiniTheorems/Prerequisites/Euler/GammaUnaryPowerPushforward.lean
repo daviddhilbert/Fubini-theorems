@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaUnaryPowerPushforward.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaEulerSets
-import FubiniTheorems.Prerequisites.Euler.GammaPowerLawCells
-import HilbertMathlib.Foundation.Euler.EulerRationalBranches
+public import FubiniTheorems.Prerequisites.Euler.GammaEulerSets
+public import FubiniTheorems.Prerequisites.Euler.GammaPowerLawCells
+public import HilbertMathlib.Foundation.Euler.EulerRationalBranches
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual unary fibre integration for a definable Gamma graph covered by
 finitely many rational-affine power laws. The finite cells are constructed

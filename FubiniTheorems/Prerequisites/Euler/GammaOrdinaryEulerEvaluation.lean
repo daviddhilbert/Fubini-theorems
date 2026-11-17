@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaOrdinaryEulerEvaluation.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryRing
-import FubiniTheorems.Prerequisites.Euler.GammaEulerEvaluation
+public import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryRing
+public import FubiniTheorems.Prerequisites.Euler.GammaEulerEvaluation
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Numerical Euler evaluation on the actual Gamma category without
 volume forms. Ordinary contracted bijections are handled by the proved

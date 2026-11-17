@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/SchemeActionsOverBase.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import Mathlib.AlgebraicGeometry.Scheme
-import Mathlib.CategoryTheory.Endomorphism
-import Mathlib.CategoryTheory.Comma.Over.Basic
+public import Mathlib.AlgebraicGeometry.Scheme
+public import Mathlib.CategoryTheory.Endomorphism
+public import Mathlib.CategoryTheory.Comma.Over.Basic
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Scheme actions fixing a structural morphism are actual actions in
 the category over that base. This keeps complex coefficients fixed in

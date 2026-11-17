@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/MeasuredRVProducts.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.RVProducts
-import FubiniTheorems.Prerequisites.Grothendieck.RVSemiring
-import FubiniTheorems.Prerequisites.Grothendieck.RVFormGraphs
-import FubiniTheorems.Prerequisites.Grothendieck.GammaFormOperations
+public import FubiniTheorems.Prerequisites.Grothendieck.RVProducts
+public import FubiniTheorems.Prerequisites.Grothendieck.RVSemiring
+public import FubiniTheorems.Prerequisites.Grothendieck.RVFormGraphs
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaFormOperations
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual cartesian products for the pointwise Gamma-measured RV
 category. The volume is the product of the pulled-back forms. Arrow

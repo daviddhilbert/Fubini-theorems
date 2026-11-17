@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaParametricFubini.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaFubiniTwo
-import FubiniTheorems.Prerequisites.Euler.GammaFamilySlicesTwo
-import FubiniTheorems.Prerequisites.Euler.GammaFibreIntegralCongruence
-import FubiniTheorems.Prerequisites.Euler.GammaParameterExtension
+public import FubiniTheorems.Prerequisites.Euler.GammaFubiniTwo
+public import FubiniTheorems.Prerequisites.Euler.GammaFamilySlicesTwo
+public import FubiniTheorems.Prerequisites.Euler.GammaFibreIntegralCongruence
+public import FubiniTheorems.Prerequisites.Euler.GammaParameterExtension
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Commute the first two actual coordinate integrals in a Gamma family
 with any finite parameter suffix. The two-coordinate theorem is applied

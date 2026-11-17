@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaOrdinaryRESEvaluation.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryEulerEvaluation
-import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryGrading
-import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryFiniteMaps
-import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryEvaluation
+public import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryEulerEvaluation
+public import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryGrading
+public import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryFiniteMaps
+public import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryEvaluation
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Ordinary Gamma Euler maps into ordinary reduced RES are graded and
 balance over the entire ordinary finite-Gamma coefficient ring. The

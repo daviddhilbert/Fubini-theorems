@@ -1,16 +1,22 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/RVGenericFibreMonomials.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVUnitAngularCells
-import FubiniTheorems.Prerequisites.Grothendieck.RVUnitGraphProjections
-import FubiniTheorems.Prerequisites.Grothendieck.RVGenericGraphBlocks
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundAngularCoefficientPoints
-import FubiniTheorems.Prerequisites.Grothendieck.RVAngularInputFibres
-import FubiniTheorems.Prerequisites.Grothendieck.IntegerMonomialReindexing
-import FubiniTheorems.Prerequisites.Grothendieck.RVMonomialFibreRigidity
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGenericValueFibres
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVUnitAngularCells
+public import FubiniTheorems.Prerequisites.Grothendieck.RVUnitGraphProjections
+public import FubiniTheorems.Prerequisites.Grothendieck.RVGenericGraphBlocks
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundAngularCoefficientPoints
+public import FubiniTheorems.Prerequisites.Grothendieck.RVAngularInputFibres
+public import FubiniTheorems.Prerequisites.Grothendieck.IntegerMonomialReindexing
+public import FubiniTheorems.Prerequisites.Grothendieck.RVMonomialFibreRigidity
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGenericValueFibres
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 set_option backward.isDefEq.respectTransparency false
 set_option autoImplicit false
 open Classical FirstOrder FirstOrder.Language

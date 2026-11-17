@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeSelectedVFStrata.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeVFZeroStrata
-import FubiniTheorems.Fubini.NativeZeroStrataPullbacks
-import FubiniTheorems.Fubini.NativeFullKeySelections
+public import FubiniTheorems.Fubini.NativeVFZeroStrata
+public import FubiniTheorems.Fubini.NativeZeroStrataPullbacks
+public import FubiniTheorems.Fubini.NativeFullKeySelections
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Zero strata in selected VF coordinates form an actual original-ground
 finite partition. Their full RV keys are exactly the matching selected RV

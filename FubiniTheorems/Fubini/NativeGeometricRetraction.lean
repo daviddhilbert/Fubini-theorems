@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeGeometricRetraction.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeBoundedRetraction
-import FubiniTheorems.Comparison.GeometricDegreeClearing
-import FubiniTheorems.Prerequisites.Euler.RVT001OrdinaryNormalization
+public import FubiniTheorems.Fubini.NativeBoundedRetraction
+public import FubiniTheorems.Comparison.GeometricDegreeClearing
+public import FubiniTheorems.Prerequisites.Euler.RVT001OrdinaryNormalization
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual geometric retraction retains degree normalization in the
 affine-localized target and factors through the VF lifting relation. The

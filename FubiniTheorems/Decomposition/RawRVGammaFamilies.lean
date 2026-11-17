@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RawRVGammaFamilies.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Comparison.RVGammaFamilyLifts
-import FubiniTheorems.Fubini.NativeRVSetValues
-import FubiniTheorems.Prerequisites.Grothendieck.RVNonzeroTupleCoding
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVProductLaws
+public import FubiniTheorems.Comparison.RVGammaFamilyLifts
+public import FubiniTheorems.Fubini.NativeRVSetValues
+public import FubiniTheorems.Prerequisites.Grothendieck.RVNonzeroTupleCoding
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVProductLaws
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Zero entries of an RV base are encoded by the proved original-ground
 nonzero tuple coding. Every Gamma coordinate and its fibre are retained. -/

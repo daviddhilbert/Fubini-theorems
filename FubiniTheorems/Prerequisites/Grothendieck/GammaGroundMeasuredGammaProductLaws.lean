@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundMeasuredGammaProductLaws.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaCodeCoherence
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaRepresentatives
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaProductLaws
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaCodeCoherence
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaRepresentatives
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaProductLaws
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 /-! Actual Gamma product symmetry, associativity and unit morphisms,
 with explicit degree casts rather than implicit rank identifications. -/
 set_option backward.isDefEq.respectTransparency false

@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/PuiseuxConcreteModel.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Comparison.PuiseuxModels.PuiseuxConcreteLanguage
-import HilbertMathlib.Foundation.Series.PuiseuxAlgebraicClosedness
-import Section6.ConcreteACVF
+public import FubiniTheorems.Comparison.PuiseuxModels.PuiseuxConcreteLanguage
+public import HilbertMathlib.Foundation.Series.PuiseuxAlgebraicClosedness
+public import Section6.ConcreteACVF
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The concrete Puiseux original-language structure satisfies ACVF(0,0).
 Newton–Puiseux algebraic closedness, the actual valuation and its residue

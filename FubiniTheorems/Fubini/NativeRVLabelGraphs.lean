@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeRVLabelGraphs.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeFiniteRVRowObjects
-import FubiniTheorems.Comparison.RESBijectionPromotion
-import IntegrationSection6.GammaFiniteTupleBounds
+public import FubiniTheorems.Fubini.NativeFiniteRVRowObjects
+public import FubiniTheorems.Comparison.RESBijectionPromotion
+public import IntegrationSection6.GammaFiniteTupleBounds
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual native RV label maps have full original-base append graphs
 and a uniform finite reverse-fibre bound, without adding label parameters. -/

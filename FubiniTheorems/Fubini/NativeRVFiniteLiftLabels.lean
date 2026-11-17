@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeRVFiniteLiftLabels.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundLifting
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteFibreInvariance
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteVFObjects
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundLifting
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteFibreInvariance
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteVFObjects
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Finiteness of a total RV label map follows from finite RV fibres of
 its actual VF lift. Surjective RV lifting is used only in the proof;

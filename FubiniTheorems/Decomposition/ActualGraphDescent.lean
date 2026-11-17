@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/ActualGraphDescent.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.ActualKummerDescent
-import FubiniTheorems.Comparison.NormalizedGraphDescent
+public import FubiniTheorems.Decomposition.ActualKummerDescent
+public import FubiniTheorems.Comparison.NormalizedGraphDescent
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The inverse graph identity on the actual original RV carrier. -/
 set_option autoImplicit false

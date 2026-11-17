@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeVFPullbackValues.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeVFIntegral
-import FubiniTheorems.Fubini.NativeZeroStrataValues
-import FubiniTheorems.Fubini.NativeVFFinitePartitions
+public import FubiniTheorems.Fubini.NativeVFIntegral
+public import FubiniTheorems.Fubini.NativeZeroStrataValues
+public import FubiniTheorems.Fubini.NativeVFFinitePartitions
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual native VF integral of an RV-pullback is computed by its
 original-ground RV key. The bounded value sums raw zero strata; the

@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaBoundedRVProfiles.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaBoundedRVMaps
-import FubiniTheorems.Prerequisites.Euler.GammaBoundedRVGrading
-import FubiniTheorems.Prerequisites.Euler.GammaRVGrading
-import FubiniTheorems.Prerequisites.Euler.RESPsiGradings
+public import FubiniTheorems.Prerequisites.Euler.GammaBoundedRVMaps
+public import FubiniTheorems.Prerequisites.Euler.GammaBoundedRVGrading
+public import FubiniTheorems.Prerequisites.Euler.GammaRVGrading
+public import FubiniTheorems.Prerequisites.Euler.RESPsiGradings
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual bounded Gamma profile and sharp maps are graded. Their
 ordinary RES evaluation is independent of the Euler choice on the entire

@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativePreparedLiftRows.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativePreparedLiftPullbacks
-import FubiniTheorems.Fubini.NativePreparedKeyDomains
-import FubiniTheorems.Fubini.NativeGammaPointBridge
+public import FubiniTheorems.Fubini.NativePreparedLiftPullbacks
+public import FubiniTheorems.Fubini.NativePreparedKeyDomains
+public import FubiniTheorems.Fubini.NativeGammaPointBridge
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The concrete transported VF lift has precisely the packed rows used
 by the prepared RV key comparison. Its RV base is the actual retained-key

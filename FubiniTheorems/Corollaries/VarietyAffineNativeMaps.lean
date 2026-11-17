@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/VarietyAffineNativeMaps.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Corollaries.VarietyAffineNativeCharts
-import FubiniTheorems.Decomposition.AffineVFAlgebraMaps
-import FubiniTheorems.Decomposition.ComplexAffineMorphisms
+public import FubiniTheorems.Corollaries.VarietyAffineNativeCharts
+public import FubiniTheorems.Decomposition.AffineVFAlgebraMaps
+public import FubiniTheorems.Decomposition.ComplexAffineMorphisms
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Affine scheme morphisms have actual original-ground native maps,
 with exactly their action on extension-field scheme points. -/

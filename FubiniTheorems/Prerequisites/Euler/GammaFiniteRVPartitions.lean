@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaFiniteRVPartitions.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaRVFinitePartitions
-import FubiniTheorems.Prerequisites.Euler.GammaFiniteDecomposition
+public import FubiniTheorems.Prerequisites.Euler.GammaRVFinitePartitions
+public import FubiniTheorems.Prerequisites.Euler.GammaFiniteDecomposition
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Finite partition additivity inside the intrinsic finite Gamma ring.
 Every restriction and finite union retains a proved finite support; no

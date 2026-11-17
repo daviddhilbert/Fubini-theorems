@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVBalancedGradings.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import HilbertMathlib.Foundation.Coaction.TensorCoactionGrading
-import FubiniTheorems.Prerequisites.Euler.GammaFiniteRVMapGradings
-import FubiniTheorems.Prerequisites.Euler.RVFiniteBalancedTensor
-import FubiniTheorems.Prerequisites.Euler.RVBoundedBalancedTensor
+public import HilbertMathlib.Foundation.Coaction.TensorCoactionGrading
+public import FubiniTheorems.Prerequisites.Euler.GammaFiniteRVMapGradings
+public import FubiniTheorems.Prerequisites.Euler.RVFiniteBalancedTensor
+public import FubiniTheorems.Prerequisites.Euler.RVBoundedBalancedTensor
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Both actual tensors over the intrinsic finite-Gamma ring have full
 natural-number gradings, with homogeneous pure tensors in the sum degree. -/

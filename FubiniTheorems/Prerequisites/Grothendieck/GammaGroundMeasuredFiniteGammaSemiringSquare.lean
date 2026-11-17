@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundMeasuredFiniteGammaSemiringSquare.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredFiniteGammaSemiring
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaSemiringLift
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredRESGradedSemiring
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaRVMorphisms
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredFiniteGammaSemiring
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaSemiringLift
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredRESGradedSemiring
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaRVMorphisms
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 /-! The actual measured coefficient square, including multiplication. -/
 set_option backward.isDefEq.respectTransparency false
 open FirstOrder FirstOrder.Language CategoryTheory

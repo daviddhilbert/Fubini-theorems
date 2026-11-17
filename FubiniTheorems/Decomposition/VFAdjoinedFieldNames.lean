@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/VFAdjoinedFieldNames.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.VFFieldSmallPresentation
-import FubiniTheorems.Decomposition.VFFieldGamma
-import Section3.GammaFullDescent
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundContext
+public import FubiniTheorems.Decomposition.VFFieldSmallPresentation
+public import FubiniTheorems.Decomposition.VFFieldGamma
+public import Section3.GammaFullDescent
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundContext
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Naming finitely many VF coordinates over a VF-generated ground is
 equivalent to naming precisely the generated field and its RV images. -/

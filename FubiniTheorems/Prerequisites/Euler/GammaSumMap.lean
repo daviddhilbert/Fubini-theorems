@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaSumMap.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaProductFamilies
-import FubiniTheorems.Prerequisites.Euler.GammaDefinableMaps
-import FubiniTheorems.Prerequisites.Euler.GammaWeightProfiles
+public import FubiniTheorems.Prerequisites.Euler.GammaProductFamilies
+public import FubiniTheorems.Prerequisites.Euler.GammaDefinableMaps
+public import FubiniTheorems.Prerequisites.Euler.GammaWeightProfiles
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual product-volume and corrected-weight maps on two coordinate
 blocks. Native Gamma multiplication is the manuscript's addition. -/

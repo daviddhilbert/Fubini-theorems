@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/AffineVFAlgebraMaps.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.AffineVFPointEquiv
-import FubiniTheorems.Fubini.NativeVFPolynomialMaps
+public import FubiniTheorems.Decomposition.AffineVFPointEquiv
+public import FubiniTheorems.Fubini.NativeVFPolynomialMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Regular maps of actual affine algebras induce original-ground
 native VF maps with the same extension-field point action. -/

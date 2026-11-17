@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVOrdinaryTensorForget.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVOrdinaryBalancedGradings
-import FubiniTheorems.Prerequisites.Euler.RVOrdinaryTensorEvaluation
-import FubiniTheorems.Prerequisites.Euler.RESOrdinarySurjectivity
+public import FubiniTheorems.Prerequisites.Euler.RVOrdinaryBalancedGradings
+public import FubiniTheorems.Prerequisites.Euler.RVOrdinaryTensorEvaluation
+public import FubiniTheorems.Prerequisites.Euler.RESOrdinarySurjectivity
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Forgetting volume induces a surjective map from the measured balanced
 tensor to the actual ordinary balanced tensor. The coefficient base also

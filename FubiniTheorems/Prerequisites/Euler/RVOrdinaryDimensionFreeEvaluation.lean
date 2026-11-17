@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVOrdinaryDimensionFreeEvaluation.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVOrdinarySpecialValues
-import FubiniTheorems.Prerequisites.Euler.RESDimensionFreeReduction
-import FubiniTheorems.Prerequisites.Euler.GammaEulerPolynomialMaps
+public import FubiniTheorems.Prerequisites.Euler.RVOrdinarySpecialValues
+public import FubiniTheorems.Prerequisites.Euler.RESDimensionFreeReduction
+public import FubiniTheorems.Prerequisites.Euler.GammaEulerPolynomialMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Ordinary Euler maps on the actual full balanced tensor, after
 forgetting target degree. The bounded map kills P-1. The geometric map

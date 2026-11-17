@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaTranslation.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaTupleMaps
-import FubiniTheorems.Prerequisites.Euler.GammaObjectRelations
-import FubiniTheorems.Prerequisites.Euler.GammaNamesSubgroup
-import Mathlib.Algebra.Group.Submonoid.BigOperators
+public import FubiniTheorems.Prerequisites.Euler.GammaTupleMaps
+public import FubiniTheorems.Prerequisites.Euler.GammaObjectRelations
+public import FubiniTheorems.Prerequisites.Euler.GammaNamesSubgroup
+public import Mathlib.Algebra.Group.Submonoid.BigOperators
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual Gamma translation invariance for both Euler theories and for
 corrected volume profiles, with compensated target volumes. The translation

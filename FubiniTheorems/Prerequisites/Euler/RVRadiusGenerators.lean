@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVRadiusGenerators.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVMeasuredGroup
-import FubiniTheorems.Prerequisites.Euler.RVSharpCharts
-import FubiniTheorems.Prerequisites.Euler.RVPointChoices
-import FubiniTheorems.Prerequisites.Euler.GammaRadiusAnnulus
+public import FubiniTheorems.Prerequisites.Euler.RVMeasuredGroup
+public import FubiniTheorems.Prerequisites.Euler.RVSharpCharts
+public import FubiniTheorems.Prerequisites.Euler.RVPointChoices
+public import FubiniTheorems.Prerequisites.Euler.GammaRadiusAnnulus
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual additive RV classes P_gamma for the author-approved radius
 indexing. Their singleton choice is independent and the zero-radius class

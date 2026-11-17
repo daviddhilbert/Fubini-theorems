@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/Completed18RVSpecialRelation.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.Completed18RVGradedComparison
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVGenerators
-import IntegrationSection6.GammaNonzeroBasicRelation
+public import FubiniTheorems.Fubini.Completed18RVGradedComparison
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVGenerators
+public import IntegrationSection6.GammaNonzeroBasicRelation
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The elementary relation in [18] is exactly the local positive
 special relation, including the degree-zero contribution of RV infinity. -/

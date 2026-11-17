@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativePreparedLiftGeometricComparison.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativePreparedLiftRows
-import FubiniTheorems.Fubini.NativePreparedKeyRealizations
-import FubiniTheorems.Fubini.NativePreparedKeyStrata
-import FubiniTheorems.Fubini.NativeGeometricBaseStrataValues
-import FubiniTheorems.Fubini.NativePreparedFibreNonzero
+public import FubiniTheorems.Fubini.NativePreparedLiftRows
+public import FubiniTheorems.Fubini.NativePreparedKeyRealizations
+public import FubiniTheorems.Fubini.NativePreparedKeyStrata
+public import FubiniTheorems.Fubini.NativeGeometricBaseStrataValues
+public import FubiniTheorems.Fubini.NativePreparedFibreNonzero
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! An actual prepared VF lift family has geometric value equal to the
 sum of its literal RV-family totals over base zero strata, normalized in

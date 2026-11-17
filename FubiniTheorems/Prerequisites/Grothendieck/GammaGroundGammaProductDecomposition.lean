@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundGammaProductDecomposition.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaProductCodeMaps
-import FubiniTheorems.Prerequisites.Grothendieck.FamilySigmaProducts
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaProductCodeMaps
+public import FubiniTheorems.Prerequisites.Grothendieck.FamilySigmaProducts
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 /-! Both Gamma products and their full RV code families separate into
 their two original factors, compatibly with the quotient decoder. -/
 set_option backward.isDefEq.respectTransparency false

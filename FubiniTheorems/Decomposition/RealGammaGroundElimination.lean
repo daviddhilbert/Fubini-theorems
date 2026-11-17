@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RealGammaGroundElimination.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.EmptyGammaSortedDefinability
-import Section3.GammaClosureLaws
+public import FubiniTheorems.Decomposition.EmptyGammaSortedDefinability
+public import Section3.GammaClosureLaws
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Gamma names already definable over the real coefficient field can
 be eliminated without adjoining an RV representative. -/

@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundMeasuredGammaProducts.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaProducts
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundVolumeForms
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaVolumeCategories
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaProducts
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundVolumeForms
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaVolumeCategories
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 /-! Measured Gamma products retain their full forms, including on finite
 domains. The coordinate concatenation is a genuine definable bijection. -/
 

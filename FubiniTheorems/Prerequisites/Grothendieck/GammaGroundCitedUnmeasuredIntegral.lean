@@ -1,14 +1,20 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundCitedUnmeasuredIntegral.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundContext
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundVFSemiring
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVGenerators
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundLifting
-import FubiniTheorems.Prerequisites.Grothendieck.CompletionEquivalences
-import FubiniTheorems.Prerequisites.Grothendieck.PresentationHomExt
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundContext
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundVFSemiring
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVGenerators
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundLifting
+public import FubiniTheorems.Prerequisites.Grothendieck.CompletionEquivalences
+public import FubiniTheorems.Prerequisites.Grothendieck.PresentationHomExt
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Replaceable input from accepted source [18], Proposition 6.18 and
 Theorem 6.19, over actual Gamma ground parameters. The full model, genuine

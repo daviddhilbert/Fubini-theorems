@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RESOrdinaryPoints.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RESOrdinaryReduction
-import FubiniTheorems.Prerequisites.Euler.RVPointChoices
+public import FubiniTheorems.Prerequisites.Euler.RESOrdinaryReduction
+public import FubiniTheorems.Prerequisites.Euler.RVPointChoices
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Any two original-base definable proper RV points have equal ordinary
 RES classes. Their values may differ; only the volume-free isomorphism is

@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/KummerDescentDefinability.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.KummerRootDefinability
-import FubiniTheorems.Decomposition.ComplexResidueDefinability
-import HilbertMathlib.Foundation.Definability.CodeMaps
+public import FubiniTheorems.Decomposition.KummerRootDefinability
+public import FubiniTheorems.Decomposition.ComplexResidueDefinability
+public import HilbertMathlib.Foundation.Definability.CodeMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The inverse finite-level construction is definable over the original
 Laurent base. Its root is an existential variable in a definable source,

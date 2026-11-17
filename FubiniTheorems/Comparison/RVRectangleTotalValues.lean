@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RVRectangleTotalValues.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.OriginalProductTotalValues
-import FubiniTheorems.Decomposition.OriginalRVTotalGraphs
-import FubiniTheorems.Comparison.RVRectangleTotalPartitions
+public import FubiniTheorems.Decomposition.OriginalProductTotalValues
+public import FubiniTheorems.Decomposition.OriginalRVTotalGraphs
+public import FubiniTheorems.Comparison.RVRectangleTotalPartitions
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Whole prepared rectangle packages evaluate actual total RV families.
 Their original-base maps and Euler witnesses suffice for the formula. -/

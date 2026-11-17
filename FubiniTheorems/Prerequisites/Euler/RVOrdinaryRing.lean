@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVOrdinaryRing.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVChartRing
-import FubiniTheorems.Prerequisites.Euler.RVForgetScissors
-import FubiniTheorems.Prerequisites.Euler.RVWeightScaling
+public import FubiniTheorems.Prerequisites.Euler.RVChartRing
+public import FubiniTheorems.Prerequisites.Euler.RVForgetScissors
+public import FubiniTheorems.Prerequisites.Euler.RVWeightScaling
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual ordinary RV chart ring: original-base underlying
 bijections and scissors ignore volume forms, while proper finite-fibre

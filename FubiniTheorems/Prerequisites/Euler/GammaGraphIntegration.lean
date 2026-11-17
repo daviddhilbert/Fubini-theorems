@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaGraphIntegration.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaPrefixIntegration
-import HilbertMathlib.Foundation.FiniteCoordinates.FiniteTupleRotation
+public import FubiniTheorems.Prerequisites.Euler.GammaPrefixIntegration
+public import HilbertMathlib.Foundation.FiniteCoordinates.FiniteTupleRotation
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The integral over the singleton output of an actual Gamma graph is
 its weight. This supplies the graph calculation for arbitrary-dimensional

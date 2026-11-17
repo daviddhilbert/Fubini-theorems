@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/GraphStratumMorphisms.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.GraphBranchCompatibility
-import FubiniTheorems.Decomposition.ImmersionBranchGluing
-import FubiniTheorems.Decomposition.LocallyClosedAffineSchemes
+public import FubiniTheorems.Decomposition.GraphBranchCompatibility
+public import FubiniTheorems.Decomposition.ImmersionBranchGluing
+public import FubiniTheorems.Decomposition.LocallyClosedAffineSchemes
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A complex definable graph gives an actual regular map on every
 locally closed input stratum on which its affine branch images are open.

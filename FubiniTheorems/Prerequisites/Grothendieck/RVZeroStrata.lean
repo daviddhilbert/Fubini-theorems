@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/RVZeroStrata.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.RVCategories
-import FubiniTheorems.Prerequisites.Grothendieck.FiniteFamilies
-import FubiniTheorems.Prerequisites.Definability.ZeroFaces
-import Section4.RVCoordinates
-import HilbertMathlib.Foundation.Definability.MapCorestrict
+public import FubiniTheorems.Prerequisites.Grothendieck.RVCategories
+public import FubiniTheorems.Prerequisites.Grothendieck.FiniteFamilies
+public import FubiniTheorems.Prerequisites.Definability.ZeroFaces
+public import Section4.RVCoordinates
+public import HilbertMathlib.Foundation.Definability.MapCorestrict
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Notation 3.9: a finite-to-one target in RV-infinity^k splits into
 finitely many definable zero patterns. Deleting exactly the zero positions

@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundMeasuredGammaRVLift.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaCodeFormRestrictions
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaVolumeCategories
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaRVLift
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaRESLift
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVFamilyDesc
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaCodeFormRestrictions
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaVolumeCategories
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaRVLift
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaRESLift
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVFamilyDesc
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 /-! Gamma volume forms lift along every RV representative and the
 explicit finite tags. The full invariant graphs remain over the same base. -/
 

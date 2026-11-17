@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeRVRectangleFamilyFubini.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Comparison.RVRectanglePositiveExpressions
-import FubiniTheorems.Fubini.NativeRESFamilyFubini
+public import FubiniTheorems.Comparison.RVRectanglePositiveExpressions
+public import FubiniTheorems.Fubini.NativeRESFamilyFubini
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Pointwise equality of actual native RV row values implies equality
 of total values whenever complete rectangle packages are fixed. The

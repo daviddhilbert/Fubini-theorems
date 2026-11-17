@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/VFFieldContext.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.VFFieldGamma
-import FubiniTheorems.Decomposition.VFFieldSmallPresentation
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundContext
+public import FubiniTheorems.Decomposition.VFFieldGamma
+public import FubiniTheorems.Decomposition.VFFieldSmallPresentation
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundContext
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The exact actual field and its value group instantiate all standing
 Section 3 context hypotheses in the same saturated ambient model. -/

@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/OriginalEulerPreparation.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.OriginalEulerRecoding
-import FubiniTheorems.Decomposition.FiniteFormulaPreparation
-import Mathlib.Data.Fintype.Sigma
+public import FubiniTheorems.Decomposition.OriginalEulerRecoding
+public import FubiniTheorems.Decomposition.FiniteFormulaPreparation
+public import Mathlib.Data.Fintype.Sigma
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! One actual special bijection prepares the source and every primitive
 predicate of an entire finite original Euler certificate. Validity descends

@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/OriginalEulerValidityLoci.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.OriginalCylindricalStepValidity
-import FubiniTheorems.Decomposition.OriginalQuotientValidity
-import FubiniTheorems.Decomposition.OriginalFinitePartitionValidity
-import FubiniTheorems.Decomposition.OriginalEulerCertificateExistence
+public import FubiniTheorems.Decomposition.OriginalCylindricalStepValidity
+public import FubiniTheorems.Decomposition.OriginalQuotientValidity
+public import FubiniTheorems.Decomposition.OriginalFinitePartitionValidity
+public import FubiniTheorems.Decomposition.OriginalEulerCertificateExistence
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Validity of an entire native Euler certificate is definable over the
 original real/Gamma base, before choosing any finite catalog. -/

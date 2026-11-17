@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaWeightedBoundary.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaGermFamilies
-import FubiniTheorems.Prerequisites.Euler.GammaUniformFiniteFibres
-import FubiniTheorems.Prerequisites.Euler.GammaFiniteGraphPartition
+public import FubiniTheorems.Prerequisites.Euler.GammaGermFamilies
+public import FubiniTheorems.Prerequisites.Euler.GammaUniformFiniteFibres
+public import FubiniTheorems.Prerequisites.Euler.GammaFiniteGraphPartition
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The intrinsic boundary of an integer-valued Gamma family, over the
 original base. A finite level-set union defines local constancy; actual

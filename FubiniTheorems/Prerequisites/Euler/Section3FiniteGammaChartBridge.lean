@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/Section3FiniteGammaChartBridge.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.Section3GammaRingEquivalences
-import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryFiniteSupportFamilies
-import FubiniTheorems.Prerequisites.Euler.GammaRestrictedRVFiniteFamilies
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteGammaSemiringInclusion
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredFiniteGammaSemiringInclusion
+public import FubiniTheorems.Prerequisites.Euler.Section3GammaRingEquivalences
+public import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryFiniteSupportFamilies
+public import FubiniTheorems.Prerequisites.Euler.GammaRestrictedRVFiniteFamilies
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteGammaSemiringInclusion
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredFiniteGammaSemiringInclusion
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The finite Gamma conversions retain the original base, all family
 tags and arbitrary partial volume forms. -/

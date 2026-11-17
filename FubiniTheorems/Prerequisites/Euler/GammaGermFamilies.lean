@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaGermFamilies.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaGermLogic
-import FubiniTheorems.Prerequisites.Euler.GammaWeightedFamilies
-import FubiniTheorems.Prerequisites.Euler.EulerGerms
+public import FubiniTheorems.Prerequisites.Euler.GammaGermLogic
+public import FubiniTheorems.Prerequisites.Euler.GammaWeightedFamilies
+public import FubiniTheorems.Prerequisites.Euler.EulerGerms
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Canonical step coefficients of actual weighted Gamma fibres are
 finite-range original-base definable families. Left/right germs and the

@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaUnaryIdentityProfile.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaCounterweightedRay
-import FubiniTheorems.Prerequisites.Euler.GammaPointFamilies
-import FubiniTheorems.Prerequisites.Euler.GammaUnboundedSpecialization
-import FubiniTheorems.Prerequisites.Euler.GammaObjectPolynomial
+public import FubiniTheorems.Prerequisites.Euler.GammaCounterweightedRay
+public import FubiniTheorems.Prerequisites.Euler.GammaPointFamilies
+public import FubiniTheorems.Prerequisites.Euler.GammaUnboundedSpecialization
+public import FubiniTheorems.Prerequisites.Euler.GammaObjectPolynomial
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! With constant zero volume, a unary Gamma object's corrected-weight
 pushforward is its actual indicator function. In particular the positive

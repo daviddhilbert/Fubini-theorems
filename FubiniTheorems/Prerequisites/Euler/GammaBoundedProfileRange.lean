@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaBoundedProfileRange.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaBoundedMapImage
-import FubiniTheorems.Prerequisites.Euler.GammaBoundedProfiles
-import FubiniTheorems.Prerequisites.Euler.GammaBoundedFunctions
-import FubiniTheorems.Prerequisites.Euler.GammaBoundedComparison
+public import FubiniTheorems.Prerequisites.Euler.GammaBoundedMapImage
+public import FubiniTheorems.Prerequisites.Euler.GammaBoundedProfiles
+public import FubiniTheorems.Prerequisites.Euler.GammaBoundedFunctions
+public import FubiniTheorems.Prerequisites.Euler.GammaBoundedComparison
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual corrected-weight profile of a bounded Gamma set belongs
 to the bounded function ring. The volume bound comes from the proved 2.41

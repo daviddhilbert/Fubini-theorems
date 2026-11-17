@@ -1,18 +1,24 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundRVRankUpper.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRealization
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteGluing
-import Section4.RVDimensionRank
-import Section4.GammaRVIndependence
-import Section3.GammaProjection
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRealFibres
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapImages
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRawDescent
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundSyntaxBridge
-import Section4.RelationFibres
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRealization
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteGluing
+public import Section4.RVDimensionRank
+public import Section4.GammaRVIndependence
+public import Section3.GammaProjection
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRealFibres
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapImages
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRawDescent
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundSyntaxBridge
+public import Section4.RelationFibres
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 set_option backward.isDefEq.respectTransparency false
 set_option autoImplicit false
 open FirstOrder FirstOrder.Language

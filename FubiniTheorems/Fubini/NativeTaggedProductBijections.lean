@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeTaggedProductBijections.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeProductBijections
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVProductScissors
+public import FubiniTheorems.Fubini.NativeProductBijections
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVProductScissors
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual native cartesian products distribute over the literal tagged
 RV coproduct, in arbitrary arities and over the original Gamma ground. -/

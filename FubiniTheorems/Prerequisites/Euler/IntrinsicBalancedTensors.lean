@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/IntrinsicBalancedTensors.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.IntrinsicFiniteGammaAlgebras
-import FubiniTheorems.Prerequisites.Euler.RVFiniteBalancedTensor
-import FubiniTheorems.Prerequisites.Euler.RVBoundedBalancedTensor
+public import FubiniTheorems.Prerequisites.Euler.IntrinsicFiniteGammaAlgebras
+public import FubiniTheorems.Prerequisites.Euler.RVFiniteBalancedTensor
+public import FubiniTheorems.Prerequisites.Euler.RVBoundedBalancedTensor
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Balanced tensors of the intrinsic RES and Gamma presentations.
 Their algebra equivalences with the existing tensors transport the

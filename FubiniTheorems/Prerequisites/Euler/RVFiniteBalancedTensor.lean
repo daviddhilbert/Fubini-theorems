@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVFiniteBalancedTensor.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.FiniteGammaAlgebras
-import FubiniTheorems.Prerequisites.Euler.RESAllFiniteBalancing
-import FubiniTheorems.Prerequisites.Euler.RVMeasuredTensor
+public import FubiniTheorems.Prerequisites.Euler.FiniteGammaAlgebras
+public import FubiniTheorems.Prerequisites.Euler.RESAllFiniteBalancing
+public import FubiniTheorems.Prerequisites.Euler.RVMeasuredTensor
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual measured product comparison and evaluation on the tensor
 over the intrinsic finite-Gamma ring. No tensor injectivity, surjectivity

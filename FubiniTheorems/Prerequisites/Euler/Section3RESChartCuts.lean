@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/Section3RESChartCuts.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.Section3RVChartCuts
-import FubiniTheorems.Prerequisites.Euler.RESDisjointPresentation
-import FubiniTheorems.Prerequisites.Euler.RESOrdinaryDisjointPresentation
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredRESScissors
+public import FubiniTheorems.Prerequisites.Euler.Section3RVChartCuts
+public import FubiniTheorems.Prerequisites.Euler.RESDisjointPresentation
+public import FubiniTheorems.Prerequisites.Euler.RESOrdinaryDisjointPresentation
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredRESScissors
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Native RES scissors descend to actual RES chart classes. Every cut
 keeps finite value support; the ordinary case forgets only the form. -/

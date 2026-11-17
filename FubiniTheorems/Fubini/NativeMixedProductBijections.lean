@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeMixedProductBijections.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMixedProducts
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundBijectionProducts
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMixedProducts
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundBijectionProducts
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual mixed product bijections retain their full Gamma-ground graphs
 and every VF/RV coordinate. Their values are the literal grouped products. -/

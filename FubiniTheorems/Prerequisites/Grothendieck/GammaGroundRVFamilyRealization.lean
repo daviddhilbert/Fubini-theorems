@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundRVFamilyRealization.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteFamilies
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapImages
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteUnions
-import FubiniTheorems.Prerequisites.Grothendieck.RVFamilyRealization
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteFamilies
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapImages
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteUnions
+public import FubiniTheorems.Prerequisites.Grothendieck.RVFamilyRealization
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Finite RV families have a genuine definable realization using finite
 zero/one tags. The encoding is bijective and retains all original points. -/

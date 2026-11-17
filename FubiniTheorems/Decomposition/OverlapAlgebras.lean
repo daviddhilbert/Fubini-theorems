@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/OverlapAlgebras.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import Mathlib.RingTheory.TensorProduct.Maps
-import Mathlib.RingTheory.FiniteStability
-import Mathlib.RingTheory.Ideal.Quotient.Operations
-import Mathlib.Basic.Complex.Basic
+public import Mathlib.RingTheory.TensorProduct.Maps
+public import Mathlib.RingTheory.FiniteStability
+public import Mathlib.RingTheory.Ideal.Quotient.Operations
+public import Mathlib.Basic.Complex.Basic
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual complex overlap algebra of two affine pieces with the
 same input coordinates. Its universal property is proved explicitly. -/

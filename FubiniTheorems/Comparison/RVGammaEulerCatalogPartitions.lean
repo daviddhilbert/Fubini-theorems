@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RVGammaEulerCatalogPartitions.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Comparison.RVGammaFamilyRestrictions
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteCoverPartition
+public import FubiniTheorems.Comparison.RVGammaFamilyRestrictions
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteCoverPartition
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Every actual mixed family has a finite disjoint original-ground RV
 base partition carrying a complete valid Euler certificate on each piece. -/

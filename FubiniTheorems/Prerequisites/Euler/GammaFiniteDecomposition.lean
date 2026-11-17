@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaFiniteDecomposition.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaNameTuples
-import FubiniTheorems.Prerequisites.Euler.GammaRVIdentityIso
-import FubiniTheorems.Prerequisites.Euler.GammaFiniteRVPresentation
+public import FubiniTheorems.Prerequisites.Euler.GammaNameTuples
+public import FubiniTheorems.Prerequisites.Euler.GammaRVIdentityIso
+public import FubiniTheorems.Prerequisites.Euler.GammaFiniteRVPresentation
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Finite Gamma chart classes split as finite sums of original-base
 named singleton charts with constant weights. This splits Gamma sets;

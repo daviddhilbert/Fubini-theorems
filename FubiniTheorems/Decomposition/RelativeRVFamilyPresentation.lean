@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RelativeRVFamilyPresentation.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.OriginalRVTotalGraphs
-import FubiniTheorems.Comparison.RESSetSumSchemata
-import FubiniTheorems.Comparison.RESSetProductSchemata
-import HilbertMathlib.Foundation.Grothendieck.PositiveAdditivePresentation
+public import FubiniTheorems.Decomposition.OriginalRVTotalGraphs
+public import FubiniTheorems.Comparison.RESSetSumSchemata
+public import FubiniTheorems.Comparison.RESSetProductSchemata
+public import HilbertMathlib.Foundation.Grothendieck.PositiveAdditivePresentation
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The relative positive presentation remembers the original RV base.
 Products share that base; isomorphisms preserve its coordinates. The

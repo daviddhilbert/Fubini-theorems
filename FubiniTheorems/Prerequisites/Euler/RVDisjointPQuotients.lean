@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVDisjointPQuotients.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVDisjointGrading
-import FubiniTheorems.Prerequisites.Euler.RVOrdinaryDisjointGrading
-import FubiniTheorems.Prerequisites.Euler.RVMeasuredPQuotient
-import FubiniTheorems.Prerequisites.Euler.RVOrdinaryPNormalization
-import Mathlib.RingTheory.Ideal.Quotient.Operations
+public import FubiniTheorems.Prerequisites.Euler.RVDisjointGrading
+public import FubiniTheorems.Prerequisites.Euler.RVOrdinaryDisjointGrading
+public import FubiniTheorems.Prerequisites.Euler.RVMeasuredPQuotient
+public import FubiniTheorems.Prerequisites.Euler.RVOrdinaryPNormalization
+public import Mathlib.RingTheory.Ideal.Quotient.Operations
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual P quotients in the intrinsic disjoint-union presentations.
 The measured relation P=0 and ordinary relation P=1 are compared

@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/Completed18RelativeCells.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import IntegrationSection6.GeneratedBase.CoherentCells
-import IntegrationSection6.GeneratedBase.CellRestrictions
-import IntegrationSection6.GeneratedBase.CellBaseTransfer
-import FubiniTheorems.Fubini.Completed18RVParameterFamilies
-import IntegrationSection6.GeneratedBase.RVParameterInsertion
+public import IntegrationSection6.GeneratedBase.CoherentCells
+public import IntegrationSection6.GeneratedBase.CellRestrictions
+public import IntegrationSection6.GeneratedBase.CellBaseTransfer
+public import FubiniTheorems.Fubini.Completed18RVParameterFamilies
+public import IntegrationSection6.GeneratedBase.RVParameterInsertion
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The completed generated-base cell preparation applies after naming
 arbitrary RV parameters: promote them first, then restrict whole cells. -/

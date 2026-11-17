@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeRelativeGammaFubini.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeEulerCertificateFubini
-import FubiniTheorems.Comparison.RVGammaEulerCatalogPartitions
+public import FubiniTheorems.Fubini.NativeEulerCertificateFubini
+public import FubiniTheorems.Comparison.RVGammaEulerCatalogPartitions
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! General relative Gamma Fubini in the actual native RES reduction.
 The finite weighted partition uses the actual fibre Euler integers over

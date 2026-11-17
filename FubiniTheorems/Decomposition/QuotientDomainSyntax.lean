@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/QuotientDomainSyntax.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.CylindricalFibreSyntax
-import Mathlib.Basic.Finite.Sum
+public import FubiniTheorems.Decomposition.CylindricalFibreSyntax
+public import Mathlib.Basic.Finite.Sum
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A finite formula certifies that a domain is a full preimage of a set
 in a quotient sort. Decoding uses images and requires no section. -/

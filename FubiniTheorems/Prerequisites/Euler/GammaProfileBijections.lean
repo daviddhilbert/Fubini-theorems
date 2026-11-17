@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaProfileBijections.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaHigherPushforward
-import FubiniTheorems.Prerequisites.Euler.GammaBijectiveRelations
+public import FubiniTheorems.Prerequisites.Euler.GammaHigherPushforward
+public import FubiniTheorems.Prerequisites.Euler.GammaBijectiveRelations
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual function-valued profiles are invariant under a definable
 bijection preserving the Gamma weight. This is the fibrewise invariance

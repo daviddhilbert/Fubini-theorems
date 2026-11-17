@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeDescribedCylinderFubini.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeCylinderFubini
-import FubiniTheorems.Decomposition.DefinableCylinderEndpoints
+public import FubiniTheorems.Fubini.NativeCylinderFubini
+public import FubiniTheorems.Decomposition.DefinableCylinderEndpoints
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The varying cylinder identity applies to the actual family itself;
 endpoint maps are extracted from its full definable fibres. -/

@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaPushforwardConvolution.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaSumFibres
-import FubiniTheorems.Prerequisites.Euler.GammaReflectedFamilies
-import FubiniTheorems.Prerequisites.Euler.GammaPushforwardCongruence
+public import FubiniTheorems.Prerequisites.Euler.GammaSumFibres
+public import FubiniTheorems.Prerequisites.Euler.GammaReflectedFamilies
+public import FubiniTheorems.Prerequisites.Euler.GammaPushforwardCongruence
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Pushforward of an actual product under the sum of its two Gamma maps
 is the actual Euler convolution of the pushforwards. All fibre and Fubini

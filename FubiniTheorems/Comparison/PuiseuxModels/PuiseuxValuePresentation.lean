@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/PuiseuxValuePresentation.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Comparison.PuiseuxModels.PuiseuxResiduePresentation
-import Section3.GammaValueLaws
+public import FubiniTheorems.Comparison.PuiseuxModels.PuiseuxResiduePresentation
+public import Section3.GammaValueLaws
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The native Gamma quotient of the concrete original structure is the
 actual rational value set with its top element. This connects native finite

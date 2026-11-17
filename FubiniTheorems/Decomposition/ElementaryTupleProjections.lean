@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/ElementaryTupleProjections.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.ElementaryNamedDefinableSets
-import Mathlib.Data.Fin.Tuple.Basic
+public import FubiniTheorems.Decomposition.ElementaryNamedDefinableSets
+public import Mathlib.Data.Fin.Tuple.Basic
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Restriction along an elementary embedding commutes with existential
 projection of an actual definable graph. In particular, an output over

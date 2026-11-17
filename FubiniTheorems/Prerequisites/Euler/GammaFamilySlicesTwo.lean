@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaFamilySlicesTwo.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaFamilySlices
-import FubiniTheorems.Prerequisites.Euler.GammaFamilyIntegration
+public import FubiniTheorems.Prerequisites.Euler.GammaFamilySlices
+public import FubiniTheorems.Prerequisites.Euler.GammaFamilyIntegration
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Keep two Gamma coordinates free while naming a finite suffix tuple.
 The slice and its integer-valued level sets retain full RV-code fibres. -/

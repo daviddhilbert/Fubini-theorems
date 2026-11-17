@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaCylindricalDecompositionExistence.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaCylindricalDecompositionData
-import FubiniTheorems.Prerequisites.Euler.GammaBoundaryStackCoverage
-import FubiniTheorems.Prerequisites.Euler.GammaBoundaryStackDisjointness
-import FubiniTheorems.Prerequisites.Euler.GammaBoundaryStackRefinement
+public import FubiniTheorems.Prerequisites.Euler.GammaCylindricalDecompositionData
+public import FubiniTheorems.Prerequisites.Euler.GammaBoundaryStackCoverage
+public import FubiniTheorems.Prerequisites.Euler.GammaBoundaryStackDisjointness
+public import FubiniTheorems.Prerequisites.Euler.GammaBoundaryStackRefinement
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Every original-base definable Gamma set has a finite decomposition
 into the project's actual cylindrical graph/band/ray/line cells. Boundary

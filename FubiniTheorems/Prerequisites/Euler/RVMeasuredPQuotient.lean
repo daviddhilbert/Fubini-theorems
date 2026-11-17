@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVMeasuredPQuotient.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVMeasuredRadius
-import FubiniTheorems.Prerequisites.Euler.RVRadiusQuotient
-import HilbertMathlib.Foundation.Algebra.CoactionGradedMaps
+public import FubiniTheorems.Prerequisites.Euler.RVMeasuredRadius
+public import FubiniTheorems.Prerequisites.Euler.RVRadiusQuotient
+public import HilbertMathlib.Foundation.Algebra.CoactionGradedMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual full measured RV quotient by P and the natural graded map
 from the bounded radius quotient. These structural maps do not presuppose

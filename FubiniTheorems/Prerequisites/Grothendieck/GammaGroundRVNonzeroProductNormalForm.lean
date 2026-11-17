@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundRVNonzeroProductNormalForm.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVAngularProductBijections
-import FubiniTheorems.Prerequisites.Grothendieck.RVGroundAngularPartition
-import Mathlib.Data.Fintype.Sigma
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVAngularProductBijections
+public import FubiniTheorems.Prerequisites.Grothendieck.RVGroundAngularPartition
+public import Mathlib.Data.Fintype.Sigma
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 set_option backward.isDefEq.respectTransparency false
 set_option autoImplicit false
 open Classical FirstOrder FirstOrder.Language

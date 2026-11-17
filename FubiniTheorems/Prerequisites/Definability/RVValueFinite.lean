@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%202/RVValueFinite.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Definability.RVValueFamilies
-import FubiniTheorems.Prerequisites.Definability.RVGammaCuts
-import FubiniTheorems.Prerequisites.Definability.GammaFamilyRestrictions
-import Section3.SmallFiniteParameters
+public import FubiniTheorems.Prerequisites.Definability.RVValueFamilies
+public import FubiniTheorems.Prerequisites.Definability.RVGammaCuts
+public import FubiniTheorems.Prerequisites.Definability.GammaFamilyRestrictions
+public import Section3.SmallFiniteParameters
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual finite output value sets over each input value. Temporary
 real names used to prove finiteness do not enter the uniform family graph. -/

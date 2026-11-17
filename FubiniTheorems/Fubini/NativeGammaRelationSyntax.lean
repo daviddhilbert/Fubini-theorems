@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeGammaRelationSyntax.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.GammaCellSyntaxValidity
-import Section4.CanonicalNormalization
+public import FubiniTheorems.Decomposition.GammaCellSyntaxValidity
+public import Section4.CanonicalNormalization
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Parameter-free original-language formulas for native Gamma code
 properness, equality and strict order. No residue or value code is named. -/

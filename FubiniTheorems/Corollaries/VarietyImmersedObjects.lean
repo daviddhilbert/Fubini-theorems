@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/VarietyImmersedObjects.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Corollaries.VarietyImmersionGoodness
-import FubiniTheorems.Decomposition.ReducedImmersionSchemeActions
-import Mathlib.AlgebraicGeometry.Noetherian
+public import FubiniTheorems.Corollaries.VarietyImmersionGoodness
+public import FubiniTheorems.Decomposition.ReducedImmersionSchemeActions
+public import Mathlib.AlgebraicGeometry.Noetherian
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Invariant reduced immersed subschemes are genuine geometric variety
 objects. The finite action, finite type, separation and goodness are derived

@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/FiniteKummerFrames.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.FiniteRootProjection
-import FubiniTheorems.Comparison.PuiseuxModels.PuiseuxRVLanguage
+public import FubiniTheorems.Decomposition.FiniteRootProjection
+public import FubiniTheorems.Comparison.PuiseuxModels.PuiseuxRVLanguage
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Finite Kummer coordinates for actual RV lines, including their common
 absorbing zero. The framing is auxiliary data, never a language symbol. -/

@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/MonomialTorsorCoordinates.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.MonomialCoordinateBijections
-import FubiniTheorems.Decomposition.UnitTupleLastProducts
-import FubiniTheorems.Decomposition.MonomialGammaGraphSupports
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVProductLaws
+public import FubiniTheorems.Decomposition.MonomialCoordinateBijections
+public import FubiniTheorems.Decomposition.UnitTupleLastProducts
+public import FubiniTheorems.Decomposition.MonomialGammaGraphSupports
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVProductLaws
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A varying scalar value torsor on a monomial chart is an actual
 original-ground product with its reconstructed Gamma support. -/

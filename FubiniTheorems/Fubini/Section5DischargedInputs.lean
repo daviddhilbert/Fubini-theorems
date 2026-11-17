@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/Section5DischargedInputs.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.Completed18GroundLiftInput
-import FubiniTheorems.Decomposition.GammaQEFiniteLaws
-import FubiniTheorems.Fubini.NativeVFFubini
-import FubiniTheorems.Fubini.NativeGeometricVFFubini
-import FubiniTheorems.Decomposition.GroundTaggedIntrinsicFibreValues
+public import FubiniTheorems.Fubini.Completed18GroundLiftInput
+public import FubiniTheorems.Decomposition.GammaQEFiniteLaws
+public import FubiniTheorems.Fubini.NativeVFFubini
+public import FubiniTheorems.Fubini.NativeGeometricVFFubini
+public import FubiniTheorems.Decomposition.GroundTaggedIntrinsicFibreValues
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Section 5 entry points with both earlier-section inputs instantiated
 by checked proofs. The standing model and original-ground hypotheses remain. -/

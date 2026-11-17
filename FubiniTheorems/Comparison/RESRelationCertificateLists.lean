@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RESRelationCertificateLists.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Comparison.RESExpressionRelations
-import FubiniTheorems.Comparison.RESStabilizationExpressions
+public import FubiniTheorems.Comparison.RESExpressionRelations
+public import FubiniTheorems.Comparison.RESStabilizationExpressions
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A finite relation list retains its actual native certificate trees,
 with no equality of positive classes accepted as input. -/

@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/AffineBranchCertificates.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.ReducedAffineBranchGluing
-import FubiniTheorems.Decomposition.ImmersionBranchGluing
+public import FubiniTheorems.Decomposition.ReducedAffineBranchGluing
+public import FubiniTheorems.Decomposition.ImmersionBranchGluing
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A branch certificate records actual local lifts of two morphisms
 to affine graph schemes. Certificates pull back along every morphism;

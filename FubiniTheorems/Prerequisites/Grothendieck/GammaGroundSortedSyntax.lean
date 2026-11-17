@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundSortedSyntax.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRawLogic
-import FubiniTheorems.Prerequisites.Grothendieck.RVFormGraphs
-import FubiniTheorems.Prerequisites.Definability.GammaRelationMaps
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRawLogic
+public import FubiniTheorems.Prerequisites.Grothendieck.RVFormGraphs
+public import FubiniTheorems.Prerequisites.Definability.GammaRelationMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Full finite sorted real tuples, including VF coordinates, agree
 with the complete invariant Gamma-parameter syntax. -/

@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeRVSetArithmetic.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeRVObjectEvaluation
-import FubiniTheorems.Prerequisites.Grothendieck.RVUnitTupleProducts
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVProductMorphisms
+public import FubiniTheorems.Fubini.NativeRVObjectEvaluation
+public import FubiniTheorems.Prerequisites.Grothendieck.RVUnitTupleProducts
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVProductMorphisms
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Native values of literal RV domains are additive on finite partitions
 and multiplicative for actual products, including nonzero tuple products. -/

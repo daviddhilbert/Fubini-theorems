@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/Section3GammaNativeIsomorphisms.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.Section3GammaNativeCodeMaps
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFamilyPieceMaps
+public import FubiniTheorems.Prerequisites.Euler.Section3GammaNativeCodeMaps
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFamilyPieceMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Chart Gamma isomorphisms give actual native contracted arrows.
 Measured arrows retain the original form and combined weight. -/

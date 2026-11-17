@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaBoundedFamilies.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaIteratedIntegral
-import HilbertMathlib.Foundation.Euler.EulerBoundedComparison
+public import FubiniTheorems.Prerequisites.Euler.GammaIteratedIntegral
+public import HilbertMathlib.Foundation.Euler.EulerBoundedComparison
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Both actual iterated Euler integrals agree on every finite-dimensional
 integer family supported in a bounded box. No Fubini theorem or Gamma

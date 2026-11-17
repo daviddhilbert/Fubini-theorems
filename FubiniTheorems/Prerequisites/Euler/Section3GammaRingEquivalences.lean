@@ -1,14 +1,20 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/Section3GammaRingEquivalences.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.Section3GammaNativeRingMaps
-import FubiniTheorems.Prerequisites.Euler.Section3GammaChartAddMaps
-import FubiniTheorems.Prerequisites.Euler.ObjectClassAdditiveGeneration
-import FubiniTheorems.Prerequisites.Grothendieck.GammaPieceSums
-import FubiniTheorems.Prerequisites.Grothendieck.MeasuredGammaPieceSums
-import FubiniTheorems.Prerequisites.Grothendieck.CompletionDirectSum
+public import FubiniTheorems.Prerequisites.Euler.Section3GammaNativeRingMaps
+public import FubiniTheorems.Prerequisites.Euler.Section3GammaChartAddMaps
+public import FubiniTheorems.Prerequisites.Euler.ObjectClassAdditiveGeneration
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaPieceSums
+public import FubiniTheorems.Prerequisites.Grothendieck.MeasuredGammaPieceSums
+public import FubiniTheorems.Prerequisites.Grothendieck.CompletionDirectSum
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual Gamma ring equivalences, including arbitrary finite tags and
 all partial measured forms, from inverse object-class formulas. -/

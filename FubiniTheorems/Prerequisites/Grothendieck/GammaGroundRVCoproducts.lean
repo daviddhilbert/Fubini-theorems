@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundRVCoproducts.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVTags
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVScissors
-import HilbertMathlib.Foundation.Grothendieck.PositiveAdditiveRepresentatives
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVTags
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVScissors
+public import HilbertMathlib.Foundation.Grothendieck.PositiveAdditiveRepresentatives
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 set_option backward.isDefEq.respectTransparency false
 set_option autoImplicit false

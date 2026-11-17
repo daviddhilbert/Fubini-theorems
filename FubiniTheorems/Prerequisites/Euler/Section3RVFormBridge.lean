@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/Section3RVFormBridge.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.Section3RVCodeBridge
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredRVCategories
-import FubiniTheorems.Prerequisites.Grothendieck.RVUnitGammaFormGraph
+public import FubiniTheorems.Prerequisites.Euler.Section3RVCodeBridge
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredRVCategories
+public import FubiniTheorems.Prerequisites.Grothendieck.RVUnitGammaFormGraph
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Partial Gamma volume forms use all RV representatives in both APIs.
 The following conversions retain the entire code graph and original base. -/

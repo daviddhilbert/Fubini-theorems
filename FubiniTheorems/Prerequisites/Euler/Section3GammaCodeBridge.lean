@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/Section3GammaCodeBridge.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteValuePoints
-import FubiniTheorems.Prerequisites.Grothendieck.FullGammaFunctionMaps
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFormTotalization
-import FubiniTheorems.Prerequisites.Euler.GammaWeightedCharts
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteValuePoints
+public import FubiniTheorems.Prerequisites.Grothendieck.FullGammaFunctionMaps
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFormTotalization
+public import FubiniTheorems.Prerequisites.Euler.GammaWeightedCharts
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The two Gamma predicate syntaxes describe the same complete RV code
 sets over the unchanged real/Gamma base. Total Gamma function graphs

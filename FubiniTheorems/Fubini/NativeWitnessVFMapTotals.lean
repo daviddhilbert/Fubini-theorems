@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeWitnessVFMapTotals.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeMixedPartialTotals
-import FubiniTheorems.Fubini.NativeFixedWitnessVFFubini
+public import FubiniTheorems.Fubini.NativeMixedPartialTotals
+public import FubiniTheorems.Fubini.NativeFixedWitnessVFFubini
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Whole fibre lift graphs assemble actual original-ground bijections
 from a source preimage to the literal RV lift family. The fixed-witness

@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundRVFamilyProducts.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVFamilyDesc
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVFamilyObjects
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVPackPairs
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteProducts
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVFamilyDesc
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVFamilyObjects
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVPackPairs
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteProducts
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 /-! Finite tags commute with actual cartesian RV products. -/
 set_option backward.isDefEq.respectTransparency false
 open FirstOrder FirstOrder.Language CategoryTheory

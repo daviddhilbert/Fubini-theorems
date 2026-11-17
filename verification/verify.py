@@ -51,7 +51,7 @@ def main():
     names = []
     for item in manifest['modules']:
         path = ROOT / item['target_path']
-        check(digest(path) == item['extracted_sha256'], 'Source fingerprint mismatch: ' + str(path))
+        check(digest(path) == item.get('module_sha256', item['extracted_sha256']), 'Source fingerprint mismatch: ' + str(path))
         sources[item['target_path']] = digest(path)
         content = path.read_text()
         masked = code_only(content)

@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaDefinableEuler.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import HilbertMathlib.Foundation.Euler.EulerFiniteCuts
-import Section3.GammaThresholdGeometry
+public import HilbertMathlib.Foundation.Euler.EulerFiniteCuts
+public import Section3.GammaThresholdGeometry
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A bridge from actual first-order unary Gamma fibres to the constructed
 Euler-function carrier. The finite-threshold theorem is checked in the

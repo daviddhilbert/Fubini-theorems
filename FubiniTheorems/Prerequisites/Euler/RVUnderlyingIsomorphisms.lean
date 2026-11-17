@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVUnderlyingIsomorphisms.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVForgetScissors
-import FubiniTheorems.Prerequisites.Euler.RVCoordinateMaps
-import FubiniTheorems.Prerequisites.Euler.RVSharpCharts
-import HilbertMathlib.Foundation.FiniteCoordinates.FiniteTupleSwap
+public import FubiniTheorems.Prerequisites.Euler.RVForgetScissors
+public import FubiniTheorems.Prerequisites.Euler.RVCoordinateMaps
+public import FubiniTheorems.Prerequisites.Euler.RVSharpCharts
+public import HilbertMathlib.Foundation.FiniteCoordinates.FiniteTupleSwap
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual definable underlying RV bijections between charts of possibly
 different degrees. Coordinates and volume forms are forgotten, while the

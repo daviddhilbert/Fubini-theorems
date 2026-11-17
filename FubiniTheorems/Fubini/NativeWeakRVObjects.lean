@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeWeakRVObjects.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeFiniteRVRowObjects
-import FubiniTheorems.Fubini.NativeFiniteRVLiftDomains
+public import FubiniTheorems.Fubini.NativeFiniteRVRowObjects
+public import FubiniTheorems.Fubini.NativeFiniteRVLiftDomains
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A finite label map to RV including its absorbing element represents
 the paper's RV[<=k] convention. Its lift retains the zero VF coordinates.

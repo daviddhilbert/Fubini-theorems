@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeValueFibreDomains.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.EmptyGammaSortedDefinability
-import FubiniTheorems.Prerequisites.Euler.RESFibreObjects
-import Section3.GammaFiniteOrder
+public import FubiniTheorems.Decomposition.EmptyGammaSortedDefinability
+public import FubiniTheorems.Prerequisites.Euler.RESFibreObjects
+public import Section3.GammaFiniteOrder
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A full value fibre is precisely the invariant pullback defining the
 Gamma imaginary; its definability names the value without naming a lift. -/

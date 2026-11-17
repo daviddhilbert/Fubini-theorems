@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/EquivariantVarietyUnderlyingPoints.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.ImmersedVarietyFieldPoints
-import FubiniTheorems.Decomposition.ComplexAffineCoordinates
+public import FubiniTheorems.Decomposition.ImmersedVarietyFieldPoints
+public import FubiniTheorems.Decomposition.ComplexAffineCoordinates
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Forgetting a finite action retains the actual scheme, coefficient
 map and all extension-field points. This connects the geometric affine

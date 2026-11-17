@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/VFAdjoinedMixedFibreValues.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.VFAdjoinedMixedParameters
-import FubiniTheorems.Decomposition.VFBoundedGroundNaturality
-import FubiniTheorems.Decomposition.OriginalFibreIntegralVanishing
+public import FubiniTheorems.Decomposition.VFAdjoinedMixedParameters
+public import FubiniTheorems.Decomposition.VFBoundedGroundNaturality
+public import FubiniTheorems.Decomposition.OriginalFibreIntegralVanishing
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual fibre values over the genuine F(b) field presentation imply
 the exact raw-parameter value used by native Fubini. -/

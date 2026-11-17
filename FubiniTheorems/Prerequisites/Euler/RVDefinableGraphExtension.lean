@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVDefinableGraphExtension.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVGraphComposition
-import FubiniTheorems.Prerequisites.Euler.RVCoordinateMaps
-import FubiniTheorems.Prerequisites.Euler.RVVolumeMaps
+public import FubiniTheorems.Prerequisites.Euler.RVGraphComposition
+public import FubiniTheorems.Prerequisites.Euler.RVCoordinateMaps
+public import FubiniTheorems.Prerequisites.Euler.RVVolumeMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Adjoining a definable RV function as an extra raw coordinate keeps
 the object degree and gives an actual measured isomorphism by projection.

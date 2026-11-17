@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/AffineCoordinateAlgebras.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.SpecAlgebraActions
-import FubiniTheorems.Corollaries.VarietyImmersedObjects
-import Mathlib.CategoryTheory.Conj
+public import FubiniTheorems.Decomposition.SpecAlgebraActions
+public import FubiniTheorems.Corollaries.VarietyImmersedObjects
+public import Mathlib.CategoryTheory.Conj
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual coordinate algebra of an affine geometric variety over
 the complex base. Finite type and equivariant transport are derived from

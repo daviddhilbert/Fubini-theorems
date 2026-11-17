@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/ImmersedObjectPartitions.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.ConstructibleSpectrumObjects
-import FubiniTheorems.Decomposition.InjectiveImagePartitions
-import FubiniTheorems.Decomposition.DiagonalFinitePartitions
-import FubiniTheorems.Corollaries.VarietyMorphisms
+public import FubiniTheorems.Decomposition.ConstructibleSpectrumObjects
+public import FubiniTheorems.Decomposition.InjectiveImagePartitions
+public import FubiniTheorems.Decomposition.DiagonalFinitePartitions
+public import FubiniTheorems.Corollaries.VarietyMorphisms
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A finite scheme-point partition by equivariant immersions becomes
 an actual finite constructible partition in every displayed affine embedding. -/

@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/AffineImmersedProductMaps.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.AffineSpaceProducts
-import FubiniTheorems.Decomposition.ReducedPullbackMaps
-import FubiniTheorems.Decomposition.RationalAffineCoordinateMaps
-import FubiniTheorems.Corollaries.VarietyImmersedObjects
-import FubiniTheorems.Corollaries.VarietyImmersionPartitions
+public import FubiniTheorems.Decomposition.AffineSpaceProducts
+public import FubiniTheorems.Decomposition.ReducedPullbackMaps
+public import FubiniTheorems.Decomposition.RationalAffineCoordinateMaps
+public import FubiniTheorems.Corollaries.VarietyImmersedObjects
+public import FubiniTheorems.Corollaries.VarietyImmersionPartitions
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Products of actual reduced immersed varieties have actual immersions
 into the rational diagonal product affine space. The image formula is

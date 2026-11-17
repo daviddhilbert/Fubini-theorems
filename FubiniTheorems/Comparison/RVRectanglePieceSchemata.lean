@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RVRectanglePieceSchemata.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.OriginalDomainProducts
-import FubiniTheorems.Comparison.RESBijectionSchemata
-import FubiniTheorems.Decomposition.OriginalEulerRowValues
-import FubiniTheorems.Decomposition.OriginalEulerRecoding
+public import FubiniTheorems.Decomposition.OriginalDomainProducts
+public import FubiniTheorems.Comparison.RESBijectionSchemata
+public import FubiniTheorems.Decomposition.OriginalEulerRowValues
+public import FubiniTheorems.Decomposition.OriginalEulerRecoding
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! One finite original-base RV rectangle witness retains its source,
 RES factor, full Gamma support, Euler certificate and complete map graph. -/

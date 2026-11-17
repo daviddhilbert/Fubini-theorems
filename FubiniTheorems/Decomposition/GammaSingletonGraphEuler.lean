@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/GammaSingletonGraphEuler.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaFubiniPermutation
-import FubiniTheorems.Prerequisites.Euler.GammaGraphIntegration
-import FubiniTheorems.Prerequisites.Euler.Section3GammaChartBridge
-import Mathlib.Logic.Equiv.Fin.Rotate
+public import FubiniTheorems.Prerequisites.Euler.GammaFubiniPermutation
+public import FubiniTheorems.Prerequisites.Euler.GammaGraphIntegration
+public import FubiniTheorems.Prerequisites.Euler.Section3GammaChartBridge
+public import Mathlib.Logic.Equiv.Fin.Rotate
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual Gamma Euler integral of a singleton graph is the integral
 of its base, with the output in the last coordinate and no global choice. -/

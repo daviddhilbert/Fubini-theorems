@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeMixedCodeBridge.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.Section3RVCodeBridge
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteVFObjects
+public import FubiniTheorems.Prerequisites.Euler.Section3RVCodeBridge
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteVFObjects
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Literal VF/RV tuple codes retain the exact original Gamma ground.
 Actual mixed native domains therefore have full sorted original-language

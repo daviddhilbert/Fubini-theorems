@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/GammaJoinedRowGraphs.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.OriginalPredicateSyntax
-import HilbertMathlib.Foundation.FiniteCoordinates.FiniteTupleBlocks
-import Section3.GammaRealMap
+public import FubiniTheorems.Decomposition.OriginalPredicateSyntax
+public import HilbertMathlib.Foundation.FiniteCoordinates.FiniteTupleBlocks
+public import Section3.GammaRealMap
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A full original-Gamma graph specializes directly to the joined raw
 RV graph convention. Every coordinate and the original base are retained. -/

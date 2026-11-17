@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/OriginalRawGammaValues.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.OriginalRawGammaFamilies
-import FubiniTheorems.Fubini.NativeRawGammaFubini
-import FubiniTheorems.Decomposition.OriginalEulerRowValues
+public import FubiniTheorems.Decomposition.OriginalRawGammaFamilies
+public import FubiniTheorems.Fubini.NativeRawGammaFubini
+public import FubiniTheorems.Decomposition.OriginalEulerRowValues
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A whole original Euler certificate evaluates the complete family of
 RV representatives over any raw RV base, including zero coordinates. -/

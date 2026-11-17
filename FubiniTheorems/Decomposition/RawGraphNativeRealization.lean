@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RawGraphNativeRealization.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.ElementaryRawGraphMaps
-import FubiniTheorems.Decomposition.EmptyGammaSortedDefinability
-import HilbertMathlib.Foundation.FiniteCoordinates.FiniteTupleGraphProduct
+public import FubiniTheorems.Decomposition.ElementaryRawGraphMaps
+public import FubiniTheorems.Decomposition.EmptyGammaSortedDefinability
+public import HilbertMathlib.Foundation.FiniteCoordinates.FiniteTupleGraphProduct
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Full ordinary definable raw RV graphs realize actual native maps
 and bijections over the same real ground, with the literal domains. -/

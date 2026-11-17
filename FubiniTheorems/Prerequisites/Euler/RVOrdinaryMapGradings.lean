@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVOrdinaryMapGradings.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVOrdinaryRadius
-import FubiniTheorems.Prerequisites.Euler.RVOrdinaryGrading
-import FubiniTheorems.Prerequisites.Euler.RESOrdinaryGrading
-import HilbertMathlib.Foundation.Algebra.CoactionGradedMaps
+public import FubiniTheorems.Prerequisites.Euler.RVOrdinaryRadius
+public import FubiniTheorems.Prerequisites.Euler.RVOrdinaryGrading
+public import FubiniTheorems.Prerequisites.Euler.RESOrdinaryGrading
+public import HilbertMathlib.Foundation.Algebra.CoactionGradedMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual ordinary RES inclusion and both forgetful maps preserve
 the full natural-number grading, including after the bounded radius

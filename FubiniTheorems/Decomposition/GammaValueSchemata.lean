@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/GammaValueSchemata.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Comparison.RESValueBoundDefinability
-import FubiniTheorems.Decomposition.OriginalQuotientValidity
-import FubiniTheorems.Comparison.RESSetSchemaRecoding
-import FubiniTheorems.Decomposition.CylindricalFormulaCongruence
-import IntegrationSection6.GammaFamilyQuantifiers
+public import FubiniTheorems.Comparison.RESValueBoundDefinability
+public import FubiniTheorems.Decomposition.OriginalQuotientValidity
+public import FubiniTheorems.Comparison.RESSetSchemaRecoding
+public import FubiniTheorems.Decomposition.CylindricalFormulaCongruence
+public import IntegrationSection6.GammaFamilyQuantifiers
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A varying Gamma value is represented by its full nonzero-RV preimage,
 with a nonempty support of size at most one. No representative is named. -/

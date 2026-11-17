@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/DiagonalPolynomialActions.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.EquivariantAffineEmbedding
-import FubiniTheorems.Decomposition.AffineSchemeActions
-import FubiniTheorems.Decomposition.FiniteKummerDescent
+public import FubiniTheorems.Decomposition.EquivariantAffineEmbedding
+public import FubiniTheorems.Decomposition.AffineSchemeActions
+public import FubiniTheorems.Decomposition.FiniteKummerDescent
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Finite diagonal point actions have actual polynomial-algebra
 automorphisms and scheme actions, with their complex-point formula. -/

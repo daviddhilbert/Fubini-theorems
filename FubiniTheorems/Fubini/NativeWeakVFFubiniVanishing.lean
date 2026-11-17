@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeWeakVFFubiniVanishing.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeWeakVFFubini
-import FubiniTheorems.Fubini.NativeWeakLiftValues
+public import FubiniTheorems.Fubini.NativeWeakVFFubini
+public import FubiniTheorems.Fubini.NativeWeakLiftValues
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Bounded fibrewise vanishing with RV[<=k] representatives, including
 all finite graded pieces, implies actual global VF vanishing. -/

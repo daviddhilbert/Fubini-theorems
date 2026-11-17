@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%202/GammaAbsoluteValues.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Definability.UniformGammaSuprema
-import FubiniTheorems.Prerequisites.Definability.RawFibreRelationalImages
-import Section4.GammaMultiplicationSyntax
-import Section8.GammaRadiusBase
+public import FubiniTheorems.Prerequisites.Definability.UniformGammaSuprema
+public import FubiniTheorems.Prerequisites.Definability.RawFibreRelationalImages
+public import Section4.GammaMultiplicationSyntax
+public import Section8.GammaRadiusBase
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Absolute Gamma values and their full code graphs, for the author's
 uniform fibre-bound construction. In multiplicative notation the absolute

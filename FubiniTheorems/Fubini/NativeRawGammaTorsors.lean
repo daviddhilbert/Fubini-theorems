@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeRawGammaTorsors.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeRawGammaFubini
-import FubiniTheorems.Prerequisites.Euler.GammaPointFamilies
+public import FubiniTheorems.Fubini.NativeRawGammaFubini
+public import FubiniTheorems.Prerequisites.Euler.GammaPointFamilies
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Full varying value torsors over arbitrary raw RV bases, including
 zeros, have exactly one residue-torus factor per Gamma output coordinate. -/

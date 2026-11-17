@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVDefinableTupleMaps.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVCoordinateMaps
-import Section3.GammaClosureLaws
+public import FubiniTheorems.Prerequisites.Euler.RVCoordinateMaps
+public import Section3.GammaClosureLaws
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Partial RV tuple maps have original-base definable graphs whenever
 all their scalar coordinate graphs do. The actual domain and all RV sort

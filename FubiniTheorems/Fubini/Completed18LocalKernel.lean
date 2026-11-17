@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/Completed18LocalKernel.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.Completed18LocalLift
-import FubiniTheorems.Fubini.Completed18RVSpecialRelation
-import FubiniTheorems.Fubini.Completed18NativePositiveKernel
+public import FubiniTheorems.Fubini.Completed18LocalLift
+public import FubiniTheorems.Fubini.Completed18RVSpecialRelation
+public import FubiniTheorems.Fubini.Completed18NativePositiveKernel
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Exact kernel on the local positive semirings, with [18]'s two-order
 input discharged by completed proofs and its elementary relation identified. -/

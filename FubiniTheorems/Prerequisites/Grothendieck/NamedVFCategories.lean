@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/NamedVFCategories.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.NamedRVScissors
-import FubiniTheorems.Prerequisites.Grothendieck.VFCategories
+public import FubiniTheorems.Prerequisites.Grothendieck.NamedRVScissors
+public import FubiniTheorems.Prerequisites.Grothendieck.VFCategories
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! VF objects and genuine bijections over fixed imaginary names use
 the actual section 2 interior dimension and literal finite RV fibres. -/

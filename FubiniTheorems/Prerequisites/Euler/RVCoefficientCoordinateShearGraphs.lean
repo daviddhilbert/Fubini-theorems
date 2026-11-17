@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVCoefficientCoordinateShearGraphs.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVCoefficientShearGraphs
-import FubiniTheorems.Prerequisites.Euler.RVCoordinateScaling
+public import FubiniTheorems.Prerequisites.Euler.RVCoefficientShearGraphs
+public import FubiniTheorems.Prerequisites.Euler.RVCoordinateScaling
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Original-base definability for retaining a coefficient tuple and
 scaling one chosen coordinate of an arbitrary finite RV tuple by one

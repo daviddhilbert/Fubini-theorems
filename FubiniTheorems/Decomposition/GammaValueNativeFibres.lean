@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/GammaValueNativeFibres.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.GammaValueSchemata
-import FubiniTheorems.Comparison.RESBijectionRealization
-import FubiniTheorems.Fubini.NativeBoundedRetraction
+public import FubiniTheorems.Decomposition.GammaValueSchemata
+public import FubiniTheorems.Comparison.RESBijectionRealization
+public import FubiniTheorems.Fubini.NativeBoundedRetraction
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The full-fibre schema realizes the actual native value torsor.
 Its class equals the native residue torus without choosing an RV point. -/

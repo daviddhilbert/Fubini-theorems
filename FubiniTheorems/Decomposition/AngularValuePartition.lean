@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/AngularValuePartition.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.GroundRectangleAssembly
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVAngularQuotient
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundBijectionRestrictions
-import FubiniTheorems.Prerequisites.Grothendieck.RVAngularValueReconstruction
+public import FubiniTheorems.Decomposition.GroundRectangleAssembly
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVAngularQuotient
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundBijectionRestrictions
+public import FubiniTheorems.Prerequisites.Grothendieck.RVAngularValueReconstruction
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Transport the mixed value partition through an actual integral monomial
 coordinate equivalence. The output pieces are cut out by a partition of

@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeAllVFBaseNormalForm.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeVFBaseTransport
-import FubiniTheorems.Fubini.NativeSpecialBaseBridge
-import FubiniTheorems.Decomposition.PreparedMixedCoordinates
+public import FubiniTheorems.Fubini.NativeVFBaseTransport
+public import FubiniTheorems.Fubini.NativeSpecialBaseBridge
+public import FubiniTheorems.Decomposition.PreparedMixedCoordinates
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Transporting all VF coordinates leaves every old RV parameter and
 has the exact inverse-source normal form. -/

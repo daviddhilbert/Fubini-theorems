@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundMeasuredGammaProductWeights.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaProductDecomposition
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaProducts
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaCodeFormRestrictions
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaProductDecomposition
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaProducts
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaCodeFormRestrictions
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 /-! The measured Gamma lift respects cartesian products pointwise. -/
 set_option backward.isDefEq.respectTransparency false
 open FirstOrder FirstOrder.Language CategoryTheory

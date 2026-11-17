@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaRVFiniteUnionGrading.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaRVFiniteUnionPresentation
-import FubiniTheorems.Prerequisites.Euler.GammaRVGrading
-import HilbertMathlib.Foundation.Algebra.CoactionGradedMaps
+public import FubiniTheorems.Prerequisites.Euler.GammaRVFiniteUnionPresentation
+public import FubiniTheorems.Prerequisites.Euler.GammaRVGrading
+public import HilbertMathlib.Foundation.Algebra.CoactionGradedMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Full object-degree grading on finite Gamma unions and preservation
 of every degree by both directions of the presentation equivalence. -/

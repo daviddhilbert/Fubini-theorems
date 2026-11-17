@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/GraphProjectionImmersions.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.PrincipalRationalMaps
-import Mathlib.AlgebraicGeometry.Morphisms.Immersion
+public import FubiniTheorems.Decomposition.PrincipalRationalMaps
+public import Mathlib.AlgebraicGeometry.Morphisms.Immersion
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A rational graph projection is an actual immersion whenever the
 original graph inclusion is an immersion. The rational section and its

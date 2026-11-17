@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeRVSetValues.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.GammaRVSetObjects
-import FubiniTheorems.Fubini.NativeBoundedRetraction
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVUnitRES
+public import FubiniTheorems.Decomposition.GammaRVSetObjects
+public import FubiniTheorems.Fubini.NativeBoundedRetraction
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVUnitRES
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Arbitrary original-ground RV domains have actual finite labels and
 native bounded values, invariant under every underlying domain bijection. -/

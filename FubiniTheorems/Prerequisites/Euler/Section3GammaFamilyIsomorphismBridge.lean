@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/Section3GammaFamilyIsomorphismBridge.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.Section3GammaCodeFamilyBridge
-import FubiniTheorems.Prerequisites.Euler.GammaRVFamilyIsomorphisms
-import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryFamilyIsomorphisms
+public import FubiniTheorems.Prerequisites.Euler.Section3GammaCodeFamilyBridge
+public import FubiniTheorems.Prerequisites.Euler.GammaRVFamilyIsomorphisms
+public import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryFamilyIsomorphisms
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual original-base contracted native Gamma family isomorphisms
 give the chart family isomorphisms, including the full volume equation. -/

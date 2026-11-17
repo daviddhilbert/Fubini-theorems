@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVDisjointInvariants.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVScissorComponents
-import FubiniTheorems.Prerequisites.Euler.RVTaggedPartitionIsomorphisms
-import Mathlib.Tactic.Abel
+public import FubiniTheorems.Prerequisites.Euler.RVScissorComponents
+public import FubiniTheorems.Prerequisites.Euler.RVTaggedPartitionIsomorphisms
+public import Mathlib.Tactic.Abel
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Isomorphism invariance and additivity for actual tagged disjoint
 unions imply every weighted RV scissor relation. The proof uses actual

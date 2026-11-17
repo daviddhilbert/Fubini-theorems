@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/VarietyNativeAtlas.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Corollaries.VarietyAffineNativeCharts
-import FubiniTheorems.Fubini.NativeVFFiniteAtlasMaps
+public import FubiniTheorems.Corollaries.VarietyAffineNativeCharts
+public import FubiniTheorems.Fubini.NativeVFFiniteAtlasMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A finite affine immersed presentation realizes all extension-field
 points as one native VF object over the original coefficient field. -/

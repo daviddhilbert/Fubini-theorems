@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaObjectRelations.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaObjectMultiplication
-import FubiniTheorems.Prerequisites.Euler.GammaProfileScissors
-import FubiniTheorems.Prerequisites.Euler.GammaProfileRestrictions
+public import FubiniTheorems.Prerequisites.Euler.GammaObjectMultiplication
+public import FubiniTheorems.Prerequisites.Euler.GammaProfileScissors
+public import FubiniTheorems.Prerequisites.Euler.GammaProfileRestrictions
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The homogeneous actual object assignment respects volume-preserving
 definable bijections, scissors, empty domains and weight restriction. These

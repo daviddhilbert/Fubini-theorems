@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/MeasuredTensorBooleanCells.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.TensorBooleanCells
-import FubiniTheorems.Prerequisites.Grothendieck.MeasuredNativeGammaPartitions
-import FubiniTheorems.Prerequisites.Grothendieck.MeasuredRESWeightPartitions
-import FubiniTheorems.Prerequisites.Grothendieck.MeasuredLocalMonomialCongruence
+public import FubiniTheorems.Prerequisites.Grothendieck.TensorBooleanCells
+public import FubiniTheorems.Prerequisites.Grothendieck.MeasuredNativeGammaPartitions
+public import FubiniTheorems.Prerequisites.Grothendieck.MeasuredRESWeightPartitions
+public import FubiniTheorems.Prerequisites.Grothendieck.MeasuredLocalMonomialCongruence
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 set_option backward.isDefEq.respectTransparency false
 set_option autoImplicit false
 open Classical FirstOrder FirstOrder.Language

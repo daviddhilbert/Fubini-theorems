@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RelativeRVTotalInvariant.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.RelativePointProductSemiring
-import FubiniTheorems.Decomposition.OriginalTaggedTotalValues
+public import FubiniTheorems.Decomposition.RelativePointProductSemiring
+public import FubiniTheorems.Decomposition.OriginalTaggedTotalValues
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Total native RV values are an additive invariant of the actual
 relative family ring. This construction uses no multiplicativity of

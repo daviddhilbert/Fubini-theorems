@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/PointLocalizationEquivalence.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.PointLocalizationNormalization
-import Mathlib.RingTheory.Ideal.Quotient.Operations
+public import FubiniTheorems.Prerequisites.Euler.PointLocalizationNormalization
+public import Mathlib.RingTheory.Ideal.Quotient.Operations
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! For a full natural-number grading and any degree-one q, quotienting
 by q-1 is the degree-zero localization at q. The inverse maps and their

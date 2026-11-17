@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundMeasuredGammaCodeCoherence.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaProductMorphisms
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaCodeProductUnits
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaProductMorphisms
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaCodeProductUnits
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 /-! Product coherence for measured Gamma objects is checked on every
 RV code, then descends with its original complete decoding relation. -/
 set_option backward.isDefEq.respectTransparency false

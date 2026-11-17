@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/FiniteWitnessFormulas.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import Mathlib.ModelTheory.Semantics
-import Mathlib.ModelTheory.Syntax
-import Mathlib.Data.Set.Function
+public import Mathlib.ModelTheory.Semantics
+public import Mathlib.ModelTheory.Syntax
+public import Mathlib.Data.Set.Function
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! First-order validity formulas for the actual bijection graphs in a
 finite witness package, uniformly in every structure of the language. -/

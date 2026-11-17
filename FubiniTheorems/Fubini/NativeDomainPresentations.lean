@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeDomainPresentations.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeProductBijections
-import FubiniTheorems.Comparison.RESExpressionSchemata
+public import FubiniTheorems.Fubini.NativeProductBijections
+public import FubiniTheorems.Comparison.RESExpressionSchemata
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Finite expressions present arbitrary native finite-value RV domains.
 Their target can be a literal tagged family with varying old degrees. -/

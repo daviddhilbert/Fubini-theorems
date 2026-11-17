@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeMixedKeyMaps.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeVFKeyAttachments
-import FubiniTheorems.Fubini.NativePreparedKeyLifting
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapPreimages
+public import FubiniTheorems.Fubini.NativeVFKeyAttachments
+public import FubiniTheorems.Fubini.NativePreparedKeyLifting
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapPreimages
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The full mixed RV key map is an actual original-Gamma map. Its raw
 coordinates agree with the prepared key, and its VF zero pattern is

@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/MeasuredNativeProductMatchCovers.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.NativeProductTransitions
-import FubiniTheorems.Prerequisites.Grothendieck.MeasuredMonomialTensorLocalMatches
-import FubiniTheorems.Prerequisites.Grothendieck.MeasuredProductWeightEquations
+public import FubiniTheorems.Prerequisites.Grothendieck.NativeProductTransitions
+public import FubiniTheorems.Prerequisites.Grothendieck.MeasuredMonomialTensorLocalMatches
+public import FubiniTheorems.Prerequisites.Grothendieck.MeasuredProductWeightEquations
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 set_option backward.isDefEq.respectTransparency false
 set_option autoImplicit false
 open Classical FirstOrder FirstOrder.Language

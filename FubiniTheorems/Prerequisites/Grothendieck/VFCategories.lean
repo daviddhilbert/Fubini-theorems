@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/VFCategories.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.DefinableBijections
-import FubiniTheorems.Prerequisites.Definability.Dimension
-import Section4.RealPresentations
+public import FubiniTheorems.Prerequisites.Grothendieck.DefinableBijections
+public import FubiniTheorems.Prerequisites.Definability.Dimension
+public import Section4.RealPresentations
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Definition 3.4 (`defn:VF:cat`) at a fixed real parameter base. The
 dimension is the section 2 coordinate-interior definition, including bottom

@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVOrdinaryBalancedGradings.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVOrdinaryBalancedTensor
-import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryFiniteMapGradings
-import FubiniTheorems.Prerequisites.Euler.RVOrdinaryMapGradings
-import FubiniTheorems.Prerequisites.Euler.TensorGradedMaps
+public import FubiniTheorems.Prerequisites.Euler.RVOrdinaryBalancedTensor
+public import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryFiniteMapGradings
+public import FubiniTheorems.Prerequisites.Euler.RVOrdinaryMapGradings
+public import FubiniTheorems.Prerequisites.Euler.TensorGradedMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Full grading of the actual ordinary RES/Gamma tensor. Homogeneous
 pure tensors have the sum degree; comparison and both numerical Euler

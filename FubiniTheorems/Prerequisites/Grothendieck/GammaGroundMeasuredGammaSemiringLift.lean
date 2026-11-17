@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundMeasuredGammaSemiringLift.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaSemiring
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaRVScissors
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaProductLift
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredRVGradedComparison
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaSemiring
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaRVScissors
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaProductLift
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredRVGradedComparison
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 /-! The actual Gamma lift induces a multiplicative map on the universal
 positive semiring, with its prescribed value on every object. -/
 set_option backward.isDefEq.respectTransparency false

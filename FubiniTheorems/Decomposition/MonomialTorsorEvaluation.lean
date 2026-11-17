@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/MonomialTorsorEvaluation.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.MonomialTorsorCoordinates
-import FubiniTheorems.Decomposition.MonomialGammaGraphEuler
-import FubiniTheorems.Fubini.NativeUnitGammaValues
-import FubiniTheorems.Prerequisites.Grothendieck.RVUnitGammaCodeBijection
-import FubiniTheorems.Prerequisites.Euler.Section3GammaRVCodeBridge
+public import FubiniTheorems.Decomposition.MonomialTorsorCoordinates
+public import FubiniTheorems.Decomposition.MonomialGammaGraphEuler
+public import FubiniTheorems.Fubini.NativeUnitGammaValues
+public import FubiniTheorems.Prerequisites.Grothendieck.RVUnitGammaCodeBijection
+public import FubiniTheorems.Prerequisites.Euler.Section3GammaRVCodeBridge
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The native bounded value of a full nonzero RV value preimage is its
 actual Gamma Euler integral times every retained residue-torus factor. -/

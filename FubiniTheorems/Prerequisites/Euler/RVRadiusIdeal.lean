@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVRadiusIdeal.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVBoundedMaps
-import FubiniTheorems.Prerequisites.Euler.RVRadiusBounds
-import Mathlib.RingTheory.GradedAlgebra.Homogeneous.Ideal
+public import FubiniTheorems.Prerequisites.Euler.RVBoundedMaps
+public import FubiniTheorems.Prerequisites.Euler.RVRadiusBounds
+public import Mathlib.RingTheory.GradedAlgebra.Homogeneous.Ideal
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual P_gamma classes and their homogeneous ideal in the bounded
 measured RV chart ring, for exactly the accepted RV-liftable radii. -/

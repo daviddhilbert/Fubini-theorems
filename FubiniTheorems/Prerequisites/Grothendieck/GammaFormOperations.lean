@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaFormOperations.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaVolumeForms
-import HilbertMathlib.Foundation.Definability.CodeMaps
-import Section3.RVOperations
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaVolumeForms
+public import HilbertMathlib.Foundation.Definability.CodeMaps
+public import Section3.RVOperations
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Multiplication and the constant unit for genuine Gamma volume forms.
 Their entire graphs are definable: code multiplication is the actual RV

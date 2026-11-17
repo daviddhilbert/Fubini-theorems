@@ -1,14 +1,20 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaOrdinaryFiniteMaps.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryFiniteRing
-import FubiniTheorems.Prerequisites.Euler.GammaOrdinarySharpScissors
-import FubiniTheorems.Prerequisites.Euler.GammaOrdinarySharpRingMap
-import FubiniTheorems.Prerequisites.Euler.GammaFiniteRVMaps
-import FubiniTheorems.Prerequisites.Euler.RESOrdinaryUniversal
-import FubiniTheorems.Prerequisites.Euler.RVOrdinaryMaps
+public import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryFiniteRing
+public import FubiniTheorems.Prerequisites.Euler.GammaOrdinarySharpScissors
+public import FubiniTheorems.Prerequisites.Euler.GammaOrdinarySharpRingMap
+public import FubiniTheorems.Prerequisites.Euler.GammaFiniteRVMaps
+public import FubiniTheorems.Prerequisites.Euler.RESOrdinaryUniversal
+public import FubiniTheorems.Prerequisites.Euler.RVOrdinaryMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The ordinary finite-Gamma coefficient ring maps to ordinary Gamma
 and RES through actual objects. Both sharp/forget squares commute on the

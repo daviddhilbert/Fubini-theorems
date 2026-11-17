@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaUniformCuts.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaFormulaLogic
-import FubiniTheorems.Prerequisites.Euler.GammaFamilySlices
-import FubiniTheorems.Prerequisites.Euler.GammaDefinableEuler
-import Section3.NormalizationSaturation
+public import FubiniTheorems.Prerequisites.Euler.GammaFormulaLogic
+public import FubiniTheorems.Prerequisites.Euler.GammaFamilySlices
+public import FubiniTheorems.Prerequisites.Euler.GammaDefinableEuler
+public import Section3.NormalizationSaturation
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Uniform finite cut bounds for unary fibres of actual Gamma relations.
 The cut-bound condition is first order over the original base. Saturation

@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVBalancedRadiusIdeal.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVBalancedSpecialGradings
-import FubiniTheorems.Prerequisites.Euler.RVBalancedMapGradings
-import FubiniTheorems.Prerequisites.Euler.RVRadiusQuotient
+public import FubiniTheorems.Prerequisites.Euler.RVBalancedSpecialGradings
+public import FubiniTheorems.Prerequisites.Euler.RVBalancedMapGradings
+public import FubiniTheorems.Prerequisites.Euler.RVRadiusQuotient
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The accepted radius relations form a homogeneous ideal already in
 the actual finite-Gamma-balanced bounded tensor. Its comparison image is

@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaCategories.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.CodePresentations
-import FubiniTheorems.Prerequisites.Grothendieck.GammaVolumeForms
-import Section4.VFAlgebraicCoordinates
-import Mathlib.CategoryTheory.Groupoid
-import Mathlib.CategoryTheory.ObjectProperty.FullSubcategory
+public import FubiniTheorems.Prerequisites.Grothendieck.CodePresentations
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaVolumeForms
+public import Section4.VFAlgebraicCoordinates
+public import Mathlib.CategoryTheory.Groupoid
+public import Mathlib.CategoryTheory.ObjectProperty.FullSubcategory
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Definition 3.13. A Gamma object is a finite tagged family of genuine
 definable subsets of Gamma powers. Arrows must have an actual definable

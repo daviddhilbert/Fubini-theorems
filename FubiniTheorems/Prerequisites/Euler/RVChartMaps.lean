@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVChartMaps.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVGrading
-import FubiniTheorems.Prerequisites.Euler.RESGrading
+public import FubiniTheorems.Prerequisites.Euler.RVGrading
+public import FubiniTheorems.Prerequisites.Euler.RESGrading
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The fixed-degree RV scissors groups and the measured RES chart ring
 map to the actual graded RV chart ring. Injectivity or identification with

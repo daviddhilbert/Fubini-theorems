@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/EndpointFamilyLifts.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.MonomialEndpointSupports
-import FubiniTheorems.Decomposition.FiniteGammaParameterControl
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapPreimages
+public import FubiniTheorems.Decomposition.MonomialEndpointSupports
+public import FubiniTheorems.Decomposition.FiniteGammaParameterControl
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapPreimages
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Literal full-RV lifts of cylindrical Gamma families given by actual
 endpoint maps. Definability retains their full original-ground graphs. -/

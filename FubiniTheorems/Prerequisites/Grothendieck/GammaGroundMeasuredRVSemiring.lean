@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundMeasuredRVSemiring.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredRVProducts
-import HilbertMathlib.Foundation.Grothendieck.PositivePresentation
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredRVProducts
+public import HilbertMathlib.Foundation.Grothendieck.PositivePresentation
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The cartesian universal presentation uses the actual pointwise
 measured RV groupoids and full Gamma forms in every degree. -/

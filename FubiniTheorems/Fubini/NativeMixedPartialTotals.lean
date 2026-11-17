@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeMixedPartialTotals.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeMixedMapTotals
-import FubiniTheorems.Fubini.NativeVFLiftFamilies
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapPreimages
+public import FubiniTheorems.Fubini.NativeMixedMapTotals
+public import FubiniTheorems.Fubini.NativeVFLiftFamilies
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapPreimages
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Restricting an actual native map to any original-ground base piece
 identifies its source preimage with the literal mixed row total over that

@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundRVFamilyRestrictions.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVFamilyObjects
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVScissors
-import Section4.RVRestrictions
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVFamilyObjects
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVScissors
+public import Section4.RVRestrictions
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The explicit family realization respects restrictions and complements,
 using disjoint tags rather than an assumed additivity property. -/

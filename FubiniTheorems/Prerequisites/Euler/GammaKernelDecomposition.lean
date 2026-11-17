@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaKernelDecomposition.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaCanonicalExpansion
-import FubiniTheorems.Prerequisites.Euler.GammaUnaryProjection
-import FubiniTheorems.Prerequisites.Euler.GammaPartialMaps
-import FubiniTheorems.Prerequisites.Euler.GammaIteratedIntegral
-import HilbertMathlib.Foundation.Euler.EulerKernelFubini
+public import FubiniTheorems.Prerequisites.Euler.GammaCanonicalExpansion
+public import FubiniTheorems.Prerequisites.Euler.GammaUnaryProjection
+public import FubiniTheorems.Prerequisites.Euler.GammaPartialMaps
+public import FubiniTheorems.Prerequisites.Euler.GammaIteratedIntegral
+public import HilbertMathlib.Foundation.Euler.EulerKernelFubini
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual point-and-ray kernel data for every definable integer function
 on Gamma squared. Boundary functions, coefficient families and unary

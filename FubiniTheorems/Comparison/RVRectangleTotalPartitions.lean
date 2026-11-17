@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RVRectangleTotalPartitions.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.OriginalRVTotalFamilies
-import FubiniTheorems.Comparison.RVRectangleDecompositionSchemata
-import FubiniTheorems.Fubini.NativeRVSetArithmetic
+public import FubiniTheorems.Decomposition.OriginalRVTotalFamilies
+public import FubiniTheorems.Comparison.RVRectangleDecompositionSchemata
+public import FubiniTheorems.Fubini.NativeRVSetArithmetic
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Valid original RV rectangle packages partition the entire native RV
 family over its original RV base, retaining every parameter coordinate. -/

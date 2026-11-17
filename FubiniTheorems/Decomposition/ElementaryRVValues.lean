@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/ElementaryRVValues.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.ElementaryNamedDefinableSets
-import FubiniTheorems.Decomposition.GammaRVSetObjects
-import Mathlib.ModelTheory.ElementaryMaps
+public import FubiniTheorems.Decomposition.ElementaryNamedDefinableSets
+public import FubiniTheorems.Decomposition.GammaRVSetObjects
+public import Mathlib.ModelTheory.ElementaryMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Elementary embeddings preserve the actual RV and value quotients.
 Restriction of a finite-value RV set to the smaller model still has

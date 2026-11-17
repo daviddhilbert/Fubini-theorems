@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/VarietyGlobalVanishing.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Corollaries.VarietyNativeChartIndependence
-import FubiniTheorems.Corollaries.VarietyNativeFibres
-import FubiniTheorems.Decomposition.GroundTaggedIntrinsicFibreValues
+public import FubiniTheorems.Corollaries.VarietyNativeChartIndependence
+public import FubiniTheorems.Corollaries.VarietyNativeFibres
+public import FubiniTheorems.Decomposition.GroundTaggedIntrinsicFibreValues
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The final Section 5 corollary for actual varieties and actual
 regular morphisms. All affine encoding and parameter adapters are

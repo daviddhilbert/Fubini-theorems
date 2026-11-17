@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVBoundedRing.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVMeasuredGroup
-import FubiniTheorems.Prerequisites.Euler.RVBoundedCharts
-import FubiniTheorems.Prerequisites.Euler.GammaGroupNames
-import Mathlib.RingTheory.FreeCommRing
-import Mathlib.RingTheory.Ideal.Quotient.Defs
+public import FubiniTheorems.Prerequisites.Euler.RVMeasuredGroup
+public import FubiniTheorems.Prerequisites.Euler.RVBoundedCharts
+public import FubiniTheorems.Prerequisites.Euler.GammaGroupNames
+public import Mathlib.RingTheory.FreeCommRing
+public import Mathlib.RingTheory.Ideal.Quotient.Defs
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The concrete ring presentation on actual doubly bounded measured RV
 charts. Products, isomorphisms, weighted scissors and the unit are imposed

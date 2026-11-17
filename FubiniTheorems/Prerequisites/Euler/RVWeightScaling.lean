@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVWeightScaling.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVCoordinateMaps
-import FubiniTheorems.Prerequisites.Euler.RESWeightCharacter
+public import FubiniTheorems.Prerequisites.Euler.RVCoordinateMaps
+public import FubiniTheorems.Prerequisites.Euler.RESWeightCharacter
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Multiplication by an actual degree-zero weighted RES unit scales the
 partial Gamma volume form on every actual RES object. The identification

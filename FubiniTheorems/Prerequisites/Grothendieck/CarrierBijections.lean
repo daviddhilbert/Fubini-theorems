@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/CarrierBijections.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.DefinableBijections
-import HilbertMathlib.Foundation.Definability.FiniteMaps
-import HilbertMathlib.Foundation.Definability.MapCorestrict
+public import FubiniTheorems.Prerequisites.Grothendieck.DefinableBijections
+public import HilbertMathlib.Foundation.Definability.FiniteMaps
+public import HilbertMathlib.Foundation.Definability.MapCorestrict
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Equal actual carriers give the identity definable bijection, even
 when their definability proofs or inherited auxiliary maps differ. -/

@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RESForwardValue.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.FiniteFramePartitions
-import FubiniTheorems.Decomposition.RationalFramedMaps
-import FubiniTheorems.Decomposition.DiagonalFinitePartitions
+public import FubiniTheorems.Decomposition.FiniteFramePartitions
+public import FubiniTheorems.Decomposition.RationalFramedMaps
+public import FubiniTheorems.Decomposition.DiagonalFinitePartitions
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The forward comparison value of every actual finite-value original
 RV domain, as a finite sum over its intrinsic value and zero patterns. -/

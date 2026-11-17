@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RESRelationTermPreparation.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Comparison.RESRelationTermPredicates
-import FubiniTheorems.Decomposition.FiniteGraphPreparation
+public import FubiniTheorems.Comparison.RESRelationTermPredicates
+public import FubiniTheorems.Decomposition.FiniteGraphPreparation
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! One genuine special bijection prepares a finite catalog of complete
 native RES relation terms, retaining coefficient domains, full graphs and orientations. -/

@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/GraphBranchCompatibility.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.ConstructibleBijectionPieces
-import FubiniTheorems.Decomposition.ReducedAffineBranchGluing
+public import FubiniTheorems.Decomposition.ConstructibleBijectionPieces
+public import FubiniTheorems.Decomposition.ReducedAffineBranchGluing
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Single-valuedness of the original complex graph proves the
 overlap compatibility of its actual affine graph schemes. -/

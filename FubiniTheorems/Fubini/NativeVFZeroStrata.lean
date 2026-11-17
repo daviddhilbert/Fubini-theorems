@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeVFZeroStrata.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeMixedKeyMaps
-import FubiniTheorems.Fubini.NativeRVZeroPatternBases
-import FubiniTheorems.Fubini.NativeVFCoordinateSelection
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteFibreInvariance
+public import FubiniTheorems.Fubini.NativeMixedKeyMaps
+public import FubiniTheorems.Fubini.NativeRVZeroPatternBases
+public import FubiniTheorems.Fubini.NativeVFCoordinateSelection
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteFibreInvariance
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual mixed VF domains split into finitely many original-ground
 zero strata. Dropping precisely the fixed zero VF coordinates gives an

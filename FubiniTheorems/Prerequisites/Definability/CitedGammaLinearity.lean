@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%202/CitedGammaLinearity.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Definability.GammaAffineBounds
-import FubiniTheorems.Prerequisites.Definability.AtomicBaseChange
-import Section4.GammaPredicates
+public import FubiniTheorems.Prerequisites.Definability.GammaAffineBounds
+public import FubiniTheorems.Prerequisites.Definability.AtomicBaseChange
+public import Section4.GammaPredicates
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Replaceable value-group background for 2.41. The proof of [18,
 Lemma 3.18] explicitly uses quantifier elimination and piecewise linearity

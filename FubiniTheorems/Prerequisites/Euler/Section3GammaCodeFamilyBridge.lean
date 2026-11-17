@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/Section3GammaCodeFamilyBridge.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.Section3GammaRVCodeBridge
-import FubiniTheorems.Prerequisites.Euler.Section3GammaFamilyBridge
-import FubiniTheorems.Prerequisites.Euler.Section3RVFamilyBridge
-import FubiniTheorems.Prerequisites.Euler.FiniteFamilyDomainCongruence
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFamilyPieceMaps
+public import FubiniTheorems.Prerequisites.Euler.Section3GammaRVCodeBridge
+public import FubiniTheorems.Prerequisites.Euler.Section3GammaFamilyBridge
+public import FubiniTheorems.Prerequisites.Euler.Section3RVFamilyBridge
+public import FubiniTheorems.Prerequisites.Euler.FiniteFamilyDomainCongruence
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFamilyPieceMaps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Full RV code bijections of finite Gamma families commute with the
 actual quotient maps after conversion to chart families. -/

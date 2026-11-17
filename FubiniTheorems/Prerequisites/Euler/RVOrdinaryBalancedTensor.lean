@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVOrdinaryBalancedTensor.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryAlgebras
-import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryRESEvaluation
-import Mathlib.RingTheory.TensorProduct.Maps
+public import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryAlgebras
+public import FubiniTheorems.Prerequisites.Euler.GammaOrdinaryRESEvaluation
+public import Mathlib.RingTheory.TensorProduct.Maps
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The tensor of actual ordinary RES and Gamma rings over the actual
 ordinary finite-Gamma ring. Both numerical Euler maps balance on that

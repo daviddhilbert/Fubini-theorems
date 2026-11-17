@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundRVFamilyMaps.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVFamilyRealization
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapRelations
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVFamilyRealization
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMapRelations
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Definable maps on finite tagged families give genuine definable maps
 on their RV realizations. This includes bijections, with no new parameters. -/

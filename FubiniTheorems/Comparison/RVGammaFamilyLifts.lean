@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RVGammaFamilyLifts.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Comparison.RVGammaFamilySchemata
-import FubiniTheorems.Fubini.NativeGammaTupleTorsors
+public import FubiniTheorems.Comparison.RVGammaFamilySchemata
+public import FubiniTheorems.Fubini.NativeGammaTupleTorsors
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A mixed RV/Gamma family lifts to literal nonzero RV tuples, keeping
 all representatives of every value coordinate. -/

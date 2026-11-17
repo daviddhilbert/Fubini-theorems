@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/RVScaledRays.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RVNamedMultiplication
-import FubiniTheorems.Prerequisites.Euler.RVForgetScissors
-import FubiniTheorems.Prerequisites.Euler.RVRadiusGenerators
-import FubiniTheorems.Prerequisites.Euler.RVMeasuredSpecialClasses
+public import FubiniTheorems.Prerequisites.Euler.RVNamedMultiplication
+public import FubiniTheorems.Prerequisites.Euler.RVForgetScissors
+public import FubiniTheorems.Prerequisites.Euler.RVRadiusGenerators
+public import FubiniTheorems.Prerequisites.Euler.RVMeasuredSpecialClasses
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Named RV scaling identifies the full proper RV preimages of a ray
 and its Gamma translate, as actual ordinary objects over the original

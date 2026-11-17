@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeScalarTorsorFubini.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.MonomialFunctionTorsors
-import FubiniTheorems.Decomposition.GammaFunctionMonomialCatalog
-import FubiniTheorems.Decomposition.GammaFunctionGraphPartitions
+public import FubiniTheorems.Decomposition.MonomialFunctionTorsors
+public import FubiniTheorems.Decomposition.GammaFunctionMonomialCatalog
+public import FubiniTheorems.Decomposition.GammaFunctionGraphPartitions
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A scalar value torsor varying over an arbitrary nonzero RV base has
 one residue-torus factor in the actual native ungraded evaluation. -/

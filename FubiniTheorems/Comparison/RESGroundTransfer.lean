@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RESGroundTransfer.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.RESOrdinaryUniversal
-import FubiniTheorems.Prerequisites.Euler.RESDimensionFreeReduction
-import FubiniTheorems.Decomposition.RealGammaGroundElimination
+public import FubiniTheorems.Prerequisites.Euler.RESOrdinaryUniversal
+public import FubiniTheorems.Prerequisites.Euler.RESDimensionFreeReduction
+public import FubiniTheorems.Decomposition.RealGammaGroundElimination
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The ordinary and reduced ungraded RES rings depend only on actual
 sorted definability. Gamma names definable over the real ground can thus

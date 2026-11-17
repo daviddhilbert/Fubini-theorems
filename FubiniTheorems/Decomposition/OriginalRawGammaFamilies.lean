@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/OriginalRawGammaFamilies.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.OriginalRVTotalFamilies
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVUnitDomains
+public import FubiniTheorems.Decomposition.OriginalRVTotalFamilies
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVUnitDomains
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Full original Gamma-domain rows give actual mixed families on raw RV
 bases, including zero parameters. The complete code preimage is proved. -/

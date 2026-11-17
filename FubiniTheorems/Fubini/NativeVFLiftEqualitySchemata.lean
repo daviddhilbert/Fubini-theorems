@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeVFLiftEqualitySchemata.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeMixedBijectionPromotion
-import FubiniTheorems.Fubini.NativeFiniteRVLiftPresentations
-import FubiniTheorems.Fubini.NativeRVPresentedRowValues
-import FubiniTheorems.Fubini.NativeFiniteRVSchemaPromotion
-import FubiniTheorems.Comparison.RVEvaluationEqualityUniformity
+public import FubiniTheorems.Fubini.NativeMixedBijectionPromotion
+public import FubiniTheorems.Fubini.NativeFiniteRVLiftPresentations
+public import FubiniTheorems.Fubini.NativeRVPresentedRowValues
+public import FubiniTheorems.Fubini.NativeFiniteRVSchemaPromotion
+public import FubiniTheorems.Comparison.RVEvaluationEqualityUniformity
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A whole original-language VF fibre witness contains both actual lift
 graphs, both finite RV representative schemata, and the full stabilized

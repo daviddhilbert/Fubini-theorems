@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativePresentedLists.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeDegreePresentations
-import FubiniTheorems.Fubini.NativeSchemaPresentations
-import FubiniTheorems.Comparison.RESCertificateRecoding
+public import FubiniTheorems.Fubini.NativeDegreePresentations
+public import FubiniTheorems.Fubini.NativeSchemaPresentations
+public import FubiniTheorems.Comparison.RESCertificateRecoding
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Every finite old native-object list has original-base presented
 occurrences. Their products retain each old object and formal coefficient. -/

@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaUnaryDescent.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaFibreCounting
-import HilbertMathlib.Foundation.Euler.EulerPowerLawFibres
-import FubiniTheorems.Prerequisites.Euler.GammaUnaryBijections
+public import FubiniTheorems.Prerequisites.Euler.GammaFibreCounting
+public import HilbertMathlib.Foundation.Euler.EulerPowerLawFibres
+public import FubiniTheorems.Prerequisites.Euler.GammaUnaryBijections
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Original-base descent of unary Euler image functions. Large fibres
 occur at finitely many Gamma values; bounded counting treats all other

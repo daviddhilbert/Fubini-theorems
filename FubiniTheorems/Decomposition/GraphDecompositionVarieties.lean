@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/GraphDecompositionVarieties.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.EquivariantGraphDecomposition
-import FubiniTheorems.Decomposition.ImmersedVarietyObjects
-import FubiniTheorems.Decomposition.AffineBranchBaseCompatibility
+public import FubiniTheorems.Decomposition.EquivariantGraphDecomposition
+public import FubiniTheorems.Decomposition.ImmersedVarietyObjects
+public import FubiniTheorems.Decomposition.AffineBranchBaseCompatibility
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The strata and common pieces of the equivariant graph decomposition
 are actual objects and equivariant morphisms in the geometric variety

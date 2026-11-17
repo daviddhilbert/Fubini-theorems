@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/OriginalGammaDomainCurrying.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.OriginalGammaCellTrees
-import FubiniTheorems.Decomposition.OriginalSortedPredicates
+public import FubiniTheorems.Decomposition.OriginalGammaCellTrees
+public import FubiniTheorems.Decomposition.OriginalSortedPredicates
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Cylindrical row currying is an actual original-base coordinate
 substitution, with exact row agreement on all raw inputs. -/

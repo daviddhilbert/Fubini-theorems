@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaPartialCellDefinability.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaWeightedCharts
-import FubiniTheorems.Prerequisites.Euler.GammaCellUnboundedSections
-import FubiniTheorems.Prerequisites.Euler.GammaMapOrder
+public import FubiniTheorems.Prerequisites.Euler.GammaWeightedCharts
+public import FubiniTheorems.Prerequisites.Euler.GammaCellUnboundedSections
+public import FubiniTheorems.Prerequisites.Euler.GammaMapOrder
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Original-base definability of cylindrical shapes with partial endpoint
 functions. An endpoint graph over its actual domain is extended only by

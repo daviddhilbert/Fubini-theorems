@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/AffineProductPartitions.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.AffineImmersedProductPresentations
-import FubiniTheorems.Decomposition.ImmersedPresentationLoci
+public import FubiniTheorems.Decomposition.AffineImmersedProductPresentations
+public import FubiniTheorems.Decomposition.ImmersedPresentationLoci
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Products of finite immersed presentations give finite immersed
 presentations of the actual product locus. Their geometric values multiply. -/

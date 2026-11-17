@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeMixedMapTotals.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeMixedMapFibres
-import FubiniTheorems.Fubini.NativeMixedFamilyTotals
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMixedProducts
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundCarrierBijections
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteFibreInvariance
+public import FubiniTheorems.Fubini.NativeMixedMapFibres
+public import FubiniTheorems.Fubini.NativeMixedFamilyTotals
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMixedProducts
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundCarrierBijections
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFiniteFibreInvariance
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The literal total of the actual fibres of a native mixed map is
 actually Gamma-ground bijective to its original domain. Thus the row

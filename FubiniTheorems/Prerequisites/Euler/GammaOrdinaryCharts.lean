@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/GammaOrdinaryCharts.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaRVIdentityIso
-import FubiniTheorems.Prerequisites.Euler.RVForgetScissors
-import FubiniTheorems.Prerequisites.Euler.GammaBoundedProducts
+public import FubiniTheorems.Prerequisites.Euler.GammaRVIdentityIso
+public import FubiniTheorems.Prerequisites.Euler.RVForgetScissors
+public import FubiniTheorems.Prerequisites.Euler.GammaBoundedProducts
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual Gamma objects without volume forms and their original-base
 RV-contracted bijections. Unlike measured Gamma morphisms, these impose

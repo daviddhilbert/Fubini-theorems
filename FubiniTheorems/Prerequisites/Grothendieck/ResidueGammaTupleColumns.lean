@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/ResidueGammaTupleColumns.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.ResidueGammaTupleSeparation
-import FubiniTheorems.Prerequisites.Grothendieck.MixedGammaTupleDifferences
-import FubiniTheorems.Prerequisites.Grothendieck.GammaFullRawCommonNames
-import FubiniTheorems.Prerequisites.Grothendieck.DefinableTestColumns
+public import FubiniTheorems.Prerequisites.Grothendieck.ResidueGammaTupleSeparation
+public import FubiniTheorems.Prerequisites.Grothendieck.MixedGammaTupleDifferences
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaFullRawCommonNames
+public import FubiniTheorems.Prerequisites.Grothendieck.DefinableTestColumns
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 set_option backward.isDefEq.respectTransparency false
 set_option autoImplicit false
 open Classical FirstOrder FirstOrder.Language

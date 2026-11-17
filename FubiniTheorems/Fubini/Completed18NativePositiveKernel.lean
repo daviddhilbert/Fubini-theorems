@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/Completed18NativePositiveKernel.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.Completed18VFComparison
-import IntegrationSection6.GammaNonzeroBasicRelation
-import Integration7.ClosedSection6GlobalIntegrationSemiringEquivalence
-import Integration7.ClosedSection6GammaNonzeroBasicRelation
+public import FubiniTheorems.Fubini.Completed18VFComparison
+public import IntegrationSection6.GammaNonzeroBasicRelation
+public import Integration7.ClosedSection6GlobalIntegrationSemiringEquivalence
+public import Integration7.ClosedSection6GammaNonzeroBasicRelation
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The completed [18] additive kernel gives the exact kernel of its
 positive semiring lift. The published generated-base kernel is used without modifying dependency sources. -/

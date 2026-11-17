@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/Section3GammaProductBridge.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Euler.GammaCoordinateIsomorphisms
-import FubiniTheorems.Prerequisites.Euler.Section3RVProductBridge
-import FubiniTheorems.Prerequisites.Euler.Section3GammaChartBridge
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaProductWeights
+public import FubiniTheorems.Prerequisites.Euler.GammaCoordinateIsomorphisms
+public import FubiniTheorems.Prerequisites.Euler.Section3RVProductBridge
+public import FubiniTheorems.Prerequisites.Euler.Section3GammaChartBridge
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMeasuredGammaProductWeights
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Cartesian Gamma products agree after the definable permutation of
 the two coordinate blocks, with the full original RV lift retained. -/

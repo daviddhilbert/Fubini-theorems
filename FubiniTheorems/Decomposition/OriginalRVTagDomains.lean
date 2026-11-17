@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/OriginalRVTagDomains.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.OriginalSortedPredicates
-import FubiniTheorems.Comparison.RESSetSchemata
-import FubiniTheorems.Prerequisites.Euler.RVNamedTuples
+public import FubiniTheorems.Decomposition.OriginalSortedPredicates
+public import FubiniTheorems.Comparison.RESSetSchemata
+public import FubiniTheorems.Prerequisites.Euler.RVNamedTuples
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Literal zero/one tagged coproduct domains are original-base families.
 The source coordinates, tag and zero padding remain explicit. -/

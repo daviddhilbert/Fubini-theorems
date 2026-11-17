@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/Completed18GroundRVObjects.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.Completed18GroundCodeGraphs
-import IntegrationSection6.GammaNonzeroClasses
-import IntegrationSection6.GammaFiniteGraphObjects
+public import FubiniTheorems.Fubini.Completed18GroundCodeGraphs
+public import IntegrationSection6.GammaNonzeroClasses
+public import IntegrationSection6.GammaFiniteGraphObjects
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A local finite-label RV object is an actual full-weight object in
 the completed [18] RV category, with the same domain and label function. -/

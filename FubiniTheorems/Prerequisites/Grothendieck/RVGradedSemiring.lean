@@ -1,12 +1,18 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/RVGradedSemiring.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.RVPositiveComparison
-import FubiniTheorems.Prerequisites.Grothendieck.RVProducts
-import FubiniTheorems.Prerequisites.Grothendieck.RVSemiring
-import Section4.RVGradedSemiring
+public import FubiniTheorems.Prerequisites.Grothendieck.RVPositiveComparison
+public import FubiniTheorems.Prerequisites.Grothendieck.RVProducts
+public import FubiniTheorems.Prerequisites.Grothendieck.RVSemiring
+public import Section4.RVGradedSemiring
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The direct sum of the actual fixed-degree positive RV quotients is
 a commutative semiring. Its multiplication comes from genuine cartesian

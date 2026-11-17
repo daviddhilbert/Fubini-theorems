@@ -1,13 +1,19 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/RESLayoutExistence.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeDegreeTaggedLayouts
-import FubiniTheorems.Fubini.NativeRelationListPresentations
-import FubiniTheorems.Comparison.RESLayoutStabilization
-import FubiniTheorems.Comparison.RESFixedBijectionPromotion
-import FubiniTheorems.Comparison.RESLiteralFamilyCriterion
+public import FubiniTheorems.Fubini.NativeDegreeTaggedLayouts
+public import FubiniTheorems.Fubini.NativeRelationListPresentations
+public import FubiniTheorems.Comparison.RESLayoutStabilization
+public import FubiniTheorems.Comparison.RESFixedBijectionPromotion
+public import FubiniTheorems.Comparison.RESLiteralFamilyCriterion
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Literal ideal terms retain their coefficient occurrences, orientation,
 old native domains and original-base formal relation certificate. -/

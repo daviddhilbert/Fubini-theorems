@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/NativeTotalRVLiftMembership.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.NativeTotalRVLabelMaps
-import FubiniTheorems.Fubini.NativeRVFiniteLiftLabels
+public import FubiniTheorems.Fubini.NativeTotalRVLabelMaps
+public import FubiniTheorems.Fubini.NativeRVFiniteLiftLabels
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The actual lift of the total label map has its literal full domain:
 the selected base labels lift, every old RV parameter is retained, and

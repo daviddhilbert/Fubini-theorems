@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/OriginalEulerCertificateExistence.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.OriginalGammaCellTrees
-import FubiniTheorems.Fubini.NativeGammaRelationSyntax
+public import FubiniTheorems.Decomposition.OriginalGammaCellTrees
+public import FubiniTheorems.Fubini.NativeGammaRelationSyntax
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual original-base Euler packages exist for every native Gamma set
 over a displayed parameter tuple. Both the source and every cell predicate

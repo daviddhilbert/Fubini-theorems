@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/GeometricInverseRingMap.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Comparison.GeometricPreimageScissors
-import FubiniTheorems.Comparison.GeometricPreimageProducts
+public import FubiniTheorems.Comparison.GeometricPreimageScissors
+public import FubiniTheorems.Comparison.GeometricPreimageProducts
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! The inverse value respects every defining geometric relation and
 therefore gives an actual inverse-direction ring homomorphism. -/

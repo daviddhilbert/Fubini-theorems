@@ -1,11 +1,17 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/EquivariantAlgebraGenerators.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Decomposition.FiniteCyclicDiagonalization
-import Mathlib.RingTheory.FiniteType
-import Mathlib.LinearAlgebra.FiniteDimensional.Defs
+public import FubiniTheorems.Decomposition.FiniteCyclicDiagonalization
+public import Mathlib.RingTheory.FiniteType
+public import Mathlib.LinearAlgebra.FiniteDimensional.Defs
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! A finite-type complex algebra with finite cyclic algebraic action has
 finitely many character eigenvectors generating the entire algebra. Their

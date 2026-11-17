@@ -1,16 +1,22 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%204/IntrinsicPresentationMaps.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import HilbertMathlib.Foundation.Algebra.RingPresentationTransport
-import FubiniTheorems.Prerequisites.Euler.GammaRVFiniteUnionGrading
-import FubiniTheorems.Prerequisites.Euler.GammaBoundedRVFiniteUnionGrading
-import FubiniTheorems.Prerequisites.Euler.GammaFiniteRVFiniteUnionGrading
-import FubiniTheorems.Prerequisites.Euler.GammaFiniteRVMapGradings
-import FubiniTheorems.Prerequisites.Euler.RVDisjointGrading
-import FubiniTheorems.Prerequisites.Euler.RVBoundedDisjointGrading
-import FubiniTheorems.Prerequisites.Euler.RESDisjointGrading
+public import HilbertMathlib.Foundation.Algebra.RingPresentationTransport
+public import FubiniTheorems.Prerequisites.Euler.GammaRVFiniteUnionGrading
+public import FubiniTheorems.Prerequisites.Euler.GammaBoundedRVFiniteUnionGrading
+public import FubiniTheorems.Prerequisites.Euler.GammaFiniteRVFiniteUnionGrading
+public import FubiniTheorems.Prerequisites.Euler.GammaFiniteRVMapGradings
+public import FubiniTheorems.Prerequisites.Euler.RVDisjointGrading
+public import FubiniTheorems.Prerequisites.Euler.RVBoundedDisjointGrading
+public import FubiniTheorems.Prerequisites.Euler.RESDisjointGrading
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Actual sharp and inclusion maps between the intrinsic finite-union
 and disjoint-union presentations. The complete comparison squares are

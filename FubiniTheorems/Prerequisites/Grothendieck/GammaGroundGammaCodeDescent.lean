@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/GammaGroundGammaCodeDescent.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFamilyDescent
-import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaVolumeCategories
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundFamilyDescent
+public import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundGammaVolumeCategories
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 /-! A bijection on full RV code families descends to a genuine Gamma
 morphism when it preserves and reflects the decoding equivalence relation. -/
 set_option backward.isDefEq.respectTransparency false

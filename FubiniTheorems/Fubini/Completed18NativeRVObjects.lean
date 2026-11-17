@@ -1,10 +1,16 @@
+module
+
 /-
 Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%205/Completed18NativeRVObjects.lean
 Original public declaration namespaces and source notices are retained.
 Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
 -/
-import FubiniTheorems.Fubini.Completed18GroundRVObjects
-import IntegrationSection6.GammaNativeFiniteBounds
+public import FubiniTheorems.Fubini.Completed18GroundRVObjects
+public import IntegrationSection6.GammaNativeFiniteBounds
+
+set_option backward.privateInPublic true
+set_option backward.proofsInPublic true
+@[expose] public section
 
 /-! Reverse conversion of full-weight original-Gamma RV objects, retaining
 actual domain points and the entire finite label graph. -/
