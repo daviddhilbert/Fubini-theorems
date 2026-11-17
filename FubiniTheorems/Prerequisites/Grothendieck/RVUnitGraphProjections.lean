@@ -1,0 +1,29 @@
+/-
+Extracted from https://github.com/daviddhilbert/diamond-integral/blob/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a/section%203/RVUnitGraphProjections.lean
+Original public declaration namespaces and source notices are retained.
+Implementation ownership and the finite-laws split are recorded in SOURCE-MANIFEST.json.
+-/
+import FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVUnitGraphs
+set_option backward.isDefEq.respectTransparency false
+set_option autoImplicit false
+open Classical FirstOrder FirstOrder.Language
+open SpecialTransformations.Milestone0 SpecialTransformations.Milestone0.LRV
+open SpecialTransformations.DefinableGeometry
+open SpecialTransformations.Section3 SpecialTransformations.Section4
+noncomputable section
+namespace DiamondIntegral.Section3
+variable {M : Type} [LRV.Structure M] [M ⊨ Axioms.ACVF]
+variable {hc : CanonicalStructure.IsCanonical (M := M)} {B : GammaParameters.Base (M := M)} {n m : ℕ}
+variable {A : GammaGroundDefSet hc B (rawRVUnitSpace (M := M) n)}
+variable {D : GammaGroundDefSet hc B (rawRVUnitSpace (M := M) m)}
+
+theorem GammaGroundMap.unitGraphMap_input (f : GammaGroundMap A D) (a : A) :
+    (f.unitGraphMap a).val ∘ Fin.castAdd m = a.val := by
+  funext i
+  exact Fin.append_left a.val (f a).val i
+
+theorem GammaGroundMap.unitGraphMap_output (f : GammaGroundMap A D) (a : A) :
+    (f.unitGraphMap a).val ∘ Fin.natAdd n = (f a).val := by
+  funext i
+  exact Fin.append_right a.val (f a).val i
+end DiamondIntegral.Section3

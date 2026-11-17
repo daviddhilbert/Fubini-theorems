@@ -1,13 +1,75 @@
 # Fubini theorems
 
-This repository will contain the active Section 5 results and all local prerequisites from the diamond-integral formalization: monomial decomposition, the canonical Puiseux-model comparison, bounded and geometric Fubini, and the variety corollary.
+Lean formalization of the active results of Section 5 of Forey and Yin's
+*Bounded integral and motivic Milnor fiber*, including the monomial decomposition,
+canonical Puiseux-model comparison, bounded and geometric Fubini theorems,
+and the variety corollary, with all of their local prerequisites.
 
-**Extraction in progress. The proof files have not been moved here yet.** The author requested that the shared-foundation migration pass every affected build and CI run before mathematical extraction begins.
+The proof implementation is independent of the diamond-integral package.
+It uses exact revisions of hilbert-mathlib, ACVF-QE, special-transformations,
+and integration-in-ACVF. Original public declaration namespaces are retained
+for compatibility. Mathematical hypotheses and theorem statements are those
+of the checked source development.
 
-The 106 shared modules are published in [hilbert-mathlib](https://github.com/daviddhilbert/hilbert-mathlib), and all four consumer repositories have updated pins and compatible imports. Local builds and audits pass. The final shared-migration CI checks are running in [integration-in-ACVF](https://github.com/daviddhilbert/integration-in-ACVF/actions/runs/43920998115) and [diamond-integral](https://github.com/daviddhilbert/diamond-integral/actions/runs/43931987273).
+## Organization
 
-The extraction plan covers 1,786 local proof modules. The checked baseline contains 10,566 public declaration types and axiom inventories; the approved upstream prerequisite promotions have a separate 69-declaration baseline. Original public names and mathematical hypotheses will be retained.
+- `Prerequisites/Definability`: the required definability background.
+- `Prerequisites/Grothendieck`: coefficient presentations and tensor prerequisites.
+- `Prerequisites/Euler`: the required Euler and comparison constructions.
+- `Decomposition`: the monomial and value-group arguments.
+- `Comparison`: coefficient comparisons and concrete Puiseux models.
+- `Fubini`: lifting interfaces and bounded/geometric integration results.
+- `Corollaries`: the concluding variety results.
 
-The two former scoped [18] dependency patches have been retired and replaced by the published generated-base kernel through a proved presentation bridge. [The repair CI passed](https://github.com/daviddhilbert/diamond-integral/actions/runs/43904799373).
+`FubiniTheorems.Library` preserves the complete original Section 5 entry point.
+Subject entry points are also available. The source inventory and exact
+implementation owners are recorded in `SOURCE-MANIFEST.json`.
 
-The subject layout and proof/migration workflow are being initialized. The repository will depend on its pinned upstream libraries and will not depend on diamond-integral.
+## Main results
+
+The declaration names below have the prefix `DiamondIntegral.Section5.`.
+Original names are retained so existing mathematical clients keep compiling.
+
+| Result | Declaration | Source |
+| --- | --- | --- |
+| Lemma 5.12: monomial decomposition | `monomial_decomposition_5_12` | [MonomialMatrixForm](FubiniTheorems/Decomposition/MonomialMatrixForm.lean) |
+| Remark 5.13: concrete Galois identifications | `PuiseuxOriginal.remark_5_13` | [PuiseuxInducedRV](FubiniTheorems/Comparison/PuiseuxModels/PuiseuxInducedRV.lean) |
+| Comparison 5.14 | `PuiseuxOriginal.theta_5_14_concrete` | [PuiseuxConcreteComparisons](FubiniTheorems/Comparison/PuiseuxModels/PuiseuxConcreteComparisons.lean) |
+| Theorem 5.17: bounded Fubini | `bounded_fubini_discharged` | [Section5DischargedInputs](FubiniTheorems/Fubini/Section5DischargedInputs.lean) |
+| Geometric Fubini | `geometric_fubini_discharged` | [Section5DischargedInputs](FubiniTheorems/Fubini/Section5DischargedInputs.lean) |
+| Variety corollary | `PuiseuxOriginal.corollary_global_vanishing_discharged` | [VarietyCorollaryDischarged](FubiniTheorems/Corollaries/VarietyCorollaryDischarged.lean) |
+
+The source statements retain their actual model, base and parameter hypotheses.
+The public contract verifier checks their full types together with all
+inventoried prerequisites.
+
+## Build and verify
+
+```sh
+lake exe cache get
+lake build FubiniTheorems
+python3 verification/verify.py
+```
+
+Lean 4.35.0 and Mathlib 56a005855ea17e0b0958f73ec801ae140b0a1679 are pinned.
+CI compiles the library, checks all source fingerprints, and compares the
+10,566 inventoried public types and axiom inventories with their checked
+pre-extraction baseline. The finite-laws prerequisite is owned by
+special-transformations and remains part of that public contract.
+Only `propext`, `Classical.choice`, and `Quot.sound` are accepted.
+Full current type/axiom output is retained as a CI artifact.
+
+The two former scoped [18] source patches are retired. The unmeasured
+lifting/kernel input uses the published generated-base proof through a
+proved presentation bridge. The extraction adds no mathematical assumptions.
+The abandoned cross-section computation material is outside this scope.
+The independent [source-boundary check](verification/independence-boundary.json)
+records that Section 5's original full closure uses no modules or constants
+from this paper's Section 6, whose Gamma-kernel repairs are separate work.
+
+## Provenance and workflow
+
+See `WORKFLOW.md` and `AGENTS.md`. Source comments and original notices are
+retained; dependencies retain their own licenses. In particular, the
+Newton–Puiseux and Grothendieck-ring adaptations remain in hilbert-mathlib
+with their Apache 2.0 notices and license texts.

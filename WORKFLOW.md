@@ -28,9 +28,8 @@ Check affected downstream imports and exact provider pins before retiring
 compatibility paths. Publish only within the author's authorization and
 report actual source, type, axiom and CI outcomes.
 
-## Initial extraction gate
-
-The 106-module shared migration must pass all affected builds and CI before
-Lean proof files are moved here. The initialized subject directories contain
-only placeholders until that gate passes. Record exact provider commits,
-then compile and compare all 10,566 baseline types and axiom inventories.
+For a future Palomar submission, select a couple of main mathematical results
+and state their exact hypotheses. Whole-paper coverage and registration of
+every section are not required unless the author explicitly requests them.
+Consult Palomar's current guidelines and complete its checks for that selection.
+This standing author rule also applies to future formalization projects.

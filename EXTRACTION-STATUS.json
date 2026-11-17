@@ -1,28 +1,14 @@
 {
-  "stage": "Shared migration CI gate; no Fubini proof files moved yet",
-  "planned_local_modules": 1786,
-  "baseline_public_types": 10566,
-  "upstream_prerequisite_baseline": 69,
-  "planned_subject_module_counts": {
-    "FubiniTheorems.Prerequisites.Definability": 37,
-    "FubiniTheorems.Prerequisites.Grothendieck": 613,
-    "FubiniTheorems.Prerequisites.Euler": 432,
-    "FubiniTheorems.Decomposition": 347,
-    "FubiniTheorems.Comparison": 120,
-    "FubiniTheorems.Fubini": 187,
-    "FubiniTheorems.Corollaries": 23,
-    "FubiniTheorems.Comparison.PuiseuxModels": 26,
-    "FubiniTheorems": 1
-  },
-  "shared_library": "daviddhilbert/hilbert-mathlib",
-  "shared_library_commit": "a26c12d71f83356ad48442b782be67ff01bd3f18",
-  "prerequisite_adapter_repair_ci": {
-    "run": 43904799373,
-    "status": "PASS"
-  },
-  "pending_shared_ci": {
-    "integration-in-ACVF": 43920998115,
-    "diamond-integral": 43931987273
-  },
-  "namespace_policy": "Preserve original public declaration names; change module providers and imports."
+  "stage": "Fresh local source build and exact public contract audit passed; GitHub CI pending.",
+  "source_modules": 1786,
+  "owned_declarations": 10565,
+  "preserved_public_contract": 10566,
+  "inherited_finite_laws_owner": "special-transformations",
+  "shared_migration_ci": "Final Diamond run still active",
+  "independent_section5_boundary": "PASS",
+  "local_build": "PASS:lake build FubiniTheorems,13021 jobs",
+  "lean_source_files": 1795,
+  "public_type_and_axiom_comparison": "PASS:10566 unchanged full types and axiom inventories",
+  "ci": "pending publication",
+  "section6_independence": "PASS:zero local Section6 modules or constant references"
 }

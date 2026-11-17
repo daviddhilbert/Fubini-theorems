@@ -1,0 +1,80 @@
+name: Lean verification
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  build:
+    name: Build and audit Fubini theorems
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      LEAN_NUM_THREADS: '4'
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+
+      - name: Restore compiled Lean files
+        id: proof-cache
+        uses: actions/cache/restore@v5
+        with:
+          path: .lake
+          key: fubini-v1-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('lean-toolchain') }}-${{ hashFiles('lake-manifest.json') }}-${{ github.sha }}
+          restore-keys: |
+            fubini-v1-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('lean-toolchain') }}-${{ hashFiles('lake-manifest.json') }}-
+            fubini-v1-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('lean-toolchain') }}-
+
+      - name: Set up Lean and the pinned Mathlib cache
+        uses: leanprover/lean-action@v1
+        with:
+          auto-config: 'false'
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          use-mathlib-cache: 'true'
+          use-github-cache: 'false'
+
+      - name: Build the independent Fubini library
+        id: build
+        run: python3 verification/build_with_diagnostics.py -- lake build FubiniTheorems
+
+      - name: Stop remaining build processes before archival
+        id: quiesce
+        if: ${{ always() && (steps.build.outcome == 'success' || steps.build.outcome == 'failure' || steps.build.outcome == 'cancelled') }}
+        run: python3 verification/quiesce_build.py
+
+      - name: Save completed proof modules
+        if: ${{ always() && steps.quiesce.outcome == 'success' && steps.proof-cache.outputs.cache-hit != 'true' && (steps.build.outcome == 'success' || steps.build.outcome == 'failure' || steps.build.outcome == 'cancelled') }}
+        uses: actions/cache/save@v5
+        with:
+          path: .lake
+          key: ${{ steps.proof-cache.outputs.cache-primary-key }}
+
+      - name: Check source owners, full public types and axioms
+        run: python3 verification/verify.py
+
+      - name: Retain verification evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fubini-verification
+          include-hidden-files: true
+          if-no-files-found: ignore
+          path: |
+            .scratch/ci-build.log
+            .scratch/ci-build-resources.log
+            .scratch/PublicSignatures.lean
+            .scratch/public-signatures.txt
+            .scratch/verification-status.json

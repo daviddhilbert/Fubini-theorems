@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "entry": "\u00absection 5\u00bb.Section",
+  "source_commits": {
+    "ACVF-QE": "a4138c3a7899330d1c77d1ec01f8f29395b5805c",
+    "special-transformations": "4b6afb7cabcb59d7ca90e883309ddc8887241d76",
+    "integration-in-ACVF": "ab4de003b3b3b107867e680a428fe9c0c9831b05",
+    "diamond-integral": "ef984d9873971249968cdbc2e737606e6cbcb557",
+    "hilbert-mathlib": "a26c12d71f83356ad48442b782be67ff01bd3f18"
+  },
+  "custom_modules": 4014,
+  "local_diamond_modules": 1857,
+  "local_section6_modules": [],
+  "local_section6_constant_references": [],
+  "unexpected_imports": [],
+  "providers": {
+    "ACVF-QE": 85,
+    "hilbert-mathlib": 94,
+    "integration-in-ACVF": 1407,
+    "special-transformations": 571,
+    "diamond-integral": 1857
+  },
+  "source_inventory_sha256": "e307df271bc20ca6fc09f7213df9de2f9db4b392b09bb25f569ee215d876422b"
+}

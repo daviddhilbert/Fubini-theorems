@@ -1,0 +1,35 @@
+name = "fubini_theorems"
+version = "0.1.0"
+description = "Fubini theorems and their prerequisites in ACVF"
+license = "MIT"
+authors = ["Yimu Yin"]
+defaultTargets = ["FubiniTheorems"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "56a005855ea17e0b0958f73ec801ae140b0a1679"
+
+[[require]]
+name = "hilbert-mathlib"
+git = "https://github.com/daviddhilbert/hilbert-mathlib.git"
+rev = "a26c12d71f83356ad48442b782be67ff01bd3f18"
+
+[[require]]
+name = "acvf_qe"
+git = "https://github.com/daviddhilbert/ACVF-QE.git"
+rev = "a4138c3a7899330d1c77d1ec01f8f29395b5805c"
+
+[[require]]
+name = "special_transformations"
+git = "https://github.com/daviddhilbert/special-transformations.git"
+rev = "39f369f0a15440465cbd12a4484779c034f278b7"
+
+[[require]]
+name = "integration_in_acvf"
+git = "https://github.com/daviddhilbert/integration-in-ACVF.git"
+rev = "a7b4779b17d8491522ff97c2a4a829546bb98683"
+
+[[lean_lib]]
+name = "FubiniTheorems"
+roots = ["FubiniTheorems"]
