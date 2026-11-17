@@ -1,93 +1,62 @@
-# Palomar preparation — Theorem 5.17
+# Bounded Fubini — preparation record
 
-**Independent Challenge work remains; this release is not ready for intake.**
-The only advertised research result is
-`DiamondIntegral.Section5.bounded_fubini_discharged`, Forey–Yin,
-*Bounded integral and motivic Milnor fiber*, arXiv:1910.12764v2, Theorem 5.17.
-The author permits necessary definition helpers in the Challenge. Geometric
-Fubini, Puiseux comparisons and the variety corollary are not separate claims.
+The only advertised research result is **Forey–Yin Theorem 5.17**, stated as
+`FubiniStatement.bounded_fubini`. Necessary definition certificates accompany
+its vocabulary. Geometric Fubini, monomial decomposition, Puiseux comparisons
+and the variety corollary remain in the library.
 
-## Mathematical scope
+Two definable maps from finite RV-fibre VF objects have a common mixed VF/RV
+base. At every point of that base, actual definable bijections to positive RV
+lifts must give equal bounded values over precisely the base point adjoined
+to the original ground. The conclusion is equality of the total bounded
+invariants. The model, saturation and generated-ground conditions are explicit.
+The VF coordinates need not be valuatively bounded.
 
-Two original-ground definable maps from finite RV-fibre VF objects have a
-common finite mixed VF/RV target. At every ambient target point, their fibres
-admit actual parameter-definable bijections to RV lifts whose bounded
-RES evaluations agree over that same parameter base. The theorem concludes
-that the total bounded values agree over the original ground. All ambient
-points, including generic points, are tested.
+The independent [Challenge](Challenge.lean) imports Mathlib and Lean's own
+compiler modules. It has 990 physical lines and 95,405 bytes, within the
+1,000-line and 100-KiB limits. The [Solution](Solution.lean) imports the
+substantive proof library and the constructive presentation bridge in
+[FubiniStatement](FubiniStatement.lean).
 
-The exact type retains the canonical RV interpretation, ACVF(0,0), an
-uncountable saturation bound, strong homogeneity, a small VF-generated real
-ground, and a small nontrivial Gamma subgroup containing its RV values.
-Nontriviality need not already occur in the VF-generated part. Source objects
-have finite RV fibres; their VF coordinates need not be valuatively bounded.
-The invariant is bounded Euler reduction of the unmeasured integral.
+## Definition helpers
 
-The [paper](paper/fubini-theorems.tex) gives the mathematical proof. Its
-[separate proof map](paper/PROOF-MAP.json) records 19 reviewed steps and 43
-Lean declarations. The [blueprint](blueprint/README.md) has 18 nodes and 22
-source-linked declarations. Neither document changes the hypotheses.
+The intrinsic reduced RES ring is presented explicitly by actual definable
+sets, underlying definable bijections, products, scissors and value-fibre
+relations. The Solution proves its ring isomorphism with the original
+coefficient presentation.
 
-## Checked module snapshot
+The bounded RV retraction is specified by bijections, scissors and cylindrical
+cell values. The total VF invariant is specified on every actual positive
+RV lift. Complete cell decomposition and original-ground lifting, proved in
+the Solution, give these specifications their ordinary mathematical meaning.
+**Neither construction record contains a Fubini law.**
 
-The module revision is recorded in `blueprint/proof-source-manifest.json`.
-Its pinned providers are published immutable commits, without a dependency
-on diamond-integral. All relevant module bodies are exported explicitly.
+Each object-construction hole carries its full carrier specification. The
+VF field and tuple/quotient presentations are additionally fixed by equations
+for their operations, carriers, codes and decoders. The exact inventory and
+purposes are recorded in [definition-helpers.json](palomar/definition-helpers.json).
+These certificates are statement vocabulary, not additional advertised
+research results.
 
-- `lake build FubiniTheorems`: PASS, 13,021 jobs.
-- `python3 verification/verify.py`: PASS, 1,786 implementation modules and
-  10,566 unchanged full public types and exact axiom inventories.
-- Mathematical-body comparison: PASS, all 1,795 pre-existing Lean files;
-  module visibility/import changes preserve the normalized mathematical text.
-- Shared foundation: its full library build and all 1,037 unchanged public
-  type/axiom comparisons passed. QE: all 85 sources compiled independently;
-  the combined headline report matches its baseline byte for byte.
-- Blueprint source, anchor, graph and rendered HTML/SVG checks: PASS.
-- Paper source-map identity and public-contract coverage: PASS. The compiled
-  PDF was rendered and visually reviewed after the bibliography correction.
+The Challenge also preserves compiler cache boundaries and unfolding-height
+metadata. These commands encode no mathematical definition or proof; they
+keep the copied declarations mechanically comparable after construction
+bodies are supplied by the Solution.
 
-See `palomar/module-verification.json` for the current source/type receipt,
-`palomar/module-migration-source.json` for body hashes and
-`palomar/verification.json` for the distinction between current and historical
-checks. Only `propext`, `Classical.choice` and `Quot.sound` are accepted.
-The current build is distinct from the earlier successful
-[extraction CI run](https://github.com/daviddhilbert/Fubini-theorems/actions/runs/43987163120).
-Lean 4.35.0 is installed locally outside the default shell PATH.
+## Verification
 
-## Remaining independent submission work
+The full library build and all 10,566 original public type/axiom comparisons
+passed in [GitHub CI](https://github.com/daviddhilbert/Fubini-theorems/actions/runs/44025205470).
+The original mathematical sources and public declarations are unchanged.
+[The CI receipt](palomar/library-ci.json) identifies that exact snapshot.
 
-1. Replace the current Challenge's three project imports with faithful
-   independent definitions. Its short import-based draft is 50 lines and
-   2,583 bytes; that does not satisfy Palomar's import restriction.
-   Necessary construction helpers must characterize the actual maps and
-   evaluations, rather than leave arbitrary invariants unconstrained.
-2. Compile the independent Challenge/Solution pair and run strict Comparator,
-   independent NanoDa replay and current official Palomar preflight on the
-   same immutable snapshot. None is certified by ordinary library CI.
-3. Review the selected statement and metadata, record the public full SHA,
-   and use the registry's current intake process if registration is requested.
-   No registration, authentication tag/gist or intake has been sent.
+The independent pair compiles. Current local and official mechanical evidence,
+including its exact source fingerprints and checked commit, is recorded in
+[verification.json](palomar/verification.json) and
+[readiness.json](palomar/readiness.json). Ordinary library compilation alone
+is not a Comparator or independent-kernel check. The full pinned workflow is
+[palomar.yml](.github/workflows/palomar.yml).
 
-The [current guide](https://palomar-registry.org/how-to-submit) and
-[binding standard](https://github.com/PalomarRegistry/PalomarPolicy/blob/main/CONTRIBUTING.md)
-govern these checks. Read `submit.llms.txt` before driving intake. The current
-request authorizes release publication, not registry registration.
-
-## Reproduce
-
-Put the pinned Lean 4.35.0 toolchain on PATH, then run:
-
-```sh
-lake build FubiniTheorems
-python3 verification/verify.py
-python3 scripts/check_paper.py --verified-types
-python3 scripts/check_blueprint.py
-leanblueprint web
-python3 scripts/check_blueprint.py --rendered
-python3 scripts/check_palomar.py --output palomar/readiness.json
-```
-
-The last command deliberately exits nonzero while the independent Challenge
-blocker remains. Its report is a local preparation gate, not official preflight.
-The source/type and blueprint workflows follow the other repositories' checked
-extraction and submission workflows; their receipts are not Fubini certificates.
+The [paper](paper/fubini-theorems.tex), its [proof map](paper/PROOF-MAP.json)
+and the [blueprint](blueprint/README.md) retain their checked mathematical
+source links. Only `propext`, `Classical.choice` and `Quot.sound` are permitted.

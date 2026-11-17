@@ -46,14 +46,13 @@ related_formalizations:
     note: "Shared corrected RV language and quantifier elimination, at the manifest revision."
 status:
   scope: >-
-    Exactly one advertised mathematical headline:
-    DiamondIntegral.Section5.bounded_fubini_discharged (Theorem 5.17).
-    Geometric Fubini, monomial decomposition, Puiseux comparisons and the
-    variety corollary remain in the full library without being separate
-    Challenge claims. Challenge.lean is presently a preparation draft whose
-    project imports must be removed for Palomar compliance. Module migration, the library build and all 10,566 unchanged public
-    type/axiom checks have passed. Exact-snapshot Comparator/NanoDa
-    verification remains required.
+    Exactly one advertised mathematical result: FubiniStatement.bounded_fubini
+    (Forey–Yin Theorem 5.17), in an intrinsic reduced RES presentation.
+    Necessary definition certificates accompany its vocabulary. Geometric Fubini,
+    monomial decomposition, Puiseux comparisons and the variety corollary remain
+    in the library. The original exported library names and all 10,566 public
+    types remain unchanged. The independent Challenge compiles within the size
+    limits. Exact-snapshot mechanical evidence is recorded in palomar/verification.json.
   sorry_count: 0
   sorry_in_definitions: 0
   axioms: ["propext", "Classical.choice", "Quot.sound"]
@@ -94,6 +93,11 @@ fidelity:
     arbitrary fibre integrals is claimed. RV inversion is named and totalized
     at the single absorbing RV zero, following the provider's language correction.
     Mathlib's multiplicative valuation order reverses the paper's additive order.
+    The Challenge uses the ordinary intrinsic reduced RES ring. The Solution
+    proves its ring isomorphism with the original coefficient presentation and
+    transports the existing bounded Fubini theorem. Typed construction holes
+    carry complete carrier or Euler-value specifications; no Fubini law is a
+    field of those construction records.
 review:
   status: "preparation; no independent expert review or Palomar acceptance claimed"
   reviewers: []
@@ -104,19 +108,19 @@ review:
     build and all unchanged full public type/axiom checks; see
     palomar/module-verification.json. The blueprint binds that revision. See
     PALOMAR-PREPARATION.md and palomar/readiness.json for current local checks
-    and the remaining independent Challenge import blocker.
-    The one deliberate Challenge sorry is excluded from proof-development counts.
+    and the independent statement verification evidence.
+    Deliberate Challenge theorem and construction holes are excluded from proof-development counts.
 alignment:
-  namespace: "DiamondIntegral.Section5"
+  namespace: "FubiniStatement"
   statements:
     - source: "Forey–Yin, arXiv:1910.12764v2, Theorem 5.17"
-      lean: "DiamondIntegral.Section5.bounded_fubini_discharged"
-      module: "FubiniTheorems.Fubini.Section5DischargedInputs"
+      lean: "FubiniStatement.bounded_fubini"
+      module: "FubiniStatement.BoundedFubini"
       status: proved
       note: >-
         Original model and ground hypotheses are retained; the value-group
         preparation and original-ground lifting/kernel records are constructed
-        by checked proofs. The independent Palomar statement is still a draft.
+        by checked proofs. The compact statement is proved from bounded_fubini_discharged through a checked ring isomorphism.
 acknowledgements: >-
   Arthur Forey and Yimu Yin for the mathematical source; Lean and Mathlib
   contributors; the pinned hilbert-mathlib, ACVF-QE, special-transformations

@@ -1,0 +1,298 @@
+{
+  "advertised_theorem": "FubiniStatement.bounded_fubini",
+  "scope": "One research theorem. All other targets are vocabulary constructions or definition certificates; none assumes a Fubini law.",
+  "theorem_helpers": [
+    {
+      "name": "SpecialTransformations.Section3.Values.vrv_eq_infinity_iff",
+      "purpose": "Certificate for the actual RV value quotient and its ordinary value-group operations.",
+      "implementation_module": "Section3.ValueQuotient",
+      "type": "∀ {M : Type} [inst : SpecialTransformations.Milestone0.LRV.Structure M] [hM : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] (t : CanonicalRV.RVSort M), SpecialTransformations.Section3.Values.vrv t = SpecialTransformations.Section3.Values.infinity ↔ ↑t = SpecialTransformations.Milestone0.iRVZero"
+    },
+    {
+      "name": "SpecialTransformations.Milestone0.Transfer.rv_zero_mem",
+      "purpose": "Sort-membership certificate for the named RV operations.",
+      "implementation_module": "QF2Fragment",
+      "type": "∀ {M : Type} [inst : SpecialTransformations.Milestone0.LRV.Structure M], M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF → SpecialTransformations.Milestone0.iRV SpecialTransformations.Milestone0.iRVZero"
+    },
+    {
+      "name": "SpecialTransformations.Milestone0.RVCalc.le_trans_rv",
+      "purpose": "Preorder certificate used in forming the actual Gamma quotient.",
+      "implementation_module": "RVCalc",
+      "type": "∀ {M : Type} [inst : SpecialTransformations.Milestone0.LRV.Structure M], M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF → ∀ {a b c : M}, SpecialTransformations.Milestone0.iRV a → SpecialTransformations.Milestone0.iRV b → SpecialTransformations.Milestone0.iRV c → SpecialTransformations.Milestone0.iLe a b → SpecialTransformations.Milestone0.iLe b c → SpecialTransformations.Milestone0.iLe a c"
+    },
+    {
+      "name": "SpecialTransformations.Milestone0.RVCalc.le_refl_rv",
+      "purpose": "Preorder certificate used in forming the actual Gamma quotient.",
+      "implementation_module": "RVCalc",
+      "type": "∀ {M : Type} [inst : SpecialTransformations.Milestone0.LRV.Structure M], M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF → ∀ {a : M}, SpecialTransformations.Milestone0.iRV a → SpecialTransformations.Milestone0.iLe a a"
+    },
+    {
+      "name": "SpecialTransformations.Section8.normalize_eq_of_isCanonical",
+      "purpose": "Keeps the canonical normalization equal to the supplied model.",
+      "implementation_module": "Section8.GammaRadiusBase",
+      "type": "∀ {M : Type} [sM : SpecialTransformations.Milestone0.LRV.Structure M] [M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF], CanonicalStructure.IsCanonical → CanonicalStructure.normalize = sM"
+    },
+    {
+      "name": "SpecialTransformations.DefinableGeometry.Space.definable_univ",
+      "purpose": "Definability closure certificate used by the explicit set and map constructors.",
+      "implementation_module": "HilbertMathlib.Foundation.Definability.DefinableGeometry",
+      "type": "∀ {L : FirstOrder.Language} {M : Type} [inst : L.Structure M] (P : SpecialTransformations.DefinableGeometry.Space L M) (S : Set M), P.Definable S Set.univ"
+    },
+    {
+      "name": "DiamondIntegral.Section3.GammaGroundDefinable.of_real",
+      "purpose": "Definability closure certificate used by the explicit set and map constructors.",
+      "implementation_module": "FubiniTheorems.Prerequisites.Grothendieck.GammaGroundParameters",
+      "type": "∀ {M : Type} [inst : SpecialTransformations.Milestone0.LRV.Structure M] [inst_1 : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] {hc : CanonicalStructure.IsCanonical} {B : SpecialTransformations.Section3.GammaParameters.Base} {Q : SpecialTransformations.DefinableGeometry.Space SpecialTransformations.Milestone0.LRV M} {A : Set Q.Carrier}, Q.Definable B.real A → DiamondIntegral.Section3.GammaGroundDefinable hc B Q A"
+    },
+    {
+      "name": "DiamondIntegral.Section3.GammaGroundContext.nontrivial_definable_gamma",
+      "purpose": "Extracts or transports the displayed nontrivial Gamma ground witness.",
+      "implementation_module": "FubiniTheorems.Prerequisites.Grothendieck.TensorPresentationContext",
+      "type": "∀ {M : Type} [inst : SpecialTransformations.Milestone0.LRV.Structure M] [inst_1 : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] (C : DiamondIntegral.Section3.GammaGroundContext M), DiamondIntegral.Section2.NontrivialDefinableGamma C.base"
+    },
+    {
+      "name": "SpecialTransformations.Section3.Values.infinity_eq_zero",
+      "purpose": "Certificate for the actual RV value quotient and its ordinary value-group operations.",
+      "implementation_module": "Section3.GammaOperations",
+      "type": "∀ {M : Type} [inst : SpecialTransformations.Milestone0.LRV.Structure M] [hM : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF], SpecialTransformations.Section3.Values.infinity = 0"
+    },
+    {
+      "name": "SpecialTransformations.Section3.Values.presentation_compatible",
+      "purpose": "Certificate for the actual RV value quotient and its ordinary value-group operations.",
+      "implementation_module": "Section3.GammaPresentation",
+      "type": "∀ {M : Type} [inst : SpecialTransformations.Milestone0.LRV.Structure M] [hM : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] (x y : SpecialTransformations.Milestone0.Transfer.VFType), SpecialTransformations.Milestone0.VFValued.predV x y ↔ SpecialTransformations.Section3.Values.presentationValuation x ≤ SpecialTransformations.Section3.Values.presentationValuation y"
+    },
+    {
+      "name": "SpecialTransformations.Milestone0.VFValued.exists_valuation_predV",
+      "purpose": "Identifies the actual value quotient with the value group of the VF valuation.",
+      "implementation_module": "VFValued",
+      "type": "∀ {M : Type} [inst : SpecialTransformations.Milestone0.LRV.Structure M] [hM : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF], ∃ Γ x w, ∀ (x_1 y : SpecialTransformations.Milestone0.Transfer.VFType), SpecialTransformations.Milestone0.VFValued.predV x_1 y ↔ w x_1 ≤ w y"
+    },
+    {
+      "name": "SpecialTransformations.Section3.Values.vf_value_eq_iff",
+      "purpose": "Identifies the actual value quotient with the value group of the VF valuation.",
+      "implementation_module": "Section3.ValueQuotient",
+      "type": "∀ {M : Type} [inst : SpecialTransformations.Milestone0.LRV.Structure M] [hM : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] {Γ : Type} [inst_1 : LinearOrderedCommGroupWithZero Γ] (v : Valuation SpecialTransformations.Milestone0.Transfer.VFType Γ), (∀ (x y : SpecialTransformations.Milestone0.Transfer.VFType), SpecialTransformations.Milestone0.VFValued.predV x y ↔ v x ≤ v y) → ∀ (x y : SpecialTransformations.Milestone0.Transfer.VFType), SpecialTransformations.Section3.Values.vrv (CanonicalRV.encodedRv x) = SpecialTransformations.Section3.Values.vrv (CanonicalRV.encodedRv y) ↔ v x = v y"
+    },
+    {
+      "name": "SpecialTransformations.Milestone0.Transfer.rv_mem",
+      "purpose": "Sort-membership certificate for the named RV operations.",
+      "implementation_module": "QF2Fragment",
+      "type": "∀ {M : Type} [inst : SpecialTransformations.Milestone0.LRV.Structure M], M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF → ∀ {x : M}, SpecialTransformations.Milestone0.iVF x → SpecialTransformations.Milestone0.iRV (SpecialTransformations.Milestone0.iRv x)"
+    },
+    {
+      "name": "CanonicalRV.encodedRv_surjective",
+      "purpose": "Surjectivity certificate for the actual quotient presentation.",
+      "implementation_module": "CanonicalRV",
+      "type": "∀ {M : Type} [inst : SpecialTransformations.Milestone0.LRV.Structure M] [hM : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF], Function.Surjective CanonicalRV.encodedRv"
+    },
+    {
+      "name": "SpecialTransformations.Section3.Values.vrv_surjective",
+      "purpose": "Certificate for the actual RV value quotient and its ordinary value-group operations.",
+      "implementation_module": "Section3.ValueQuotient",
+      "type": "∀ {M : Type} [inst : SpecialTransformations.Milestone0.LRV.Structure M] [hM : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF], Function.Surjective SpecialTransformations.Section3.Values.vrv"
+    },
+    {
+      "name": "SpecialTransformations.Section3.GammaParameters.value_surjective",
+      "purpose": "Surjectivity certificate for the actual quotient presentation.",
+      "implementation_module": "Section3.GammaCodes",
+      "type": "∀ {M : Type} [inst : SpecialTransformations.Milestone0.LRV.Structure M] [hM : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF], Function.Surjective SpecialTransformations.Section3.GammaParameters.value"
+    },
+    {
+      "name": "DiamondIntegral.Section4.GammaGroupNames.one_definable_base",
+      "purpose": "The neutral Gamma parameter is definable over the original ground.",
+      "implementation_module": "FubiniTheorems.Prerequisites.Euler.GammaGroupNames",
+      "type": "∀ {M : Type} [inst : SpecialTransformations.Milestone0.LRV.Structure M] [hM : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] (B : SpecialTransformations.Section3.GammaParameters.Base), SpecialTransformations.Section3.GammaParameters.GammaDefinableClosureAtBase B 1"
+    },
+    {
+      "name": "DiamondIntegral.Section3.GammaGroundDefinable.compl",
+      "purpose": "Definability closure certificate used by the explicit set and map constructors.",
+      "implementation_module": "FubiniTheorems.Prerequisites.Grothendieck.GammaGroundParameters",
+      "type": "∀ {M : Type} [inst : SpecialTransformations.Milestone0.LRV.Structure M] [inst_1 : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] {hc : CanonicalStructure.IsCanonical} {B : SpecialTransformations.Section3.GammaParameters.Base} {Q : SpecialTransformations.DefinableGeometry.Space SpecialTransformations.Milestone0.LRV M} {A : Set Q.Carrier}, DiamondIntegral.Section3.GammaGroundDefinable hc B Q A → DiamondIntegral.Section3.GammaGroundDefinable hc B Q Aᶜ"
+    },
+    {
+      "name": "DiamondIntegral.Section3.GammaGroundDefinable.inter",
+      "purpose": "Definability closure certificate used by the explicit set and map constructors.",
+      "implementation_module": "FubiniTheorems.Prerequisites.Grothendieck.GammaGroundParameters",
+      "type": "∀ {M : Type} [inst : SpecialTransformations.Milestone0.LRV.Structure M] [inst_1 : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] {hc : CanonicalStructure.IsCanonical} {B : SpecialTransformations.Section3.GammaParameters.Base} {Q : SpecialTransformations.DefinableGeometry.Space SpecialTransformations.Milestone0.LRV M} {A D : Set Q.Carrier}, DiamondIntegral.Section3.GammaGroundDefinable hc B Q A → DiamondIntegral.Section3.GammaGroundDefinable hc B Q D → DiamondIntegral.Section3.GammaGroundDefinable hc B Q (A ∩ D)"
+    },
+    {
+      "name": "DiamondIntegral.Section5.ShapedGammaCell.definable",
+      "purpose": "Definability certificate for the recursively specified cylindrical cells.",
+      "implementation_module": "FubiniTheorems.Decomposition.CylindricalEulerCertificates",
+      "type": "∀ {M : Type} [inst : SpecialTransformations.Milestone0.LRV.Structure M] [inst_1 : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] {B : SpecialTransformations.Section3.GammaParameters.Base} {n : ℕ} {s : DiamondIntegral.Section5.CylindricalShape n} {C : Set (Fin n → SpecialTransformations.Section3.Values.Gamma)}, DiamondIntegral.Section5.ShapedGammaCell B n C s → DiamondIntegral.Section4.GammaOrderLogic.GammaDefinable B C"
+    },
+    {
+      "name": "DiamondIntegral.Section2.NontrivialDefinableGamma.mono",
+      "purpose": "Extracts or transports the displayed nontrivial Gamma ground witness.",
+      "implementation_module": "FubiniTheorems.Prerequisites.Definability.AtomicBaseChange",
+      "type": "∀ {M : Type} [inst : SpecialTransformations.Milestone0.LRV.Structure M] [hM : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] {B C : DiamondIntegral.Section2.ParameterBase M}, DiamondIntegral.Section2.NontrivialDefinableGamma B → B.real ⊆ C.real → B.gamma ⊆ C.gamma → DiamondIntegral.Section2.NontrivialDefinableGamma C"
+    },
+    {
+      "name": "SpecialTransformations.Section3.GammaParameters.small_union_range_carrier",
+      "purpose": "Finite parameter adjunction preserves the displayed cardinal smallness bound.",
+      "implementation_module": "Section3.GammaFullDescent",
+      "type": "∀ {α : Type} {κ : Cardinal.{0}}, Cardinal.aleph0 ≤ κ → ∀ (S : Set α), Cardinal.mk ↑S < κ → ∀ {n : ℕ} (a : Fin n → α), Cardinal.mk ↑(S ∪ Set.range a) < κ"
+    },
+    {
+      "name": "FubiniStatement.rawRVSpace_data",
+      "purpose": "Fixes the complete real-coordinate presentation of RV tuples.",
+      "implementation_module": "FubiniStatement.PresentationSpecs",
+      "type": "∀ {M : Type} [inst : SpecialTransformations.Milestone0.LRV.Structure M] [M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] (n : ℕ), FubiniStatement.spaceData (SpecialTransformations.Section4.rawRVSpace n) = ⟨Fin n → CanonicalRV.RVSort M, ⟨Fin n, ⟨Set.range SpecialTransformations.Section4.rvValues, fun z => Classical.choose ⋯⟩⟩⟩"
+    },
+    {
+      "name": "FubiniStatement.rawVFSpace_data",
+      "purpose": "Fixes the complete real-coordinate presentation of VF tuples.",
+      "implementation_module": "FubiniStatement.PresentationSpecs",
+      "type": "∀ {M : Type} [inst : SpecialTransformations.Milestone0.LRV.Structure M] [M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] (n : ℕ), FubiniStatement.spaceData (SpecialTransformations.Section4.rawVFSpace n) = ⟨Fin n → SpecialTransformations.Milestone0.Transfer.VFType, ⟨Fin n, ⟨Set.range SpecialTransformations.Section4.vfValues, fun z => Classical.choose ⋯⟩⟩⟩"
+    },
+    {
+      "name": "FubiniStatement.gammaSpace_data",
+      "purpose": "Fixes the full nonzero-RV presentation of the actual Gamma quotient.",
+      "implementation_module": "FubiniStatement.PresentationSpecs",
+      "type": "∀ {M : Type} [inst : SpecialTransformations.Milestone0.LRV.Structure M] [inst_1 : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF], FubiniStatement.spaceData SpecialTransformations.Section4.gammaSpace = ⟨SpecialTransformations.Section3.Values.Gamma, ⟨Fin 1, ⟨{z | SpecialTransformations.Milestone0.iRV (z 0) ∧ z 0 ≠ SpecialTransformations.Milestone0.iRVZero}, fun z => SpecialTransformations.Section3.Values.gammaOf ⟨↑z 0, ⋯⟩ ⋯⟩⟩⟩"
+    },
+    {
+      "name": "FubiniStatement.rvGroupoid_hom",
+      "purpose": "Fixes morphisms to actual parameter-definable underlying bijections.",
+      "implementation_module": "FubiniStatement.PresentationSpecs",
+      "type": "∀ {M : Type} [inst : SpecialTransformations.Milestone0.LRV.Structure M] [inst_1 : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] {hc : CanonicalStructure.IsCanonical} {B : SpecialTransformations.Section3.GammaParameters.Base} {k : ℕ} (U V : DiamondIntegral.Section3.GammaGroundRVObject hc B k), (U ⟶ V) = DiamondIntegral.Section3.GammaGroundBijection U.domain V.domain"
+    },
+    {
+      "name": "FubiniStatement.vfField_operations",
+      "purpose": "Fixes the field operations to those of the original VF sort.",
+      "implementation_module": "FubiniStatement.PresentationSpecs",
+      "type": "∀ {M : Type} [inst : SpecialTransformations.Milestone0.LRV.Structure M] [inst_1 : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF],\n  have F := SpecialTransformations.Milestone0.Transfer.vfFieldOfModel;\n  ↑Zero.zero = SpecialTransformations.Milestone0.Transfer.iVFZero ∧ ↑One.one = SpecialTransformations.Milestone0.Transfer.iVFOne ∧ (∀ (a b : SpecialTransformations.Milestone0.Transfer.VFType), ↑(Add.add a b) = SpecialTransformations.Milestone0.iVFAdd ↑a ↑b) ∧ ∀ (a b : SpecialTransformations.Milestone0.Transfer.VFType), ↑(Mul.mul a b) = SpecialTransformations.Milestone0.iVFMul ↑a ↑b"
+    }
+  ],
+  "definition_helpers": [
+    {
+      "name": "SpecialTransformations.Milestone0.Transfer.vfFieldOfModel",
+      "purpose": "The VF field dictionary; vfField_operations fixes zero, one, addition and multiplication to the original model, and field laws determine the remaining operations.",
+      "implementation_module": "VFField",
+      "type": "{M : Type} → [inst : SpecialTransformations.Milestone0.LRV.Structure M] → [hM : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] → Field SpecialTransformations.Milestone0.Transfer.VFType",
+      "compiler_height": 28
+    },
+    {
+      "name": "DiamondIntegral.Section3.gammaGroundRVObjectGroupoid",
+      "purpose": "Category bookkeeping on RV objects; rvGroupoid_hom fixes its morphisms to actual definable underlying bijections.",
+      "implementation_module": "FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVCategories",
+      "type": "{M : Type} → [inst : SpecialTransformations.Milestone0.LRV.Structure M] → [inst_1 : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] → {hc : CanonicalStructure.IsCanonical} → {ground : SpecialTransformations.Section3.GammaParameters.Base} → {k : ℕ} → CategoryTheory.Groupoid (DiamondIntegral.Section3.GammaGroundRVObject hc ground k)",
+      "compiler_height": 27
+    },
+    {
+      "name": "SpecialTransformations.Section4.gammaSpace",
+      "purpose": "All nonzero RV codes for the actual value quotient, fixed completely by gammaSpace_data.",
+      "implementation_module": "Section4.Spaces",
+      "type": "{M : Type} → [sM : SpecialTransformations.Milestone0.LRV.Structure M] → [hM : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] → SpecialTransformations.Section4.Space",
+      "compiler_height": 29
+    },
+    {
+      "name": "SpecialTransformations.Section4.rawVFSpace",
+      "purpose": "Literal VF tuple codes and decoding, fixed completely by rawVFSpace_data.",
+      "implementation_module": "Section4.RealPresentations",
+      "type": "{M : Type} → [inst : SpecialTransformations.Milestone0.LRV.Structure M] → ℕ → SpecialTransformations.DefinableGeometry.Space SpecialTransformations.Milestone0.LRV M",
+      "compiler_height": 19
+    },
+    {
+      "name": "SpecialTransformations.Section4.rawRVSpace",
+      "purpose": "Literal RV tuple codes and decoding, fixed completely by rawRVSpace_data.",
+      "implementation_module": "Section4.RealPresentations",
+      "type": "{M : Type} → [inst : SpecialTransformations.Milestone0.LRV.Structure M] → ℕ → SpecialTransformations.DefinableGeometry.Space SpecialTransformations.Milestone0.LRV M",
+      "compiler_height": 18
+    },
+    {
+      "name": "FubiniStatement.vfLift",
+      "purpose": "The positive lift with all RV coordinates retained and exactly rv(x)=volume(u); its full carrier is specified in the return type.",
+      "implementation_module": "FubiniStatement.NativeObjects",
+      "type": "{M : Type} → [inst : SpecialTransformations.Milestone0.LRV.Structure M] → [inst_1 : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] → {hc : CanonicalStructure.IsCanonical} → {B : SpecialTransformations.Section3.GammaParameters.Base} → {k : ℕ} → (U : DiamondIntegral.Section3.GammaGroundRVObject hc B k) → { D // D.carrier = {q | ∃ u, ↑u = q.2 ∧ ↑(U.volume.toFun u) = DiamondIntegral.Section2.tupleRV M q.1} }",
+      "compiler_height": 29
+    },
+    {
+      "name": "FubiniStatement.mapFibre",
+      "purpose": "The actual map fibre over the displayed point, definable over precisely that point adjoined to the real ground; its full carrier is specified.",
+      "implementation_module": "FubiniStatement.NativeObjects",
+      "type": "{M : Type} → [inst : SpecialTransformations.Milestone0.LRV.Structure M] → [inst_1 : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] → {hc : CanonicalStructure.IsCanonical} → {B : SpecialTransformations.Section3.GammaParameters.Base} → {n r p q : ℕ} → {A : DiamondIntegral.Section3.GammaGroundDefSet hc B (SpecialTransformations.Section4.rawMixedSpace n r)} → {C : DiamondIntegral.Section3.GammaGroundDefSet hc B (SpecialTransformations.Section4.rawMixedSpace p q)} → (f : DiamondIntegral.Section3.GammaGroundMap A C) → (z : Fin (p + q) → M) → { D // D.carrier = {x | ∃ a, ↑a = x ∧ DiamondIntegral.Section5.nativeMixedCode ↑(f.toFun a) = z} }",
+      "compiler_height": 37
+    },
+    {
+      "name": "FubiniStatement.rvProduct",
+      "purpose": "A finite-to-one labelled RV presentation of the complete Cartesian product carrier.",
+      "implementation_module": "FubiniStatement.NativeObjects",
+      "type": "{M : Type} → [inst : SpecialTransformations.Milestone0.LRV.Structure M] → [inst_1 : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] → {hc : CanonicalStructure.IsCanonical} → {B : SpecialTransformations.Section3.GammaParameters.Base} → {k l : ℕ} → (U : DiamondIntegral.Section3.GammaGroundRVObject hc B k) → (V : DiamondIntegral.Section3.GammaGroundRVObject hc B l) → { W // W.arity = U.arity + V.arity ∧ W.domain.carrier ≍ FubiniStatement.productCarrier U V }",
+      "compiler_height": 30
+    },
+    {
+      "name": "FubiniStatement.resProduct",
+      "purpose": "The same complete Cartesian product with finite value support.",
+      "implementation_module": "FubiniStatement.NativeObjects",
+      "type": "{M : Type} → [inst : SpecialTransformations.Milestone0.LRV.Structure M] → [inst_1 : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] → {hc : CanonicalStructure.IsCanonical} → {B : SpecialTransformations.Section3.GammaParameters.Base} → {k l : ℕ} → (U : DiamondIntegral.Section3.GammaGroundRESObject hc B k) → (V : DiamondIntegral.Section3.GammaGroundRESObject hc B l) → { W // W.obj.arity = U.obj.arity + V.obj.arity ∧ W.obj.domain.carrier ≍ FubiniStatement.productCarrier U.obj V.obj }",
+      "compiler_height": 31
+    },
+    {
+      "name": "FubiniStatement.rvRestrict",
+      "purpose": "A labelled RV presentation of exactly the specified definable subset.",
+      "implementation_module": "FubiniStatement.NativeObjects",
+      "type": "{M : Type} → [inst : SpecialTransformations.Milestone0.LRV.Structure M] → [inst_1 : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] → {hc : CanonicalStructure.IsCanonical} → {B : SpecialTransformations.Section3.GammaParameters.Base} → {k : ℕ} → (U : DiamondIntegral.Section3.GammaGroundRVObject hc B k) → (X : DiamondIntegral.Section3.GammaGroundDefSet hc B (SpecialTransformations.Section4.rawRVSpace U.arity)) → X.carrier ⊆ U.domain.carrier → { W // W.arity = U.arity ∧ W.domain.carrier ≍ X.carrier }",
+      "compiler_height": 28
+    },
+    {
+      "name": "FubiniStatement.resRestrict",
+      "purpose": "The same exact restriction with finite value support.",
+      "implementation_module": "FubiniStatement.NativeObjects",
+      "type": "{M : Type} → [inst : SpecialTransformations.Milestone0.LRV.Structure M] → [inst_1 : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] → {hc : CanonicalStructure.IsCanonical} → {B : SpecialTransformations.Section3.GammaParameters.Base} → {k : ℕ} → (U : DiamondIntegral.Section3.GammaGroundRESObject hc B k) → (X : DiamondIntegral.Section3.GammaGroundDefSet hc B (SpecialTransformations.Section4.rawRVSpace U.obj.arity)) → X.carrier ⊆ U.obj.domain.carrier → { W // W.obj.arity = U.obj.arity ∧ W.obj.domain.carrier ≍ X.carrier }",
+      "compiler_height": 29
+    },
+    {
+      "name": "FubiniStatement.resUnit",
+      "purpose": "The complete zero-dimensional point, the multiplicative unit in reduced RES.",
+      "implementation_module": "FubiniStatement.NativeObjects",
+      "type": "{M : Type} → [inst : SpecialTransformations.Milestone0.LRV.Structure M] → [inst_1 : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] → (hc : CanonicalStructure.IsCanonical) → (B : SpecialTransformations.Section3.GammaParameters.Base) → { U // U.obj.arity = 0 ∧ U.obj.domain.carrier ≍ Set.univ }",
+      "compiler_height": 30
+    },
+    {
+      "name": "FubiniStatement.rvEmpty",
+      "purpose": "The empty carrier in the specified label degree.",
+      "implementation_module": "FubiniStatement.NativeObjects",
+      "type": "{M : Type} → [inst : SpecialTransformations.Milestone0.LRV.Structure M] → [inst_1 : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] → (hc : CanonicalStructure.IsCanonical) → (B : SpecialTransformations.Section3.GammaParameters.Base) → (k : ℕ) → { U // U.arity = 0 ∧ U.domain.carrier ≍ ∅ }",
+      "compiler_height": 28
+    },
+    {
+      "name": "FubiniStatement.valueLineObject",
+      "purpose": "The complete RV fibre at the displayed definable Gamma value, with its carrier specification in its type.",
+      "implementation_module": "FubiniStatement.CanonicalRES",
+      "type": "{M : Type} → [inst : SpecialTransformations.Milestone0.LRV.Structure M] → [inst_1 : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] → (hc : CanonicalStructure.IsCanonical) → (B : SpecialTransformations.Section3.GammaParameters.Base) → (α : SpecialTransformations.Section3.Values.Gamma) → SpecialTransformations.Section3.GammaParameters.GammaDefinableClosureAtBase B α → { U // FubiniStatement.IsValueLine U α }",
+      "compiler_height": 44
+    },
+    {
+      "name": "FubiniStatement.gammaLiftObject",
+      "purpose": "The complete RV inverse image of the displayed Gamma set, with its carrier specification in its type.",
+      "implementation_module": "FubiniStatement.BoundedValues",
+      "type": "{M : Type} → [inst : SpecialTransformations.Milestone0.LRV.Structure M] → [inst_1 : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] → (hc : CanonicalStructure.IsCanonical) → (B : SpecialTransformations.Section3.GammaParameters.Base) → {n : ℕ} → (T : Set (Fin n → SpecialTransformations.Section3.Values.Gamma)) → DiamondIntegral.Section4.GammaOrderLogic.GammaDefinable B T → { U // U.arity = n ∧ U.domain.carrier ≍ FubiniStatement.gammaLiftDomain T }",
+      "compiler_height": 44
+    },
+    {
+      "name": "FubiniStatement.boundedRVValues",
+      "purpose": "The bounded Euler retraction, characterized by actual bijections, scissors, and the displayed cylindrical-cell values.",
+      "implementation_module": "FubiniStatement.BoundedValues",
+      "type": "{M : Type} → [inst : SpecialTransformations.Milestone0.LRV.Structure M] → [inst_1 : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] → M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF00 → {κ : Cardinal.{0}} → Cardinal.aleph0 ≤ κ → SpecialTransformations.Section3.Saturated M κ → (hc : CanonicalStructure.IsCanonical) → (B : SpecialTransformations.Section3.GammaParameters.Base) → Cardinal.mk ↑B.real < κ → Cardinal.mk ↑B.gamma < κ → DiamondIntegral.Section2.NontrivialDefinableGamma B → FubiniStatement.BoundedRVValues hc B",
+      "compiler_height": 65
+    },
+    {
+      "name": "FubiniStatement.boundedVFValues",
+      "purpose": "The total VF invariant, characterized by its value on every actual definable positive RV lift.",
+      "implementation_module": "FubiniStatement.BoundedFubini",
+      "type": "{M : Type} → [inst : SpecialTransformations.Milestone0.LRV.Structure M] → [inst_1 : M ⊨ SpecialTransformations.Milestone0.Axioms.ACVF] → (G : DiamondIntegral.Section3.GammaGroundContext M) → (hc : CanonicalStructure.IsCanonical) → FubiniStatement.BoundedVFValues G hc",
+      "compiler_height": 66
+    }
+  ],
+  "proof_sources": {
+    "FubiniStatement.lean": "a584b04103635dd0c18cfcdff68934ea01f009d4da27bf13f67fd89c7badff8a",
+    "FubiniStatement/BoundedFubini.lean": "c32b8c0dd78a305d57250ca0ae20cfd9067b16fced9bccdc77ec207dd6ab1cdd",
+    "FubiniStatement/BoundedValues.lean": "330e52322fb6d89cb6254062cd76978f31b13008aa04c58745a6bee5937fdcda",
+    "FubiniStatement/CanonicalRES.lean": "ecee66caabaa8b61972596b408ee9f24fbedfd347f84f0f386e2e67475d8ba75",
+    "FubiniStatement/NativeObjects.lean": "bbec9670cd49a70f251cd9ecea18848185b272c75387e7630dfa58757f60ec8f",
+    "FubiniStatement/PresentationSpecs.lean": "7f73a452247f31113e646fe887f1bea9f4dadaefee403419a3c229647d65a8f4"
+  },
+  "compiler_metadata": "Unfolding-height overrides preserve compiler metadata only; they contain no mathematical values or proofs."
+}

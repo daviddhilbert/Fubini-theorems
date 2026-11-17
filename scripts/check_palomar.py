@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'verification'))
 from lean_source import code_only, declarations
 
-MAIN = 'DiamondIntegral.Section5.bounded_fubini_discharged'
+MAIN = 'FubiniStatement.bounded_fubini'
 
 
 def main():
@@ -20,18 +20,26 @@ def main():
     args = parser.parse_args()
     blockers = []
     config = json.loads((ROOT / 'comparator.json').read_text())
-    if config != {
-        'challenge_module': 'Challenge', 'solution_module': 'Solution',
-        'theorem_names': [MAIN],
-        'permitted_axioms': ['propext', 'Classical.choice', 'Quot.sound'],
-    }:
-        blockers.append('Comparator selection must contain exactly the main Fubini theorem.')
+    inventory_path = ROOT / 'palomar/definition-helpers.json'
+    inventory = json.loads(inventory_path.read_text()) if inventory_path.exists() else {}
+    helper_theorems = [item['name'] for item in inventory.get('theorem_helpers', [])]
+    helper_definitions = [item['name'] for item in inventory.get('definition_helpers', [])]
+    if not inventory:
+        blockers.append('Necessary definition-helper inventory has not been recorded.')
+    if config.get('challenge_module') != 'Challenge' or config.get('solution_module') != 'Solution':
+        blockers.append('Unexpected Challenge/Solution module selection.')
+    if config.get('theorem_names') != [MAIN] + helper_theorems:
+        blockers.append('Selection must contain only bounded Fubini and its inventoried definition helpers.')
+    if config.get('definition_names', []) != helper_definitions:
+        blockers.append('Definition holes differ from their specification inventory.')
+    if config.get('permitted_axioms') != ['propext', 'Classical.choice', 'Quot.sound']:
+        blockers.append('Only the standard three axioms are allowed.')
     challenge = ROOT / 'Challenge.lean'
     source = challenge.read_text()
     code = code_only(source)
     theorems = [d['name'] for d in declarations(source) if d['kind'] in ('theorem', 'lemma')]
-    if theorems != [MAIN]:
-        blockers.append('Challenge must state exactly the selected Fubini result.')
+    if set(theorems) != set([MAIN] + helper_theorems) or len(theorems) != len(set(theorems)):
+        blockers.append('Challenge theorem declarations differ from the one headline and necessary definition helpers.')
     imports = re.findall(r'^\s*(?:public\s+)?import\s+(\S+)', code, re.M)
     # Deliberately conservative: the draft must first reach the Mathlib-only
     # shape. Official preflight must authenticate the entire import closure.
@@ -42,17 +50,13 @@ def main():
     size = len(challenge.read_bytes())
     if lines > 1000 or size > 100 * 1024:
         blockers.append('Challenge exceeds the hard 1,000-line / 100-KiB limit.')
-    # Compare the literal source type and the integral definition to the owner;
-    # kernel elaboration and Comparator are still required after migration.
-    owner = (ROOT / 'FubiniTheorems/Fubini/Section5DischargedInputs.lean').read_text()
-    def headline(text):
-        return text.split('theorem bounded_fubini_discharged', 1)[1].split(' :=', 1)[0]
-    if headline(source) != headline(owner):
-        blockers.append('Draft theorem statement differs from its implementation owner.')
-    def integral(text):
-        return text.split('def section5BoundedVFIntegral', 1)[1].split('\n\n', 1)[0]
-    if integral(source) != integral(owner):
-        blockers.append('Draft bounded integral definition differs from its implementation owner.')
+    # The author selects a concise standalone presentation. The original
+    # public theorem remains untouched; the Solution constructs the vocabulary
+    # and proves the new presentation via the original bounded Fubini theorem.
+    # Comparator, rather than a source-string comparison, judges the new type.
+    proof = ROOT / 'FubiniStatement/BoundedFubini.lean'
+    if not proof.exists() or 'bounded_fubini_discharged' not in code_only(proof.read_text()):
+        blockers.append('Missing proof bridge to the existing bounded Fubini theorem.')
     missing_module = []
     oversized = []
     unproved = []
@@ -90,6 +94,7 @@ def main():
     report = {
         'status': 'BLOCKED' if blockers else 'LOCAL_CHECKS_PASS',
         'scope': 'preparation checks only; not official Palomar verification',
+        'advertised_theorems': [MAIN], 'definition_helper_theorems': helper_theorems,
         'theorem_names': theorems,
         'challenge': {'lines': lines, 'bytes': size, 'imports': imports,
                       'project_imports': forbidden, 'sha256': hashlib.sha256(challenge.read_bytes()).hexdigest()},

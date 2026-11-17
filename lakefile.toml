@@ -33,3 +33,12 @@ rev = "9a726a52eb760534ac6a3de8a9bbf81b8d3a9184"
 [[lean_lib]]
 name = "FubiniTheorems"
 roots = ["FubiniTheorems"]
+
+[[lean_lib]]
+name = "FubiniStatement"
+
+[[lean_lib]]
+name = "Challenge"
+
+[[lean_lib]]
+name = "Solution"

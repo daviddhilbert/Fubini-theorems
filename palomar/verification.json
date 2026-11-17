@@ -1,130 +1,41 @@
 {
-  "date": "2026-11-16",
-  "base_revision": "2cd1ec8e8a73aaac794b2df6eace8fc7c64d4290",
-  "lean_version": "4.35.0, arm64-apple-darwin24.6.0, eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
-  "proof_sources_changed": "Module visibility and imports changed; all normalized mathematical bodies and 10,566 full public types/axiom inventories are preserved.",
-  "official_comparator": "NOT RUN",
-  "nanoda": "NOT RUN",
-  "palomar_intake": "NOT SENT",
-  "draft_sha256": {
-    "Challenge.lean": "d755c5103c8f31c71f10d2f5f1d193c2b3bfb1e064c5f51b641617e6780c0935",
-    "Solution.lean": "cc364fcc6be9c506038c81a64784348e9c00cd065f6ea2fa6c986d8a631e7eb8",
-    "comparator.json": "ee691dc604a1ad22d37999138ce020346b7ece204bdfa15bd1004b447caa8a53",
-    "formalization.yaml": "5decac9c860b155039b7c147bf145dfd50114a9cd010386caa28d5f89955e48f"
+  "scope": "single bounded Fubini theorem and necessary definition helpers",
+  "advertised_theorem": "FubiniStatement.bounded_fubini",
+  "source_sha256": {
+    "Challenge.lean": "aa27965d524f9e871b93135615cc0eff4890fda52aa3e3a8670ae36876c2fa93",
+    "Solution.lean": "2c65798986ea4c643ec98ff25c266507cd6e4f6cdabba77819aa6b3d8155277c",
+    "comparator.json": "d4b3f3c0377509e8963c4cc9ac70cfa539ab0dd8963f8354088e7efea25beca4",
+    "formalization.yaml": "dccfe0f6d23dc5898a6db3a7db605325eff7a62c26c7597ab35fde93c412aec2",
+    "lakefile.toml": "f36d2c5193e015e89e97b34c78d3fd76a57950382a9c461d41c0f5180f192e7a"
   },
-  "historical_pre_module_checks": [
-    {
-      "id": "library_build",
-      "status": "PASS",
-      "command": "lake build FubiniTheorems",
-      "log": ".scratch/palomar/library-build.log",
-      "log_sha256": "a7af24cbe1c839a0d8771664d217bec6b01a9d1fdb40640722896857dd69fe1e",
-      "scope": "Incremental build using existing checked artifacts; 13021 jobs."
-    },
-    {
-      "id": "public_contract",
-      "status": "PASS",
-      "command": "python3 verification/verify.py",
-      "log": ".scratch/palomar/public-audit.log",
-      "log_sha256": "6c8fd5a1217576af0e92a415a6d58ebc5f0dbdb86626de333494084527aacefb",
-      "scope": "Fresh type/axiom audit against compiled modules; 10566 unchanged public types."
-    },
-    {
-      "id": "challenge_legacy_smoke",
-      "status": "PASS",
-      "command": "lake env lean .scratch/palomar/ChallengeLegacy.lean",
-      "log": ".scratch/palomar/challenge-legacy.log",
-      "log_sha256": "81e0a72ff6845fa418d399aca98a99e0483cc45b119befaebebbcb0d69a322a8",
-      "scope": "Statement smoke check with module wrappers removed; intentional Challenge sorry."
-    },
-    {
-      "id": "solution_legacy_smoke",
-      "status": "PASS",
-      "command": "lake env lean .scratch/palomar/SolutionLegacy.lean",
-      "log": ".scratch/palomar/solution-legacy.log",
-      "log_sha256": "75aaaa3ab9263dd3d0a7bed594748e512e25b6d6f9981946fad303d2cabf8f0a",
-      "scope": "Full type and standard-three-axiom audit of selected implementation."
-    },
-    {
-      "id": "challenge_module",
-      "status": "FAIL",
-      "command": "lake env lean Challenge.lean",
-      "log": ".scratch/palomar/challenge-module.log",
-      "log_sha256": "467823f3838034b71499a85c8b1b6617d8b63285ad29919ac768d343ebe6f2a2",
-      "scope": "Lean rejects import of non-module Completed18GroundLiftInput."
-    },
-    {
-      "id": "solution_module",
-      "status": "FAIL",
-      "command": "lake env lean Solution.lean",
-      "log": ".scratch/palomar/solution-module.log",
-      "log_sha256": "290d9045c2cddcf2cc7c766ac2fd80ed06418454b13575d896bab583a8686cbe",
-      "scope": "Lean rejects import of non-module Section5DischargedInputs."
-    },
-    {
-      "id": "blueprint_render",
-      "status": "PASS",
-      "command": "leanblueprint web",
-      "log": ".scratch/palomar/blueprint-render.log",
-      "log_sha256": "c1eba673917996e08957039ad3d7635b3c6084585708b49930625bf1b863f98d",
-      "scope": "HTML and clickable SVG rendered with leanblueprint 0.0.20; optional LaTeX image utilities unavailable."
-    },
-    {
-      "id": "blueprint_validation",
-      "status": "PASS",
-      "command": "python3 scripts/check_blueprint.py --rendered",
-      "log": ".scratch/palomar/blueprint_validation.log",
-      "log_sha256": "10dd74b2ead399d214413ce6e5ba750caeb6e0bf87ca42876e69f37c3891ee78",
-      "scope": "Documentation fingerprint, declaration anchor, graph and rendered-link checks only."
-    }
-  ],
-  "module_revision": "58506df2ed62eafc66d3cb00be8ee24c57597449",
-  "checks": [
-    {
-      "id": "module_library_build",
-      "status": "PASS",
-      "command": "lake build FubiniTheorems",
-      "scope": "13,021 jobs; exact provider pins; full receipt in palomar/module-verification.json."
-    },
-    {
-      "id": "module_public_contract",
-      "status": "PASS",
-      "command": "python3 verification/verify.py",
-      "scope": "Fresh audit of all 10,566 unchanged full public types and exact axiom inventories."
-    },
-    {
-      "id": "module_mathematical_bodies",
-      "status": "PASS",
-      "scope": "1,795 unchanged normalized Lean mathematical bodies; see palomar/module-migration-source.json."
-    },
-    {
-      "id": "independent_challenge",
-      "status": "BLOCKED",
-      "scope": "The current small Challenge still imports project modules; necessary construction helpers are permitted by the author."
-    },
-    {
-      "id": "strict_comparator",
-      "status": "PENDING"
-    },
-    {
-      "id": "independent_nanoda",
-      "status": "PENDING"
-    },
-    {
-      "id": "official_palomar_preflight",
-      "status": "PENDING"
-    },
-    {
-      "id": "challenge_module",
-      "status": "PASS",
-      "log_sha256": "449fac278aed35352212c4fd66e8c28ffcc99c77f0aab063a6b6d5594be3b84a",
-      "scope": "Module-format smoke check. Project imports remain in the Challenge; no independent Comparator certificate."
-    },
-    {
-      "id": "solution_module",
-      "status": "PASS",
-      "log_sha256": "75aaaa3ab9263dd3d0a7bed594748e512e25b6d6f9981946fad303d2cabf8f0a",
-      "scope": "Module-format smoke check. Project imports remain in the Challenge; no independent Comparator certificate."
-    }
+  "challenge": {
+    "lines": 990,
+    "bytes": 95405,
+    "ordinary_imports": [
+      "Mathlib"
+    ],
+    "meta_imports": [
+      "Lean.Meta.Match.Match",
+      "Lean.Meta.Tactic.AuxLemma"
+    ]
+  },
+  "local": {
+    "pair_build": "PASS",
+    "comparator": "PASS",
+    "nanoda": "PASS",
+    "lean_kernel": "PASS",
+    "command": "lake comparator --inadvisably-no-sandbox --config comparator.json",
+    "limitation": "Local macOS diagnostic without the Linux build sandbox; official exact-snapshot workflow is separate.",
+    "log_sha256": "62febfe74dde5053be14ff485680c4cb5707150c19b28db659880044dca04b17"
+  },
+  "official_preflight": {
+    "status": "PENDING",
+    "workflow": ".github/workflows/palomar.yml",
+    "pipeline_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7"
+  },
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
   ]
 }

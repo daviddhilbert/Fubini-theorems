@@ -11,8 +11,10 @@ The [Lean blueprint](blueprint/README.md) follows the main bounded Fubini proof
 through its exact model, ground and fibre hypotheses. After rendering, open
 `blueprint/web/index.html` for the statements and clickable dependency graph.
 The [Palomar preparation record](PALOMAR-PREPARATION.md) selects **Theorem 5.17
-only**. The Challenge is a draft; independent statement imports and official
-verification remain required before submission. The module migration, library
+only**, stated as `FubiniStatement.bounded_fubini`. Its independent Challenge
+uses an intrinsic reduced RES ring and the necessary
+[definition certificates](palomar/definition-helpers.json). The Solution proves
+this presentation from the existing bounded Fubini theorem. The full library
 build and all 10,566 unchanged public type/axiom comparisons have passed.
 
 The [traditional mathematical paper](paper/fubini-theorems.tex) is available
@@ -62,7 +64,7 @@ inventoried prerequisites.
 
 ```sh
 lake exe cache get
-lake build FubiniTheorems
+lake build FubiniTheorems Challenge Solution
 python3 verification/verify.py
 ```
 

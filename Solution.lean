@@ -1,8 +1,51 @@
 module
-public import FubiniTheorems.Fubini.Section5DischargedInputs
+public import FubiniStatement
 public section
-/-! The substantive implementation supplies the single selected theorem.
-This preparation entry point requires fresh compilation and Comparator checks. -/
-set_option pp.all true in
-#check @DiamondIntegral.Section5.bounded_fubini_discharged
-#print axioms DiamondIntegral.Section5.bounded_fubini_discharged
+/-! The checked library constructs the independent vocabulary and proves the
+single bounded Fubini claim. Definition-support certificates are audited too. -/
+set_option pp.fullNames true
+#print axioms FubiniStatement.bounded_fubini
+#print axioms SpecialTransformations.Section3.Values.vrv_eq_infinity_iff
+#print axioms SpecialTransformations.Milestone0.Transfer.rv_zero_mem
+#print axioms SpecialTransformations.Milestone0.RVCalc.le_trans_rv
+#print axioms SpecialTransformations.Milestone0.RVCalc.le_refl_rv
+#print axioms SpecialTransformations.Section8.normalize_eq_of_isCanonical
+#print axioms SpecialTransformations.DefinableGeometry.Space.definable_univ
+#print axioms DiamondIntegral.Section3.GammaGroundDefinable.of_real
+#print axioms DiamondIntegral.Section3.GammaGroundContext.nontrivial_definable_gamma
+#print axioms SpecialTransformations.Section3.Values.infinity_eq_zero
+#print axioms SpecialTransformations.Section3.Values.presentation_compatible
+#print axioms SpecialTransformations.Milestone0.VFValued.exists_valuation_predV
+#print axioms SpecialTransformations.Section3.Values.vf_value_eq_iff
+#print axioms SpecialTransformations.Milestone0.Transfer.rv_mem
+#print axioms CanonicalRV.encodedRv_surjective
+#print axioms SpecialTransformations.Section3.Values.vrv_surjective
+#print axioms SpecialTransformations.Section3.GammaParameters.value_surjective
+#print axioms DiamondIntegral.Section4.GammaGroupNames.one_definable_base
+#print axioms DiamondIntegral.Section3.GammaGroundDefinable.compl
+#print axioms DiamondIntegral.Section3.GammaGroundDefinable.inter
+#print axioms DiamondIntegral.Section5.ShapedGammaCell.definable
+#print axioms DiamondIntegral.Section2.NontrivialDefinableGamma.mono
+#print axioms SpecialTransformations.Section3.GammaParameters.small_union_range_carrier
+#print axioms FubiniStatement.rawRVSpace_data
+#print axioms FubiniStatement.rawVFSpace_data
+#print axioms FubiniStatement.gammaSpace_data
+#print axioms FubiniStatement.rvGroupoid_hom
+#print axioms FubiniStatement.vfField_operations
+#print axioms SpecialTransformations.Milestone0.Transfer.vfFieldOfModel
+#print axioms DiamondIntegral.Section3.gammaGroundRVObjectGroupoid
+#print axioms SpecialTransformations.Section4.gammaSpace
+#print axioms SpecialTransformations.Section4.rawVFSpace
+#print axioms SpecialTransformations.Section4.rawRVSpace
+#print axioms FubiniStatement.vfLift
+#print axioms FubiniStatement.mapFibre
+#print axioms FubiniStatement.rvProduct
+#print axioms FubiniStatement.resProduct
+#print axioms FubiniStatement.rvRestrict
+#print axioms FubiniStatement.resRestrict
+#print axioms FubiniStatement.resUnit
+#print axioms FubiniStatement.rvEmpty
+#print axioms FubiniStatement.valueLineObject
+#print axioms FubiniStatement.gammaLiftObject
+#print axioms FubiniStatement.boundedRVValues
+#print axioms FubiniStatement.boundedVFValues

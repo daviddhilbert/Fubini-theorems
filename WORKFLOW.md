@@ -34,18 +34,19 @@ every section are not required unless the author explicitly requests them.
 Consult Palomar's current guidelines and complete its checks for that selection.
 This standing author rule also applies to future formalization projects.
 
-The current author selection is narrower: **only Theorem 5.17**,
-`DiamondIntegral.Section5.bounded_fubini_discharged`, is the only advertised Challenge result. Necessary definition helpers may
-accompany its independent vocabulary; supporting research results remain in
-the library and blueprint. The author explicitly permits these helpers. Preserve the
-exact model, generated-ground and fibre-lift hypotheses. The present pair is
-an explicitly blocked preparation draft; see `PALOMAR-PREPARATION.md`.
+The current author selection is narrower: **only Theorem 5.17**, stated as
+`FubiniStatement.bounded_fubini`, is the advertised Challenge result. Necessary
+definition helpers may accompany its independent vocabulary; supporting research
+results remain in the library and blueprint. The author permits a concise
+standalone statement rather than an exact copy of the older exported type.
+Preserve the existing library declarations. The Solution constructs the intrinsic
+RES presentation and proves its Fubini statement from
+`DiamondIntegral.Section5.bounded_fubini_discharged`. See
+`palomar/definition-helpers.json` for the construction specifications.
 
 For blueprint edits, run `python3 scripts/check_blueprint.py`,
 `leanblueprint web`, and `python3 scripts/check_blueprint.py --rendered`.
-Run `python3 scripts/check_palomar.py --output palomar/readiness.json` to
-record local preparation blockers. Its current nonzero exit is intentional:
-it must not treat ordinary Lean verification as independent Challenge,
-Comparator or NanoDa evidence. Before an official check, complete the
-independent statement-import work and update all affected source
-fingerprints deliberately, preserving full exported types and axiom lists.
+Run `python3 scripts/check_palomar.py --output palomar/readiness.json` for local
+source, selection and size checks. Run `lake build Challenge Solution` and
+Comparator with independent NanoDa replay, then the pinned full workflow on
+the immutable public snapshot. Ordinary library compilation is separate evidence.

@@ -1804,5 +1804,10 @@
     "lakefile.toml": "ad69fcd6d3e44f365842f4de6063c02761b68380a01d10c7f273183a6291c85d",
     "lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
     "verification/public-contract.json": "b33717624c11ed50596152bf1e7e41bd754cbe2c2bd548618a1e69646221eab1"
+  },
+  "statement_library_extension": {
+    "lakefile_sha256": "f36d2c5193e015e89e97b34c78d3fd76a57950382a9c461d41c0f5180f192e7a",
+    "suffix": "\n[[lean_lib]]\nname = \"FubiniStatement\"\n\n[[lean_lib]]\nname = \"Challenge\"\n\n[[lean_lib]]\nname = \"Solution\"\n",
+    "scope": "Adds only independent statement libraries; the complete pinned proof configuration prefix and mathematical sources remain unchanged."
   }
 }

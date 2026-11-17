@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "scope": "library build and unchanged public type/axiom audit; not Palomar verification",
+  "repository": "daviddhilbert/Fubini-theorems",
+  "commit": "7e056c79cc1179405edcfe0b1d0c29c079a7a77d",
+  "workflow_url": "https://github.com/daviddhilbert/Fubini-theorems/actions/runs/44025205470",
+  "build_jobs": 13021,
+  "implementation_modules": 1786,
+  "preserved_public_types": 10566,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "providers": {
+    "hilbert-mathlib": "89972dda28566ae669329c67b6cd224998a11601",
+    "acvf_qe": "1d158a9ef5cbe5ac2cb52707144b1da127ef8dbf",
+    "special_transformations": "b661cbb2ac28cf003999579a3789e319fa9a5b7d",
+    "integration_in_acvf": "9a726a52eb760534ac6a3de8a9bbf81b8d3a9184",
+    "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+  },
+  "artifact_sha256": {
+    "ci-build.log": "c4ebc7226d14604756fefcd1b0b4b2d5ab4c3df6a3c4bd98a6417765dd80f721",
+    "verification-status.json": "a980bb2fb988b5f999e33dc6a6a7f3fca1796b399fb190b405089f85afb76bb2",
+    "public-signatures.txt": "8dfd493d60ebf29700b6a6d7da198e0ee622bf52d304abc79325de77bfef1339"
+  }
+}
