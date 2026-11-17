@@ -1,0 +1,81 @@
+name: Fubini blueprint
+
+on:
+  push:
+    branches: [main, codex/palomar-blueprint]
+    paths:
+      - "blueprint/**"
+      - "FubiniTheorems/**"
+      - "FubiniTheorems.lean"
+      - "lean-toolchain"
+      - "lakefile.toml"
+      - "lake-manifest.json"
+      - "SOURCE-MANIFEST.json"
+      - "verification/public-contract.json"
+      - "scripts/check_blueprint.py"
+      - "scripts/check_paper.py"
+      - "paper/**"
+      - "output/pdf/**"
+      - ".github/workflows/blueprint.yml"
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: read
+
+concurrency:
+  group: blueprint-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - uses: actions/configure-pages@v5
+        if: github.ref == 'refs/heads/main'
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: blueprint/requirements.txt
+      - name: Install Graphviz
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends graphviz libgraphviz-dev
+      - name: Render and validate the blueprint
+        run: |
+          python -m pip install -r blueprint/requirements.txt
+          python scripts/check_blueprint.py
+          leanblueprint web
+          python scripts/check_blueprint.py --rendered
+          python scripts/check_paper.py
+          test -s blueprint/web/index.html
+          test -s blueprint/web/dependency-graph.svg
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fubini-blueprint
+          path: blueprint/web
+      - uses: actions/upload-pages-artifact@v4
+        if: github.ref == 'refs/heads/main'
+        with:
+          path: blueprint/web
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment
