@@ -1,10 +1,9 @@
 {
   "status": "PASS",
-  "scope": "library build and unchanged public type/axiom audit; not Palomar verification",
+  "scope": "library build, independent Challenge/Solution compilation, and unchanged public type/axiom audit; full Palomar verification is separate",
   "repository": "daviddhilbert/Fubini-theorems",
-  "commit": "7e056c79cc1179405edcfe0b1d0c29c079a7a77d",
-  "workflow_url": "https://github.com/daviddhilbert/Fubini-theorems/actions/runs/44025205470",
-  "build_jobs": 13021,
+  "commit": "40e4e23f0b34f87d753f0456a943463c9ab52ab0",
+  "workflow_url": "https://github.com/daviddhilbert/Fubini-theorems/actions/runs/44039621761",
   "implementation_modules": 1786,
   "preserved_public_types": 10566,
   "permitted_axioms": [
@@ -20,8 +19,12 @@
     "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679"
   },
   "artifact_sha256": {
-    "ci-build.log": "c4ebc7226d14604756fefcd1b0b4b2d5ab4c3df6a3c4bd98a6417765dd80f721",
+    "ci-build.log": "422b855cc53228e2dca27d6a79097ec5f4107c5d00de9c22311f5b93e7487f9e",
     "verification-status.json": "a980bb2fb988b5f999e33dc6a6a7f3fca1796b399fb190b405089f85afb76bb2",
     "public-signatures.txt": "8dfd493d60ebf29700b6a6d7da198e0ee622bf52d304abc79325de77bfef1339"
+  },
+  "previous_library_checkpoint": {
+    "commit": "7e056c79cc1179405edcfe0b1d0c29c079a7a77d",
+    "workflow_url": "https://github.com/daviddhilbert/Fubini-theorems/actions/runs/44025205470"
   }
 }

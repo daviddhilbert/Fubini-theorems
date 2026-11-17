@@ -29,13 +29,41 @@
     "log_sha256": "62febfe74dde5053be14ff485680c4cb5707150c19b28db659880044dca04b17"
   },
   "official_preflight": {
-    "status": "PENDING",
+    "status": "PASS",
     "workflow": ".github/workflows/palomar.yml",
-    "pipeline_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7"
+    "pipeline_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+    "workflow_url": "https://github.com/daviddhilbert/Fubini-theorems/actions/runs/44039528542",
+    "source_preparation": "PASS",
+    "checked_at": "2026-11-17T08:50:38Z",
+    "report": "palomar/mechanical-report-40e4e23.json",
+    "report_sha256": "c327cda0ec03ce431f28a791bc03a0bab54db244a30710a643311603e9e5a207",
+    "comparator": "PASS",
+    "lean_kernel": "PASS",
+    "nanoda": "PASS",
+    "con_ron": "PASS",
+    "challenge_provenance": "PASS",
+    "source_requirements": "PASS",
+    "warnings": [
+      "configured Challenge source exceeds the preferred 32 KiB / 300-line review surface"
+    ]
   },
   "permitted_axioms": [
     "propext",
     "Classical.choice",
     "Quot.sound"
-  ]
+  ],
+  "checked_snapshot": {
+    "repository": "daviddhilbert/Fubini-theorems",
+    "commit": "40e4e23f0b34f87d753f0456a943463c9ab52ab0"
+  },
+  "ci": {
+    "status": "PASS",
+    "workflow_url": "https://github.com/daviddhilbert/Fubini-theorems/actions/runs/44039621761",
+    "preserved_public_types": 10566
+  },
+  "additional_checks": {
+    "blueprint_rendered_source_and_anchors": "PASS",
+    "paper_map_and_all_43_anchors": "PASS",
+    "selected_vocabulary_static_checks": "PASS"
+  }
 }
