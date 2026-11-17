@@ -1,0 +1,36 @@
+{
+  "status": "BLOCKED",
+  "scope": "preparation checks only; not official Palomar verification",
+  "theorem_names": [
+    "DiamondIntegral.Section5.bounded_fubini_discharged"
+  ],
+  "challenge": {
+    "lines": 50,
+    "bytes": 2583,
+    "imports": [
+      "FubiniTheorems.Fubini.Completed18GroundLiftInput",
+      "FubiniTheorems.Decomposition.GammaQEFiniteLaws",
+      "FubiniTheorems.Fubini.NativeVFFubini"
+    ],
+    "project_imports": [
+      "FubiniTheorems.Fubini.Completed18GroundLiftInput",
+      "FubiniTheorems.Decomposition.GammaQEFiniteLaws",
+      "FubiniTheorems.Fubini.NativeVFFubini"
+    ],
+    "sha256": "d755c5103c8f31c71f10d2f5f1d193c2b3bfb1e064c5f51b641617e6780c0935"
+  },
+  "lean_source_files": 1797,
+  "missing_module": [],
+  "oversized": [],
+  "symlinks": [],
+  "unproved_proof_sources": [],
+  "blockers": [
+    "Challenge imports project-specific sources; independent vocabulary is required."
+  ],
+  "required_external_checks": [
+    "Exact-snapshot Comparator",
+    "Independent NanoDa replay",
+    "Official Palomar preflight"
+  ],
+  "external_check_status": "Not verified by this script; see palomar/verification.json"
+}

@@ -1,0 +1,6 @@
+/web/
+/print/
+/lean_decls
+/src/*.paux
+/src/*.log
+__pycache__/

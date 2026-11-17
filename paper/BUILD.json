@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "source": "paper/fubini-theorems.tex",
+  "command": "tectonic --outdir output/pdf --keep-logs paper/fubini-theorems.tex",
+  "compiler": "Tectonic 0.17.0",
+  "compiler_exit_code": 0,
+  "pages": 16,
+  "references": 9,
+  "pdf_sha256": "588319868867b0f0ed9bbb5b83f6eb59411adffb828013e17d215d273a4a93c9",
+  "source_sha256": {
+    "paper/fubini-theorems.tex": "85e1a5be6490bc57db6ed0b1ec3f4be47e3c302488d8bdbc5d9de37b2a730fed",
+    "paper/sections/bounded.tex": "8ffbb3b1e5b09af45da43966c667c139a02dca45ae6c13b21530bb7cf550f137",
+    "paper/sections/complex.tex": "ac9d31150871db95e6c573927ad0a94af8b199bd865d10515f924b9e323e3b84",
+    "paper/sections/decomposition.tex": "5dc02ec0deed7449b7b2f81f53d2fa92269375cbe99b0290f790d62d0dc9f84c",
+    "paper/sections/geometric.tex": "65aa5d8379c4bf59e1c85f4b1d009dabb9c999687874946e030b43be36ac1449",
+    "paper/sections/setup.tex": "654850e4259abea5df1bb57bd49d92ba6fe19a614d5f8aac108bdab1d6c53cbc"
+  },
+  "layout_review": "All 16 latest pages rendered to PNG and visually inspected; no overlap or clipping observed. Final bibliography inspected at full page size.",
+  "proof_map": "paper/PROOF-MAP.json",
+  "source_type_receipt": "palomar/module-verification.json",
+  "independent_palomar_checks": "Pending; not certified by this manuscript receipt."
+}

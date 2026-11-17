@@ -1,0 +1,291 @@
+@DiamondIntegral.Section5.bounded_fubini_discharged : ∀ {M : Type}
+  [inst : FirstOrder.Language.Structure.{0, 0, 0} SpecialTransformations.Milestone0.LRV M]
+  [inst_1 :
+    @FirstOrder.Language.Theory.Model.{0, 0, 0} SpecialTransformations.Milestone0.LRV M inst
+      SpecialTransformations.Milestone0.Axioms.ACVF]
+  {hc : @CanonicalStructure.IsCanonical M inst} {G : @DiamondIntegral.Section3.GammaGroundContext M inst inst_1}
+  (A A' :
+    @DiamondIntegral.Section3.GammaGroundFiniteVFObject M inst inst_1 hc
+      (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+  {p q : Nat}
+  (C :
+    @DiamondIntegral.Section3.GammaGroundDefSet M inst inst_1 hc
+      (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G)
+      (@SpecialTransformations.Section4.rawMixedSpace M inst p q))
+  (f :
+    @DiamondIntegral.Section3.GammaGroundMap M inst inst_1
+      (@SpecialTransformations.Section4.rawMixedSpace M inst
+        (@DiamondIntegral.Section3.GammaGroundFiniteVFObject.vfArity M inst inst_1 hc
+          (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G) A)
+        (@DiamondIntegral.Section3.GammaGroundFiniteVFObject.rvArity M inst inst_1 hc
+          (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G) A))
+      (@SpecialTransformations.Section4.rawMixedSpace M inst p q) hc
+      (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G)
+      (@DiamondIntegral.Section3.GammaGroundFiniteVFObject.domain M inst inst_1 hc
+        (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G) A)
+      C)
+  (f' :
+    @DiamondIntegral.Section3.GammaGroundMap M inst inst_1
+      (@SpecialTransformations.Section4.rawMixedSpace M inst
+        (@DiamondIntegral.Section3.GammaGroundFiniteVFObject.vfArity M inst inst_1 hc
+          (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G) A')
+        (@DiamondIntegral.Section3.GammaGroundFiniteVFObject.rvArity M inst inst_1 hc
+          (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G) A'))
+      (@SpecialTransformations.Section4.rawMixedSpace M inst p q) hc
+      (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G)
+      (@DiamondIntegral.Section3.GammaGroundFiniteVFObject.domain M inst inst_1 hc
+        (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G) A')
+      C)
+  (h :
+    ∀ (z : Fin (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) p q) → M),
+      @Membership.mem.{0, 0} (Fin (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) p q) → M)
+          (Set.{0} (Fin (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) p q) → M))
+          (@Set.instMembership.{0} (Fin (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat) p q) → M))
+          (@DiamondIntegral.Section5.nativeMixedDomain M inst inst_1 hc
+            (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G) p q C)
+          z →
+        @DiamondIntegral.Section5.NativeBoundedVFFibreLiftEquality M inst inst_1 hc
+          (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G)
+          (@DiamondIntegral.Section3.GammaGroundFiniteVFObject.vfArity M inst inst_1 hc
+            (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G) A)
+          (@DiamondIntegral.Section3.GammaGroundFiniteVFObject.rvArity M inst inst_1 hc
+            (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G) A)
+          (@DiamondIntegral.Section3.GammaGroundFiniteVFObject.vfArity M inst inst_1 hc
+            (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G) A')
+          (@DiamondIntegral.Section3.GammaGroundFiniteVFObject.rvArity M inst inst_1 hc
+            (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G) A')
+          p q (@DiamondIntegral.Section3.GammaGroundContext.model00 M inst inst_1 G)
+          (@DiamondIntegral.Section5.GammaQE.gamma_piecewise_rational_affine M inst inst_1)
+          (@DiamondIntegral.Section3.GammaGroundContext.κ M inst inst_1 G)
+          (@LT.lt.le.{1} Cardinal.{0} (@PartialOrder.toPreorder.{1} Cardinal.{0} Cardinal.partialOrder.{0})
+            Cardinal.aleph0.{0} (@DiamondIntegral.Section3.GammaGroundContext.κ M inst inst_1 G)
+            (@DiamondIntegral.Section3.GammaGroundContext.uncountable M inst inst_1 G))
+          (@DiamondIntegral.Section3.GammaGroundContext.saturated M inst inst_1 G)
+          (@DiamondIntegral.Section3.GammaGroundContext.small_real M inst inst_1 G)
+          (@DiamondIntegral.Section3.GammaGroundContext.small_gamma M inst inst_1 G)
+          (@DiamondIntegral.Section3.GammaGroundContext.nontrivial_definable_gamma M inst inst_1 G)
+          (@DiamondIntegral.Section3.GammaGroundFiniteVFObject.domain M inst inst_1 hc
+            (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G) A)
+          (@DiamondIntegral.Section3.GammaGroundFiniteVFObject.domain M inst inst_1 hc
+            (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G) A')
+          C f f' z),
+  @Eq.{1}
+    (@DiamondIntegral.Section4.RESDimensionFreeReduction.Ring M inst inst_1
+      (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+    (@DFunLike.coe.{1, 1, 1}
+      (@RingHom.{0, 0}
+        (@DiamondIntegral.Section3.GammaGroundVFGrothendieckRing M inst inst_1 hc
+          (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+        (@DiamondIntegral.Section4.RESDimensionFreeReduction.Ring M inst inst_1
+          (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+        (@Semiring.toNonAssocSemiring.{0}
+          (@DiamondIntegral.Section3.GammaGroundVFGrothendieckRing M inst inst_1 hc
+            (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+          (@CommSemiring.toSemiring.{0}
+            (@DiamondIntegral.Section3.GammaGroundVFGrothendieckRing M inst inst_1 hc
+              (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+            (@CommRing.toCommSemiring.{0}
+              (@DiamondIntegral.Section3.GammaGroundVFGrothendieckRing M inst inst_1 hc
+                (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+              (@Algebra.GrothendieckAddGroup.instCommRing.{0}
+                (@DiamondIntegral.Section3.GammaGroundVFPositiveSemiring M inst inst_1 hc
+                  (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+                (@RingCon.instCommSemiringQuotient.{0}
+                  (@MvPolynomial.{0, 0}
+                    (@DiamondIntegral.Section3.GammaGroundFiniteVFObject M inst inst_1 hc
+                      (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+                    Nat Nat.instCommSemiring)
+                  (@AddMonoidAlgebra.commSemiring.{0, 0} Nat
+                    (@Finsupp.{0, 0}
+                      (@DiamondIntegral.Section3.GammaGroundFiniteVFObject M inst inst_1 hc
+                        (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+                      Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                    Nat.instCommSemiring
+                    (@Finsupp.instAddCommMonoid.{0, 0}
+                      (@DiamondIntegral.Section3.GammaGroundFiniteVFObject M inst inst_1 hc
+                        (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+                      Nat Nat.instAddCommMonoid))
+                  (@SpecialTransformations.Section4.PositiveGrothendieck.congruence.{0}
+                    (@DiamondIntegral.Section3.GammaGroundFiniteVFObject M inst inst_1 hc
+                      (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+                    (@DiamondIntegral.Section3.gammaGroundVFSemiringPresentation M inst inst_1 hc
+                      (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))))))))
+        (@Semiring.toNonAssocSemiring.{0}
+          (@DiamondIntegral.Section4.RESDimensionFreeReduction.Ring M inst inst_1
+            (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+          (@CommSemiring.toSemiring.{0}
+            (@DiamondIntegral.Section4.RESDimensionFreeReduction.Ring M inst inst_1
+              (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+            (@CommRing.toCommSemiring.{0}
+              (@DiamondIntegral.Section4.RESDimensionFreeReduction.Ring M inst inst_1
+                (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+              (@DiamondIntegral.Section4.RESDimensionFreeReduction.instCommRingRing M inst inst_1
+                (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))))))
+      (@DiamondIntegral.Section3.GammaGroundVFGrothendieckRing M inst inst_1 hc
+        (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+      (fun
+          (x :
+            @DiamondIntegral.Section3.GammaGroundVFGrothendieckRing M inst inst_1 hc
+              (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G)) =>
+        @DiamondIntegral.Section4.RESDimensionFreeReduction.Ring M inst inst_1
+          (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+      (@RingHom.instFunLike.{0, 0}
+        (@DiamondIntegral.Section3.GammaGroundVFGrothendieckRing M inst inst_1 hc
+          (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+        (@DiamondIntegral.Section4.RESDimensionFreeReduction.Ring M inst inst_1
+          (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+        (@Semiring.toNonAssocSemiring.{0}
+          (@DiamondIntegral.Section3.GammaGroundVFGrothendieckRing M inst inst_1 hc
+            (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+          (@CommSemiring.toSemiring.{0}
+            (@DiamondIntegral.Section3.GammaGroundVFGrothendieckRing M inst inst_1 hc
+              (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+            (@CommRing.toCommSemiring.{0}
+              (@DiamondIntegral.Section3.GammaGroundVFGrothendieckRing M inst inst_1 hc
+                (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+              (@Algebra.GrothendieckAddGroup.instCommRing.{0}
+                (@DiamondIntegral.Section3.GammaGroundVFPositiveSemiring M inst inst_1 hc
+                  (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+                (@RingCon.instCommSemiringQuotient.{0}
+                  (@MvPolynomial.{0, 0}
+                    (@DiamondIntegral.Section3.GammaGroundFiniteVFObject M inst inst_1 hc
+                      (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+                    Nat Nat.instCommSemiring)
+                  (@AddMonoidAlgebra.commSemiring.{0, 0} Nat
+                    (@Finsupp.{0, 0}
+                      (@DiamondIntegral.Section3.GammaGroundFiniteVFObject M inst inst_1 hc
+                        (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+                      Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                    Nat.instCommSemiring
+                    (@Finsupp.instAddCommMonoid.{0, 0}
+                      (@DiamondIntegral.Section3.GammaGroundFiniteVFObject M inst inst_1 hc
+                        (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+                      Nat Nat.instAddCommMonoid))
+                  (@SpecialTransformations.Section4.PositiveGrothendieck.congruence.{0}
+                    (@DiamondIntegral.Section3.GammaGroundFiniteVFObject M inst inst_1 hc
+                      (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+                    (@DiamondIntegral.Section3.gammaGroundVFSemiringPresentation M inst inst_1 hc
+                      (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))))))))
+        (@Semiring.toNonAssocSemiring.{0}
+          (@DiamondIntegral.Section4.RESDimensionFreeReduction.Ring M inst inst_1
+            (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+          (@CommSemiring.toSemiring.{0}
+            (@DiamondIntegral.Section4.RESDimensionFreeReduction.Ring M inst inst_1
+              (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+            (@CommRing.toCommSemiring.{0}
+              (@DiamondIntegral.Section4.RESDimensionFreeReduction.Ring M inst inst_1
+                (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+              (@DiamondIntegral.Section4.RESDimensionFreeReduction.instCommRingRing M inst inst_1
+                (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))))))
+      (@DiamondIntegral.Section5.section5BoundedVFIntegral M inst inst_1 G hc)
+      (@DiamondIntegral.Section5.nativeVFClass M inst inst_1 hc
+        (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G) A))
+    (@DFunLike.coe.{1, 1, 1}
+      (@RingHom.{0, 0}
+        (@DiamondIntegral.Section3.GammaGroundVFGrothendieckRing M inst inst_1 hc
+          (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+        (@DiamondIntegral.Section4.RESDimensionFreeReduction.Ring M inst inst_1
+          (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+        (@Semiring.toNonAssocSemiring.{0}
+          (@DiamondIntegral.Section3.GammaGroundVFGrothendieckRing M inst inst_1 hc
+            (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+          (@CommSemiring.toSemiring.{0}
+            (@DiamondIntegral.Section3.GammaGroundVFGrothendieckRing M inst inst_1 hc
+              (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+            (@CommRing.toCommSemiring.{0}
+              (@DiamondIntegral.Section3.GammaGroundVFGrothendieckRing M inst inst_1 hc
+                (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+              (@Algebra.GrothendieckAddGroup.instCommRing.{0}
+                (@DiamondIntegral.Section3.GammaGroundVFPositiveSemiring M inst inst_1 hc
+                  (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+                (@RingCon.instCommSemiringQuotient.{0}
+                  (@MvPolynomial.{0, 0}
+                    (@DiamondIntegral.Section3.GammaGroundFiniteVFObject M inst inst_1 hc
+                      (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+                    Nat Nat.instCommSemiring)
+                  (@AddMonoidAlgebra.commSemiring.{0, 0} Nat
+                    (@Finsupp.{0, 0}
+                      (@DiamondIntegral.Section3.GammaGroundFiniteVFObject M inst inst_1 hc
+                        (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+                      Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                    Nat.instCommSemiring
+                    (@Finsupp.instAddCommMonoid.{0, 0}
+                      (@DiamondIntegral.Section3.GammaGroundFiniteVFObject M inst inst_1 hc
+                        (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+                      Nat Nat.instAddCommMonoid))
+                  (@SpecialTransformations.Section4.PositiveGrothendieck.congruence.{0}
+                    (@DiamondIntegral.Section3.GammaGroundFiniteVFObject M inst inst_1 hc
+                      (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+                    (@DiamondIntegral.Section3.gammaGroundVFSemiringPresentation M inst inst_1 hc
+                      (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))))))))
+        (@Semiring.toNonAssocSemiring.{0}
+          (@DiamondIntegral.Section4.RESDimensionFreeReduction.Ring M inst inst_1
+            (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+          (@CommSemiring.toSemiring.{0}
+            (@DiamondIntegral.Section4.RESDimensionFreeReduction.Ring M inst inst_1
+              (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+            (@CommRing.toCommSemiring.{0}
+              (@DiamondIntegral.Section4.RESDimensionFreeReduction.Ring M inst inst_1
+                (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+              (@DiamondIntegral.Section4.RESDimensionFreeReduction.instCommRingRing M inst inst_1
+                (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))))))
+      (@DiamondIntegral.Section3.GammaGroundVFGrothendieckRing M inst inst_1 hc
+        (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+      (fun
+          (x :
+            @DiamondIntegral.Section3.GammaGroundVFGrothendieckRing M inst inst_1 hc
+              (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G)) =>
+        @DiamondIntegral.Section4.RESDimensionFreeReduction.Ring M inst inst_1
+          (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+      (@RingHom.instFunLike.{0, 0}
+        (@DiamondIntegral.Section3.GammaGroundVFGrothendieckRing M inst inst_1 hc
+          (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+        (@DiamondIntegral.Section4.RESDimensionFreeReduction.Ring M inst inst_1
+          (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+        (@Semiring.toNonAssocSemiring.{0}
+          (@DiamondIntegral.Section3.GammaGroundVFGrothendieckRing M inst inst_1 hc
+            (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+          (@CommSemiring.toSemiring.{0}
+            (@DiamondIntegral.Section3.GammaGroundVFGrothendieckRing M inst inst_1 hc
+              (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+            (@CommRing.toCommSemiring.{0}
+              (@DiamondIntegral.Section3.GammaGroundVFGrothendieckRing M inst inst_1 hc
+                (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+              (@Algebra.GrothendieckAddGroup.instCommRing.{0}
+                (@DiamondIntegral.Section3.GammaGroundVFPositiveSemiring M inst inst_1 hc
+                  (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+                (@RingCon.instCommSemiringQuotient.{0}
+                  (@MvPolynomial.{0, 0}
+                    (@DiamondIntegral.Section3.GammaGroundFiniteVFObject M inst inst_1 hc
+                      (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+                    Nat Nat.instCommSemiring)
+                  (@AddMonoidAlgebra.commSemiring.{0, 0} Nat
+                    (@Finsupp.{0, 0}
+                      (@DiamondIntegral.Section3.GammaGroundFiniteVFObject M inst inst_1 hc
+                        (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+                      Nat (@MulZeroClass.toZero.{0} Nat Nat.instMulZeroClass))
+                    Nat.instCommSemiring
+                    (@Finsupp.instAddCommMonoid.{0, 0}
+                      (@DiamondIntegral.Section3.GammaGroundFiniteVFObject M inst inst_1 hc
+                        (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+                      Nat Nat.instAddCommMonoid))
+                  (@SpecialTransformations.Section4.PositiveGrothendieck.congruence.{0}
+                    (@DiamondIntegral.Section3.GammaGroundFiniteVFObject M inst inst_1 hc
+                      (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+                    (@DiamondIntegral.Section3.gammaGroundVFSemiringPresentation M inst inst_1 hc
+                      (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))))))))
+        (@Semiring.toNonAssocSemiring.{0}
+          (@DiamondIntegral.Section4.RESDimensionFreeReduction.Ring M inst inst_1
+            (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+          (@CommSemiring.toSemiring.{0}
+            (@DiamondIntegral.Section4.RESDimensionFreeReduction.Ring M inst inst_1
+              (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+            (@CommRing.toCommSemiring.{0}
+              (@DiamondIntegral.Section4.RESDimensionFreeReduction.Ring M inst inst_1
+                (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))
+              (@DiamondIntegral.Section4.RESDimensionFreeReduction.instCommRingRing M inst inst_1
+                (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G))))))
+      (@DiamondIntegral.Section5.section5BoundedVFIntegral M inst inst_1 G hc)
+      (@DiamondIntegral.Section5.nativeVFClass M inst inst_1 hc
+        (@DiamondIntegral.Section3.GammaGroundContext.base M inst inst_1 G) A'))
+'DiamondIntegral.Section5.bounded_fubini_discharged' depends on axioms: [propext, Classical.choice, Quot.sound]

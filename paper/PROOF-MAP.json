@@ -1,0 +1,404 @@
+{
+  "scope": "Mathematical proof-route audit, separate from the manuscript; compiler and kernel verification are recorded independently.",
+  "status": "Source proof routes reviewed; migrated library build and all 10,566 unchanged full public type/axiom checks passed.",
+  "specific_alignment": [
+    "Integer coordinates use the checked Smith basis construction.",
+    "Euler witnesses use original-language cylindrical cell trees.",
+    "The relative Gamma calculation follows unary endpoint preparation and induction on those trees.",
+    "Complete witness graphs are fixed before VF preparation.",
+    "Geometric denominator clearing never cancels the affine class before localization.",
+    "Variety fibres range over every ambient point in the exact generated parameter base."
+  ],
+  "steps": [
+    {
+      "section": "paper/sections/setup.tex",
+      "step": "Original ground",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section3.GammaGroundContext",
+          "file": "FubiniTheorems/Prerequisites/Grothendieck/GammaGroundContext.lean",
+          "line": 28,
+          "source_sha256": "23fb18f94fcbe64159e4ccd712fde2b88f8bbdf7c7d2411542a0c7e241093c8e"
+        },
+        {
+          "name": "DiamondIntegral.Section5.completed18GroundLiftInput",
+          "file": "FubiniTheorems/Fubini/Completed18GroundLiftInput.lean",
+          "line": 52,
+          "source_sha256": "ef626fb719aedc6a47e8be25e7be281986b76a0374102ace6aa800c5eec5873b"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/setup.tex",
+      "step": "Finite RV fibres under ground bijections",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section3.gammaGroundFiniteRVFibres_iff",
+          "file": "FubiniTheorems/Prerequisites/Grothendieck/GammaGroundFiniteFibreInvariance.lean",
+          "line": 31,
+          "source_sha256": "cbdabd581f0c65262394c100fc243eb8d17d74fbed31412ef5b87331cd2d48e6"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/decomposition.tex",
+      "step": "Finite angular data",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.ground_global_angular_value_partition",
+          "file": "FubiniTheorems/Decomposition/GlobalAngularPartition.lean",
+          "line": 35,
+          "source_sha256": "2219d2f7fa30cadcc3f3e5a538fceb9a1521464c196c8383d0eed232f222f25c"
+        },
+        {
+          "name": "DiamondIntegral.Section5.ground_angular_value_partition",
+          "file": "FubiniTheorems/Decomposition/AngularValuePartition.lean",
+          "line": 46,
+          "source_sha256": "307c796c1f318f48f8a153efab43f967792773d395c3259553b88b9634131a77"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/decomposition.tex",
+      "step": "Smith basis and finite coordinate values",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section3.smith_basis_coordinate_values_finite",
+          "file": "FubiniTheorems/Prerequisites/Grothendieck/CharacterFiniteValues.lean",
+          "line": 64,
+          "source_sha256": "7d5e05761e21c629c0dbfe8e9c589b210479c7dd2a6ab44c4ca8545fa8918133"
+        },
+        {
+          "name": "DiamondIntegral.Section3.exists_monomial_residue_coordinates",
+          "file": "FubiniTheorems/Prerequisites/Grothendieck/MonomialResidueCoordinates.lean",
+          "line": 39,
+          "source_sha256": "f388497ca719e1c819092a228ae3ca51f78925bc1f5cf2179d1286471832cc68"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/decomposition.tex",
+      "step": "Original-ground separation",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.ground_mixed_value_normal_form",
+          "file": "FubiniTheorems/Decomposition/GroundRectangleAssembly.lean",
+          "line": 131,
+          "source_sha256": "8abd7d554b8a1ffc3a071a95d4a12eabd15ca048347f0585fb3c5015ad8d5585"
+        },
+        {
+          "name": "DiamondIntegral.Section5.ground_finite_value_rectangle_partition",
+          "file": "FubiniTheorems/Decomposition/GroundRectangleAssembly.lean",
+          "line": 67,
+          "source_sha256": "8abd7d554b8a1ffc3a071a95d4a12eabd15ca048347f0585fb3c5015ad8d5585"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/decomposition.tex",
+      "step": "Literal unimodular matrix decomposition",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.monomial_decomposition_5_12",
+          "file": "FubiniTheorems/Decomposition/MonomialMatrixForm.lean",
+          "line": 102,
+          "source_sha256": "d0bd317a1de17efe0e2f40d438bbf6e25e0a44aad9c05fefbfbd31892cc3f951"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/bounded.tex",
+      "step": "Finite stabilized quotient witnesses",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.RESFiniteWitness.res_finite_stabilized_equality",
+          "file": "FubiniTheorems/Comparison/RESFiniteWitness.lean",
+          "line": 94,
+          "source_sha256": "f6f35670211326d54664bba26600116d18f10c05a9e9b49b78574533b57e6103"
+        },
+        {
+          "name": "DiamondIntegral.Section5.RESFiniteWitness.res_finite_list_equality",
+          "file": "FubiniTheorems/Comparison/RESFiniteWitness.lean",
+          "line": 107,
+          "source_sha256": "f6f35670211326d54664bba26600116d18f10c05a9e9b49b78574533b57e6103"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/setup.tex",
+      "step": "Cylindrical Euler certificates",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.finite_cylindrical_euler_certificate",
+          "file": "FubiniTheorems/Decomposition/CylindricalEulerCertificates.lean",
+          "line": 118,
+          "source_sha256": "53f852b4bb670e478ab52cd15041e09844525e2f9ca734a5a225bdf25feeef16"
+        },
+        {
+          "name": "DiamondIntegral.Section5.original_euler_certificate_exists",
+          "file": "FubiniTheorems/Decomposition/OriginalEulerCertificateExistence.lean",
+          "line": 60,
+          "source_sha256": "917aaa8832d3c78279616375ea31abc7cccea8a853495b5334ff95abbb7cbe08"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/bounded.tex",
+      "step": "Whole witness catalogue and partition",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.native_vf_map_finite_whole_witness_catalog",
+          "file": "FubiniTheorems/Fubini/NativeVFMapWitnessUniformity.lean",
+          "line": 53,
+          "source_sha256": "e90a9c7554a3e6ccf8cec4701f1038a6b77ed48859b85349f3989ebb0f3a6088"
+        },
+        {
+          "name": "DiamondIntegral.Section5.native_vf_map_whole_witness_partition",
+          "file": "FubiniTheorems/Fubini/NativeVFMapWitnessPartitions.lean",
+          "line": 31,
+          "source_sha256": "5dc01ea2a9adabf8934f50b40befadb8b87a7263d5c49c89115ddff29e200300"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/bounded.tex",
+      "step": "Prepare all witness formulas",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.prepare_native_vf_lift_RV_data",
+          "file": "FubiniTheorems/Fubini/NativeVFLiftRVPreparation.lean",
+          "line": 62,
+          "source_sha256": "eb91034b6ed48341f8c8808eb82ee22b4bfb9aade39a9f7bd50ea3fdea3972f0"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/bounded.tex",
+      "step": "Endpoint monomial preparation and unary cylinders",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.gamma_endpoint_monomial_catalog",
+          "file": "FubiniTheorems/Decomposition/GammaEndpointMonomialCatalog.lean",
+          "line": 42,
+          "source_sha256": "eb6f76430805ad372fbb7a69967f2b9f5a68bbc9ebc017c6f887f7cebb99a60a"
+        },
+        {
+          "name": "DiamondIntegral.Section5.native_cylinder_fubini",
+          "file": "FubiniTheorems/Fubini/NativeCylinderFubini.lean",
+          "line": 29,
+          "source_sha256": "5db6ee01716d75baba10fc7d30728c1d19f1ebd9eeba114cbbf0ccab0c615c73"
+        },
+        {
+          "name": "DiamondIntegral.Section5.native_described_cylinder_fubini",
+          "file": "FubiniTheorems/Fubini/NativeDescribedCylinderFubini.lean",
+          "line": 35,
+          "source_sha256": "3940c6ce8555d54ad80d54f57d3e16469ef14d380a61c1f144632a9adb14c7e8"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/bounded.tex",
+      "step": "Induction on cylindrical trees and finite certificates",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.RVGammaCellFamily.native_value",
+          "file": "FubiniTheorems/Comparison/RVGammaCellFamilies.lean",
+          "line": 46,
+          "source_sha256": "a20cea66284f5620991aaea5530cbb0b823b7d0b0fcb85334e926882eb860f85"
+        },
+        {
+          "name": "DiamondIntegral.Section5.native_euler_certificate_fubini",
+          "file": "FubiniTheorems/Fubini/NativeEulerCertificateFubini.lean",
+          "line": 29,
+          "source_sha256": "cb9a068801658f5a8f54f0156215d4580a4e23bc5bb5e2914fc19af9f57d6969"
+        },
+        {
+          "name": "DiamondIntegral.Section5.native_relative_gamma_fubini_partition",
+          "file": "FubiniTheorems/Fubini/NativeRelativeGammaFubini.lean",
+          "line": 30,
+          "source_sha256": "ab2dd982876aa1d7097ac42d0d7ef3dce6c18aedefbfd38f1d53af79d9f05cc3"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/bounded.tex",
+      "step": "Fixed whole-witness comparison",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.native_vf_fixed_whole_witness_fubini",
+          "file": "FubiniTheorems/Fubini/NativeFixedWitnessVFFubini.lean",
+          "line": 34,
+          "source_sha256": "c04d13437ff4898888a3447013c5d9c3fcd6d38d33d26e11cc5cf481e00a119e"
+        },
+        {
+          "name": "DiamondIntegral.Section5.nativeVFBoundedValue_map_fixed_whole_witness",
+          "file": "FubiniTheorems/Fubini/NativeWitnessVFMapTotals.lean",
+          "line": 63,
+          "source_sha256": "20a431983315f13f2be394f53f75a9fcea518ccdd29c5ce8e6310e71a17b67eb"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/bounded.tex",
+      "step": "Actual preimages and finite additive assembly",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.nativeMap_preimage_partition",
+          "file": "FubiniTheorems/Fubini/NativeMapBasePartitions.lean",
+          "line": 51,
+          "source_sha256": "509d0f306d4987b3245ae6e22e94e471485b8792390e9d748d956349ad6181d4"
+        },
+        {
+          "name": "DiamondIntegral.Section5.nativeVFClass_finite_partition",
+          "file": "FubiniTheorems/Fubini/NativeVFPullbackValues.lean",
+          "line": 41,
+          "source_sha256": "6aca318f219e4740f9aadfe26e0945db26e67f0beeb00af1d1a6de7c18b61c83"
+        },
+        {
+          "name": "DiamondIntegral.Section5.nativeBoundedVFFubini",
+          "file": "FubiniTheorems/Fubini/NativeVFFubini.lean",
+          "line": 44,
+          "source_sha256": "3b86b51a470a25e99c373c5466802b7ca8d91b5a29ed8d95622efb4c707d97c1"
+        },
+        {
+          "name": "DiamondIntegral.Section5.bounded_fubini_discharged",
+          "file": "FubiniTheorems/Fubini/Section5DischargedInputs.lean",
+          "line": 39,
+          "source_sha256": "02a4b62c41496148b8fa8ab3bbe1742c2fa823450be05c507dab7500ef14681e"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/geometric.tex",
+      "step": "Common-degree clearing and affine padding",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.nativeGroundGeometricRetraction_eq_iff_common_degree",
+          "file": "FubiniTheorems/Fubini/NativeGeometricPadding.lean",
+          "line": 109,
+          "source_sha256": "1adf02ab316c454ba6209b1689508718145c3c79ef41bc9ec23d41e49e9c50f9"
+        },
+        {
+          "name": "DiamondIntegral.Section5.nativeAffineRVPower_raw_value",
+          "file": "FubiniTheorems/Fubini/NativeGeometricPadding.lean",
+          "line": 75,
+          "source_sha256": "1adf02ab316c454ba6209b1689508718145c3c79ef41bc9ec23d41e49e9c50f9"
+        },
+        {
+          "name": "DiamondIntegral.Section5.nativeGroundGeometricRetraction_affine_padding",
+          "file": "FubiniTheorems/Fubini/NativeGeometricPadding.lean",
+          "line": 100,
+          "source_sha256": "1adf02ab316c454ba6209b1689508718145c3c79ef41bc9ec23d41e49e9c50f9"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/geometric.tex",
+      "step": "Geometric whole witnesses and assembly",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.native_geometric_vf_map_finite_whole_witness_catalog",
+          "file": "FubiniTheorems/Fubini/NativeGeometricVFMapWitnesses.lean",
+          "line": 55,
+          "source_sha256": "4718fddc0d55102eab8d1a19d366c41316e631986b853f4b1ac5b1bc6e9a909c"
+        },
+        {
+          "name": "DiamondIntegral.Section5.native_vf_fixed_geometric_whole_witness_fubini",
+          "file": "FubiniTheorems/Fubini/NativeFixedGeometricWitnessVFFubini.lean",
+          "line": 36,
+          "source_sha256": "d94d1bfc3c4c284280b3b0b0b5d8488bc8fa2a021c085e4c5035c5668b2f61d7"
+        },
+        {
+          "name": "DiamondIntegral.Section5.geometric_fubini_discharged",
+          "file": "FubiniTheorems/Fubini/Section5DischargedInputs.lean",
+          "line": 48,
+          "source_sha256": "02a4b62c41496148b8fa8ab3bbe1742c2fa823450be05c507dab7500ef14681e"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/complex.tex",
+      "step": "Finite Kummer RV actions",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.puiseuxRVAction_fraction",
+          "file": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxRVActions.lean",
+          "line": 179,
+          "source_sha256": "9da52477a98ce8b44cd5084fd055d43e66723a4091b82bd23824e857b09a30e0"
+        },
+        {
+          "name": "DiamondIntegral.Section5.PuiseuxOriginal.remark_5_13",
+          "file": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxInducedRV.lean",
+          "line": 75,
+          "source_sha256": "7b62ea9e59c9d39dccc2aa45ceb80c5816d8d4721757ed4b7a9a784877e2be23"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/complex.tex",
+      "step": "Finite framing, characters and quotient comparison",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.PuiseuxOriginal.finite_framed_RES_comparison",
+          "file": "FubiniTheorems/Decomposition/FramedRVConstructibility.lean",
+          "line": 110,
+          "source_sha256": "0f0b35819772547181952c3dcd998ba1deeba5b542d6aea58ec0a29f5f26c640"
+        },
+        {
+          "name": "DiamondIntegral.Section5.finite_cyclic_character_basis",
+          "file": "FubiniTheorems/Decomposition/FiniteCyclicDiagonalization.lean",
+          "line": 28,
+          "source_sha256": "f67b82ca38a15e5047d2ef0c145807180db32c36819dc113326d1191cd6d46a0"
+        },
+        {
+          "name": "DiamondIntegral.Section5.PuiseuxOriginal.theta_5_14_concrete",
+          "file": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxConcreteComparisons.lean",
+          "line": 30,
+          "source_sha256": "6ea3bd4c9b290f9d83efce9483a41928c03a6d6cc1f36991d8804ca9839943a4"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/complex.tex",
+      "step": "Actual variety charts and intrinsic fibres",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.PuiseuxOriginal.varietyNativeMorphism_exists",
+          "file": "FubiniTheorems/Corollaries/VarietyNativeMorphisms.lean",
+          "line": 34,
+          "source_sha256": "ad4dffd78832033a0f09c227eac4a73e041123092f2b01c3390fbc00a1afe38b"
+        },
+        {
+          "name": "DiamondIntegral.Section5.PuiseuxOriginal.varietyNativeClass_independent",
+          "file": "FubiniTheorems/Corollaries/VarietyNativeChartIndependence.lean",
+          "line": 54,
+          "source_sha256": "753c176fb3ff6d174253a9a40454e73021b1a20adb58aefa95d6ee2b42c2a9e4"
+        },
+        {
+          "name": "DiamondIntegral.Section5.PuiseuxOriginal.corollary_global_vanishing_discharged",
+          "file": "FubiniTheorems/Corollaries/VarietyCorollaryDischarged.lean",
+          "line": 37,
+          "source_sha256": "f12c5e4b1ed1984ddff6994dba3078cfddd58f7a559c4147d26c80a0738dba54"
+        }
+      ]
+    }
+  ],
+  "paper_sha256": {
+    "paper/fubini-theorems.tex": "85e1a5be6490bc57db6ed0b1ec3f4be47e3c302488d8bdbc5d9de37b2a730fed",
+    "paper/sections/bounded.tex": "8ffbb3b1e5b09af45da43966c667c139a02dca45ae6c13b21530bb7cf550f137",
+    "paper/sections/complex.tex": "ac9d31150871db95e6c573927ad0a94af8b199bd865d10515f924b9e323e3b84",
+    "paper/sections/decomposition.tex": "5dc02ec0deed7449b7b2f81f53d2fa92269375cbe99b0290f790d62d0dc9f84c",
+    "paper/sections/geometric.tex": "65aa5d8379c4bf59e1c85f4b1d009dabb9c999687874946e030b43be36ac1449",
+    "paper/sections/setup.tex": "654850e4259abea5df1bb57bd49d92ba6fe19a614d5f8aac108bdab1d6c53cbc"
+  },
+  "review_notes": [
+    "Paper statements and proof blocks were read against the cited Lean source routes, including the main fibre hypothesis, original parameter base, finite whole-witness compactness, actual preparation, Euler induction, stabilization, geometric padding, Kummer descent and variety charts.",
+    "This correspondence is a manual mathematical audit, not a machine verification of prose. Bibliographical prerequisites are cited in the manuscript.",
+    "Lean full-type/axiom checks and independent Palomar statement/kernel checks have separate receipts; their status is not inferred from this map."
+  ],
+  "bibliography_review": {
+    "references": 9,
+    "scope": "References restored at the mathematical uses; Euler, QE, Newton\u2013Puiseux, compactness and background; Nicaise\u2013Payne is a comparison, not a proof input."
+  },
+  "compiler_evidence": "palomar/module-verification.json"
+}

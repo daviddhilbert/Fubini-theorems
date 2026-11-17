@@ -1,0 +1,98 @@
+{
+  "scope": "Author-approved mathematical source fragments used in the standalone paper. Editorial history stays out of the mathematical text.",
+  "original_paper": "arXiv:1910.12764v2",
+  "fragments": [
+    {
+      "name": "section5-approved-through-5-12.tex",
+      "sha256": "fdda3433389402262128cbe7feb9b01f89eab47ee913f8cdfb395fb1fc8b5972",
+      "status": "approved and incorporated in the Section 5 review record"
+    },
+    {
+      "name": "section5-approved-R086-R087.tex",
+      "sha256": "d5b1476a2feb6e52a502589f682d65a8b3d84229a34b4b04ff6bd1e6eb20bc45",
+      "status": "approved and incorporated in the Section 5 review record"
+    },
+    {
+      "name": "section5-approved-R090-R091.tex",
+      "sha256": "691730b3cc066e126578537f8a3b1bdd850c680d2cd30f18d01341801e99ce59",
+      "status": "approved and incorporated in the Section 5 review record"
+    },
+    {
+      "name": "section5-approved-R092-R093.tex",
+      "sha256": "66e11605344364b64621c9c6870b430126a0dc07735a0eb35a55a6fe38f753d2",
+      "status": "approved and incorporated in the Section 5 review record"
+    },
+    {
+      "name": "section5-approved-R094-R095.tex",
+      "sha256": "ef6b324630c1ff60988d71bc29ea01e07e1a5d88c9e476a79bc2e2263fedadb4",
+      "status": "approved and incorporated in the Section 5 review record"
+    },
+    {
+      "name": "section5-approved-geometric-fubini.tex",
+      "sha256": "11b9919141ed3640ec3f6a3ea165767e8c0e6d5b871effd6b055594d0aefa781",
+      "status": "approved and incorporated in the Section 5 review record"
+    },
+    {
+      "name": "section5-approved-puiseux-kummer.tex",
+      "sha256": "ad59fb480e20ee40c98756d66759a4e24d322d4e3baf143ce1b7dd3bf7de1bcc",
+      "status": "approved and incorporated in the Section 5 review record"
+    },
+    {
+      "name": "section5-approved-Theta-R083.tex",
+      "sha256": "df3f96e5481f5e0963bb66df18fa216b443a19a7b756e75970f964a17a7127f1",
+      "status": "approved and incorporated in the Section 5 review record"
+    },
+    {
+      "name": "section5-approved-final-corollary.tex",
+      "sha256": "dcead32dc41182688a44967d0d964f288062784a25fd26c3e4d3c1a61bb15257",
+      "status": "approved and incorporated in the Section 5 review record"
+    }
+  ],
+  "bibliography_review": [
+    {
+      "key": "Eisenbud",
+      "use": "Newton\u2013Puiseux theorem, Corollary 13.15; this reference is also named by the checked Puiseux provider.",
+      "url": "https://link.springer.com/book/10.1007/978-1-4612-5350-1"
+    },
+    {
+      "key": "EnglerPrestel",
+      "use": "Background valued-field notation and conventions.",
+      "url": "https://link.springer.com/book/10.1007/3-540-30035-X"
+    },
+    {
+      "key": "FY",
+      "use": "Original residue retractions and Section 5 target results.",
+      "url": "https://arxiv.org/abs/1910.12764v2"
+    },
+    {
+      "key": "Marker",
+      "use": "Background small-parameter saturation, homogeneity and compactness.",
+      "url": "https://homepages.math.uic.edu/~marker/mt-intro.html"
+    },
+    {
+      "key": "NicaisePayne",
+      "use": "Comparison with the tropical motivic Fubini theorem, Theorem 3.1.3; not a proof input.",
+      "url": "https://web.ma.utexas.edu/users/sampayne/pdf/TropicalFubini.pdf"
+    },
+    {
+      "key": "vdD",
+      "use": "Geometric o-minimal Euler characteristic, Chapter 4.",
+      "url": "https://doi.org/10.1017/CBO9780511525919"
+    },
+    {
+      "key": "YinQE",
+      "use": "Original RV quantifier elimination background.",
+      "url": "https://arxiv.org/abs/1006.1393"
+    },
+    {
+      "key": "YinST",
+      "use": "RV-fibre dimension invariance and polynomial preparation.",
+      "url": "https://doi.org/10.1016/j.apal.2010.06.005"
+    },
+    {
+      "key": "YinI",
+      "use": "Generated-base lifting and kernel.",
+      "url": "https://arxiv.org/abs/0809.0473v2"
+    }
+  ]
+}

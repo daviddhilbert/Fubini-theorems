@@ -7,6 +7,19 @@ Lean formalization of the active results of Section 5 of Forey and Yin's
 canonical Puiseux-model comparison, bounded and geometric Fubini theorems,
 and the variety corollary, with all of their local prerequisites.
 
+The [Lean blueprint](blueprint/README.md) follows the main bounded Fubini proof
+through its exact model, ground and fibre hypotheses. After rendering, open
+`blueprint/web/index.html` for the statements and clickable dependency graph.
+The [Palomar preparation record](PALOMAR-PREPARATION.md) selects **Theorem 5.17
+only**. The Challenge is a draft; independent statement imports and official
+verification remain required before submission. The module migration, library
+build and all 10,566 unchanged public type/axiom comparisons have passed.
+
+The [traditional mathematical paper](paper/fubini-theorems.tex) is available
+as a [compiled PDF](output/pdf/fubini-theorems.pdf). Its proof steps follow
+the checked Lean routes; [the separate proof map](paper/PROOF-MAP.json) records
+19 steps and 43 declaration anchors.
+
 The proof implementation is independent of the diamond-integral package.
 It uses exact revisions of hilbert-mathlib, ACVF-QE, special-transformations,
 and integration-in-ACVF. Original public declaration namespaces are retained

@@ -1,0 +1,14 @@
+{
+  "scope": "Custom type/definition closure only; not extraction or verification",
+  "root": "DiamondIntegral.Section5.bounded_fubini_discharged",
+  "custom_declarations": 2227,
+  "kinds": {
+    "theorem": 1073,
+    "definition": 984,
+    "constructor": 106,
+    "inductive": 60,
+    "recursor": 4
+  },
+  "modules": 241,
+  "note": "Read-only environment inventory. A faithful independent Challenge has not been extracted; no lower bound on compressed Challenge size is claimed."
+}

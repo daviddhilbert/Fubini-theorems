@@ -1,0 +1,495 @@
+Let the ground be an arbitrary
+$(\VF,\Gamma)$-generated ground substructure $\mathbb S$,
+with $\Gamma(\mathbb S)$ nontrivial.
+All definability remains in the original RV language.
+Let $A,A'\in\VF_*$ and let
+$f:A\to B$, $f':A'\to B$ be definable maps.
+Write $A_b=f^{-1}(b)$, $A'_b=(f')^{-1}(b)$ and
+$\mathbb S_b=\mathbb S\langle b\rangle$.
+For a parameter base $\mathbb T$, write
+\[
+ R(\mathbb T)=\sggk(\RES_{\mathbb T})
+\]
+for the ungraded RES quotient computed with
+$\mathbb T$-definable sets, maps and value-fiber relations.
+The subscript $\mathrm b$ in $\mathbb E_{\mathrm b}$ denotes
+the bounded retraction; the parameter base is specified
+separately.
+
+\medskip
+\noindent\emph{Finite witnesses for the RES quotient.}
+The following object-level criterion supplies the finite
+data needed for compactness.
+
+\begin{test}\label{test}
+Let $\mathbb T$ be a parameter base and
+$P,Q\in\RES_{\mathbb T}$.
+The equality $[P]=[Q]$ in $R(\mathbb T)$ holds if and only if
+there are $C\in\RES_{\mathbb T}$, finitely many ordered pairs
+$(L_j,R_j)$, and an actual $\mathbb T$-definable bijection
+\begin{equation}\label{finite:RES:witness}
+ P\sqcup C\sqcup\bigsqcup_j R_j
+       \ \xrightarrow{\ \sim\ }\
+ Q\sqcup C\sqcup\bigsqcup_j L_j .
+\end{equation}
+For each $j$, the pair $(L_j,R_j)$ is either
+\[
+ \bigl(\alpha_j^\sharp\times Z_j,\
+              (\G_m)^{n_j}\times Z_j\bigr)
+\]
+or its reverse, where
+$Z_j\in\RES_{\mathbb T}$ and
+$\alpha_j\in\Gamma^{n_j}$ is $\mathbb T$-definable.
+All unions and copies are tagged disjoint unions.
+\end{test}
+
+To prove the criterion, an element of the ideal defining
+$R(\mathbb T)$ is a finite sum of its generators times
+elements of $K_0(\RES_{\mathbb T})$.
+Write each coefficient as a difference of two positive
+object classes. Absorb those objects into $Z_j$, reversing
+a pair for a negative coefficient.
+The one-coordinate generators already suffice; tuple
+generators give the same ideal by expanding a difference
+of products.
+Thus $[P]-[Q]=\sum_j([L_j]-[R_j])$ in the group completion.
+Equality there means that adding one common positive class
+$[C]$ makes the two positive sums equal.
+Positive scissor equalities assemble into an actual
+definable bijection, giving
+(\ref{finite:RES:witness}).
+Conversely that bijection and the defining ideal relations
+imply $[P]=[Q]$ in $R(\mathbb T)$.
+This gives finite object witnesses directly.
+
+\begin{thm}\label{fubini}
+Suppose that for every $b\in B$ there are
+$\mathbb S_b$-definable objects
+$\bm U_b,\bm U'_b\in\RV[*]$ and
+$\mathbb S_b$-definable bijections
+\[
+ H_b:A_b\xrightarrow{\ \sim\ }\mathbb L\bm U_b,
+ \qquad
+ H'_b:A'_b\xrightarrow{\ \sim\ }\mathbb L\bm U'_b
+\]
+such that
+\[
+ \mathbb E_{\mathrm b}^{\mathbb S_b}([\bm U_b])
+ =
+ \mathbb E_{\mathrm b}^{\mathbb S_b}([\bm U'_b])
+ \quad\text{in }R(\mathbb S_b).
+\]
+Then, over the original ground $\mathbb S$,
+\[
+ \mathbb E_{\mathrm b}^{\mathbb S}\!\left(\int[A]\right)
+ =
+ \mathbb E_{\mathrm b}^{\mathbb S}\!\left(\int[A']\right)
+ \quad\text{in }R(\mathbb S).
+\]
+As usual, $B$ and its points are interpreted in the sufficiently
+saturated ambient model.
+\end{thm}
+
+\begin{rem}
+The lifting hypotheses mean
+\[
+ [A_b]_+=[\mathbb L\bm U_b]_+,\qquad
+ [A'_b]_+=[\mathbb L\bm U'_b]_+
+\]
+in the positive Grothendieck semiring over $\mathbb S_b$.
+For these categories of definable sets, finite scissor
+decompositions assemble into actual definable bijections;
+the displayed maps specify the required witnesses explicitly.
+The ground-generation assumption supplies the domain of
+the global integral from Section~\ref{sec:setup}.
+No generation assumption is imposed on every $\mathbb S_b$
+merely to evaluate the displayed RV retractions.
+
+
+
+Whenever $\mathbb S_b$ is $(\VF,\Gamma)$-generated, the fiber
+integral of Section~\ref{sec:setup} is available and the hypothesis can
+equivalently be written
+\[
+ \mathbb E_{\mathrm b}^{\mathbb S_b}
+       \!\left(\int[A_b]\right)
+ =
+ \mathbb E_{\mathrm b}^{\mathbb S_b}
+       \!\left(\int[A'_b]\right).
+\]
+This applies, for example, to a base parameter $b$ consisting
+of VF and Gamma coordinates.
+If $B$ is definably bijective over $\mathbb S$ to a set of such
+tuples, transport the parameter along that bijection:
+the two parameter bases have the same definable closure,
+so their definable categories and the stated equalities agree.
+This does not assert equality of their generated substructures.
+\end{rem}
+
+\begin{proof}
+Include in each finite package the complete graphs of both positive
+lift bijections $H_b,H'_b$, the representative objects, their label maps,
+and their finite-fibre bounds. Validity requires that these graphs define
+actual bijections with the displayed fibres and lifts. The formulas for
+these data are fixed together with the residue-relation witnesses below.
+\medskip
+\noindent\emph{Choose the full packages before preparing the base.}
+Fix $b\in B$ in the original parameter
+coordinates, and put $\mathbb S_b=\mathbb S\langle b\rangle$.
+Apply Lemma~\ref{coh:decom} to the two RV representatives over
+$\mathbb S_b$, with their zero strata and finite tags retained.
+The standing nontriviality of the ground Gamma group
+also holds over $\mathbb S_b$.
+Only RV decomposition and the RV retraction are used here;
+no fiber VF-integration hypothesis is added.
+
+For one such finite package the charts have matrices $M_i$,
+free arities $\ell_i$, residue factors $V_{i,b}$,
+Gamma supports $I_{i,b}$ and integers
+$e_i=\chi_b(I_{i,b})$, and similarly for the primed family.
+Set
+\[
+ C_{i,b}=V_{i,b}\times(\G_m)^{\ell_i},
+ \qquad C'_{i',b}=V'_{i',b}\times(\G_m)^{\ell'_{i'}}.
+\]
+Writing $a^+=\max(a,0)$ and $a^-=\max(-a,0)$, form the
+positive RES objects
+\[
+ P_b=\bigsqcup_i e_i^+ C_{i,b}
+       \ \sqcup\ \bigsqcup_{i'}(e'_{i'})^- C'_{i',b},
+\]
+\[
+ Q_b=\bigsqcup_i e_i^- C_{i,b}
+       \ \sqcup\ \bigsqcup_{i'}(e'_{i'})^+ C'_{i',b}.
+\]
+Here $mC$ means $m$ tagged copies of $C$.
+The monomial evaluation and the hypothesis imply
+$[P_b]=[Q_b]$ in $R(\mathbb S_b)$.
+Choose the full finite witness of Test~\ref{test} over
+$\mathbb S_b$: the stabilizer $C_b$, the factors $Z_{j,b}$,
+the value tuples $\alpha_j(b)$, the orientations of the
+pairs, and the graph of the displayed bijection.
+
+Include in the package the representative and label
+formulas, their finite-fiber bounds, the monomial source
+pieces and coordinate maps, the residue and Gamma factors,
+and finite bounds for every RES value support.
+Include formulas defining all Gamma-valued parameter
+functions and the complete stabilization bijection graph.
+
+The Euler integers have the cylindrical certificates of
+Section~\ref{sec:setup}. For every Gamma support, include formulas for a
+finite partition into cells, the full finite cell trees, endpoint graphs,
+and all projection and ordering conditions. The integer assigned to a
+tree depends only on its shape. The covering and disjointness assertions,
+and the validity of every tree, are first-order conditions. Thus the
+asserted Euler integer is certified over the same parameter base as the
+support itself.
+
+Validity of the entire fixed finite package is now a
+first-order condition on $b$: all arities and bounds are
+fixed, and the required set identities, maps and actual
+bijections are given by formulas.
+These conditions cover every ambient $b\in B$.
+Saturation and compactness therefore give a finite
+definable partition of $B$ with one package on each piece.
+Here we use the usual small-parameter saturation form of compactness
+\cite[Chapter 4]{Marker}.
+In particular, the matrices, copy numbers, Euler integers,
+arity lists and pair orientations are fixed on a piece.
+
+\medskip
+\noindent\emph{Preparation with the RV coordinates retained.}
+By the standing convention, write
+$B\subseteq\VF^{d_0}\times\RV_\infty^{q_0}$.
+First replace $A,A'$ by the graphs of $f,f'$.
+Their projections back to $A,A'$ are definable bijections,
+and the graphs still belong to $\VF_*$.
+On each compactness piece, write
+$\bm U_b=(U_b,p_b)$ and $\bm U'_b=(U'_b,p'_b)$,
+with fixed label degrees $k,k'$.
+All the RV coordinates of $u\in U_b$, including the finite
+tags, remain part of the representative.
+
+Apply the preparation theorem to the finite list of
+VF polynomials appearing in the defining formulas for $B$,
+all RV/Gamma witness sets, their structure-map graphs, the Euler certificates, the Gamma-valued parameter functions and the stabilization bijection graphs.
+These polynomials involve the VF base variables and ground
+coefficients; the RV parameters remain free variables.
+Thus preparation can be performed on the VF projection of
+the base. Carry along the original RV coordinates and every
+new RV coordinate introduced by the preparation.
+RV contractibility of the prepared polynomials makes all
+these RV-sorted data depend on the prepared VF base only
+through its RV tuple.
+
+After reparametrizing, and partitioning the zero-coordinate
+strata, write the base as
+\[
+ B^\flat=\{(c,t):\tau=(\rv(c),t)\in S\},\qquad
+ S\subseteq(\RV^\times)^d\times\RV_\infty^q.
+\]
+Here $c$ has $d$ nonzero VF coordinates and $t$ contains
+all the retained RV coordinates; the finite stratum tags
+are retained as well.
+The inverse preparation recovers the original parameter
+$b=b(c,t)$.
+The representatives and label maps are now denoted by
+\[
+ \bm U_\tau=(U_\tau,p_\tau),\qquad
+ p_\tau:U_\tau\longrightarrow(\RV^\times)^k,
+\]
+and similarly for the primed family.
+Using the transported lift bijections, the first total space
+is definably bijective to
+\[
+ Y=\{(c,t,x,u):
+       \tau=(\rv(c),t)\in S,\ u\in U_\tau,\
+       \rv(x)=p_\tau(u)\}.
+\]
+The primed construction is identical.
+These total spaces belong to $\VF_*$: they are obtained by
+the displayed bijections from the original graph families,
+and RV-fiber dimension is invariant under definable
+bijections.
+
+Put $\tau=(s,t)$ and form the RV object
+\[
+ W=\{(\tau,u):\tau\in S,\ u\in U_\tau\},\qquad
+ q(\tau,u)=(s,p_\tau(u)).
+\]
+Its structure map $q$ is finite-to-one.
+Indeed, fix $(s,w)$ and choose any
+$c\in\rv^{-1}(s)$ and $x\in\rv^{-1}(w)$.
+Then $q^{-1}(s,w)$ identifies, by keeping $(t,u)$, with the
+RV fiber of $Y$ at the fixed VF tuple $(c,x)$.
+That fiber is finite because $Y\in\VF_*$.
+The choices of $c,x$ are used only to prove finiteness and
+are not parameters in the definition of $W$ or $q$.
+Thus $\bm W=(W,q)\in\RV[d+k]$.
+
+There is an explicit definable bijection
+\[
+ \mathbb L\bm W\longrightarrow Y,\qquad
+ ((c,x),((s,t),u))\longmapsto(c,t,x,u).
+\]
+Its inverse restores the forced coordinate $s=\rv(c)$.
+Define $\bm W'$ in the same way, of degree $d+k'$.
+Consequently the two global integrals are represented by
+$\bm W,\bm W'$ modulo the lifting congruence.
+The coordinates $t$ remain RV coordinates; they are not
+replaced by VF coordinates or given additional lifts.
+
+The full finite package was fixed before this preparation. Thus its RV/Gamma
+formulas, including the stabilization graphs, depend on the prepared VF
+coordinates only through $\tau$. Their first-order validity conditions
+therefore hold over $\mathbb S\langle\tau\rangle$ itself. The transported
+VF lift bijections are retained on the total mixed families. This gives
+equality witnesses over the RV base without using injectivity under
+extension of the coefficient base.
+
+\medskip
+\noindent\emph{Euler certificates over the RV base.}
+Apply the same preparation to the original-language formulas in the
+cylindrical certificates. Each certificate includes the graphs of its
+endpoints; it is not merely a list of fibre Euler integers. After
+preparation the validity assertions depend on the base through $\tau$
+and remain true over $\mathbb S\langle\tau\rangle$.
+Their finite cell trees therefore describe the actual Gamma fibres
+over that RV base. The shapes and their Euler factors are fixed on a
+compactness piece. For any further restriction, refine the finite
+certificate partition again before doing a fibre calculation.
+
+\medskip
+\noindent\emph{A relative Gamma-push calculation.}
+We use the following calculation over the original ground
+in place of choosing a common fixed-value residue fiber
+of the base.
+Let $\bm X=(X,p)\in\RV[k]$, let
+$J\subseteq X\times\Gamma^r$ be definable, and put
+\[
+ J_x=\{\xi:(x,\xi)\in J\},\qquad
+ Y=\{(x,z):x\in X,\ \vrv(z)\in J_x\}.
+\]
+Give $Y$ the finite-to-one label $(p(x),z)$, of degree
+$k+r$. Set $g=[\G_m]$ in $R(\mathbb S)$.
+The integer function $c(x)=\chi_b(J_x)$ has finite range
+and definable level sets $X_e=\{x:c(x)=e\}$, and
+\begin{equation}\label{relative:Gamma:push}
+ \mathbb E_{\mathrm b}^{\mathbb S}([Y])
+       =g^r\sum_e e\,
+               \mathbb E_{\mathrm b}^{\mathbb S}([X_e]).
+\end{equation}
+The sum is finite. All classes in this formula use the
+ungraded bounded retraction; the specified RV labels are
+retained before that evaluation.
+Two finite-to-one labels on the same RV set give the same
+bounded value: pad them with constant-one coordinates to
+a common degree. The underlying identity is then an RV
+isomorphism. Each padding multiplies by the degree-one
+point class, whose bounded value is $1$.
+
+Here is the relative calculation, including its unary step.
+Work first on fixed nonzero-coordinate strata, carrying all finite tags.
+Suppose that $J_x\subseteq\Gamma$ is a point, a bounded open interval,
+an upper or lower open ray, or the whole line, with its endpoint graphs
+definable over the original ground. Write $\lambda_\bullet$ for its
+factor in the Euler table of Section~\ref{sec:setup}.
+
+There is a finite monomial partition of $X$ on which all endpoint
+functions depend only on the value coordinates in a fixed rational
+Gamma graph. Indeed, apply the value-parameter control in
+\eqref{eq:gamma-control} to the endpoint graphs, use their functionality
+to obtain finitely many rational affine descriptions, and refine the
+monomial partition by their validity loci. This retains the entire
+endpoint graph and the ordering conditions on each piece.
+On a piece with $h_M(X_0)=V\times I^\sharp$, the lifted cylinder is
+$V\times K^\sharp$, where $K$ is the corresponding cylinder over $I$.
+One-coordinate Gamma integration gives
+$\chi_\bullet(K)=\lambda_\bullet\chi_\bullet(I)$.
+The monomial evaluation formulas then give
+\[
+ \mathbb E_\bullet([Y_0])
+   =[V]g^{\ell+1}\chi_\bullet(K)
+   =\lambda_\bullet g\,\mathbb E_\bullet([X_0]).
+\]
+Here $\mathbb E_\bullet$ means the bounded map or the unnormalized
+geometric map, as appropriate. Sum over the endpoint partition.
+
+Now let $J_x\subseteq\Gamma^r$ have one fixed valid cylindrical
+certificate on a definable base piece. Lift its Gamma coordinates fully
+to RV and reorder them so that the next cylindrical coordinate is
+adjoined last. The already lifted coordinates and $x$ are retained as
+RV base coordinates. The unary calculation applies at every step of
+each cell tree. Induction on the tree shows that a cell of shape $s$
+contributes
+\[
+ e_\bullet(s)g^r\mathbb E_\bullet([X]),
+\]
+where $e_\bullet(s)$ is the product of its Euler factors.
+Disjointness and covering in the certificate give an actual partition
+of the lifted total family. Summing its cell contributions gives
+$g^r\bigl(\sum_s e_\bullet(s)\bigr)\mathbb E_\bullet([X])$.
+Finally take a finite partition on which the certificates, hence their
+Euler integers, are fixed, and add the resulting identities. This
+proves \eqref{relative:Gamma:push}.
+Every step retains the RV base coordinate; none of the resulting total
+families is asserted to be a RES object over the ground.
+Formula~\eqref{relative:Gamma:push} concerns the full RV lift of the
+Gamma family, accounting for its factor $g^r$. For the tropical motivic
+Fubini formula, see \cite[Theorem 3.1.3]{NicaisePayne}.
+
+\medskip
+\noindent\emph{Keep the residue families over their RV base.}
+For the finite witness packages already prepared over $S$, write the resulting
+fiber charts as
+\[
+ h_{M_i}(U_{\tau,i})
+      =V_{i,\tau}\times I_{i,\tau}^{\sharp},
+ \qquad \tau\in S.
+\]
+The matrices, arities, finite tags, label maps and graphs
+are part of these packages.
+After the preceding parameter control and a finite common
+partition of $S$, the numbers
+$\chi_b(I_{i,\tau})=e_i$ are constant on a selected base
+piece; do the same for the primed family.
+The affine map
+$\eta\mapsto M_i^{-1}(\beta_{i,\tau},\eta)$ identifies
+this free support with the original value piece, so their
+bounded Euler characteristics agree.
+Retain every source chart on that piece. A chart may have
+empty fibers, and its projection need not equal the
+projections of other charts.
+
+Put
+\[
+ \mathcal V_i=\{(\tau,v):\tau\in S,\ v\in V_{i,\tau}\}.
+\]
+This is an RV object with a chosen finite-to-one label;
+it need not be a RES object over the ground.
+Apply (\ref{relative:Gamma:push}) with
+$X=\mathcal V_i$ and Gamma fiber $I_{i,\tau}$.
+The maps $(\tau,u)\mapsto(\tau,h_{M_i}(u))$
+retain the RV base coordinate. Thus
+\begin{equation}\label{fubini:family:coefficients}
+ \mathbb E_{\mathrm b}([\bm W])
+   =\sum_i e_i g^{\ell_i}
+               \mathbb E_{\mathrm b}([\mathcal V_i]),
+ \qquad
+ \mathbb E_{\mathrm b}([\bm W'])
+   =\sum_{i'} e'_{i'}g^{\ell'_{i'}}
+               \mathbb E_{\mathrm b}([\mathcal V'_{i'}]).
+\end{equation}
+The product labels in the calculation can be replaced by
+the transported labels of $\bm W,\bm W'$: the monomial
+evaluation in the ungraded bounded target is independent
+of that label choice, as in the earlier evaluation formula.
+
+There is a useful special case for the later RES relations.
+For any definable RV family
+$\mathcal Z=\{(\tau,z):z\in Z_\tau\}$ and definable
+$\alpha:S\to\Gamma^n$, set
+\[
+ T_{\alpha,\mathcal Z}
+  =\{(\tau,z,u):(\tau,z)\in\mathcal Z,\
+                        \vrv(u)=\alpha(\tau)\}.
+\]
+Its Gamma fibers are singletons, of bounded Euler
+characteristic $1$. Hence
+\begin{equation}\label{fubini:relative:torsor}
+ \mathbb E_{\mathrm b}([T_{\alpha,\mathcal Z}])
+      =g^n\mathbb E_{\mathrm b}([\mathcal Z])
+      =\mathbb E_{\mathrm b}([(\G_m)^n\times\mathcal Z]).
+\end{equation}
+This treats a varying value-torsor relation directly over
+the RV base.
+
+\medskip
+\noindent\emph{Apply the finite witnesses to the total families.}
+For every object family $F_\tau$ use the tagged total
+\[
+ \mathcal F=\{(\tau,u):\tau\in S,\ u\in F_\tau\}.
+\]
+Give each total a finite-to-one RV label, for example its
+full coordinate tuple when necessary.
+These totals are RV objects; no assertion that they are
+ground RES objects is needed.
+The uniform bijection (\ref{finite:RES:witness}) yields
+an actual definable bijection
+\[
+ \mathcal P\sqcup\mathcal C\sqcup\bigsqcup_j\mathcal R_j
+       \ \cong\
+ \mathcal Q\sqcup\mathcal C\sqcup\bigsqcup_j\mathcal L_j .
+\]
+For each $j$, the relative torsor identity gives
+\[
+ \mathbb E_{\mathrm b}([\mathcal L_j])
+       =\mathbb E_{\mathrm b}([\mathcal R_j]),
+\]
+with either orientation, even for varying
+$\alpha_j(\tau)$.
+Apply the ungraded bounded retraction to the total
+bijection and cancel the common summands additively:
+\[
+ \mathbb E_{\mathrm b}([\mathcal P])
+       =\mathbb E_{\mathrm b}([\mathcal Q]).
+\]
+The definitions of $P_\tau,Q_\tau$ turn their difference
+into
+\[
+ \sum_i e_i g^{\ell_i}\mathbb E_{\mathrm b}([\mathcal V_i])
+   -\sum_{i'}e'_{i'}g^{\ell'_{i'}}
+                   \mathbb E_{\mathrm b}([\mathcal V'_{i'}]).
+\]
+By the preceding family-coefficient formula this is
+$\mathbb E_{\mathrm b}([\bm W])
+ -\mathbb E_{\mathrm b}([\bm W'])$.
+Consequently the two global bounded values agree.
+Since $\bm W,\bm W'$ represent the original total
+VF objects under the lifting comparison, this proves
+the conclusion of Theorem~\ref{fubini}.
+Sum over the finitely many base pieces.
+All cancellations above take place in the additive
+group of $R(\mathbb S)$; no torus class is inverted.
+\end{proof}

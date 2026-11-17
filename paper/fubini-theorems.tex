@@ -1,0 +1,114 @@
+\documentclass[12pt]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,bm,mathtools}
+\usepackage[top=2.3cm,bottom=2.3cm,left=2cm,right=2cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\allowdisplaybreaks
+\numberwithin{equation}{section}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{test}[thm]{Lemma}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{nota}[thm]{Notation}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+\newcommand{\VF}{\mathrm{VF}}
+\newcommand{\RV}{\mathrm{RV}}
+\newcommand{\RES}{\mathrm{RES}}
+\newcommand{\rv}{\operatorname{rv}}
+\newcommand{\vrv}{\operatorname{vrv}}
+\newcommand{\vv}{v}
+\newcommand{\dcl}{\operatorname{dcl}}
+\newcommand{\GL}{\operatorname{GL}}
+\newcommand{\gal}{\operatorname{Gal}}
+\newcommand{\aut}{\operatorname{Aut}}
+\newcommand{\Vol}{\operatorname{Vol}}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\R}{\mathbb R}
+\newcommand{\A}{\mathbb A}
+\newcommand{\G}{\mathbb G}
+\newcommand{\ggk}{K_0}
+\newcommand{\sggk}{\widetilde K_0}
+\newcommand{\bb}{\mathbb}
+\newcommand{\var}{\mathrm{Var}}
+\newcommand{\gmv}{K_0^{\widehat\mu}(\mathrm{Var}_{\C})}
+\newcommand{\lan}[3]{\mathcal L_{\mathrm{#2}}}
+\DeclareMathOperator{\rank}{rank}
+\title{Fubini Theorems for Motivic Volume}
+\author{Arthur Forey}
+\author{Yimu Yin}
+\subjclass[2020]{03C60, 12J25, 14E18}
+\keywords{Motivic integration, Fubini theorem, algebraically closed valued fields}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+Let two definable maps in an algebraically closed valued field of
+equicharacteristic zero have the same target. If their fibres admit
+parameter-definable RV lifts with equal bounded residue-field values, then
+their total spaces have equal bounded motivic values over the original
+parameter base. We give a proof using finite monomial decompositions,
+first-order certificates for Euler characteristics, and stabilized
+bijections witnessing equality in the residue-field quotient. The same
+method gives a geometric Fubini theorem in the affine-localized target.
+Over the complex Laurent-series field, finite Kummer coordinates identify
+the residue-field quotient with the equivariant Grothendieck ring and give
+a vanishing criterion for morphisms of complex varieties.
+\end{abstract}
+
+\section{Definable sets and motivic values}
+\label{sec:setup}
+\input{sections/setup}
+\section{Monomial decomposition over the original ground}
+\label{sec:decomposition}
+\input{sections/decomposition}
+\section{Bounded Fubini}
+\label{sec:bounded}
+\input{sections/bounded}
+\section{Geometric Fubini}
+\label{sec:geometric}
+\input{sections/geometric}
+\section{Complex realization and varieties}
+\label{sec:complex}
+\input{sections/complex}
+
+\begin{thebibliography}{9}
+\bibitem{Eisenbud}
+D. Eisenbud, \emph{Commutative Algebra with a View Toward Algebraic Geometry},
+Graduate Texts in Mathematics, vol.~150, Springer, New York, 1995.
+\bibitem{EnglerPrestel}
+A. J. Engler and A. Prestel, \emph{Valued Fields},
+Springer Monographs in Mathematics, Springer, Berlin, 2005.
+\bibitem{FY}
+A. Forey and Y. Yin,
+\emph{Bounded integral and motivic Milnor fiber},
+arXiv:1910.12764v2, 2020.
+\bibitem{Marker}
+D. Marker, \emph{Model Theory: An Introduction},
+Graduate Texts in Mathematics, vol.~217, Springer, New York, 2002.
+\bibitem{NicaisePayne}
+J. Nicaise and S. Payne, \emph{A tropical motivic Fubini theorem with
+applications to Donaldson--Thomas theory},
+Duke Mathematical Journal \textbf{168} (2019), no.~10, 1843--1886.
+\bibitem{vdD}
+L. van den Dries, \emph{Tame Topology and O-minimal Structures},
+London Mathematical Society Lecture Note Series, vol.~248,
+Cambridge University Press, Cambridge, 1998.
+\bibitem{YinQE}
+Y. Yin, \emph{Quantifier elimination and minimality conditions in
+algebraically closed valued fields}, arXiv:1006.1393, 2010.\bibitem{YinST}
+Y. Yin, \emph{Special transformations in algebraically closed valued fields},
+Annals of Pure and Applied Logic \textbf{161} (2010), 1541--1564;
+arXiv:1006.2467.
+\bibitem{YinI}
+Y. Yin, \emph{Integration in algebraically closed valued fields},
+Annals of Pure and Applied Logic \textbf{162} (2011), no.~5, 384--408;
+arXiv:0809.0473v2.
+\end{thebibliography}
+\end{document}

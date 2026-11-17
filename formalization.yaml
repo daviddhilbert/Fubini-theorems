@@ -1,0 +1,125 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+version: "v0.4"
+project:
+  name: "Bounded Fubini in algebraically closed valued fields"
+  description: >-
+    A Lean formalization of Forey and Yin's Theorem 5.17. For two definable
+    maps to a common mixed VF/RV base, parameter-definable RV lifts of every
+    pair of fibres with equal bounded residue-field evaluations imply equal
+    bounded invariants of the total VF classes. The saturated canonical
+    equicharacteristic-zero model and small generated-ground hypotheses are
+    explicit. The submission selection contains this one theorem; necessary definition helpers may accompany its vocabulary.
+  authors: ["Yimu Yin"]
+  responsible_maintainers: ["Yimu Yin"]
+  license: "MIT"
+classification:
+  arxiv: ["math.LO", "math.AG"]
+  msc2020: ["03C60", "12J25", "14E18", "03B35"]
+sources:
+  - title: "Bounded integral and motivic Milnor fiber"
+    authors: ["Arthur Forey", "Yimu Yin"]
+    id: "arXiv:1910.12764v2"
+    location: "https://arxiv.org/abs/1910.12764v2"
+    type: paper
+    relationship: formalizes
+    note: >-
+      Theorem 5.17 in Section 5.2, using its explicit RV-lift hypothesis.
+      The selected result concerns the unmeasured integral followed by bounded
+      Euler reduction. The later measured bounded integral and Milnor-fibre
+      applications are not this submission's claim.
+related_formalizations:
+  - id: "https://github.com/daviddhilbert/diamond-integral/tree/a3ef33e664e0a0725f0b04d9400bb7c8a1b8e95a"
+    relationship: adapts
+    note: >-
+      Extracted active Section 5 development with unchanged public theorem
+      names and types. SOURCE-MANIFEST.json records every original file and
+      the independent package's implementation ownership. This repository
+      contains the substantive proof development, not only a Comparator wrapper.
+  - id: "https://github.com/daviddhilbert/integration-in-ACVF"
+    relationship: builds-on
+    note: "Exact lifting provider revision is pinned in lake-manifest.json."
+  - id: "https://github.com/daviddhilbert/special-transformations"
+    relationship: builds-on
+    note: "Exact preparation and finite-law provider revision is pinned in lake-manifest.json."
+  - id: "https://github.com/daviddhilbert/ACVF-QE"
+    relationship: builds-on
+    note: "Shared corrected RV language and quantifier elimination, at the manifest revision."
+status:
+  scope: >-
+    Exactly one advertised mathematical headline:
+    DiamondIntegral.Section5.bounded_fubini_discharged (Theorem 5.17).
+    Geometric Fubini, monomial decomposition, Puiseux comparisons and the
+    variety corollary remain in the full library without being separate
+    Challenge claims. Challenge.lean is presently a preparation draft whose
+    project imports must be removed for Palomar compliance. Module migration, the library build and all 10,566 unchanged public
+    type/axiom checks have passed. Exact-snapshot Comparator/NanoDa
+    verification remains required.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: ["propext", "Classical.choice", "Quot.sound"]
+automation:
+  methods:
+    - method: agent
+      models: []
+      framework: "Codex / ChatGPT"
+      tool_setup: "Author-directed Lean development, extraction, source compilation and public type/axiom audits."
+      cost:
+        wall_time: "not tracked"
+        spend_usd: "not tracked"
+        hardware: "Local Apple silicon toolchain and GitHub Actions."
+      prompting_notes: "Preserve exact theorem types, original parameter bases and explicit hypotheses."
+    - method: agent
+      models: ["GPT-6"]
+      framework: "Codex desktop"
+      tool_setup: "Repository inspection, source-linked blueprint and single-result submission preparation."
+      cost:
+        wall_time: "not tracked"
+        spend_usd: "not tracked"
+        hardware: "Local Apple silicon machine."
+      prompting_notes: "Read other repository workflows; state only the main Fubini result in the Challenge."
+  spend_usd: "not tracked"
+  notes: >-
+    Historical model identifiers and total costs were not tracked. The current
+    preparation preserves the mathematical implementation. Human responsibility
+    and AI assistance are recorded separately; no independent human review is claimed.
+fidelity:
+  divergences: >-
+    The exported theorem explicitly retains a canonical tagged RV structure,
+    ACVF(0,0), an uncountable saturation bound, strong homogeneity, a small
+    VF-generated real ground and a small nontrivial Gamma subgroup containing
+    the real ground's RV values. Source objects have finite RV fibres over
+    VF tuples; their VF coordinates need not be valuatively bounded. At each
+    mixed-base point, actual definable bijections to RV lifts and equality in
+    the same parameter-relative RES ring are required. No simplification to
+    arbitrary fibre integrals is claimed. RV inversion is named and totalized
+    at the single absorbing RV zero, following the provider's language correction.
+    Mathlib's multiplicative valuation order reverses the paper's additive order.
+review:
+  status: "preparation; no independent expert review or Palomar acceptance claimed"
+  reviewers: []
+  notes: >-
+    Existing source build and all 10,566 public type/axiom comparisons passed
+    at fea1092a0a3e0b6bcde5453c3083151f16d747f9, Actions run 43987163120.
+    The module revision 58506df2ed62eafc66d3cb00be8ee24c57597449 also passes the library
+    build and all unchanged full public type/axiom checks; see
+    palomar/module-verification.json. The blueprint binds that revision. See
+    PALOMAR-PREPARATION.md and palomar/readiness.json for current local checks
+    and the remaining independent Challenge import blocker.
+    The one deliberate Challenge sorry is excluded from proof-development counts.
+alignment:
+  namespace: "DiamondIntegral.Section5"
+  statements:
+    - source: "Forey–Yin, arXiv:1910.12764v2, Theorem 5.17"
+      lean: "DiamondIntegral.Section5.bounded_fubini_discharged"
+      module: "FubiniTheorems.Fubini.Section5DischargedInputs"
+      status: proved
+      note: >-
+        Original model and ground hypotheses are retained; the value-group
+        preparation and original-ground lifting/kernel records are constructed
+        by checked proofs. The independent Palomar statement is still a draft.
+acknowledgements: >-
+  Arthur Forey and Yimu Yin for the mathematical source; Lean and Mathlib
+  contributors; the pinned hilbert-mathlib, ACVF-QE, special-transformations
+  and integration-in-ACVF providers and their individually retained notices;
+  Patrick Massot for leanblueprint. No novelty of the underlying mathematics
+  or priority over earlier formalizations is claimed.

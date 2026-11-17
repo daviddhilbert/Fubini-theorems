@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "scope": "formalization.yaml v0.4 upstream JSON Schema; not Palomar preflight",
+  "schema_url": "https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/v0.4.schema.json",
+  "schema_sha256": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
+  "metadata_sha256": "1bba20184cc44d28c0d8d8328c8f76a19d89aa5fd83a453277d236d6db8fc3eb",
+  "errors": []
+}
