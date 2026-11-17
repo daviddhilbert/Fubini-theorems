@@ -50,6 +50,9 @@ jobs:
         id: build
         run: python3 verification/build_with_diagnostics.py -- lake build FubiniTheorems
 
+      - name: Build the independent bounded Fubini statement and solution
+        run: lake build Challenge Solution
+
       - name: Stop remaining build processes before archival
         id: quiesce
         if: ${{ always() && (steps.build.outcome == 'success' || steps.build.outcome == 'failure' || steps.build.outcome == 'cancelled') }}
