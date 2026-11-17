@@ -1,5 +1,7 @@
 # Fubini theorems
 
+[![Lean verification](https://github.com/daviddhilbert/Fubini-theorems/actions/workflows/lean.yml/badge.svg)](https://github.com/daviddhilbert/Fubini-theorems/actions/workflows/lean.yml)
+
 Lean formalization of the active results of Section 5 of Forey and Yin's
 *Bounded integral and motivic Milnor fiber*, including the monomial decomposition,
 canonical Puiseux-model comparison, bounded and geometric Fubini theorems,
@@ -58,6 +60,11 @@ pre-extraction baseline. The finite-laws prerequisite is owned by
 special-transformations and remains part of that public contract.
 Only `propext`, `Classical.choice`, and `Quot.sound` are accepted.
 Full current type/axiom output is retained as a CI artifact.
+
+The first independent source build and complete public contract audit passed
+in [GitHub Actions](https://github.com/daviddhilbert/Fubini-theorems/actions/runs/43987163120)
+at [the extracted mathematical revision](https://github.com/daviddhilbert/Fubini-theorems/commit/fea1092a0a3e0b6bcde5453c3083151f16d747f9).
+`EXTRACTION-STATUS.json` records that checkpoint; the badge shows current CI.
 
 The two former scoped [18] source patches are retired. The unmeasured
 lifting/kernel input uses the published generated-base proof through a

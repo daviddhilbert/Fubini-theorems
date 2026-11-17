@@ -1,14 +1,28 @@
 {
-  "stage": "Fresh local source build and exact public contract audit passed; GitHub CI pending.",
+  "stage": "Independent extraction complete; source build and full public contract checks passed locally and in GitHub Actions.",
   "source_modules": 1786,
   "owned_declarations": 10565,
   "preserved_public_contract": 10566,
   "inherited_finite_laws_owner": "special-transformations",
-  "shared_migration_ci": "Final Diamond run still active",
+  "shared_migration_ci": {
+    "status": "PASS",
+    "run_id": 43959230579,
+    "tested_commit": "ef984d9873971249968cdbc2e737606e6cbcb557"
+  },
   "independent_section5_boundary": "PASS",
   "local_build": "PASS:lake build FubiniTheorems,13021 jobs",
   "lean_source_files": 1795,
   "public_type_and_axiom_comparison": "PASS:10566 unchanged full types and axiom inventories",
-  "ci": "pending publication",
-  "section6_independence": "PASS:zero local Section6 modules or constant references"
+  "ci": {
+    "status": "PASS",
+    "tested_commit": "fea1092a0a3e0b6bcde5453c3083151f16d747f9",
+    "run_id": 43987163120,
+    "url": "https://github.com/daviddhilbert/Fubini-theorems/actions/runs/43987163120"
+  },
+  "section6_independence": "PASS:zero local Section6 modules or constant references",
+  "diamond_consumer_ci": {
+    "tested_commit": "0377037f60d15168d707d0220805296dc5542929",
+    "url": "https://github.com/daviddhilbert/diamond-integral/actions/runs/43996732913",
+    "status_source": "GitHub Actions; tracked independently of this extraction checkpoint."
+  }
 }

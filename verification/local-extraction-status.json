@@ -1,7 +1,7 @@
 {
   "compiler": "Lean4.35.0, fresh independent Fubini source build",
   "build_jobs": 13021,
-  "ci_status": "pending",
+  "ci_status": "See EXTRACTION-STATUS.json for the subsequent GitHub CI result.",
   "status": "PASS",
   "modules": 1786,
   "owned_declarations": 10565,
