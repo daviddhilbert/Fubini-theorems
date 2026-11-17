@@ -2,6 +2,15 @@ name: Palomar mechanical preflight
 
 on:
   workflow_dispatch:
+  push:
+    branches: [codex/palomar-blueprint]
+    paths:
+      - Challenge.lean
+      - Solution.lean
+      - comparator.json
+      - FubiniStatement.lean
+      - FubiniStatement/**
+      - formalization.yaml
 
 permissions:
   contents: read
