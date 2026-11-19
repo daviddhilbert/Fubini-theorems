@@ -74247,7 +74247,7 @@
       ]
     },
     {
-      "name": "DiamondIntegral.Section5.invariantOpenMap_\u03b9",
+      "name": "DiamondIntegral.Section5.invariantOpenMap_ι",
       "signature_sha256": "508b920678af3904f208c8a37eaa2a4879339679f967c2d8f1b9af8c5612a723",
       "axioms": [
         "Classical.choice",
@@ -94489,6 +94489,5575 @@
     {
       "name": "DiamondIntegral.Section5.EquivariantVariety.subsetClass_finite_partition",
       "signature_sha256": "b748c19c8389f820d7bef79f530fa5cdb5f244ad18103c72c634c1bd11101344",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedGammaPower",
+      "signature_sha256": "625fde0ab84708b9c5a788b00eed0a7b28c709180cc625c4dac1e4b6ed660253",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedRVReindexMap",
+      "signature_sha256": "af4fc62e939e1da5dab3b607b3ffd2566108348a04a50370644b826ecfa87e05",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedRVReindexMap_value",
+      "signature_sha256": "96bc956eff39680bffe61aa59a515a2346bc45cc9cbc07d0f2d210ba9f209c73",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedVFReindexMap",
+      "signature_sha256": "d36124ad9c6edad0e7873d7fbf744bc81d81dbe9e4d5eae6ffb18d69cc458edc",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedVFReindexMap_value",
+      "signature_sha256": "d92af83c30bfb30bf9ce5cec0c59d68aad3b12c98a88d1c872c0eb881c995195",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedRVGammaTopMap",
+      "signature_sha256": "19ba54853ffc836fd8a5d3f041a7d6b14ad63f3c115970612bd387a3aeb53b79",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedRVGammaTopMap_value",
+      "signature_sha256": "3451cb68517d337726ef04975ceadd76395f96f23088a34ef14e01b1e6a938bf",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedVFGammaTopMap",
+      "signature_sha256": "d4421f09ad3723d8748c1f9f8331dbee41325d515d1f0eb604bfa923a94296f8",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedVFGammaTopMap_value",
+      "signature_sha256": "642994d00ccaf6ee8205300b962c121de4da8099927b91474db54b0ab88fbcac",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedGammaIncludeMap",
+      "signature_sha256": "444c2f0741a132db84d5aa6b6585bccb64fbc4c672ba8779fc3a0e92aa4e1f38",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedGammaIncludeMap_value",
+      "signature_sha256": "2829fa43b81395a3013f2f49f964aa09a370030b8b7c4ce7f56747a84708c7e5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.GammaGroundDefinable.diagonal_preimage",
+      "signature_sha256": "89d1148ae2e17ab2f4e15702bfd4485cd9629daed58326550ee2525fad63700e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.GammaGroundDefinable.forall_snd",
+      "signature_sha256": "9eaf53a02d4d8f607b94993d72476db1ba61b93329fc27588aac6d2841db8295",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.GammaGroundDefinable.exists_snd",
+      "signature_sha256": "3387358af96bd7fa47a9f60eca87677aed0ce8391f74587e135dead5516b1c3e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.GammaGroundDefinable.exists_gamma_lift",
+      "signature_sha256": "3640a4a6f1be19958b7385c4e4b424bc93d11696c56476d93d560810b5e55c4e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedGamma_singleton_definable",
+      "signature_sha256": "5c29a6d680027d6f1b16f1da67ce4f408290c8d3349b1513d7870c3c60e58a60",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.GammaGroundDefinable.gammaFibre",
+      "signature_sha256": "6b773b8ac3e33f1a6b5bd40bf477150cd63613b2febda48fc8c9065be04e82e2",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.adjoinGammaTuple_names",
+      "signature_sha256": "1bd19a15a7401186a8f80641dc99f410d3aba2d12929a398cd53b532be7d6954",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.GammaGroundDefSet.gammaFibreOver",
+      "signature_sha256": "1f33072a684654f141a5421b8736477defa4e34fc4db192f520f019ee3575fd0",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.GammaGroundDefSet.gammaFibre",
+      "signature_sha256": "9390d51bc343dc08e94c75cab91fc51f9dab3d6c036e1b5dfa59eccf79ccafbf",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.GammaGroundDefSet.mem_gammaFibre",
+      "signature_sha256": "05065a9f29b265904b3e75336a3b75f3d0e2ab2d02cde4c72e554ffe6a6ec506",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.GammaGroundDefSet.mem_gammaFibreOver",
+      "signature_sha256": "f471758ca2389a5ac1a519c64acdd4f9356a014244825739622644587e35fda5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.GammaGroundDefSet.gammaRVInflation",
+      "signature_sha256": "c3079cf98a0503dbad7d38a6d37d6696a2438e45899222d49457ac7e445c57c0",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.GammaGroundDefSet.mem_gammaRVInflation",
+      "signature_sha256": "7daf8a2edcfb65eec5942aed49646e6bf5aac34f0a07010a780d98eee4b715e7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.GammaGroundDefSet.append_mem_gammaRVInflation",
+      "signature_sha256": "66c759e7cacfcf066f7dba282c122e0d4cb7e7aa4ee478a37245074e603efbbb",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflated_gamma_unique",
+      "signature_sha256": "b6d06e084f176d9d2dd43175ea828ad6fcabfa6ae31aefbc0ef0690d1dc540ce",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily",
+      "signature_sha256": "f45b45ba266f1b39ee41c204abd85c28e841c6d3064d757d30d6e433642a2572",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.row",
+      "signature_sha256": "4b1b782f3615233f9efd1d58e96baae28a1f748d57f6e0f30f34a09c8ddffb02",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.fibreOver",
+      "signature_sha256": "deb401e069577835400929dac6f21272811cdb8fcdf7b74ecbfe8581cf9255d6",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.fibreAt",
+      "signature_sha256": "a27edd5ec700f93b3a27711e5a1f9f7a5cbb0c69250d919f872e244812224456",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.fibreAt_carrier",
+      "signature_sha256": "6c00412b4d318290089410c4447f4136ef6a246a7ff67fdac7d17b7618d698d7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.fibreOver_carrier",
+      "signature_sha256": "86dc0f3cd520a2cda6882195a117c40b1fc79d56ab242ed17582c5d78e0e1c5d",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.inflatedCarrier",
+      "signature_sha256": "4239081e6e3f12f8d3ccceb731d5a08678c3c0e5c5da1d35e61ad06062c8c87f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.inflatedSplitMap",
+      "signature_sha256": "31248ff42010207e1feb6357e7a30088a7dec5de866cab5da76d43fd1510194e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.inflatedValueMap",
+      "signature_sha256": "e9c868822e3a9e2c2e1474ad260fa4b71aee7441f889c01a3ba2866a2f014049",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.inflatedCarrier_definable",
+      "signature_sha256": "26bcb2a1101beca8dbc27449fd34325d631f50ffe6a764b047e5b3b651126a42",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.inflatedCarrier_finite",
+      "signature_sha256": "43859ee9db56f3bc558dc047997cd96e9719f7cfc286487b8a785378da271cf0",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.inflated",
+      "signature_sha256": "399a8d75370b6eac173cfb57b3e047c7bb70265a2e860d6f7c239a617548bca4",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.mem_inflated",
+      "signature_sha256": "295fe86eb50840133726e16024ba756f7ba561813c38669708d1725f53d13453",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.inflated_coordinate_ne_zero",
+      "signature_sha256": "0347915e1f54049d3a55d1f9f1d4c93fa7a5221d7dc13b8e537e0b10fbe7052a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedGammaNameMap",
+      "signature_sha256": "64e762b2dfd85ad9399cd950709ec4bb3320331f640e62f824c21cf8fcdd0828",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedGammaNameMap_value",
+      "signature_sha256": "01cf3ea48a73426711437ed3c360910426c19dcb0bfba27fce9bd1a9e04d2835",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.gammaGroundDefinable_abstract_gamma_names",
+      "signature_sha256": "0a02da5b62fa003ac199e93673ba70c47cb9d9b67a0d3504527164280d6a24d3",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.GammaGroundDefSet.exists_gamma_family",
+      "signature_sha256": "8878438f5c8d52cf8ba6995341216ce3b22f451e9f7d787911af614ca80540cc",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflated_finite_of_no_injective",
+      "signature_sha256": "81060e7e303fa3aae0dbb2654dc679ccf3cdb503ec278f9402721517b93474f7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflated_no_injective_of_ncard",
+      "signature_sha256": "9dcf02e431a2082db08441d02e3ee404ff4ad827c609348e19c5a0bc7fdd2011",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.GammaGroundDefinable.exists_injective_tuple",
+      "signature_sha256": "c5ced91ffb8e761f2dcdbd417b424f04403fa23c6c3a682fd8576502b85fc755",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaWeakLiftDatum",
+      "signature_sha256": "010c3df7fd2353549da579f08ce6b1823366ec80bf99edda0653649310b001ba",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.liftRow",
+      "signature_sha256": "b24e35bbcab4f4e2d991f63c3572b0632fd84f247cbeb0178a87dd315f7e5a50",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.labelFibre",
+      "signature_sha256": "22f3c92b2a296cc26a68d884cbe859ca73ee78a42cd136678821cb1e8936ff85",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.Valid",
+      "signature_sha256": "28eda6a02075f9bb1cfb311cc93e6e3e3ac51cd7b6106c4c2de7c120734c7d66",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.Valid.labelFibre_finite",
+      "signature_sha256": "c1a1e0c4165031c9aeeb0d508388db2079f8ca37aadf21e6e66c57fa43c0d00e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.valid_definable",
+      "signature_sha256": "0f7930e687322ee7cdd1a78336aa0bb051f0b61eac43d9191585dd7858f6a75c",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflated_append_comp_castAdd",
+      "signature_sha256": "371bf7bfbbead1210f6d49eb731d2c697c7f63832e3657063ff2c4c5f0fb2bed",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflated_append_comp_natAdd",
+      "signature_sha256": "50b826c7ecf059ec8165a18b40532d733faf2d20d74676bcf4003286a8eae27d",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflated_append_split_rows",
+      "signature_sha256": "e0939f136ddde2b1ed4478b3186ea5258648c2a47d05dc2a3ea807c514643222",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.exists_valid_datum",
+      "signature_sha256": "bfb46dec512fd1b06eab8e5fa851d3f37775c5efd618a2f94efbb1fcf58b3fda",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.finite_valid_catalog",
+      "signature_sha256": "b68b70d43ad32d59d4c761ba1fdb6732c99cc7b7ea68fce769c738c57bf2b2f0",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.uniform_lift_catalog",
+      "signature_sha256": "9f5daa37e4c2953fc1a168739ed21692f7c748e1a0b477f92fcedbec886187c0",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.section5BoundedRVSetValue",
+      "signature_sha256": "83d71b1ba74b3405c21a75bdf2dd9e922d095dbe6cbff888f752931e0b9f30ea",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedRelationMap",
+      "signature_sha256": "003cbfcae7573efa5c04ba9917d104d2ee68ef81f2c2d7d6a1e51b444455496b",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedRelationMap_spec",
+      "signature_sha256": "fae182ba638daaa8feeb7e5c5be81afafc2ecc8ebe416ef76ad93a9cc51c18ea",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedRelationMap_bijective",
+      "signature_sha256": "b7db544aa2c2f70a3fe36dfc47d9f0cbc5303af87f9aa85338431f3181f9fcef",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedRelationBijection",
+      "signature_sha256": "3a0a192b1e40bccf35b14a843cd48624301e23290ed04b3592286eb6cffe6277",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.objectAt",
+      "signature_sha256": "645ecf7aeae202f64557eadcc03b6717b9350d849ab5a86a204f41b6a18cecfa",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.mem_lift_objectAt",
+      "signature_sha256": "55a1a8b2bd1bc1c2aa0279ffbc302adcbe9c2964bb9ca29b917af9a9c6fc04e5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.bijectionAt",
+      "signature_sha256": "7597a8243255ca21448b0213de9812c76bbcc33af02e9f133540bdcb9c34215e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.fibre_value",
+      "signature_sha256": "95c3808dacc5ff57de39d320b21b6329a9c73b0b38aeb4f7933d9b46bd24cfb4",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedLabelIndex",
+      "signature_sha256": "b1a78fb87a6655aae61a429f638c58e8c859bf2985f3093790933823962b0cb2",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedLabelIndex_castAdd",
+      "signature_sha256": "a7f4898763923c8e7d97d6e10b038b27366d66dc4e46ce34ff5377c1e73f5354",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedLabelIndex_natAdd",
+      "signature_sha256": "c3c523f560e76200bdb2408879ea53bf267d03894cf6a7863c887dab8c63163e",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.restrictDomain",
+      "signature_sha256": "fd022d12f4b3a92c7d292f2187f86813465263a48613889241d912f46c1969bf",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.inflated_label_fibre_finite",
+      "signature_sha256": "b2e30f4a6e82b526d3135364c3eeac927de24501ebb53242a936b177909079a7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.inflatedObject",
+      "signature_sha256": "16869e045dbf68b504f0c8621fd2fd9e9b45fbf2c04006bb498ee002cc2eec02",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.mem_lift_inflatedObject",
+      "signature_sha256": "aebfa713c2972000865bc25cf746fbd5425793e5e2ddcbdc39f0523475b84562",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.inflatedPiece",
+      "signature_sha256": "c3ed5b9a743efe892cffeeeca567299c1791454abc3b49653697ed1411182eb1",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.inflatedPiece_subset",
+      "signature_sha256": "16e08dbcda10b32c08043b73dede0c50821cebd3cbfb8507faa72555d1535687",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.inflatedPieceRelation",
+      "signature_sha256": "bdac53448d1765aaa5ac2bae6d0b7a0f6079ef8867a3aa6638cf3fa05b158bf3",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.inflatedPieceRelation_definable",
+      "signature_sha256": "e8d6bf42c9eb07ea123269b238387bd731e70273fcd7aec8424ea44a25250974",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.inflatedPieceBijection",
+      "signature_sha256": "dd2d5fc241baf6a6be6d42dfcdf9a4322a720c9fce28666ac3431111178c0958",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.inflatedPiece_partition",
+      "signature_sha256": "942647939515bd65724c31976f0e601d89e6c1066ab9a38a1b3cc90452dea906",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.row_empty_iff",
+      "signature_sha256": "ee8040e804d4c18354e21b6c3a78527ea82984031b732aa7e69108303d98bdbf",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.fibre_value_sum",
+      "signature_sha256": "e607c264c6f468c21348f23a1dac988b46f8490329df8c251bbed7135f2dc365",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.inflated_value_sum",
+      "signature_sha256": "c330f7609faf19f169e8a692e35d17fad61a4dfacb651df4c9c6647f36e60584",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GammaVFFamily.uniform_representatives",
+      "signature_sha256": "d02d4b7384eb2656a9f9df5f29058530d7bca3032c3d18df794f925906a691ba",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedMonomial_mul",
+      "signature_sha256": "f370248cba89e546cb7f3c6a8f7c3e6a4ff186fa496b6a418a19294811e547ae",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedMonomial_inv",
+      "signature_sha256": "db7055b3c975f38391ff72acee13d3810c6e7a518b2165b776e0ad6e979125fe",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedMonomial_one_input",
+      "signature_sha256": "6737faa1749a7f8dc7a5ea65e8fe5604249ece53c0996e0772677ef60441f689",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedMonomial_zero_matrix",
+      "signature_sha256": "10f950586781d486c1abf832a0118e4e0c8bf970b8648504ba88902f55e33053",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedMonomial_map",
+      "signature_sha256": "5ab6696c7da23e7a3958885afb51f2adca90379e802c9a0379209e892405ccf4",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedMonomial_mem",
+      "signature_sha256": "0e7ea309c36ead6b45fcf0a0b0e13995cb180f7a4a001bb0290a82893dd4967c",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedMonomial_rows",
+      "signature_sha256": "35a2b20f7ea38c1ed446ab03516563b09fe12fb45d0842ad898d155abaeeb540",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedMonomial_append",
+      "signature_sha256": "731f3cf3784ceb03f03e02c7ef04b0f59a38abccd7e106f492720936a245070d",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedMonomial_smul_one",
+      "signature_sha256": "be7c520b92de84f942cd8f2f246ae3eec15985b36c7e8f0b82f2877c63b46dc2",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedMonomial_left_inverse",
+      "signature_sha256": "b8252a7ea943e27c2801b83719eac1492bf8e7e30590655723ad8127ef7eb0cc",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedMonomial_injective",
+      "signature_sha256": "5bfa4fcb72f9cda853f12e9f1e18336763e9318ecec8e885a62efcc63967de13",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedBlockDiag",
+      "signature_sha256": "a3c6c676caac18b6094c3bc28849e5f372e07c15c4578fd1bec8fac38c60749f",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedBlockDiag_monomial",
+      "signature_sha256": "7f8f8a917963aca76e840df04f8714b7d4ceb174182bd250deaf2d7a11783aee",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflated_append_eq_iff",
+      "signature_sha256": "1804bb96083431e96a6f7e68413b775df67c74e21c329016239e36ba61f43206",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflated_append_split",
+      "signature_sha256": "ce25b682f6d74bcc762b4d5493d0fb3d4cd0a4ff6655763704d67573a42ea331",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflated_right_block_right_inverse",
+      "signature_sha256": "170eea39e396a1b05f5a395e3925194dea3fc54ea7e8ef52441f96db47dcaa91",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflated_rows_extend_of_right_inverse",
+      "signature_sha256": "71e74cb13a973ef471eed8e025539a3f44b1c1d497eda88ec892337f2d266ded",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflated_left_kernel_block",
+      "signature_sha256": "fec744f5a29924f5b442bbb2548751dc1ec5c815eea678c4d2d277996fe71479",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedMonomial_surjective_of_left_kernel",
+      "signature_sha256": "1694afaa6969fd3d0c9b1c229de801f3c5f8020d325bc7a05e720358d6edda9e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedTop",
+      "signature_sha256": "f528682cd3d3121c23a10219cfcb3cf17ee978ee5e0180fabddaf3bb352ea50e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedBottom",
+      "signature_sha256": "4303eb2c1a351f0dd1095c11b3b0158527816c46789bbea5adf42f045f625787",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedTop_apply",
+      "signature_sha256": "8fb152af6109f6f5856401a213cf32cded4b94dfde3d2b2cca7b7ff262080252",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedBottom_apply",
+      "signature_sha256": "1aa51ea51f6f82bc7a0755f1d320138f099db64e1cd3f69766eb5231de077e9a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedTop_append_bottom",
+      "signature_sha256": "90a1bb3429aea1058905c9bc780c88aa4b096ec22c8461d966a818250c3fbd3a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflated_relative_block_chart",
+      "signature_sha256": "336bca247082277469d416316dba1d9ef07cc4f4e0318ed864ad51e973be2299",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedRVResidue_divisible",
+      "signature_sha256": "976599a375559257d1c66819114aaf390293cb9cbd2d63f1d0e770925e243c8b",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedRVValues_append",
+      "signature_sha256": "1060e08809a2201dfadd89dc26f9d11487cbf3f50b1f9ee690b6e8a2be1a17f6",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedRVValues_monomial",
+      "signature_sha256": "f7726faede48f468b723fa28ee810042228b1c7063090d865f6fb2588549071b",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedMonomialImage",
+      "signature_sha256": "7680c9d9ad146f823c8bc25687e98ddd1e8bf40692090fa76e6a7e7be9bdc6c3",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedMonomialValueImage",
+      "signature_sha256": "1badd53ed60e20cfa06f41caac05b530115e7dedb379c20673afe7935638e67e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeMonomialChart",
+      "signature_sha256": "6dd361c0695f1d940ad2cd7cba1e99b81672bcaace9f8b34ee82d2eb491303b2",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeMonomialChart.source_invariant",
+      "signature_sha256": "ee2c9c11cfac3298bd8e459dbc308cd8ed71175c7f5b264d4b29d4e8ea785e46",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeMonomialChart.residue_value",
+      "signature_sha256": "01200ce27b281097acdb9d61407fe60c1a56e7a74650f3dfd1ed0bc94c8f8f61",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeMonomialChart.fixed_free_injective",
+      "signature_sha256": "1d6b105d0b642a15c0a0def6a3e5298c702e0ff305faeb2baa40b70b71cfd6f6",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.GroundMonomialPiece.exists_relative_chart",
+      "signature_sha256": "bcdf82816a17ce14bf7232874ce7152451bf4316ee1986d056a9cc64721ce66f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.relative_monomial_decomposition",
+      "signature_sha256": "78b6dd4019b52713cf5d75c307b28612bc6f03aade0bb165fb53da9648dd92b6",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeMonomialChart.productTarget",
+      "signature_sha256": "f3d1d68007dbbb9951607ec7e29c4160327998808ffb7d4f500dee9612745f37",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeMonomialChart.productTarget_mem",
+      "signature_sha256": "a395c591446e4ffe857e11a1da009120864749480d4414a1198ca32bd21c4a0e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeMonomialChart.totalIndex",
+      "signature_sha256": "10b88b5857f805102a8b54ef77da30118aa32ba6ae4452eaf06bd19087e07e79",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeMonomialChart.totalMatrix",
+      "signature_sha256": "c80409808e0f15847269f1a8f72bbc03690818bb7b850f1aab10d5b432a9be6d",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeMonomialChart.totalMatrix_monomial",
+      "signature_sha256": "9cd98e1bd647078672c0c1c81bf79f4081bfeeb5c4de132fdbef910d9d419344",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeMonomialChart.totalMatrix_mem",
+      "signature_sha256": "db2f4930e8a8fa36304004c2ab4341386903368ab9b2121c38b2aa991ce71b71",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeMonomialChart.totalMap",
+      "signature_sha256": "42b8b0a10e04cc87d3d6db5a94e26d902e74004ff50ab6da05d53187914d506e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeMonomialChart.totalMap_value",
+      "signature_sha256": "f5649d7cb3a95a6674f2ff244302111cd196ab1d1fe0521f76bcb550656cfe7c",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeMonomialChart.totalMap_bijective",
+      "signature_sha256": "9eface9b44bcf26ab305cad5c4e0ab5fe5f3099351ac792c3249f5a7bc171e75",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeMonomialChart.totalBijection",
+      "signature_sha256": "13ab3f31eef003659f904fbdf589d357a1acab0ce07df96c0ff9659d4a9b304b",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeMonomialChart.fibre",
+      "signature_sha256": "8f8a8b30226f2ff573bc58767331fe252a43093ade559473be71fbeaa47658e0",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeMonomialChart.fibre_mem",
+      "signature_sha256": "f10c02626c32d695b20dc733383823cc479a6bdba349626e8fe9257102d7940d",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeMonomialChart.fibreTarget",
+      "signature_sha256": "76e0022424191a16fb5a88798979c8fca11b7edd50171e486d61f2f85653205d",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeMonomialChart.fibreTarget_mem",
+      "signature_sha256": "139a3c0ae6e3a22ec3bff6baa2e3f9e8ea4b5a53ed08c9156301fb113d5c99a1",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeMonomialChart.fibreMap",
+      "signature_sha256": "4ee462d8e8c35c62cc7c9275ef0e4307885d4ba7836b780cfe7dd1196ce60dba",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeMonomialChart.fibreMap_bijective",
+      "signature_sha256": "5417591a7aab5675d995adaa6ab226a019e1d893b99dc12bb715129f10d860c5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeMonomialChart.fibreBijection",
+      "signature_sha256": "58b82e4bd1b109f71f7ef306be3e5f2b2cc1f531d1c7d3210eff1207f559f7c1",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeMonomialChart.chart_image",
+      "signature_sha256": "f3656375639ac3978c242a8061188859edaede5a1806f5cd116a12c4f2b4d2a0",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.relativeGammaEuler",
+      "signature_sha256": "633528eaf8d0eb1ba7809320d9fdc5f99857d12169836cc404cb7fa8b0761a6b",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeMonomialChart.native_value",
+      "signature_sha256": "a8746596dd9644c30f851b1bed049e36c2ef715ae973ba79d20c889ee2cc79dc",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeMonomialChart.fibre_value",
+      "signature_sha256": "eeac84b8b60f4c1a31d9233d245377f2399bfcdcb710051ae872f43542739d57",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.relative_charts_native_value",
+      "signature_sha256": "b3546787f39002421c8c9dee8d223697f7ecfc747112a85788ffc9d275ef0369",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.relative_charts_fibre_value",
+      "signature_sha256": "6d607724cb3bceb610f1d419f533b60fb06bfa18bfbc27722c4e4a35b0ce08c5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.relativeGammaSlice",
+      "signature_sha256": "bd18d254dedb2068b3e1403ba92916ab6f8031e32941f1fdf9d03f1ae84583a1",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.relativeGammaSlice_mem",
+      "signature_sha256": "338f9f31cec6ca3aefc2579f67bff7eb28879a822266209dd4c38fa8d9635bdd",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.relativeJoinIndex_injective",
+      "signature_sha256": "7379c88eb3d2374258fd555879b356e96d5580b243c3381459c5cbdcfe80a473",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.relativeJoinEquiv",
+      "signature_sha256": "c1344e799efd46cb807e10803a74d5109d7ddafa5fdf5496d74f1419f978a484",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.relativeJoinEquiv_comp",
+      "signature_sha256": "542e5f91326d6f0e6c8bc33208ac795bda0ba7ed1d6e7c27a9b70847bac15cb5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.relativeGammaJoin",
+      "signature_sha256": "85c31371f8fcacb0e196cdcf2029552a4b09dbf5231a7d4f9edbbc2967038099",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.relativeGammaJoin_mem",
+      "signature_sha256": "01d30d098ee4dae4b787b4e5e92ebe324b8e9f0197abcf19ff58f8dc8b40051f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.relativeGammaJoin_euler",
+      "signature_sha256": "b5956e3054801888a82197a4afde74e67e9e49552b0cfd0c555dac8d31bbbc26",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedRVUnitValue_val",
+      "signature_sha256": "2477a5dd7e382faebd5b6b6df490826cd23fff8044cb9648227fb783c1d15c08",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedRV_ne_zero_iff",
+      "signature_sha256": "44a4218fbe718d11a9554eca2db81cd50bb4ce49a642943fd8a7b098e0750542",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedUnitStratum",
+      "signature_sha256": "36027cb5694867b275384580b2736748e0d14573546cda75141ee528217c4531",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedUnitStratumBijection",
+      "signature_sha256": "612f7268576d2a5054a2180f21b5c467243d2f2c6d787f03714c582923fe3b15",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedUnitStratum_value",
+      "signature_sha256": "876f8e570a98fde6fd639bbb02f3ee32f3773d2e43aa61c31eaebf90ba0369cf",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedPatternIndex",
+      "signature_sha256": "91e3c592576e1871923b692d143fb9bf0ccdbe36410a8e00e974b96bf9654ba5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedStratumIndex",
+      "signature_sha256": "a144351afd308c7cd9120ee9b741fb7a7cd16a59600bd4d37f4080166a0b1821",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedPatternIndex_mem",
+      "signature_sha256": "91c6613c04eb7b5272fd0c810dc751819c2ce1e48a076c7227950314bcaae65c",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedPatternIndex_cover",
+      "signature_sha256": "8c6ea356e0effc1d927bf546557c7a182de502334eedc7ae35f998370ea7b646",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedStratum",
+      "signature_sha256": "33ac7bdde37adfc63519139643c41c02e92d0428461dc02ce275aaa3abc53060",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedFibreStratum",
+      "signature_sha256": "f0052644336d6238e46d62bda325542241fe2ad273df68ea990ec0fe78cc4da4",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedPattern_iff",
+      "signature_sha256": "2e0ec50e8d3c9f9bebd410aba57fd841b5033e220012c77deb435df5a87b47b0",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedUnitsToRV",
+      "signature_sha256": "ea77cc769557d1c9c21a14b72af42ee82197ccf76989b708bbfd9b8b040b585c",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedStratum_restrict",
+      "signature_sha256": "c47473ebff5abeafe8199d48d0e9dd6c95b6ad5437245a3eed3c6318e2eff519",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedStratum_conditions",
+      "signature_sha256": "c535026f922dbf1e30a75274278f4b9057f9ceac1c2cf59e3ca172d95242e170",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedFibreStratum_conditions",
+      "signature_sha256": "072cc49b1b8c2f15bf37ea5ba7a43419760bd93f40d7b78c138eee52d339cb45",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedStratum_invariant",
+      "signature_sha256": "d56dcec437443663836f43acba246534930a7fde5c07c953823f7ff70151f41d",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedFibreStratum_mem",
+      "signature_sha256": "85082ec402b463fc51525851a894628b57ca7f3b828d90e6447cf2fd2c576331",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeValueTerm",
+      "signature_sha256": "be11c5ad4a2b645c7d2d4a22f3b663e9064a7a27d85224f1e3aa84587118438c",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeMonomialChart.toTerm",
+      "signature_sha256": "b66cec8e9e3fa6d1cf77e301abcfa1e4448dc8826f048a932ec1049ca164bf4a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflated_relative_monomial_values",
+      "signature_sha256": "e6dec247dc4dcc7dd0bc2ba310c769feb91c8b79106e3e2eb8246099f3db0f44",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.gamma_common_level_partition",
+      "signature_sha256": "b14ecdce464e91b8c7c3023813ed366f4b39588095f5c44c51752144d0fc563b",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedSlice_definable",
+      "signature_sha256": "e2150c1c89791d913f4ee3db75d7f84fadc62ff5a8ab3b87346de020e1ab5e24",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedSliceFamily",
+      "signature_sha256": "30be62bc88d2d55bfd4f6831807c5653dad9db237595fc848219e0ee805d4301",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedSliceFamily_apply",
+      "signature_sha256": "ac03a2ee858ea2694fd649abd14bed7cd00bef26627e195cc5659a715edc21bb",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedJoinFamily",
+      "signature_sha256": "1faf5364a016d788e75507a52d412a2552d4c4eee6133efcaad58b6a3eb0b4ff",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedSlice_integral_eq_prefix",
+      "signature_sha256": "5be935ce1ce3bb02d4375a8c64f60716b70b313731832bd591b989167671a05c",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedSlice_integral_eq_base",
+      "signature_sha256": "56c87d40e09c554817b581ed9d5931b79d868d2bb542ab3a33d02db3c710f990",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflated_gamma_base_partition",
+      "signature_sha256": "20787ad7a3d7a479d02f6bbb9dc024cff4db3955c1cfd64a4fe3e8120cb674a7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedFubini_chart_support",
+      "signature_sha256": "7d26eac46ecda93d500460ed6fcc0ed765c7abda305051932c89169edc85c664",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedFubini_stratum_support",
+      "signature_sha256": "41c0baa430b9fe0514ed89f9ce20c12887ea47cd432adb35ae853138e4490945",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedFubini_relative_values",
+      "signature_sha256": "a2b6deffdb25712c98547de39cf1b9ee39851c2da592286bf96d3ad1bdbad54a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedFubini_ne_zero_of_vrv",
+      "signature_sha256": "266b1121178e92e61f419f872e77e7b973fcfdb78c98f6c2e393c5358af578d5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedFubini_unitValues_iff",
+      "signature_sha256": "6adb7928cdc98c28c4ab0401e238a3eb66b0ffd9780f556890b91f0369f0ca33",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedFubini_inflation_ne_zero",
+      "signature_sha256": "24c3422ec17c5f6fc96a1bbf6999b91fb9a254e384f7936e15986bec58ea7a8f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedFubini_inflation_invariant",
+      "signature_sha256": "905d0171227b134fc91fcfff0c85422b249a78b244be9c49c36d00691b7e74e3",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedFubini_inflation_fibre",
+      "signature_sha256": "451beb23a6dda8fde10d26ee0910e4e25bba943d1a48ae2b54ab239c2bcbb582",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedFubini_inflation_support",
+      "signature_sha256": "4579333c5960fc9a56f458a1b484227a0f72b9b7881935a4c128ebcca6fc18e9",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RelativeValueTerm.inflatedFubiniCoeff",
+      "signature_sha256": "48b2df421ec4a0ce8ec2813b4958bf69ead16889fa543e350d5342c48123d743",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflated_family_fubini",
+      "signature_sha256": "8a50ed984637db2c2c0ab20aa90ae4c4da5d1fcdb1b9fb0b816d1ae52e5d2bfb",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedFubini_eliminate_torus",
+      "signature_sha256": "629aaff421b405301f2b399a60c7d48bbb0a1e6993e7acd4ced62791e1212007",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.inflatedFubini_restriction_torus",
+      "signature_sha256": "1fb0dab3e0ec79cb5dc67450994548e7c615c8d90b089fbb4c91b48b3d90e3a5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.modifiedAffineLineClass",
+      "signature_sha256": "9de29c87a862abc4112d00d06bda50029f482da2cc679b207d235da2b90c2e43",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.modifiedTorusClass",
+      "signature_sha256": "5ef44ef559f814d358804b42528e4111dea69f3685d70ff638427cdca7a79498",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.inflatedFubiniZeroUnitEquiv",
+      "signature_sha256": "ecda8bdaa9f702381a314a96a977cc6bcf977352e672d444dc684e937442187e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.inflatedFubini_zeroGraph",
+      "signature_sha256": "c4922f5106f89e6a2dfa81816ea8804204c59aebc10440719638366932b09518",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.inflatedFubiniZeroUnitIso",
+      "signature_sha256": "f5ecb539d0e7392ef7ec01cee857f206b829ccf9aeb3f40b9446b7cf8be3ddf6",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.inflatedFubini_puncturedLine_geometric",
+      "signature_sha256": "700428deafcd83f0a6a0b6c6ab2c8f601318810b5c6fc75c46bbdf224f13592e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.inflatedFubini_coefficient_torus",
+      "signature_sha256": "0217a4afc292807f99b1dad6c3165ec585394169a95273819cbad077dc5ed1ea",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.inflatedFubini_theta_torus",
+      "signature_sha256": "078f806438db0d0e157e8a50080c858d178a08354d42a74a8e69aa8defb650d0",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientPuiseuxComparison_nativeTorusClass",
+      "signature_sha256": "51b8d0635f854815d7eddc33fdb375fd5f9fa58f32250117a73f2f0eb0bc200a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.inflated_family_fubini_vol",
+      "signature_sha256": "248c413dad8b34a5cf17fd4b3317dd52c7cbbc480e0703fe0b140985cdb08f9b",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.puiseux_inflated_family_fubini_vol",
+      "signature_sha256": "bcc1848a7f6ac945c4d12f875bbb35ba53294f9ff90cbd4f75e9679b434b26e8",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.bounded_weak_fubini_discharged",
+      "signature_sha256": "6946a479f2e54139418bbca2bd24a226f053387d8292f8b31b0622f6cff7d85f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.weakZeroPatternDomain",
+      "signature_sha256": "7998716786173e4e258ef33e0ad6cf9cd5905c866427c9f242154469a59a90ef",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.weakZeroPatternDomain_mem",
+      "signature_sha256": "1b761868a1b0fd954985176f5350de1891c8294af0fb5a67b4894655ced8eebe",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.weakZeroPatternDomain_subset",
+      "signature_sha256": "914e14f8ea7ef8c064875c6f196222728224adfa3a7441d470011ed2f628c5b0",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.nativeStrictToWeak",
+      "signature_sha256": "f5b49afe32fccd6cfe237d696a954b84ed211845556aa3dfe493e49d340e3095",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.nativeStrictToWeak_lift",
+      "signature_sha256": "110a3eb9162621879db003a4d8250caf2b536b630796b1b5b1e6e8e8e0393dad",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.nativeWeakGeometricValue",
+      "signature_sha256": "3ddc751256c9b00b1cb3cc40c023ad49ad612a4fc7d696c650b0bdaeabaf7c3f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.nativeRVSetValue_empty",
+      "signature_sha256": "a4e7dce055d921131f32acb0dd0e55a0af760c5863bc9ba2bb0b2903b21ed692",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.nativeWeakGeometricValue_toWeak",
+      "signature_sha256": "45631e2a3edcd4641f4bde69c2963d3f57bf69b242a445d329e572992671cebf",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.weakStratumObject",
+      "signature_sha256": "bc1e2e9f9cb54af7f913171fc809dd48a820a692f23a25e16a2969c870b828d2",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.nativeWeakGeometricValue_eq_sum_strata",
+      "signature_sha256": "674e6cf61896628db66bf9c7688f5b1494ea518dd77a4459981f2866088c4506",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.nativeRVSetValue_weak_eq_sum_strata",
+      "signature_sha256": "e1c9b3496ab16a4f04c5a702b8faba6311e7b52baa04e44719c736df0ad89685",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.iRV_iRVZero",
+      "signature_sha256": "5974d03afe5dad1f53fea5fed442fef1b72ff35f57641c36ec5e55a74b7c5869",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickC",
+      "signature_sha256": "b4ec6b7cc10f304cbd51d5d4fc45c0b9f159308bc1ba8b51008595af0d8b06f7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickPadGraph",
+      "signature_sha256": "f542564ed01db51d34f9fd73d6800c52eeda923c1ec9f9d1c72a793f36a93644",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickPadGraph_definable",
+      "signature_sha256": "c33b5bab883a451b34a65e33401612729e55715fcbf322ec5b356051903fca8b",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickRel",
+      "signature_sha256": "b974ff9b8aa5c2465cd195416101b4d1e78b203845b85ce91803820fc9822c46",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thZ",
+      "signature_sha256": "6d12a65d9ac5c0d2f4c498aa60591018bc960779389da4ed57075647bd243b51",
+      "axioms": []
+    },
+    {
+      "name": "DiamondIntegral.Section5.thU",
+      "signature_sha256": "4e852434783f05bdcf3c46bff57b7063bb121c1f39230e052941070de155661d",
+      "axioms": []
+    },
+    {
+      "name": "DiamondIntegral.Section5.thW",
+      "signature_sha256": "b359dc32b6363027625245ee12d656b624ebe9745870fed21f4a769dc0aa0137",
+      "axioms": []
+    },
+    {
+      "name": "DiamondIntegral.Section5.thY",
+      "signature_sha256": "6270ea7caffcb2dcd9ba6583c16e0a5eadaa38434e3bee1c85f86d6dfbabda0a",
+      "axioms": []
+    },
+    {
+      "name": "DiamondIntegral.Section5.thZ_append",
+      "signature_sha256": "c5409f013eecc4a2f1d0ebd0160a604ab46af641ba1e90ad937030437bcadfe5",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thU_append",
+      "signature_sha256": "fd76201a2f35a671b3873ef1c72fdd3ee3931f53e49ab94e77c91d7d058cbacd",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thW_append",
+      "signature_sha256": "89342f186c1984c8921e521b697e8c4c09ce9bf6f2a7b44e0f3835505a10ae97",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thY_append",
+      "signature_sha256": "564fe399481e052f020eddbf172202205cea441b07c53bab4bbf99ee6c3bd3dc",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.th_split",
+      "signature_sha256": "b9e61899a24bca4ebeb43853fdf2b014658278891edc3046ab264a322fa63e0f",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickSort",
+      "signature_sha256": "fe42cc7864832faa4bc92916342c1a26c96be668437442d1666d563d8ac64c1f",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thick_sorted_iff",
+      "signature_sha256": "4ea31f0803601bfc0a0b10a4122c8ede9ec5bc1a018c5a53b6b503e161dc9000",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.coord_eq_zero_predicate",
+      "signature_sha256": "0cae609753f5a1dd35449e2c9edd7973278520f8586343c5427b4a6ce38bfc63",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickRel_predicate",
+      "signature_sha256": "d357ec31d2e6b445e239b9843900731bd12b594bf08554371a1abe1784cffbc2",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickVolume",
+      "signature_sha256": "8348cc09eeed21204e6ede44bb6a984365ebc035f7cf40d20744229e5a798072",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickVolume_definable",
+      "signature_sha256": "5dd80ed1d71a3d70233b5a53b7cc47a93879fd59a9c0ff485dc58430f60bdacc",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickDomain_predicate",
+      "signature_sha256": "38ff214c6861d27f3ff886fa635b683b4226e090a05776d5ae3ad5faa0ab4b08",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickAt",
+      "signature_sha256": "495e19cb4c7d76266f5024d0314ee83178656dcf835301fe4cdc49b3884710fa",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickPadGraph_functional",
+      "signature_sha256": "09cefeb6b0f419488e9b9f12200427398d07c6517f62b6e64b60af3f4750d548",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickPadGraph_proper",
+      "signature_sha256": "b8440578424e574f82fad97e80f5e2fd6911e8fa35a0ff85294b6dc170bad959",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickPadGraph_nonzero",
+      "signature_sha256": "2120914a0d0cb3062e28aa6b896f20645b59bfd36fe6b5654f7dd0b924198eeb",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickRel_sorted",
+      "signature_sha256": "2a29bbece4bddd9ea9ac12fa5486b82c84a513daa2f9402a7cef7e78c4e7db16",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickVolume_mem",
+      "signature_sha256": "ec8e0326917492f474ebf8e0db15ba35d6ab8b3bfce8b795187b0c25d69b7d39",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickVolume_mem'",
+      "signature_sha256": "81f808a4d25a634dd5bbba8c13a0b495ffb29c8f3e0ca65fab157a704a92d7ca",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickAt_valid",
+      "signature_sha256": "2249a24b45e406226f92d26a8c9946de9f21357b7eeac0a6e1aa80cdf0993e93",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickArity",
+      "signature_sha256": "b95b44855e3b2d61ed30d40a2427853fbb24d2daf8e63c339b825347eddca6ed",
+      "axioms": []
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickSeq",
+      "signature_sha256": "ac16c99f0bfbf184b81a2b82961637b33c0c36550fb7e7d3e82010e92eacfcc7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickSeq_valid",
+      "signature_sha256": "cf407156d6ffecbbe130b4fdbcb39eadafc9c44ac8a62a7de2a9839527e9a4c2",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickSeq_nonzero",
+      "signature_sha256": "36422ad4b8b1145cdd841a833b4a1190580e30eb024c18043216caa55ad39172",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickFull",
+      "signature_sha256": "c1ab831d3d41736800064071ac4f281db784d5d2ffdf94902d2151520218a5ba",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickFull_strict",
+      "signature_sha256": "eb45ee42da4965a36bb2bd612517268ed35901bb1bd2f288a56b8524afe2e310",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.schemaPatternDomain",
+      "signature_sha256": "f1c8a665dbce0662f87192fd758ceaa970919b6f9bc2c7e58c84f54421d0a7e2",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.schemaPatternDomain_row",
+      "signature_sha256": "91fe4bd1f78bae614ae4ca1f3eaad74ac536a34038b30b4315bf93b988a6f7e3",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.zeroConstDomain",
+      "signature_sha256": "5cb6c171b38c100bb3973b2c01b684355c0c423f11dad3bd680fc4e3adc2ffd3",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.zeroConstDomain_row",
+      "signature_sha256": "80818de82d86ae0579bb121a915f823d9f7397d18ac2ce3f4d85c70199ea2116",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.geometricDegreeValue_add",
+      "signature_sha256": "05ee9cf2ceaa1283ff8a7a4b99e24feec1c8bdd36c1bc2e4892aab85670134de",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.geometricDegreeValue_zero",
+      "signature_sha256": "6088b5af073b308312247769a71e41f8e2463e03f41f6501783b4ef5cfe1533c",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.geometricDegreeValue_affine_succ",
+      "signature_sha256": "c175ddbdfadb3c3ac18331779fcee9e50f2df701bceb5a40ec49d1097c2085db",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.finset_sum_erase_split",
+      "signature_sha256": "520b31eee45c2c3519c78f31fccc9165af7f0c5669b86db8e95b5ff254244255",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.nativeRVSetValue_singleton",
+      "signature_sha256": "510c57cd01edc26b5c231c7361613292f89b708fe7163cb6e06fb0107060c861",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.rowWeakValue",
+      "signature_sha256": "3957181d3d6905586f922619d1854eb893128b30ae9c221d560e9b563e0c0c4b",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.rowValue_congr",
+      "signature_sha256": "63aa89f8a64ce49be07b679461a3b8b3d44660fd8ce7d214dd079804dab0690b",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.rowValue_empty",
+      "signature_sha256": "93b7ea91fa4e63574e45024f2d799d0cb935ede2f3bc93821c352e34412c8251",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.rowValue_split",
+      "signature_sha256": "bf9a43285264e0904df0b5e1b0456bea45b6a1e69d6e20e2e66b2a57a20bcbb4",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.rowValue_product",
+      "signature_sha256": "62c8d63f4b3623666fbcdbb77621e3aa028e97adacce448a478697f5399463b9",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.rowValue_zeroConst",
+      "signature_sha256": "2c09a8b29684cf36a5088de7a1c6fc75c0f22d33a0ed1c101173ba6e9f57f9c6",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.rowWeakValue_strict",
+      "signature_sha256": "8391502e24191c8cc731005925d2bd0723d4d87ecccd83cb2f52c7c6a8a95279",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.rowWeakValue_presentation",
+      "signature_sha256": "1ea031b7a3c5b3f005eb29de69826f703f3fdf88c1948ce6ef5b345c4b011a20",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.rawDomain_pad_iff",
+      "signature_sha256": "2b4d9387cf771f5822f4a56127dfc6b552bce5101b6ebf2a848eeec9192fea93",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickAt_pattern_row",
+      "signature_sha256": "5e358170495d5bc89c4f20aead4a646d2d39bf7dbef910d6f1b2d13a7cbe801e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickAt_pattern_value",
+      "signature_sha256": "9ba1ff4b3b122fe0bed299443989c8f4dc3f31736ce1d42b3a4b5643f94c5da9",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.rowWeakValue_thickAt",
+      "signature_sha256": "17f4bda5df020ced2ee9cd646f5af9df258f634d14b47b182d4490171e57ee32",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.rowWeakValue_thickSeq",
+      "signature_sha256": "46d040b93e3470c745825e81c33c4dfd97b1c22e079a067110554883309dac45",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickFull_row_value",
+      "signature_sha256": "2b8fb3a7c78679f3b438d07ab8782d85440c4c50ee89d66c7dd9c13dde087592",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.rvValues_append'",
+      "signature_sha256": "b843c29098e280f9e84979b233566e956c352cb9810bfe7fbfbe505de078132f",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.rvValues_tupleRV_update",
+      "signature_sha256": "de3c642328702334debfdffb1496aa4c035d8a89af23c32ff48d215f0b937df7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.rvValues_tupleRV_update_val",
+      "signature_sha256": "5cacddc9fe5bbd877e2c03377dd0db55c0d20baf1180e8597ed87071f5541aec",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.mixed_eta",
+      "signature_sha256": "1802592a839b0857a7ac2368d40d93532c4afb786fcd0fae5ca89623039832a7",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickLift_mem",
+      "signature_sha256": "5131862f7ce6fa84614b1dd006fd7e32ea3be2465299d8aef542ecb28b398d72",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickXs",
+      "signature_sha256": "33c145a18a320ec6136bff491f8f2fd17c3bbff82348ae82582bbb64f09f69e0",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickXs_mem",
+      "signature_sha256": "eb9bded3fb968870eb627ea4bfb7cb0cfdb902712365b8b0f5cd901fe6974b2e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.nativeVFClass_two_partition",
+      "signature_sha256": "7b26885ff393300a4f9988578830d9779a61209beda023808111ddd2ef9eed1b",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickXfObj",
+      "signature_sha256": "90c2dd28b1c208eff78ebf4a971b48c5eaac5535b1bd5d8c2dffa2cd2665e409",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickPr",
+      "signature_sha256": "e20ba117dba3f722adb82d7a79053609559ceedbab7da315cc8ea1f85b7b2f7e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickJV",
+      "signature_sha256": "14bbfb2dc53aa51fe6ae6d995e95efb90fa3c974f27e5092b93cea091c6be619",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickHR",
+      "signature_sha256": "916607276e314b8bbc2c6b4c7278f2455457329bd19aafa2e9f75544f4c031c7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickPhi",
+      "signature_sha256": "d0955119f49bcd0f69845296799233e1a04e9137d4ce2ef01132d869bfeea9da",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickJV_comp",
+      "signature_sha256": "aabdf2a7b825421a9b8a95388c8e5d13343aee9e2f6816734d9a13963d7775f9",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickHR_comp",
+      "signature_sha256": "cca051759aea24a09fd17a46b3efb8fe4c4c0e225a39e232023f18421d8b18ba",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickPr_mem",
+      "signature_sha256": "ef1b7dade35098d117d0cffbc0cccd258c63f808a9c608896a8a4b70c2b79e28",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickPhi_injective",
+      "signature_sha256": "762664837986c6ac81bb2b0d0ca82e69ea86704004763bfd779735fdef34576f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickPhi_rel",
+      "signature_sha256": "247208ccf3c9cd6d1b190060d24727e9dd443546d5a9936d1dec36794c0dbf20",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickPhi_mem",
+      "signature_sha256": "39e6274d2460b663296183e9869c61c67edc5240ebddfe9b30a555a0348a3637",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thick_eta",
+      "signature_sha256": "bf3bef30750e9e6311cd441ddba8a7f988e633542d593df19f5e8d5a8f0f1116",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickCase2_mem_image",
+      "signature_sha256": "4c601be43e4e5debbac171823d2426b83982730cf7f0fe2bef895381879b8829",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickX1",
+      "signature_sha256": "f250b7516d2bf2de98f4e7efc0ac8617afbcc4624e95406cdbc20ba7ebd36386",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickX1_case1",
+      "signature_sha256": "1c96ec3fb3f3fdb9c11301f81bd966d0961c0f005a6150be2c70461b681154be",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickDrop",
+      "signature_sha256": "194707c3a7279d4b42aa60a3cd7e0c553ffa61ead903e67482d5d854b4c0e2a5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickPsi",
+      "signature_sha256": "f1a65da6dcb71450a38c2f7ef553e8b120f56f28ddf1ab07c0ed1aab936f4bae",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickDrop_comp",
+      "signature_sha256": "cd381424e9ec3fe247e35afcf6fc97ea793b1420549d0b5a747485035c41d78b",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickPsi_value",
+      "signature_sha256": "6fdd12bd1ad0f069237bb67b1de644bd2924479b76ac08626f6b2db687205482",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickPsi_injective",
+      "signature_sha256": "bdfc6695b3672848670885cf4edaf9fdb80bd08faa0c0df46fad6f98cf01b27b",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickPsi_image",
+      "signature_sha256": "da6e3e1f5a0e3909e4ada4841f12caab982ad8a4844f9e21526866d6560d6c0e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.geometricDegreeValue_affine_one",
+      "signature_sha256": "1d9ac885803ec0d531bb60bef249db56a39c9d8af65d6a71c032348ad603ae35",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.nativeVFGeometricValue_padLift",
+      "signature_sha256": "ecd141be0effdcb1e780008b04af96f0c606f22b1da5989ab56a6ef468d9ece0",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickAt_vf_step",
+      "signature_sha256": "23f36c7efcf80a7d55cbe9a1ead9078ea9494f2058c793cb49d56321c5ba78a4",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickSeq_vf",
+      "signature_sha256": "930bb5fdcc106c9c671a32b8a36970bdc8b6780a9eea1484e5e92f255044ac26",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.idChart",
+      "signature_sha256": "ae9b3bb10c6109bda0849cf1068042079500ff61f9c3a03a7bec67aa53506661",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.idChart_valid",
+      "signature_sha256": "9f7423e04356906f8f7f097208edfeaa911fdf05d671384dc207479ea304216a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.NativeGeometricWeakVFLiftEqualitySchema",
+      "signature_sha256": "d8ea37e7d0d297d79c96754843b62fc13714aae7190fdda07fe73cdf5ed4a317",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.NativeGeometricWeakVFLiftEqualitySchema.Valid",
+      "signature_sha256": "1bf7b5ad28f81d3b624cd1ab0df686a68d62ea089f39513787ec0c11f428fb8c",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.NativeGeometricWeakVFLiftEqualitySchema.valid_definable",
+      "signature_sha256": "1725aa6d161a51df41484aa2572ab0aedf354ae26a6d6c23b5b3f68ff14ef3bc",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.native_geometric_weak_vf_lift_schema_at_parameter",
+      "signature_sha256": "badbf74d28272e99462365a3e7d4c137afd588600dedecd0eef8a072538bbd07",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.native_geometric_weak_vf_lift_finite_catalog",
+      "signature_sha256": "fc9feced9a9a846a871442c0e4a496be4fe7e7a003bf75e2d1d1ddfc1cab505e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.NativeGeometricWeakVFFibreLiftEquality",
+      "signature_sha256": "d2fe3783488678ae8e9139cf4e888373a51c606dd0d7cdb5494809ee5eb68c2e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.NativeGeometricVFFibreLiftEquality.toWeak",
+      "signature_sha256": "32fa89a69f0697a0104722c98d389f2da9b38f79e7c70b665b88a4e060670992",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.native_geometric_weak_vf_map_whole_witness_partition",
+      "signature_sha256": "7ad5da35f07cbb986f4732b04ef006c47fe2bc7a5199d5580811b62fa982f058",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.nativeVFGeometricValue_map_fixed_weak_witness",
+      "signature_sha256": "117668fee2ae7eb6c16a2865b0e07d41d3fc8cc75a5084a83b7f2019e08b6296",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.thickPad_uniform_bound",
+      "signature_sha256": "c8ee5d6b2d0cf31df25149ca31d98b39e19982164ae9ad5c29042d4295d2b004",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.nativeGeometricWeakVFFubini",
+      "signature_sha256": "d72bc6da89a2c554613dd519152cfe9507be9caf6b1555f8a3827222964d5236",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.geometric_weak_fubini_discharged",
+      "signature_sha256": "d9be156442e9d953d8b0c8c7e1f7fc58abd9bf4b41f71445ee856a9dc2bb81cc",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.nativeVFGeometricValue_weak_lift",
+      "signature_sha256": "c73e561ac6de56390bb3e4165299d01dc0be7f1da377f35522578b8a5afbfb00",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.NativeBoundedVFFibreLiftEquality.toWeak",
+      "signature_sha256": "6064573c2fb9c2888f66b536cf6ee2505ee5666d8e28f93c41f487725329dcd4",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.nativeGeometricVFFubini_via_weak",
+      "signature_sha256": "56ba4ff18ae5994743666b31a77d2e060cfd8684167b035e8f3270d3541abe71",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryActualExtension",
+      "signature_sha256": "bdae9e64ceb2f7f717c00b171bfc8fa13b06de0e9a59827f478553a458b25c3b",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryActualExtension_mem",
+      "signature_sha256": "c1f0605982c21f27ce87c465b624b5c1e6e49c5577bbc26732360b04982126c3",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryActual_eq_of_restrict",
+      "signature_sha256": "83205bec71d734a83721f5f5383ef3545abbcda3657c6120ef5a4dc68eb8ba0b",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryActualExtension_eq_iff",
+      "signature_sha256": "be82e4707f00fc3be4de1586131403f7a86184a2292c321e34deecf40f0f23ff",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryActual_eq_empty",
+      "signature_sha256": "a98aa3d85289b1528a8d03bfa885b93832ae7b49d6d0b8cc38fc9dd1cad723ba",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryActual_subset",
+      "signature_sha256": "c927056205507713667e2cbc33d648f0acc268490596079766727a9a23c664ac",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementary_range_mono",
+      "signature_sha256": "d248bff3f90f9042487968fe26b87647f972cf4fc1ffae45285ab9a5db8a129e",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryActualExtension_eq_of_params",
+      "signature_sha256": "faee77f54b2aa7da3aef596acbb8180c9dea4400858276c06c8150a4ce768b3d",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryActualExtension_subset_of_params",
+      "signature_sha256": "7f64d0027d3b7b5c50ea7c92a5af88e10f639bd85b46b5920caea9ea50050173",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryActualExtension_subset",
+      "signature_sha256": "7726d9b55c2d811b7f6b2ef682c3f867857e5d41d881ba0734a879715b30bc65",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.tuple_append_split",
+      "signature_sha256": "bb3b221356715e302d4cf7a3ecb49066e0e05982a0ad6105162569ec20988a1f",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.tuple_append_left",
+      "signature_sha256": "66796cd189b9894533c76831787caef8320c91d661c9ba28aefc66ca253d41c4",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.tuple_append_right",
+      "signature_sha256": "c7fb2fad39da3b1e641351599909912bd63763dce62ffa7b41ed8848433d12a5",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.definableTupleProjection",
+      "signature_sha256": "d42e5ef5dbfd63d37c1069b21b4c345a651ced764ae9bb74d1be466d10633e1c",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.mem_definableTupleProjection",
+      "signature_sha256": "f8a0e89cf61391db6d69a9a94bd142e15292699e8c9d3a927fc6ce8cff37e1c1",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.definableTupleSwap",
+      "signature_sha256": "3a61a9a6ff54512303744e9cccabbec4303c073948e4b8c5628852b1acfc80a7",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.mem_definableTupleSwap",
+      "signature_sha256": "bef26f97651c031ff54d2856211a0c56ff6ed546354ed8679357f9fed8b51b60",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.definable_tuple_diagonal",
+      "signature_sha256": "274c5a8990f49e752def00963b8f60fbece0ba1988fc824a6e414fc9aa56be21",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.definable_tuple_ne",
+      "signature_sha256": "1bc5c9843f359324de0c11aad289910e40f7b58a401d8d5a1fb2772e5a3524b8",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementary_total_transfer",
+      "signature_sha256": "8def2f4e752a0be89453906b5ddb56532c1ca74f6111bd313cbc33da4ca5976d",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.tripleSecondIndex",
+      "signature_sha256": "73fe58099fe9e2f06f91086dd854fe425d78c846d52849ef1c96354ba4b0f8dc",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.tripleSecondIndex_append",
+      "signature_sha256": "8a910b9072efab8d0cb39ff6bc0ba1b5aff17d041e19b013e55eb040c2f0b606",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.triple_first_append",
+      "signature_sha256": "14f657263daa4d98c2db60e51a5296023a7f39efe49deced253906028cca0f75",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.triple_middle",
+      "signature_sha256": "5e9813e9486cb8db9aa66895e677ffb799ad9bed7dafa0c7382e31a67c99fa62",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.triple_last",
+      "signature_sha256": "bb55ccc48b0717e64a77290ade99362297a9e973b678354d3475c77525ea8fd3",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementary_functional_transfer",
+      "signature_sha256": "97f838a59284d516fb519bf2471f50544d34c50bdb3fb3b100eb0755f2df5bcb",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RawDefinableGraphMap.graph_functional",
+      "signature_sha256": "7a121320aea2fc50353adb212fbabe34bedf7762afb251793808e753dde86152",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RawDefinableGraphMap.extensionGraph",
+      "signature_sha256": "4a995d6ff03572f804b3fb7f69b27e5b9836749d5876099e5119b62e97a419b1",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RawDefinableGraphMap.extension_total",
+      "signature_sha256": "44819a4d8ab8848288f292e873b63279cfc0d9ea2ffd8f858393987afcbfb050",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RawDefinableGraphMap.extension_functional",
+      "signature_sha256": "a297f55a10c2b8a7690f6cff220d04c0be544417c1ff51e165c80de9fbd7a5ec",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RawDefinableGraphMap.extension_source_target",
+      "signature_sha256": "7ff0d233d7f015cc8c2c7a019a28d1ad5293d7695f0bf8f3e5e4622bfa420159",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RawDefinableGraphMap.extensionFun",
+      "signature_sha256": "21c0cf825b3e5ea3c8f54eb78ee251e3208e1f0feab6c11c8b558b39abcbd738",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RawDefinableGraphMap.extensionFun_graph",
+      "signature_sha256": "69ed67c2b065c019125737be093403faa26986acf52c17368beb0f7bfe834813",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RawDefinableGraphMap.extensionFun_eq_iff",
+      "signature_sha256": "91bbe4884dfb27575c9fc72b4a72deaf8a8c692acc82863f2498634318f75af1",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RawDefinableGraphMap.extensionFun_graph_eq",
+      "signature_sha256": "22ce3195b6d32f43f76f650b24a0767dd284e6cae862c164e612344e4b653332",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RawDefinableGraphMap.extension",
+      "signature_sha256": "17cf9d50ea342073a5926c36d642cb2333834e48a3bfebb80d1a4e19f1acee2d",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RawDefinableGraphMap.extension_apply",
+      "signature_sha256": "536f0dcb821c6c2914ea6cc7d505ab8869b5caadda53259ea3f9702c177dfe4e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RawDefinableGraphMap.extension_bijective",
+      "signature_sha256": "15247c029d4e8899ca9b82ee210b7f4b76271b464f33154bb0135434bbae534b",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.definable_rv_coordinate",
+      "signature_sha256": "66c62d66f5446fdf091a0531e8581895b428f4e65421cda1c23f5a1e2eed52fd",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.definable_rv_tuples",
+      "signature_sha256": "b10709395f15aa73af8321ba43cdfa4ab56e59a3e01f60d884f1f35d502d953a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.definable_rvLe_left",
+      "signature_sha256": "929abab59e6a270c5c26640ea592156f5ff542fe2fe29ade7dd8300fe7965085",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.definable_rvLe_right",
+      "signature_sha256": "a4e07b96ad9dc084638b79bfd631e5a51415b0ef82c4f4ac80521d1f5ecadcf1",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.mem_rawDomain_iff",
+      "signature_sha256": "13531901b6911e05288f3c857808aacc8d7d0a064710e71a64ceba0ef55812e2",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.rawDomain_sorted",
+      "signature_sha256": "896355d276c57e8d75b96d6eaf07787c478ca5adefe72d33d86b91b45d1ace0d",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRawExtension",
+      "signature_sha256": "9e189e0550f804547d49ea69f876810d810321a18a741a1e96a60036bd0051db",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRawExtension_mem",
+      "signature_sha256": "db5ce23f219c5562e17d80b2a3d947fc216f977dab516f3b4a45e51a1f5b3635",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRawExtension_sorted",
+      "signature_sha256": "aa4f1229c4fe590c3ba422e497caf6f32b3ef23dc16b135463ebf25409a57ba5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRVExtension",
+      "signature_sha256": "0b7ca72eb106ecb888adc790643437fa5babb87d626aa78595df64fbc2f29220",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRVExtension_mem",
+      "signature_sha256": "2ee64960377c46590f73077362a553b7fbc62b64047cad8a82bd43d08f4e265a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRVExtension_mem_image",
+      "signature_sha256": "7caedd16c73d0e40f0193804a4fa96bf549c4117b1e2a6bf3723fb90f4e66fd7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRVRestriction_extension",
+      "signature_sha256": "f93c1774e847aef74e45ef5eb7646ed97d30f84b04ae71b05040777ff8ed454a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRawExtension_restriction",
+      "signature_sha256": "2c9a93b4dd1071280d39ae53d9f3a68ecf6aafdf95337add66e3f61f2b454b97",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRVExtension_carrier_eq",
+      "signature_sha256": "e93571f88604707a719ef9b68a0bbe994734ed61bccfe7cf2192279565a764a2",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRVExtension_restriction",
+      "signature_sha256": "0b098fa64cacd12d438be9c7422a1d2c0c79cc49e9b3ac92ca2e58995b6d44a0",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRVExtension_subset",
+      "signature_sha256": "fd0edd8d3c9778ebdf7c658fc241bc123777c3b4fee5c6e1f2f1a20488bbc332",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRVExtension_finite",
+      "signature_sha256": "34d2b357c0a8994cfdc6ce661589b2b1e857a5f96f8247d3fd0dbd97dd43f6ea",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementary_value_fibre_extension",
+      "signature_sha256": "57c109b89f13360ae9f5f984bc7743f619080d8f65b69fda1617b092356d9ecb",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRVExtensionMap",
+      "signature_sha256": "9782499f16d56725a4743cecd383cd6cd3d7cfea84693fc05ef42d36d6e8caa1",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRVExtensionMap_bijective",
+      "signature_sha256": "15814f491bf1ca7a7217dd1270986f23ffb6ae69e35773f88e1576055bc79fd2",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRVExtensionBijection",
+      "signature_sha256": "7eeeb16083a6e55c16d0dc6b80888efd0e36859fad3ab22b8b39873f204f17a8",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRVExtension_product",
+      "signature_sha256": "6bb3af759f37bb5968b57a0d5c6ca1f447ae79454435bad9296e1558053effd3",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRVExtension_sdiff",
+      "signature_sha256": "218d25fdf12125beb58ed588427aacf559479abb23c3463c7efd2a33f0ab96cd",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRESExtension",
+      "signature_sha256": "acf945a7f5913c2253a754ebadbd6e9726200f368b2a0fe8620819d4219330ea",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRESExtensionValue",
+      "signature_sha256": "06b71e1fea84e030fc7bd360431cd55370c70fd613b67db57f9c61732048a02e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRESExtensionValue_bijection",
+      "signature_sha256": "0ca7281b462dd5d99accc7ebb6acb02f9e00df8b07ea052692deb218cb5b86dc",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRESExtensionValue_empty",
+      "signature_sha256": "1ef9956408acd3c77b0e770ce025f36ba17cfc71e43060113033adda359e7114",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRESExtensionValue_product",
+      "signature_sha256": "9b4f7d4cab04610003c890b81dd490b475b8d8ecf96c28177776d4254b2e4fed",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRESExtensionValue_cut",
+      "signature_sha256": "5e0a2200b8d258f98a5c1626dfc3c0076f2a1a18986d77bb79855052d68f73cc",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRESExtensionValue_unit",
+      "signature_sha256": "6309a420666e1de1967ec5d4049760d419f69193cc2ebbaf9178ecb05cb2892e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryRESExtensionChartValue",
+      "signature_sha256": "795cfb1687417823348fef341d09f03b57555cecbd1cd12eb991415bb2a99241",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryRESExtensionChartValue_partition",
+      "signature_sha256": "a713f3e361ff58c7a0e7128a7463ed739136c612f4202143fdfe35c5d88e527d",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryRESExtensionCutInvariant",
+      "signature_sha256": "8ca187e95bda2a8a9100dcc809009a26c87368951320d0b9392e208a7e6e89fb",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryRESExtensionInvariant",
+      "signature_sha256": "ce4879666b53853db5e3c8a263ef18dd4b2a43187111adf6b2af3d451dbabcef",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryRESOrdinaryExtension",
+      "signature_sha256": "c5c98be72257942b3e4e719ebbae103b4522cf8397c2984a7550c3e973f5ea58",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryRESOrdinaryExtension_class",
+      "signature_sha256": "27bb726b4b0b622d0976a24f48c2cc43806fda871d61e6a94757ba571bf747c9",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryRESOrdinaryExtension_degreeIdeal",
+      "signature_sha256": "b2f91b3db02f6c785e8347749339983203bd12417b5bdefd0146bcba7eb904f2",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryRESUngradedExtension",
+      "signature_sha256": "b28b37a20042d94d3ddd36a406116a83d3c51e27c7223b5bb011371090ce0c2a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryRESExtensionChartValue_fibre",
+      "signature_sha256": "7bd857aa7cd4ea2efc7f97ca379ca9fc3443f76978fca6106f5ea0032e4b9ab3",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryRESOrdinaryReducedExtension",
+      "signature_sha256": "dbf387b80779162c5e26adffcc6fac5d18da13e71da8cc3dffc05afc3ebe3bf1",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryRESExtension_kills_fibres",
+      "signature_sha256": "a264422d48b2676c0446661614a56b055a4ba09a31623f4083cda1dade2ee909",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryRESUngradedReducedExtension",
+      "signature_sha256": "e3482391ce73a22eb58ad57bd7d3c453f8ac7b4ed46fd6db3cc411c1803505ec",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryRESUngradedReducedExtension_kills_fibres",
+      "signature_sha256": "4f300e2a3640287936645c7de716075be202a9aab3cc2bc2d01f5a6b3bc91b5c",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryRESReducedExtension",
+      "signature_sha256": "675d081a58b2b8215561c94723ce330ade18476fb6a5012938776e9c9aab0e9a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.reducedRESRing_hom_ext",
+      "signature_sha256": "f76fbc36876caad311d674a68c51b3cdbeefd1c7ee28fa808b975a4bd943cfd3",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.nativeUngradedClass_nativeRES",
+      "signature_sha256": "75446d69b6643d991858a70bc6ded4049c388d946b687bbdca4aa9528c0a8d74",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryRESReducedRestriction_class",
+      "signature_sha256": "30f531e10fcea47f683b714f6e1d1e3947777240fd407b598e3bf4d9ead1b1a2",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryRESReducedExtension_class",
+      "signature_sha256": "c2ff000d8a77343d742a00e1ffb960a714aca90a9ceaedf92df4b13be6e1dcee",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryRESChartValue_chartRES",
+      "signature_sha256": "21a6780b3e670a0788233afa1f93aadc789d7f67a07e979c2fc742a770d9f35d",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryRESExtensionChartValue_chartRES",
+      "signature_sha256": "b4a6fc5bb24444901dcda573ea51b97b9c0a9895b0f5f5c997c7192193f26bde",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRESValue_extension",
+      "signature_sha256": "8d171f303d541755f8fce4d4020673bc539804189a7a2639e2f333cbeb8e8389",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryNativeRESExtensionValue_restriction",
+      "signature_sha256": "bc02762f0cbdc3ebc20ed10c768cbe4634ca23e3cf7f630b3dd4b1d4900bc280",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryRESReducedRestriction_comp_extension",
+      "signature_sha256": "cac0a128de7ec898718b8b9bd4a16ad552061c5a6942f4a18693642f18ce073b",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryRESReducedExtension_comp_restriction",
+      "signature_sha256": "146f374f6b797e3942317fca5347d2a7724022d24e12e4b6f50e3f61d77d06d7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryRESReducedRestrictionEquiv",
+      "signature_sha256": "04856a72acb845994b1fed98f19fcf97bb3d87b66a7f7a29e4d889d4c41f1bc9",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryRESReducedRestrictionEquiv_apply",
+      "signature_sha256": "347d9ede32ecf3ac78c125eb82b2b9ce16898cadbd4444be84d3256b0cefb976",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.elementaryRESReducedRestriction_bijective",
+      "signature_sha256": "f425b05d021690116a22f6be12a42af4b3544402be1c061dc67a3fdb7e1e824b",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.resGroundTransferReduced_objectClass",
+      "signature_sha256": "b5b4e993e12e0f182a238871a74d2f1ab24f9fc844ff8ed2c1ed38ba5db283af",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.resGroundTransferReduced_comp_inverse",
+      "signature_sha256": "4ad9a65acb5ac5756b7014096c960199d6e9270828b383b48be7a39b3bd59e93",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.eliminateRealGammaRES_bijective",
+      "signature_sha256": "9520c2c3b6e31a13c939520a4dcedf69678b285c001266ab1a1ad952891c8019",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.coefficientGroundComparison_bijective",
+      "signature_sha256": "19efeaf09778b3dede8190726acb010d4b1aec50c2055543a76e4e901cd0a028",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientRealPuiseuxComparison_bijective",
+      "signature_sha256": "585f176ca4aa5d5fa51adcc88e91483910d84cf5a445f7992a52005e3733b960",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientPuiseuxComparison_bijective",
+      "signature_sha256": "1d592b9e35c082ad85f778563ebd598d4ceeefccd9f984bb3541707451f95c11",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientPuiseuxComparisonEquiv",
+      "signature_sha256": "ea7abbb9a9126951bcae9f8c8d15b7696efe04697a2f20d9f1790274638b2509",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientPuiseuxComparisonEquiv_apply",
+      "signature_sha256": "8a67a8ec3a84e53bbe394a750c809690fa308fd261374973c0c6a14bbc9912fb",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.Lemma519.IsRVContractible",
+      "signature_sha256": "359d1ef848ca2ad88f914881f005e02feb318fa17237daa9c4092d5b77a2b3a6",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.Lemma519.isRVContractible_iff",
+      "signature_sha256": "18427b887224aab7f953f8b3c2bd4b4ec73879d8e77632e6bc5866b82c1a4889",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.Lemma519.rvContraction_unique",
+      "signature_sha256": "a33afb9fa70996c544ed0da0e3eb1dc888dd557754fa7ccbc889b306bfb4005e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.Lemma519.polynomial_rv_row_code",
+      "signature_sha256": "4c86214d57d2f75c612a59def3ddc99f363b9584f48a9ac14442d7a80dc73130",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.Lemma519.lemma_5_19",
+      "signature_sha256": "91ad9358bb446d4cecfef3e364647239088e7b4ef4ba4ae0255d9c949fc9021c",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.Lemma519.lemma_5_19_base_coefficients",
+      "signature_sha256": "c9f4e5356490fbb3c8887c2e96f6a9529e59e4a5abcdfc945ade5b074f3188c1",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.Lemma519.extendBase_carrier",
+      "signature_sha256": "a298ae50261b10ca93d888eef8da735606f07ac83fb2c7f0927f718c3e52a461",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.FinSat",
+      "signature_sha256": "99c901e5bf596721362920f8eb10183f305144d42f1da3e0704f8ff44ceb55f0",
+      "axioms": []
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.IsSat",
+      "signature_sha256": "c291a545a5ef533232c9378fd1214f2dabc2191da220e43683d1872a1cfc309b",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.PartElem",
+      "signature_sha256": "65d90e1d63e834a00695b1828ee815c65402b4f094e6d25fe5ef63d21fff835e",
+      "axioms": []
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.IsSH",
+      "signature_sha256": "10c1a11b8d33f49e954bbde86d600d3f1ede6bc402c3083b9b8f8b518a3d3660",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.Cond",
+      "signature_sha256": "35f5f98a4cf7a3abea697a86aac46bd07d079b8f8bfc12fedb596b931b3454e0",
+      "axioms": []
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.StepIdx",
+      "signature_sha256": "ce056adab3d9183bb161aaf44a1aa0761334ea79b017e0b88c367340dd705049",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.stepU",
+      "signature_sha256": "67ff855b75cbda88a7ed0b834e2594adf744a5544f9d0a737653801df9626e8f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.Step",
+      "signature_sha256": "6f5fa4b2f66ec41ddcca74397574898e7b2768d44dfb8023d0ecbdaa53ba8ddc",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.stepU_cone",
+      "signature_sha256": "35f5735cf19e68c5e1459ba3a7f866d10b0b97d397c07e8511fdde98f1ef48c4",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.diag",
+      "signature_sha256": "8c57cd75a1c8a2ca47e6fdd42bcb624292ec1a72b8342b24be4f002435f17467",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.key_realize",
+      "signature_sha256": "9e888e439722f04614db023fcb94822ed5d36f6ebeb6dd3e5e3656741234473d",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.step_finite_part",
+      "signature_sha256": "d89436c9c3d27b6b1908176ced040f4d112d5824162e20b41e7179961f2259f1",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.step_realizes",
+      "signature_sha256": "bd1c4037f2190e30cd3403d49be6056dd2f485e54734cd812647c851a141f649",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.partElem_eq",
+      "signature_sha256": "9e9f60d8e4595d58c73c4bcc7566008200e1e02a3926be55b2b5cdd2ced59c35",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.partElem_extend_formula",
+      "signature_sha256": "93a010518e2926d19918f9d24bcf78ac955b27b0ff79de9a4ffa992b443870ee",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.step_extends",
+      "signature_sha256": "9b842358b636dd0996fef1d62dccf2331662bf9592a206eb578914820d72b4b7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.EObj",
+      "signature_sha256": "363cd1faefd7c3809ba51ce90d712293cc3581d3937af02bff7685b083710344",
+      "axioms": []
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.toE",
+      "signature_sha256": "dea9631d134832ef70bb5de678954feadde96b1da6f1923d98430badb9f7fec5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.ofE",
+      "signature_sha256": "8af78d68f7f0183b36d51c6c46e50587767fe54b78d73f047d5a70681c24a591",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.toE_comp",
+      "signature_sha256": "9c3e43d288eeb79837f9dbbcacf68fdc0aba3847b581f56a415095702ec39e5e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.toE_id",
+      "signature_sha256": "63e7bc89768571310e7b86f5a74a6f8fc4e3e4bc65aa1df4a84589d360bafa7b",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.toE_ofE",
+      "signature_sha256": "8efdeda7d11363ef9e33d36fd8145e722d56a3500e22c7b5ab6ad35316017f8d",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.hom_ext",
+      "signature_sha256": "a0fcfcf98756956b91ce84ee5f1dea0329da7f866a03c8b23d8cda989b636ea3",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.sysG",
+      "signature_sha256": "6b9481f1848589d1f6569a156311a9a63ae470fa50e1b627952249aae2f18312",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.sysF",
+      "signature_sha256": "a40f6c1a030c8bed6d33bebe338a9003323daaf9a091154fce646cd8a1fd2d27",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.sysF_apply",
+      "signature_sha256": "f5ca3e3e8a8d39f7f3a5a14b6c201fa7222f5cb06c80b8a9cca2652ebabff6a0",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.toE_map_apply",
+      "signature_sha256": "9868339ac4c52224a09adb64ba57f96537dec4e8d8dd2873d38c00c43eaffa3a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.sysF_directed",
+      "signature_sha256": "5150da19a8a11367f135877fce6664cd2f4867c155fa678e925519d2a41ba7e3",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.Lim",
+      "signature_sha256": "b522caf76dff1753e85c79621bb8d648d50c9d5743a02bc28b14792486e6b733",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.limOf",
+      "signature_sha256": "2605b4b4ce8b55ee42bcf804ec489e1840a52f602ea3499a107ddfd16460ff22",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.limOf_f",
+      "signature_sha256": "9c0282e82b5a033e9a451d4957cfcf58c8acf3e62ccd249addbfbd4438f2e42b",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.lim_realize",
+      "signature_sha256": "02fc217da32b234ca5bf7cb3ea164fcc420f18bfacded5c24e2bc76e53fe8af2",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.lim_formula",
+      "signature_sha256": "8cb4dd05d2dfdd221437492bb2300a2b0f2bfe51fffce3506b3ce651359b795e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.limOfE",
+      "signature_sha256": "5708a15086ed9cd58d92470ded774458dec7702e67db6bf8b6e2feff5ad43645",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.limOfE_apply",
+      "signature_sha256": "06376811458f7c9c6a43ec84cf9d712685bd152423369e8164c82b5fe7786b9a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.lim_exists",
+      "signature_sha256": "74c41501aabae2147389da03bb0b33343e3a27b20b552f3b69a7ccfc371d9616",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.limCocone",
+      "signature_sha256": "58f62c4e96110ade2a7e3ad4d5831ed8e472d8e8105ff46669b83b15170b1cc5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.limDescEmb",
+      "signature_sha256": "b085c65da37424ed254e44e7fdfa3a048593fcb6642da898398e784f3f2f0cb6",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.limDescEmb_of",
+      "signature_sha256": "0a00d04354f6047b7b7150a0fb7ae80c5c00e817dbf8cc666e37eee27a826eb2",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.limDesc",
+      "signature_sha256": "472398246f3a3ab486a0eeef77ecd568b467c7d65f4045348d047ccddce8a563",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.limIsColimit",
+      "signature_sha256": "d4224dd04cf3fcb0c1088a27acbc69b2dac9e41c5453e36bdfca41190bc8a269",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.hasColimitsOfShape_directed",
+      "signature_sha256": "fab2ab321c280cb68f9d7e25e3e78f7e9f2c52d4562ecfe762c74cdbea600125",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.PE",
+      "signature_sha256": "e592a99a31a86cff90a71101cd9f36a19f6cd00cca9e54bb62ec908550d7102f",
+      "axioms": [
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.PE.functional",
+      "signature_sha256": "9cfec9d129443c8031d201fe3e1ddba552594d0fcd06f06a473e0a21c571cebc",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.PE.mono",
+      "signature_sha256": "126626bac26511fefb35d986401d11f8182b80cb0fd4865fd51cc2dd08d286ab",
+      "axioms": [
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.PE_range_pair",
+      "signature_sha256": "6bdfb90fd281c97a5c9e9ce1037dcbcd4d13874eee07c146bcc4f1b977eb459a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.PE_image",
+      "signature_sha256": "58dad99dcdb94570a954bbdbfb81b99dba1578597b5a90e8344f2e15d5a7ace4",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.PE_preimage",
+      "signature_sha256": "349b6a2bdedd1863be1f2a69d29fa7920dd29718b1a4034bbc1611ff91f85e3e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.PE_of_partElem",
+      "signature_sha256": "b8362748df85ab8bcc8bac86b948804889fbb99159d266867015df0c12d1d0b0",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.PE_formula",
+      "signature_sha256": "44a477248e727fed27d337f36b5aa67f104684e97734aa8cbd283f8162cce651",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.partElem_of_PE",
+      "signature_sha256": "b7ab6edc772da8975ecc7002a02732ef8ba17ff324823f89f63b463dfb9f7cfe",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.chain_bound",
+      "signature_sha256": "50c4bde95c62b12152dbc7c13d6f299e79f042ba8cada9aaf1e6af57465bb3f7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.Step2",
+      "signature_sha256": "a036b318f2284c605dc96648cf305a908a1f65dc439e73de92fb95a74f055f38",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.toStep2",
+      "signature_sha256": "ab5727e38f25a36fe04a63db1b183e148b0a22cbf27f6e8fc7699e68901b2045",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.step2_extend",
+      "signature_sha256": "4fe6be5972ba674388c53e95d267ebcf5c57ece0c3add37f180f70763619aa55",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.J_nonempty",
+      "signature_sha256": "2f1b79a7edcc7e43a1baa0be836af430b28b97ede5905b7271dce1a964d1b7f4",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.J_orderBot",
+      "signature_sha256": "2c21f75ffc0294f549ddd8be7a1d55f45567b44b9d847c9160146eec7b1f0042",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.J_not_isMax",
+      "signature_sha256": "93bc8f57d46d23639c926b928cecefd5a84d12345cec64b0a4bf023ccfd7e68e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.J_bounded",
+      "signature_sha256": "bf18f3072ae560695be4debddbe36c04ce02413a5f13db384915312d36feb9a8",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.succObj",
+      "signature_sha256": "c80ab4a235ba68fd7bb5be250d758556bee05d9d00a3ddf9bd94da05388e7953",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.succStr",
+      "signature_sha256": "1243f927a8dcdf191bf0b9c906573bbe0ccce3747a123fac4bdc89830ea92c22",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.chain",
+      "signature_sha256": "1754ba26297fa43b63929916f1f44dbaaaa7b150c9ceaf1d160c7dd7b64a90d3",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.Mon",
+      "signature_sha256": "185ab3524a3835a88c5afe20ca20459fb330eb2bec54663c6e5b8d43effc02d5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.baseE",
+      "signature_sha256": "ef6f704f6e467f07aed2f34f1101168a76597ce5c37cf04015c250f6eafca784",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.nextE",
+      "signature_sha256": "078e9b3ff54dce3135353c2c0d045b82cefaacb5c90fddc40666307e6b0dee95",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.nextE_toStep2",
+      "signature_sha256": "e0afa7d57dafdfbc8d02de5372e21c4b81e6cc5a3f060c67979baee3545aa51c",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.nextE_mem",
+      "signature_sha256": "20a715396b1505f847d41d7855369cb3c62aab3a6c803288fe8003921931358f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.mon_sat",
+      "signature_sha256": "9d4d651cec088e800c94c6fd484ca6901704db994a85d49633c9d413d120b688",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.mon_sh",
+      "signature_sha256": "0ef1e3e2e80589c737ae2adb900dffd933e5ba221247544c3e93610141e27829",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.MonsterModels.exists_saturated_homogeneous_extension",
+      "signature_sha256": "93e0da12105470a5acfaaee5c91a6cb7293cad353a13b8265f5673ab17aed371",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.rvOfField_zero",
+      "signature_sha256": "f11a6c90a48d2d0f99a66293eadba6ea3f94b02c64a6470e9f4ac2b686246574",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.rvOfField_baseUnit",
+      "signature_sha256": "1ba9a8677519394f332ba0d9776e50b0825a8dbb1d24c9c641b4dfac53bd42c0",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.baseCarrier_rv_iff",
+      "signature_sha256": "fbb1aacc17712856b93e7b4b9783fbc239efa34c8184a409431db8f1375b20b0",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.elementaryAmbient_canonicalACVF",
+      "signature_sha256": "12f1d5c6c38c7050c23e0a7296dade03a671a8a56fb451b54980ed7cd4a2187e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.elementaryAmbient_ACVF00",
+      "signature_sha256": "e6e7d2962168bfad724c622a728e769f4165c7eae2d3c5c761640ebee0e92973",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientLaurentSubfield",
+      "signature_sha256": "b89bbf532721284c3a7df884d8347aa9f98ed71f3e52987129b745aea58fddd6",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientPuiseux_rv_val",
+      "signature_sha256": "c00557d5b06809cc5be65486f81ad81d3eeb3fa531174565dfa20175ab580317",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientLaurent_carrier",
+      "signature_sha256": "255f91bcc3fb82af3c7f6abf989cb7da080e7ebf0dde0a25bd31a278238ecfc3",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientLaurent_names",
+      "signature_sha256": "1e003942620cdfb8b4c1f41faf86081845f9eb94dc20078bcb25104ecea700e1",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientLaurent_nontrivial",
+      "signature_sha256": "4d2b9515903274dbfb5e8fcec236fa2fbe308a906269bc0eadbfd50159dbbafe",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientLaurent_small",
+      "signature_sha256": "ec311a5cb2711be1cf63eee4ccc449baf321321eaccd9e703b810548abed5dc5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.puiseuxAmbientContext",
+      "signature_sha256": "afdb48f5b80af15d229ec0762293127780954d0fd8961196458ae65424f94fd7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.carrier_infinite",
+      "signature_sha256": "daebdcaf6b9c8001098f657d844684d3afa0ae944e7ede97421b24355ceb325f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.saturated_iff_isSat",
+      "signature_sha256": "6678af9a4dff9f669dd9d19aaa34c9155fafc59e2193a52d7bcff7d72297a970",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.stronglyHomogeneous_iff_isSH",
+      "signature_sha256": "b3a62f15c8834df8118bb41d735099a0f872b00d8bf51b7fbc528441fa580d2d",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.exists_puiseux_monster",
+      "signature_sha256": "f1a1853e8e496d98de01aab2bdc4009e0e634afc8300399acf7a63f3af8c9252",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.exists_puiseux_ambient",
+      "signature_sha256": "1a6e9d7e0ab092dffddd20454b85ae29795bce57e8a29136b51e48b3f7a8fa7e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.PuiseuxAmbient",
+      "signature_sha256": "dbed145f77177c4b357e82c9bbe5aa80fa3bd09e1f97721d85db35b71dba6390",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.puiseuxAmbient_nonempty",
+      "signature_sha256": "d59893d556a6337387f61a1a1333338a92874642cba2bcc84ec44e46cd6869ff",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.puiseuxAmbient",
+      "signature_sha256": "d209a7fb448a040a65c704ad47de689072fc8fb19fb6450dce5b5a750727f896",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.puiseuxComplexVarietyVolume",
+      "signature_sha256": "0859533e8efec4c6988cb070454e3a19b9b4a425cd52bbd106c7cee342288123",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.puiseux_corollary_global_vanishing",
+      "signature_sha256": "7055896cb340dc0ebc31db8c4d054be8c7b101ca24aac01b262a33551f520429",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.PuiseuxOriginal.puiseuxBoundedVFVolume",
+      "signature_sha256": "415c9c71ecdacf6db47b8d71c8db68271664bfc9aa9f250a8efc2f2ae4ed8bb1",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.GammaTuple",
+      "signature_sha256": "44009593822cf0fbf62a8f628d8556722d54301de227a73d70af119ce115772a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.fibreFactor",
+      "signature_sha256": "53696ebc171d08fe86c4a754763fda147ee87fd4ca43b33522b699bc0b92c3f1",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.torusFactor",
+      "signature_sha256": "092588b9d48c2e6588fb0c6296d55b1b41dd40dced14ceb273e85c9989623f9a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.primitive_fibre_rightObject",
+      "signature_sha256": "38d1efd884a574eb1aa2092293871934fa6d78fe16cf70e54e02746677a69fa5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.GammaTuple.fibreFactors",
+      "signature_sha256": "45750dea950c195cc7dea72c98cb050c1732bf2fe293a91298bfcb0668d40d25",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.GammaTuple.torusFactors",
+      "signature_sha256": "ca5472abdd81f52ada7a91d2dee6502f538bdad932f607db8555a15bce995b00",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.iteratedObject",
+      "signature_sha256": "93551a6075e7dd585c3f25852de59f32eb3cef341cf5b1a9f96defe499b277c5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.TupleRelationTerm",
+      "signature_sha256": "f156717fe8845fa3d0c2bc77d4e35d99a2319ed3e7d8328306c050a351450110",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.TupleRelationTerm.left",
+      "signature_sha256": "c4bcc883b0669f9dcd371a0fd13197636b40bb985d43971238743d355e1f1920",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.TupleRelationTerm.right",
+      "signature_sha256": "83bdb41fc0eac4c3099e14854d82cd0f432d8f0db678d1c7efae122864cbcb02",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.tupleLeftFamily",
+      "signature_sha256": "765ae024364b965efc827b38229b7764398d558fe63481861ded4fc2d330b91b",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.tupleRightFamily",
+      "signature_sha256": "a9a604921274340d1580c458041874c0cce480ac152dadfbb9c9dc5245a699ef",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.TupleFibreFamilyWitness",
+      "signature_sha256": "e6654b0659b304101f2aac07aaa251ca574fd2b6f8cc2f7c5a9ff82d34c79a03",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.fibreFactor_reduced",
+      "signature_sha256": "f404e07939bda2dc4db0df5fb01f73085eb813e1288639581c715bddac62d797",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.iteratedObject_reduced",
+      "signature_sha256": "ee04382d1415ac4ef6c5c2905c24246f5c3cabd8342015ed8a178873f5769c7e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.fibreFactors_reduced",
+      "signature_sha256": "aa935859231ff83a0b9844aad5400a839fc4e86b62f1a7fb80dfb4fe93f9fe3f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.torusFactors_reduced",
+      "signature_sha256": "0779b38c4c8be538025ad06134b731be58edfd57243fdf082c4b01e55f65e170",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.TupleRelationTerm.reduced_eq",
+      "signature_sha256": "2a40bfb3275f7273cd74314ec958a2918c97878fb22f9cfdfd2bab8d8553cc2c",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.tupleFamilies_reduced_eq",
+      "signature_sha256": "0eb455a58878810e51d43ec15f156e2ee0f517484448a72540d0fbd494a8d6f6",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.TupleFibreFamilyWitness.reduced_equality",
+      "signature_sha256": "41fe37f2866c344a34bbb9df17e369816331c273bcbd479c7bfec759f6bcd87e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.oneTuple",
+      "signature_sha256": "4db83bfd50f3ce42a1c35990b70e3ff5596faba3f17fa1e94f218662ed6de050",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.termsToTuple",
+      "signature_sha256": "7e81be9989cdc6a07d14ece84a66f7044ad8d59a619916a11453aeebbaf11eba",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.oneTuple_fibreFactors",
+      "signature_sha256": "80332fc260245179d8debe10c27e7b99e9ce84329e597ec266005c94d9462bcb",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.oneTuple_torusFactors",
+      "signature_sha256": "20a59790f62c9e38d941fd3055e9152d2236716dfb79e6f2aa469db6a83cd112",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.oneTuple_coefficient_families",
+      "signature_sha256": "62e82c123b2936a11d8919998abc75328431ca633cce6632473264cd3f5d80a9",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.termsToTuple_families",
+      "signature_sha256": "10d7627ed7a9c5c6dca8fe3fd7366c827726df7032a39e3f64b180fd5d8d7442",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.fibreOnlyToTuple",
+      "signature_sha256": "9ce64ac7d490f7ecdf623fafb341874e0a14b5fb2da13b7e18b0b1c89a7937b1",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.test_5_20_tuples",
+      "signature_sha256": "b126a20a051f84b06607f3c80b14892077a59e307933d5818aba6ccd11e6dac3",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.tuple_witness_iff_fibre_only_witness",
+      "signature_sha256": "e8ceaa71724866fbf1af20dfe0bc18664a9ffc2f1d3854831de0cf4f6f952327",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.GammaGroundDefinable.monoBase",
+      "signature_sha256": "1080f5096f63ea62cb433c0bea8d79d096c5a5dbf97509f71fb5e79768ac4a55",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.GammaGroundDefSet.monoBase",
+      "signature_sha256": "7db7eabc67d9fa7013c0b5e84fb52f75894f46671eebb05e08dbe7a05fd8f666",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.GammaGroundMap.monoBase",
+      "signature_sha256": "401c4f8753a60f05a69b4264c7873b5f3a81e4f9ec8336f745ef1c224fc86c1e",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.gammaGroundVolumeFormMonoBase",
+      "signature_sha256": "4ed3e4f37498c34215da754e0a8370a9373a8b12d4e63dabe3ac25a6f8a4db9f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.gammaTopSpace",
+      "signature_sha256": "a28a6d09a9e8f4bc8eccd1e47e747250d01fb88c9e0e78717fe16fa9a69ffd42",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvGammaTopMap",
+      "signature_sha256": "7ca67e6afdcf28f1d8fb3ca5909fb38c5bc65bfdf27b838e1020148c85879ab6",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.gammaTopValuationMap",
+      "signature_sha256": "5976d4082ed1ac3d0de1e22c40abf39a4a7a419fe4d98fc9682aa3949502b708",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.gammaTopValuationMap_value",
+      "signature_sha256": "5cc5bd46607a14cece8b28445081f26f231d94b105ae8e85aa70ed9be17fd4f1",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.gammaIncludeTopMap",
+      "signature_sha256": "8291b4cfe6417be569d5362a270e941df7ff2d958f8608c2e06f1f58a5f2a080",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.gammaTopMultiplyMap",
+      "signature_sha256": "715d806e74b444e4010d5115eed5910b0941691bb751223109a793e4e9ea6f4d",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.exists_residueUnitToRV_of_value_one",
+      "signature_sha256": "e908378435855c75d6c84ad31645f4b47707cc92cbd0bb33493f055fbfd2d87b",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvNormalizedPoint_surjective_on_fibre",
+      "signature_sha256": "6e42cd5741797c94105e3206b6e3458dd129092116aab9ab0c59121fe1cdff6c",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvNormalizedTuple_surjective_on_fibre",
+      "signature_sha256": "c2ea11987f977a3dd596faf01d97d1a4a9a5272c1840e7db36eac61db08e6bfb",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.gammaCodeCharacterTwist",
+      "signature_sha256": "f831b48c91da34989ff51fc9e4ee1da2de76b1ae8fdc4ed81faaeef6054d02f0",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.gammaCodeCharacterTwist_value",
+      "signature_sha256": "b016f86758102aaade44c5ea82f582dafaab398e6a9d5089bea5093a7f8a9f62",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvCharacterTwist_definableOverBase",
+      "signature_sha256": "8ab7ae49dcb59414e066c25359ab4b857690e56d9c9e572ec852c38a9dd9d0ab",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.gammaGroundRVSet_character_invariant",
+      "signature_sha256": "7eb5ffd142a05362e773f956696bd27309f20a42bedc33dccca52e885fa6a9c1",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.gammaGroundRawRV_character_invariant",
+      "signature_sha256": "c257c73477a54f2df490553d437f6990b6e4de51b13f096f3fc2afa76a543c08",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.gammaGroundRVDefinableUnits",
+      "signature_sha256": "d0f27ee89ef826d31738b5e2037f70c1aa1ecbfbccf22a7a0f1a40d938e98ad8",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.gammaGroundDefinableRVValues",
+      "signature_sha256": "8834d354192b84673a1fd589db57c773bc46b1d32412a33bbe7963547d6e68c7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.gammaGroundDefinableRVValues_mem_iff",
+      "signature_sha256": "26c7a6ebffbc25517b5c95f5b872ce00bf119c5ecca18f2c346e243385993941",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvGenericCoordinateInput",
+      "signature_sha256": "343230ae3383edb8cc96f7a828b6bc9c9b3c5497407fbc0b427a9351aadfff76",
+      "axioms": []
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvGenericCoordinate",
+      "signature_sha256": "192b197d9ad00791ca4b9141854c9de52d8e362a84abc8357362938b782d7fe2",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvGenericCoordinate_definableOverBase",
+      "signature_sha256": "65c5978dcf50c7b994200ae4b4bb7f09cd0ada528497786a44fdc00ee1f6dcc6",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvGenericCoordinate_fold_definableOverBase",
+      "signature_sha256": "6a5bdedf75cad2a4398b0b062cc93ce2fa8452c8ac1fb63691fca75dd239bd0a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.mem_rvGenericCoordinate_iff",
+      "signature_sha256": "3fba22b830f961f6f3358ee3a92887fa2dbc5fc0952b3e04e9ab9d09e212ac39",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvInfiniteLast",
+      "signature_sha256": "8c2a93600c88727b9296dabdd0dac24fcc9499682d87b9ed5665e15f836f0bb4",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvInfiniteLast_definableOverBase",
+      "signature_sha256": "d897a5b048183cd5a385eaac4622dd1b1041361d59d82d61a68766e96a58aeab",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvNormalizedPoint",
+      "signature_sha256": "2396a3bf9dba405ee3bdfe6adb7827cb45279454c3859172299d3ffaf4edb859",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvNormalizedPoint_raw_injective",
+      "signature_sha256": "73af9f6c798fa61ab7efd3135450d862f5cacd6c33a66dca27a1af3251c4356d",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvNormalizedPoint_nonzero",
+      "signature_sha256": "67d7645db5af5fd9721e7e9b70f3ea135b65c3c8788f76189162d79c5864a011",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvNormalizedPoint_sameScalar",
+      "signature_sha256": "536bb542c9171b290aedd69106d2fc194853cd6d570e95737c582ce45d27043f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvNormalizedTuple",
+      "signature_sha256": "b11adb253f31d077f49b15ce386f5d10308cf07c91057c3e2d16a75ddf9302f6",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvNormalizedTuple_update",
+      "signature_sha256": "c99b1baa6b545570aa5d6e9683622dc9d2aad5a63bd6f8f95415026af74cdf5c",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvCharacterPair_ground",
+      "signature_sha256": "797d856dbeb1415cc3bbb2f347827d175b2d5d70b5d1d52cc38c18b2fa7d0988",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvCharacterTwist_definableOver",
+      "signature_sha256": "adff257e5888cc9d353e28ce90190aec20a1eb4d09d15d7b12a2f31381c468e6",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvCharacterPair_qf",
+      "signature_sha256": "a2d6cb02f7de04ababd6ae26240249dd3f980896695a7f3d135b2e1d43987fea",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvCharacterPair_formula",
+      "signature_sha256": "e2884251511f5c71ab1117e82c7a0ed12dbec15439b7974cfa3daff1151e215d",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.RVCharacterPair",
+      "signature_sha256": "7891ec4ed8603d0c74fdf98fef0357cdfae393ece7300bde44f9101405420628",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvCharacterPair_function",
+      "signature_sha256": "2279015a1c1c497eabd492c9abbea8da65bfe93473f25802ccb26b0504fe612c",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvCharacterPair_term",
+      "signature_sha256": "8725010ede2c4f527a3279b31af61274fec033fe514f70a1532992bc07874259",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvCharacterPair_equal",
+      "signature_sha256": "28584af3b13f5e7991208ba5ab8767a6de63a836cb334d143b90881b465dab89",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvCharacterPair_relation",
+      "signature_sha256": "b736ededdf5ed074840a07f369af262184fa56d3dd67994c4a0f2e54efb07842",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.valueCharacterTwistHom",
+      "signature_sha256": "c1eec82e12a1f4a9d856db1b81266b78b756d3eaa37e6e9691487b9022cc90ae",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.valueCharacterTwistHom_apply",
+      "signature_sha256": "f4ba30dfda519a3b116e4615f4252d4d02e66ee762f1527347bf6b5342cfd2d4",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.valueCharacterTwistHom_value",
+      "signature_sha256": "848559d0e70f411d75ed2ca8de533adf2fa58240c7e6474151c6ed2f1f8af336",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.valueCharacterTwistEquiv",
+      "signature_sha256": "0fe52a16b5ac0b65ef2f116eb13241eeb00688cf7dd043e825a4dbca93d69612",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.valueCharacterTwistEquiv_value",
+      "signature_sha256": "3c6d2fc10b85a26965e703ce65d71a9cc7cac1173459a43ee8db57bb76428ce9",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.valueCharacterTwistEquiv_fixed",
+      "signature_sha256": "5ada390a137259c080c2a961d7a44e65400d9f9e2323f5d4a55f5448c679a05a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwist",
+      "signature_sha256": "1dfaee7c176f17602444be588bf67b07f6d87337282658f7545f6c91d41074db",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwist_value",
+      "signature_sha256": "a249f96445e078e7065b58228026e153e3bf17639a2d6db4056d8f42ace3c18d",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwist_fixes_ground",
+      "signature_sha256": "ddf34130186599ac0693a6ed13fba74fef6067c9ced0dad84267efa3eb25f409",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero_fixes_ground",
+      "signature_sha256": "e5c282dcf5100bde5732147d7224a85774995029e226ca54a0896ce1c33855ef",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero_rv",
+      "signature_sha256": "cbda87f688084b46dd5d05a4b67b8cda93cb9c50a28c139f22509e4a645918b7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero_le",
+      "signature_sha256": "d4595b74dcf30a7aba7eef71dfc041d9a26edd32270fbc06f175d997466a7248",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero_units",
+      "signature_sha256": "1e66e3a70fc28163950efc8286e6fc3613ef2e35c8a913d411d7c6f92a90c1cc",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvCharacterResidueScalar",
+      "signature_sha256": "d032f7c70686773df02d0efddc53fbfdc903389fa85accf389b9b8c526d9f487",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwist_formula",
+      "signature_sha256": "6213e81cee2535ebea860f9258c4d403f4106b145751f3439f20c8bfee29940c",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero_normalized",
+      "signature_sha256": "41e1e6881f2eb5712bb04bef79e19c6acba5be19db21ab9a1078b7378f15ceb4",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.gammaGroundNormalizedRelation_character_invariant",
+      "signature_sha256": "5cc9289dd2ab0ae60e470850964cc43abfc0c60c281922cc9e70b5f750908e80",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero_zero",
+      "signature_sha256": "56c3adc889a104a6de4aacd68707753126acdc0608407364685565ae2a9bd7d1",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero_residue",
+      "signature_sha256": "0688baeac750ea11669941cc42e2369af500ccf8f1434167236903a42a21f6bd",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero_inK",
+      "signature_sha256": "c43778893f15d25fa217d2449c0c0e6d907f46e4841c4948ba95b162bf42c790",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero_addK",
+      "signature_sha256": "52c54c437472b525049ad40741548f184a164c994484e520529b0c72a3cb9cb5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero_negK",
+      "signature_sha256": "a485ace5b8c2793fdec7c70058184510367a4b4339905d7a2dac652947cdddf5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.unitsEquivExtendZero",
+      "signature_sha256": "287410c93390bfa8d1aecb11a9fa8d6d332b31a44f92ec3318ebce7900c2fb11",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.unitsEquivExtendZero_coe",
+      "signature_sha256": "6aff8fd793e590ce926f52f3a9053a5f7910128e2e9cfcd30ffc382b15e3bc63",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.unitsEquivExtendZero_zero",
+      "signature_sha256": "c651dbd0f27ba9b595ecdc91bec8913152f7fb9b55587085dc22a7ae7cd2bfb1",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero",
+      "signature_sha256": "a6f293b180be2a1fd920652fe9a74c1f07b30bee8ba51d06c0be417a4b48b02a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero_coe",
+      "signature_sha256": "b40cdc58d01497f8c05d03a0a843b8acd5f0d231257cbea700f4298f17f8f3fc",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero_value",
+      "signature_sha256": "0685e2a8dd690b039badae80af320b0624e09edd83ec50320af6ab27cf47e3b4",
       "axioms": [
         "Classical.choice",
         "Quot.sound",

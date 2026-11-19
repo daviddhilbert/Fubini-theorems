@@ -1,8 +1,8 @@
 {
-  "stage": "Independent extraction complete; source build and full public contract checks passed locally and in GitHub Actions.",
-  "source_modules": 1786,
-  "owned_declarations": 10565,
-  "preserved_public_contract": 10566,
+  "stage": "November 18, 2026: 34 further modules extracted from diamond-integral d7117c9 (the inflated-family Fubini theorems, RV[*]-fibre Fubini, the constructed Puiseux ambient, the elementary RES extension isomorphism, Lemma 5.19 and Test 5.20 for tuples, with 18 Section 3 prerequisites); local source build and full public contract checks pass. Earlier CI checkpoints are retained below.",
+  "source_modules": 1820,
+  "owned_declarations": 10861,
+  "preserved_public_contract": 11195,
   "inherited_finite_laws_owner": "special-transformations",
   "shared_migration_ci": {
     "status": "PASS",
@@ -10,9 +10,9 @@
     "tested_commit": "ef984d9873971249968cdbc2e737606e6cbcb557"
   },
   "independent_section5_boundary": "PASS",
-  "local_build": "PASS:lake build FubiniTheorems,13021 jobs",
-  "lean_source_files": 1795,
-  "public_type_and_axiom_comparison": "PASS:10566 unchanged full types and axiom inventories",
+  "local_build": "PASS:lake build FubiniTheorems,13134 jobs",
+  "lean_source_files": 1829,
+  "public_type_and_axiom_comparison": "PASS:11195 unchanged full types and axiom inventories",
   "ci": {
     "status": "PASS",
     "tested_commit": "fea1092a0a3e0b6bcde5453c3083151f16d747f9",

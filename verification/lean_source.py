@@ -45,6 +45,9 @@ def declarations(source):
         decl=re.match(r'(?:(?:noncomputable|public|protected)\s+)*(def|abbrev|theorem|lemma|structure|inductive|class|instance)\s+([\w.\']+)',command)
         if decl:
             prefix='.'.join(n for k,n in frames if k=='namespace')
-            out.append({'kind':decl[1],'name':prefix+'.'+decl[2] if prefix else decl[2]})
+            name=decl[2]
+            if name.startswith('_root_.'):name=name[len('_root_.'):]
+            elif prefix:name=prefix+'.'+name
+            out.append({'kind':decl[1],'name':name})
     if any(k in ('namespace','mutual') or n for k,n in frames):raise ValueError('Unclosed named scope: '+str(frames))
     return out

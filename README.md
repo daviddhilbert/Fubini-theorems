@@ -55,8 +55,8 @@ python3 verification/verify.py
 
 Lean 4.35.0 and Mathlib 56a005855ea17e0b0958f73ec801ae140b0a1679 are pinned.
 CI compiles the library, checks all source fingerprints, and compares the
-10,566 inventoried public types and axiom inventories with their checked
-pre-extraction baseline. The finite-laws prerequisite is owned by
+11,195 inventoried public types and axiom inventories with their checked
+baseline (10,566 from the original extraction and 629 added on November 18, 2026). The finite-laws prerequisite is owned by
 special-transformations and remains part of that public contract.
 Only `propext`, `Classical.choice`, and `Quot.sound` are accepted.
 Full current type/axiom output is retained as a CI artifact.
@@ -86,3 +86,10 @@ to hilbert-mathlib, retaining 48 original module paths and the complete 10,566-t
 public contract. The remaining 10,232 locally implemented declarations and 334
 inherited declarations have explicit owners; SHARED-FOUNDATION.json records
 the new provider bodies and compatibility fingerprints.
+
+On November 18, 2026, 34 further modules were extracted from diamond-integral
+at `d7117c9`: the inflated-family Fubini theorem and its Vol version, Fubini
+for RV[*] fibres, the constructed saturated Puiseux ambient, the elementary
+RES extension isomorphism, Lemma 5.19 and Test 5.20 for tuples, and 18 Section 3
+prerequisites. They add 629 owned declarations and public types; original
+names, statements and provenance are recorded in `SOURCE-MANIFEST.json`.

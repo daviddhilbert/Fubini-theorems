@@ -346,3 +346,6 @@ import FubiniTheorems.Decomposition.VFPolynomialLoci
 import FubiniTheorems.Decomposition.VFPolynomialNativeDomains
 import FubiniTheorems.Decomposition.ValueInducedCharts
 import FubiniTheorems.Decomposition.ValueInducedRectangles
+import FubiniTheorems.Decomposition.ElementaryRESExtensionData
+import FubiniTheorems.Decomposition.ElementaryRESExtension
+import FubiniTheorems.Decomposition.Lemma519Polynomial

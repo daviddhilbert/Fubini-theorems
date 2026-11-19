@@ -119,3 +119,4 @@ import FubiniTheorems.Comparison.RVRectangleUniformity
 import FubiniTheorems.Comparison.RVRetractionExt
 import FubiniTheorems.Comparison.RVRetractionGroundNaturality
 import FubiniTheorems.Comparison.RingLanguageEmbeddings
+import FubiniTheorems.Comparison.Test520Tuples

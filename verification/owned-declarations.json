@@ -48151,7 +48151,7 @@
   },
   {
     "kind": "theorem",
-    "name": "DiamondIntegral.Section5.invariantOpenMap_\u03b9",
+    "name": "DiamondIntegral.Section5.invariantOpenMap_ι",
     "provider": "FubiniTheorems.Decomposition.InvariantOpenSchemeActions",
     "source_path": "FubiniTheorems/Decomposition/InvariantOpenSchemeActions.lean"
   },
@@ -61390,5 +61390,3779 @@
     "name": "DiamondIntegral.Section5.EquivariantVariety.subsetClass_finite_partition",
     "provider": "FubiniTheorems.Corollaries.VarietySubsetScissors",
     "source_path": "FubiniTheorems/Corollaries/VarietySubsetScissors.lean"
+  },
+  {
+    "kind": "abbrev",
+    "name": "DiamondIntegral.Section5.inflatedGammaPower",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.inflatedRVReindexMap",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedRVReindexMap_value",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.inflatedVFReindexMap",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedVFReindexMap_value",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.inflatedRVGammaTopMap",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedRVGammaTopMap_value",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.inflatedVFGammaTopMap",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedVFGammaTopMap_value",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.inflatedGammaIncludeMap",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedGammaIncludeMap_value",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.GammaGroundDefinable.diagonal_preimage",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.GammaGroundDefinable.forall_snd",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.GammaGroundDefinable.exists_snd",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.GammaGroundDefinable.exists_gamma_lift",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedGamma_singleton_definable",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.GammaGroundDefinable.gammaFibre",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.adjoinGammaTuple_names",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.GammaGroundDefSet.gammaFibreOver",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.GammaGroundDefSet.gammaFibre",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.GammaGroundDefSet.mem_gammaFibre",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.GammaGroundDefSet.mem_gammaFibreOver",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.GammaGroundDefSet.gammaRVInflation",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.GammaGroundDefSet.mem_gammaRVInflation",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.GammaGroundDefSet.append_mem_gammaRVInflation",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflated_gamma_unique",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "structure",
+    "name": "DiamondIntegral.Section5.GammaVFFamily",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.row",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.fibreOver",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.fibreAt",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.fibreAt_carrier",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.fibreOver_carrier",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.inflatedCarrier",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.inflatedSplitMap",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.inflatedValueMap",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.inflatedCarrier_definable",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.inflatedCarrier_finite",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.inflated",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.mem_inflated",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.inflated_coordinate_ne_zero",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaFamilyRows",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.inflatedGammaNameMap",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaCodePromotion",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaCodePromotion.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedGammaNameMap_value",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaCodePromotion",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaCodePromotion.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.gammaGroundDefinable_abstract_gamma_names",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaCodePromotion",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaCodePromotion.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.GammaGroundDefSet.exists_gamma_family",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaCodePromotion",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaCodePromotion.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflated_finite_of_no_injective",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaWeakLiftSchemata",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaWeakLiftSchemata.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflated_no_injective_of_ncard",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaWeakLiftSchemata",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaWeakLiftSchemata.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.GammaGroundDefinable.exists_injective_tuple",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaWeakLiftSchemata",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaWeakLiftSchemata.lean"
+  },
+  {
+    "kind": "structure",
+    "name": "DiamondIntegral.Section5.GammaWeakLiftDatum",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaWeakLiftSchemata",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaWeakLiftSchemata.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.liftRow",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaWeakLiftSchemata",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaWeakLiftSchemata.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.labelFibre",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaWeakLiftSchemata",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaWeakLiftSchemata.lean"
+  },
+  {
+    "kind": "structure",
+    "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.Valid",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaWeakLiftSchemata",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaWeakLiftSchemata.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.Valid.labelFibre_finite",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaWeakLiftSchemata",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaWeakLiftSchemata.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.valid_definable",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaWeakLiftSchemata",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaWeakLiftSchemata.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflated_append_comp_castAdd",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaWeakLiftSchemata",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaWeakLiftSchemata.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflated_append_comp_natAdd",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaWeakLiftSchemata",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaWeakLiftSchemata.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflated_append_split_rows",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaWeakLiftSchemata",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaWeakLiftSchemata.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.exists_valid_datum",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaWeakLiftSchemata",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaWeakLiftSchemata.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.finite_valid_catalog",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaWeakLiftSchemata",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaWeakLiftSchemata.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.uniform_lift_catalog",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaWeakLiftSchemata",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaWeakLiftSchemata.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.section5BoundedRVSetValue",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.inflatedRelationMap",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedRelationMap_spec",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedRelationMap_bijective",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.inflatedRelationBijection",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.objectAt",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.mem_lift_objectAt",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.bijectionAt",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.fibre_value",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.inflatedLabelIndex",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedLabelIndex_castAdd",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedLabelIndex_natAdd",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.restrictDomain",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.inflated_label_fibre_finite",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.inflatedObject",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.GammaWeakLiftDatum.mem_lift_inflatedObject",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.inflatedPiece",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.inflatedPiece_subset",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.inflatedPieceRelation",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.inflatedPieceRelation_definable",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.inflatedPieceBijection",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.inflatedPiece_partition",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.row_empty_iff",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.fibre_value_sum",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.inflated_value_sum",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.GammaVFFamily.uniform_representatives",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaUniformRepresentatives",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedMonomial_mul",
+    "provider": "FubiniTheorems.Fubini.InflatedIntegerBlockReduction",
+    "source_path": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedMonomial_inv",
+    "provider": "FubiniTheorems.Fubini.InflatedIntegerBlockReduction",
+    "source_path": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedMonomial_one_input",
+    "provider": "FubiniTheorems.Fubini.InflatedIntegerBlockReduction",
+    "source_path": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedMonomial_zero_matrix",
+    "provider": "FubiniTheorems.Fubini.InflatedIntegerBlockReduction",
+    "source_path": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedMonomial_map",
+    "provider": "FubiniTheorems.Fubini.InflatedIntegerBlockReduction",
+    "source_path": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedMonomial_mem",
+    "provider": "FubiniTheorems.Fubini.InflatedIntegerBlockReduction",
+    "source_path": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedMonomial_rows",
+    "provider": "FubiniTheorems.Fubini.InflatedIntegerBlockReduction",
+    "source_path": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedMonomial_append",
+    "provider": "FubiniTheorems.Fubini.InflatedIntegerBlockReduction",
+    "source_path": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedMonomial_smul_one",
+    "provider": "FubiniTheorems.Fubini.InflatedIntegerBlockReduction",
+    "source_path": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedMonomial_left_inverse",
+    "provider": "FubiniTheorems.Fubini.InflatedIntegerBlockReduction",
+    "source_path": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedMonomial_injective",
+    "provider": "FubiniTheorems.Fubini.InflatedIntegerBlockReduction",
+    "source_path": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.inflatedBlockDiag",
+    "provider": "FubiniTheorems.Fubini.InflatedIntegerBlockReduction",
+    "source_path": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedBlockDiag_monomial",
+    "provider": "FubiniTheorems.Fubini.InflatedIntegerBlockReduction",
+    "source_path": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflated_append_eq_iff",
+    "provider": "FubiniTheorems.Fubini.InflatedIntegerBlockReduction",
+    "source_path": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflated_append_split",
+    "provider": "FubiniTheorems.Fubini.InflatedIntegerBlockReduction",
+    "source_path": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflated_right_block_right_inverse",
+    "provider": "FubiniTheorems.Fubini.InflatedIntegerBlockReduction",
+    "source_path": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflated_rows_extend_of_right_inverse",
+    "provider": "FubiniTheorems.Fubini.InflatedIntegerBlockReduction",
+    "source_path": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflated_left_kernel_block",
+    "provider": "FubiniTheorems.Fubini.InflatedIntegerBlockReduction",
+    "source_path": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedMonomial_surjective_of_left_kernel",
+    "provider": "FubiniTheorems.Fubini.InflatedIntegerBlockReduction",
+    "source_path": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.inflatedTop",
+    "provider": "FubiniTheorems.Fubini.InflatedIntegerBlockReduction",
+    "source_path": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.inflatedBottom",
+    "provider": "FubiniTheorems.Fubini.InflatedIntegerBlockReduction",
+    "source_path": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedTop_apply",
+    "provider": "FubiniTheorems.Fubini.InflatedIntegerBlockReduction",
+    "source_path": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedBottom_apply",
+    "provider": "FubiniTheorems.Fubini.InflatedIntegerBlockReduction",
+    "source_path": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedTop_append_bottom",
+    "provider": "FubiniTheorems.Fubini.InflatedIntegerBlockReduction",
+    "source_path": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflated_relative_block_chart",
+    "provider": "FubiniTheorems.Fubini.InflatedIntegerBlockReduction",
+    "source_path": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedRVResidue_divisible",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialDecomposition",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialDecomposition.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedRVValues_append",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialDecomposition",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialDecomposition.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedRVValues_monomial",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialDecomposition",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialDecomposition.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.inflatedMonomialImage",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialDecomposition",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialDecomposition.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.inflatedMonomialValueImage",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialDecomposition",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialDecomposition.lean"
+  },
+  {
+    "kind": "structure",
+    "name": "DiamondIntegral.Section5.RelativeMonomialChart",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialDecomposition",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialDecomposition.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RelativeMonomialChart.source_invariant",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialDecomposition",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialDecomposition.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RelativeMonomialChart.residue_value",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialDecomposition",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialDecomposition.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RelativeMonomialChart.fixed_free_injective",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialDecomposition",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialDecomposition.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.GroundMonomialPiece.exists_relative_chart",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialDecomposition",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialDecomposition.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.relative_monomial_decomposition",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialDecomposition",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialDecomposition.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RelativeMonomialChart.productTarget",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RelativeMonomialChart.productTarget_mem",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RelativeMonomialChart.totalIndex",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RelativeMonomialChart.totalMatrix",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RelativeMonomialChart.totalMatrix_monomial",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RelativeMonomialChart.totalMatrix_mem",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RelativeMonomialChart.totalMap",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RelativeMonomialChart.totalMap_value",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RelativeMonomialChart.totalMap_bijective",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RelativeMonomialChart.totalBijection",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RelativeMonomialChart.fibre",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RelativeMonomialChart.fibre_mem",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RelativeMonomialChart.fibreTarget",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RelativeMonomialChart.fibreTarget_mem",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RelativeMonomialChart.fibreMap",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RelativeMonomialChart.fibreMap_bijective",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RelativeMonomialChart.fibreBijection",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RelativeMonomialChart.chart_image",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "abbrev",
+    "name": "DiamondIntegral.Section5.relativeGammaEuler",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RelativeMonomialChart.native_value",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RelativeMonomialChart.fibre_value",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.relative_charts_native_value",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.relative_charts_fibre_value",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.relativeGammaSlice",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.relativeGammaSlice_mem",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.relativeJoinIndex_injective",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.relativeJoinEquiv",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.relativeJoinEquiv_comp",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.relativeGammaJoin",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.relativeGammaJoin_mem",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.relativeGammaJoin_euler",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedRVUnitValue_val",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedRV_ne_zero_iff",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.inflatedUnitStratum",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.inflatedUnitStratumBijection",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedUnitStratum_value",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.inflatedPatternIndex",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.inflatedStratumIndex",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedPatternIndex_mem",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedPatternIndex_cover",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.inflatedStratum",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.inflatedFibreStratum",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedPattern_iff",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "abbrev",
+    "name": "DiamondIntegral.Section5.inflatedUnitsToRV",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedStratum_restrict",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedStratum_conditions",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedFibreStratum_conditions",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedStratum_invariant",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedFibreStratum_mem",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "structure",
+    "name": "DiamondIntegral.Section5.RelativeValueTerm",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RelativeMonomialChart.toTerm",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflated_relative_monomial_values",
+    "provider": "FubiniTheorems.Fubini.InflatedRelativeMonomialValues",
+    "source_path": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.gamma_common_level_partition",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaBasePartition",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaBasePartition.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedSlice_definable",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaBasePartition",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaBasePartition.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.inflatedSliceFamily",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaBasePartition",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaBasePartition.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedSliceFamily_apply",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaBasePartition",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaBasePartition.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.inflatedJoinFamily",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaBasePartition",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaBasePartition.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedSlice_integral_eq_prefix",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaBasePartition",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaBasePartition.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedSlice_integral_eq_base",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaBasePartition",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaBasePartition.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflated_gamma_base_partition",
+    "provider": "FubiniTheorems.Fubini.InflatedGammaBasePartition",
+    "source_path": "FubiniTheorems/Fubini/InflatedGammaBasePartition.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedFubini_chart_support",
+    "provider": "FubiniTheorems.Fubini.InflatedFamilyFubini",
+    "source_path": "FubiniTheorems/Fubini/InflatedFamilyFubini.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedFubini_stratum_support",
+    "provider": "FubiniTheorems.Fubini.InflatedFamilyFubini",
+    "source_path": "FubiniTheorems/Fubini/InflatedFamilyFubini.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedFubini_relative_values",
+    "provider": "FubiniTheorems.Fubini.InflatedFamilyFubini",
+    "source_path": "FubiniTheorems/Fubini/InflatedFamilyFubini.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedFubini_ne_zero_of_vrv",
+    "provider": "FubiniTheorems.Fubini.InflatedFamilyFubini",
+    "source_path": "FubiniTheorems/Fubini/InflatedFamilyFubini.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedFubini_unitValues_iff",
+    "provider": "FubiniTheorems.Fubini.InflatedFamilyFubini",
+    "source_path": "FubiniTheorems/Fubini/InflatedFamilyFubini.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedFubini_inflation_ne_zero",
+    "provider": "FubiniTheorems.Fubini.InflatedFamilyFubini",
+    "source_path": "FubiniTheorems/Fubini/InflatedFamilyFubini.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedFubini_inflation_invariant",
+    "provider": "FubiniTheorems.Fubini.InflatedFamilyFubini",
+    "source_path": "FubiniTheorems/Fubini/InflatedFamilyFubini.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedFubini_inflation_fibre",
+    "provider": "FubiniTheorems.Fubini.InflatedFamilyFubini",
+    "source_path": "FubiniTheorems/Fubini/InflatedFamilyFubini.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedFubini_inflation_support",
+    "provider": "FubiniTheorems.Fubini.InflatedFamilyFubini",
+    "source_path": "FubiniTheorems/Fubini/InflatedFamilyFubini.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RelativeValueTerm.inflatedFubiniCoeff",
+    "provider": "FubiniTheorems.Fubini.InflatedFamilyFubini",
+    "source_path": "FubiniTheorems/Fubini/InflatedFamilyFubini.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflated_family_fubini",
+    "provider": "FubiniTheorems.Fubini.InflatedFamilyFubini",
+    "source_path": "FubiniTheorems/Fubini/InflatedFamilyFubini.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedFubini_eliminate_torus",
+    "provider": "FubiniTheorems.Fubini.InflatedFamilyFubiniVol",
+    "source_path": "FubiniTheorems/Fubini/InflatedFamilyFubiniVol.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.inflatedFubini_restriction_torus",
+    "provider": "FubiniTheorems.Fubini.InflatedFamilyFubiniVol",
+    "source_path": "FubiniTheorems/Fubini/InflatedFamilyFubiniVol.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.modifiedAffineLineClass",
+    "provider": "FubiniTheorems.Fubini.InflatedFamilyFubiniVol",
+    "source_path": "FubiniTheorems/Fubini/InflatedFamilyFubiniVol.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.modifiedTorusClass",
+    "provider": "FubiniTheorems.Fubini.InflatedFamilyFubiniVol",
+    "source_path": "FubiniTheorems/Fubini/InflatedFamilyFubiniVol.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.inflatedFubiniZeroUnitEquiv",
+    "provider": "FubiniTheorems.Fubini.InflatedFamilyFubiniVol",
+    "source_path": "FubiniTheorems/Fubini/InflatedFamilyFubiniVol.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.inflatedFubini_zeroGraph",
+    "provider": "FubiniTheorems.Fubini.InflatedFamilyFubiniVol",
+    "source_path": "FubiniTheorems/Fubini/InflatedFamilyFubiniVol.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.inflatedFubiniZeroUnitIso",
+    "provider": "FubiniTheorems.Fubini.InflatedFamilyFubiniVol",
+    "source_path": "FubiniTheorems/Fubini/InflatedFamilyFubiniVol.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.inflatedFubini_puncturedLine_geometric",
+    "provider": "FubiniTheorems.Fubini.InflatedFamilyFubiniVol",
+    "source_path": "FubiniTheorems/Fubini/InflatedFamilyFubiniVol.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.inflatedFubini_coefficient_torus",
+    "provider": "FubiniTheorems.Fubini.InflatedFamilyFubiniVol",
+    "source_path": "FubiniTheorems/Fubini/InflatedFamilyFubiniVol.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.inflatedFubini_theta_torus",
+    "provider": "FubiniTheorems.Fubini.InflatedFamilyFubiniVol",
+    "source_path": "FubiniTheorems/Fubini/InflatedFamilyFubiniVol.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientPuiseuxComparison_nativeTorusClass",
+    "provider": "FubiniTheorems.Fubini.InflatedFamilyFubiniVol",
+    "source_path": "FubiniTheorems/Fubini/InflatedFamilyFubiniVol.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.inflated_family_fubini_vol",
+    "provider": "FubiniTheorems.Fubini.InflatedFamilyFubiniVol",
+    "source_path": "FubiniTheorems/Fubini/InflatedFamilyFubiniVol.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.puiseux_inflated_family_fubini_vol",
+    "provider": "FubiniTheorems.Fubini.InflatedFamilyFubiniVol",
+    "source_path": "FubiniTheorems/Fubini/InflatedFamilyFubiniVol.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.bounded_weak_fubini_discharged",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.weakZeroPatternDomain",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.weakZeroPatternDomain_mem",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.weakZeroPatternDomain_subset",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.nativeStrictToWeak",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.nativeStrictToWeak_lift",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.nativeWeakGeometricValue",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.nativeRVSetValue_empty",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.nativeWeakGeometricValue_toWeak",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.weakStratumObject",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.nativeWeakGeometricValue_eq_sum_strata",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.nativeRVSetValue_weak_eq_sum_strata",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.iRV_iRVZero",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "abbrev",
+    "name": "DiamondIntegral.Section5.thickC",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.thickPadGraph",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickPadGraph_definable",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.thickRel",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.thZ",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.thU",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.thW",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.thY",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thZ_append",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thU_append",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thW_append",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thY_append",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.th_split",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "abbrev",
+    "name": "DiamondIntegral.Section5.thickSort",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thick_sorted_iff",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.coord_eq_zero_predicate",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickRel_predicate",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.thickVolume",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickVolume_definable",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickDomain_predicate",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.thickAt",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickPadGraph_functional",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickPadGraph_proper",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickPadGraph_nonzero",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickRel_sorted",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickVolume_mem",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickVolume_mem'",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickAt_valid",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.thickArity",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.thickSeq",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickSeq_valid",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickSeq_nonzero",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "abbrev",
+    "name": "DiamondIntegral.Section5.thickFull",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickFull_strict",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.schemaPatternDomain",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.schemaPatternDomain_row",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.zeroConstDomain",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.zeroConstDomain_row",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.geometricDegreeValue_add",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.geometricDegreeValue_zero",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.geometricDegreeValue_affine_succ",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.finset_sum_erase_split",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.nativeRVSetValue_singleton",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.rowWeakValue",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.rowValue_congr",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.rowValue_empty",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.rowValue_split",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.rowValue_product",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.rowValue_zeroConst",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.rowWeakValue_strict",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.rowWeakValue_presentation",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.rawDomain_pad_iff",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickAt_pattern_row",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickAt_pattern_value",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.rowWeakValue_thickAt",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.rowWeakValue_thickSeq",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickFull_row_value",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.rvValues_append'",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.rvValues_tupleRV_update",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.rvValues_tupleRV_update_val",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.mixed_eta",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickLift_mem",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.thickXs",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickXs_mem",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.nativeVFClass_two_partition",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.thickXfObj",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.thickPr",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.thickJV",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.thickHR",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.thickPhi",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickJV_comp",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickHR_comp",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickPr_mem",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickPhi_injective",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickPhi_rel",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickPhi_mem",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thick_eta",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickCase2_mem_image",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.thickX1",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickX1_case1",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.thickDrop",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.thickPsi",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickDrop_comp",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickPsi_value",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickPsi_injective",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickPsi_image",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.geometricDegreeValue_affine_one",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.nativeVFGeometricValue_padLift",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickAt_vf_step",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickSeq_vf",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.idChart",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.idChart_valid",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "structure",
+    "name": "DiamondIntegral.Section5.NativeGeometricWeakVFLiftEqualitySchema",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.NativeGeometricWeakVFLiftEqualitySchema.Valid",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.NativeGeometricWeakVFLiftEqualitySchema.valid_definable",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.native_geometric_weak_vf_lift_schema_at_parameter",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.native_geometric_weak_vf_lift_finite_catalog",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.NativeGeometricWeakVFFibreLiftEquality",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.NativeGeometricVFFibreLiftEquality.toWeak",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.native_geometric_weak_vf_map_whole_witness_partition",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.nativeVFGeometricValue_map_fixed_weak_witness",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.thickPad_uniform_bound",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.nativeGeometricWeakVFFubini",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.geometric_weak_fubini_discharged",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.nativeVFGeometricValue_weak_lift",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.NativeBoundedVFFibreLiftEquality.toWeak",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.nativeGeometricVFFubini_via_weak",
+    "provider": "FubiniTheorems.Fubini.WeakDegreeFubiniDischarged",
+    "source_path": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.elementaryActualExtension",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryActualExtension_mem",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryActual_eq_of_restrict",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryActualExtension_eq_iff",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryActual_eq_empty",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryActual_subset",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementary_range_mono",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryActualExtension_eq_of_params",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryActualExtension_subset_of_params",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryActualExtension_subset",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.tuple_append_split",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.tuple_append_left",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.tuple_append_right",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.definableTupleProjection",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.mem_definableTupleProjection",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.definableTupleSwap",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.mem_definableTupleSwap",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.definable_tuple_diagonal",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.definable_tuple_ne",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementary_total_transfer",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.tripleSecondIndex",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.tripleSecondIndex_append",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.triple_first_append",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.triple_middle",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.triple_last",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementary_functional_transfer",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RawDefinableGraphMap.graph_functional",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RawDefinableGraphMap.extensionGraph",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RawDefinableGraphMap.extension_total",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RawDefinableGraphMap.extension_functional",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RawDefinableGraphMap.extension_source_target",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RawDefinableGraphMap.extensionFun",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RawDefinableGraphMap.extensionFun_graph",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RawDefinableGraphMap.extensionFun_eq_iff",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RawDefinableGraphMap.extensionFun_graph_eq",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RawDefinableGraphMap.extension",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RawDefinableGraphMap.extension_apply",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RawDefinableGraphMap.extension_bijective",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.definable_rv_coordinate",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.definable_rv_tuples",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.definable_rvLe_left",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.definable_rvLe_right",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.mem_rawDomain_iff",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.rawDomain_sorted",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.elementaryNativeRawExtension",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryNativeRawExtension_mem",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryNativeRawExtension_sorted",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.elementaryNativeRVExtension",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryNativeRVExtension_mem",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryNativeRVExtension_mem_image",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryNativeRVRestriction_extension",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryNativeRawExtension_restriction",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryNativeRVExtension_carrier_eq",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryNativeRVExtension_restriction",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryNativeRVExtension_subset",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryNativeRVExtension_finite",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementary_value_fibre_extension",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.elementaryNativeRVExtensionMap",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryNativeRVExtensionMap_bijective",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.elementaryNativeRVExtensionBijection",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtensionData",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtensionData.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryNativeRVExtension_product",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryNativeRVExtension_sdiff",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.elementaryNativeRESExtension",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.elementaryNativeRESExtensionValue",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryNativeRESExtensionValue_bijection",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryNativeRESExtensionValue_empty",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryNativeRESExtensionValue_product",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryNativeRESExtensionValue_cut",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryNativeRESExtensionValue_unit",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.elementaryRESExtensionChartValue",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryRESExtensionChartValue_partition",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.elementaryRESExtensionCutInvariant",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.elementaryRESExtensionInvariant",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.elementaryRESOrdinaryExtension",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryRESOrdinaryExtension_class",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryRESOrdinaryExtension_degreeIdeal",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.elementaryRESUngradedExtension",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryRESExtensionChartValue_fibre",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.elementaryRESOrdinaryReducedExtension",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryRESExtension_kills_fibres",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.elementaryRESUngradedReducedExtension",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryRESUngradedReducedExtension_kills_fibres",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.elementaryRESReducedExtension",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.reducedRESRing_hom_ext",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.nativeUngradedClass_nativeRES",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryRESReducedRestriction_class",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryRESReducedExtension_class",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryRESChartValue_chartRES",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryRESExtensionChartValue_chartRES",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryNativeRESValue_extension",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryNativeRESExtensionValue_restriction",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryRESReducedRestriction_comp_extension",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryRESReducedExtension_comp_restriction",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.elementaryRESReducedRestrictionEquiv",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryRESReducedRestrictionEquiv_apply",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.elementaryRESReducedRestriction_bijective",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.resGroundTransferReduced_objectClass",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.resGroundTransferReduced_comp_inverse",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.eliminateRealGammaRES_bijective",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.coefficientGroundComparison_bijective",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientRealPuiseuxComparison_bijective",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientPuiseuxComparison_bijective",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientPuiseuxComparisonEquiv",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientPuiseuxComparisonEquiv_apply",
+    "provider": "FubiniTheorems.Decomposition.ElementaryRESExtension",
+    "source_path": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.Lemma519.IsRVContractible",
+    "provider": "FubiniTheorems.Decomposition.Lemma519Polynomial",
+    "source_path": "FubiniTheorems/Decomposition/Lemma519Polynomial.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.Lemma519.isRVContractible_iff",
+    "provider": "FubiniTheorems.Decomposition.Lemma519Polynomial",
+    "source_path": "FubiniTheorems/Decomposition/Lemma519Polynomial.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.Lemma519.rvContraction_unique",
+    "provider": "FubiniTheorems.Decomposition.Lemma519Polynomial",
+    "source_path": "FubiniTheorems/Decomposition/Lemma519Polynomial.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.Lemma519.polynomial_rv_row_code",
+    "provider": "FubiniTheorems.Decomposition.Lemma519Polynomial",
+    "source_path": "FubiniTheorems/Decomposition/Lemma519Polynomial.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.Lemma519.lemma_5_19",
+    "provider": "FubiniTheorems.Decomposition.Lemma519Polynomial",
+    "source_path": "FubiniTheorems/Decomposition/Lemma519Polynomial.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.Lemma519.lemma_5_19_base_coefficients",
+    "provider": "FubiniTheorems.Decomposition.Lemma519Polynomial",
+    "source_path": "FubiniTheorems/Decomposition/Lemma519Polynomial.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.Lemma519.extendBase_carrier",
+    "provider": "FubiniTheorems.Decomposition.Lemma519Polynomial",
+    "source_path": "FubiniTheorems/Decomposition/Lemma519Polynomial.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.MonsterModels.FinSat",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.MonsterModels.IsSat",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.MonsterModels.PartElem",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.MonsterModels.IsSH",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "abbrev",
+    "name": "DiamondIntegral.Section5.MonsterModels.Cond",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "abbrev",
+    "name": "DiamondIntegral.Section5.MonsterModels.StepIdx",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.MonsterModels.stepU",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "abbrev",
+    "name": "DiamondIntegral.Section5.MonsterModels.Step",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.stepU_cone",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.MonsterModels.diag",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.key_realize",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.step_finite_part",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.step_realizes",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.partElem_eq",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.partElem_extend_formula",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.step_extends",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "structure",
+    "name": "DiamondIntegral.Section5.MonsterModels.EObj",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.MonsterModels.toE",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.MonsterModels.ofE",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.toE_comp",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.toE_id",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.toE_ofE",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.hom_ext",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "abbrev",
+    "name": "DiamondIntegral.Section5.MonsterModels.sysG",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.MonsterModels.sysF",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.sysF_apply",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.toE_map_apply",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "instance",
+    "name": "DiamondIntegral.Section5.MonsterModels.sysF_directed",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "abbrev",
+    "name": "DiamondIntegral.Section5.MonsterModels.Lim",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.MonsterModels.limOf",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.limOf_f",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.lim_realize",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.lim_formula",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.MonsterModels.limOfE",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.limOfE_apply",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.lim_exists",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.MonsterModels.limCocone",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.MonsterModels.limDescEmb",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.limDescEmb_of",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.MonsterModels.limDesc",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.MonsterModels.limIsColimit",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "instance",
+    "name": "DiamondIntegral.Section5.MonsterModels.hasColimitsOfShape_directed",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.MonsterModels.PE",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.PE.functional",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.PE.mono",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.PE_range_pair",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.PE_image",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.PE_preimage",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.PE_of_partElem",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.PE_formula",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.partElem_of_PE",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.chain_bound",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "abbrev",
+    "name": "DiamondIntegral.Section5.MonsterModels.Step2",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.MonsterModels.toStep2",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.step2_extend",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "instance",
+    "name": "DiamondIntegral.Section5.MonsterModels.J_nonempty",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "instance",
+    "name": "DiamondIntegral.Section5.MonsterModels.J_orderBot",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.J_not_isMax",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.J_bounded",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.MonsterModels.succObj",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.MonsterModels.succStr",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "abbrev",
+    "name": "DiamondIntegral.Section5.MonsterModels.chain",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "abbrev",
+    "name": "DiamondIntegral.Section5.MonsterModels.Mon",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.MonsterModels.baseE",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.MonsterModels.nextE",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.nextE_toStep2",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.nextE_mem",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.mon_sat",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.mon_sh",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.MonsterModels.exists_saturated_homogeneous_extension",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.rvOfField_zero",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.rvOfField_baseUnit",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.baseCarrier_rv_iff",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.elementaryAmbient_canonicalACVF",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.elementaryAmbient_ACVF00",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientLaurentSubfield",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientPuiseux_rv_val",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientLaurent_carrier",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientLaurent_names",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientLaurent_nontrivial",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientLaurent_small",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.puiseuxAmbientContext",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.carrier_infinite",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.saturated_iff_isSat",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.stronglyHomogeneous_iff_isSH",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.exists_puiseux_monster",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.exists_puiseux_ambient",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "structure",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.PuiseuxAmbient",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.puiseuxAmbient_nonempty",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.puiseuxAmbient",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.puiseuxComplexVarietyVolume",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.puiseux_corollary_global_vanishing",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.PuiseuxOriginal.puiseuxBoundedVFVolume",
+    "provider": "FubiniTheorems.Comparison.PuiseuxModels.PuiseuxMonsterAmbient",
+    "source_path": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean"
+  },
+  {
+    "kind": "structure",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.GammaTuple",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.fibreFactor",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.torusFactor",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.primitive_fibre_rightObject",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.GammaTuple.fibreFactors",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.GammaTuple.torusFactors",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.iteratedObject",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "structure",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.TupleRelationTerm",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.TupleRelationTerm.left",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.TupleRelationTerm.right",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.tupleLeftFamily",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.tupleRightFamily",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "structure",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.TupleFibreFamilyWitness",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.fibreFactor_reduced",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.iteratedObject_reduced",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.fibreFactors_reduced",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.torusFactors_reduced",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.TupleRelationTerm.reduced_eq",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.tupleFamilies_reduced_eq",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.TupleFibreFamilyWitness.reduced_equality",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.oneTuple",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.termsToTuple",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.oneTuple_fibreFactors",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.oneTuple_torusFactors",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.oneTuple_coefficient_families",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.termsToTuple_families",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.fibreOnlyToTuple",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.test_5_20_tuples",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section5.RESFiniteWitness.Test520.tuple_witness_iff_fibre_only_witness",
+    "provider": "FubiniTheorems.Comparison.Test520Tuples",
+    "source_path": "FubiniTheorems/Comparison/Test520Tuples.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.GammaGroundDefinable.monoBase",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMonotoneBases",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/GammaGroundMonotoneBases.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.GammaGroundDefSet.monoBase",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMonotoneBases",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/GammaGroundMonotoneBases.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.GammaGroundMap.monoBase",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMonotoneBases",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/GammaGroundMonotoneBases.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.gammaGroundVolumeFormMonoBase",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.GammaGroundMonotoneBases",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/GammaGroundMonotoneBases.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.gammaTopSpace",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.GammaTopPresentation",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/GammaTopPresentation.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.rvGammaTopMap",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.GammaTopPresentation",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/GammaTopPresentation.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.gammaTopValuationMap",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.GammaTopPresentation",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/GammaTopPresentation.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.gammaTopValuationMap_value",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.GammaTopPresentation",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/GammaTopPresentation.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.gammaIncludeTopMap",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.GammaTopPresentation",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/GammaTopPresentation.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.gammaTopMultiplyMap",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.GammaTopPresentation",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/GammaTopPresentation.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.exists_residueUnitToRV_of_value_one",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.RVResidueFullFibreCoordinates",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/RVResidueFullFibreCoordinates.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvNormalizedPoint_surjective_on_fibre",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.RVResidueFullFibreCoordinates",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/RVResidueFullFibreCoordinates.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvNormalizedTuple_surjective_on_fibre",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.RVResidueFullFibreCoordinates",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/RVResidueFullFibreCoordinates.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.gammaCodeCharacterTwist",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.GammaGroundCharacterSymmetry",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/GammaGroundCharacterSymmetry.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.gammaCodeCharacterTwist_value",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.GammaGroundCharacterSymmetry",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/GammaGroundCharacterSymmetry.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvCharacterTwist_definableOverBase",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.GammaGroundCharacterSymmetry",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/GammaGroundCharacterSymmetry.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.gammaGroundRVSet_character_invariant",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVCharacterSymmetry",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/GammaGroundRVCharacterSymmetry.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.gammaGroundRawRV_character_invariant",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVCharacterSymmetry",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/GammaGroundRVCharacterSymmetry.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.gammaGroundRVDefinableUnits",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVDefinableSubgroup",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/GammaGroundRVDefinableSubgroup.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.gammaGroundDefinableRVValues",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVDefinableSubgroup",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/GammaGroundRVDefinableSubgroup.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.gammaGroundDefinableRVValues_mem_iff",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVDefinableSubgroup",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/GammaGroundRVDefinableSubgroup.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.rvGenericCoordinateInput",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVGenericCoordinates",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/GammaGroundRVGenericCoordinates.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.rvGenericCoordinate",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVGenericCoordinates",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/GammaGroundRVGenericCoordinates.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvGenericCoordinate_definableOverBase",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVGenericCoordinates",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/GammaGroundRVGenericCoordinates.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvGenericCoordinate_fold_definableOverBase",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVGenericCoordinates",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/GammaGroundRVGenericCoordinates.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.mem_rvGenericCoordinate_iff",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVGenericCoordinates",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/GammaGroundRVGenericCoordinates.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.rvInfiniteLast",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVInfiniteRows",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/GammaGroundRVInfiniteRows.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvInfiniteLast_definableOverBase",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.GammaGroundRVInfiniteRows",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/GammaGroundRVInfiniteRows.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.rvNormalizedPoint",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.RVResidueNormalizedPoints",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/RVResidueNormalizedPoints.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvNormalizedPoint_raw_injective",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.RVResidueNormalizedPoints",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/RVResidueNormalizedPoints.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvNormalizedPoint_nonzero",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.RVResidueNormalizedPoints",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/RVResidueNormalizedPoints.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvNormalizedPoint_sameScalar",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.RVResidueNormalizedPoints",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/RVResidueNormalizedPoints.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.rvNormalizedTuple",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.RVResidueNormalizedPoints",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/RVResidueNormalizedPoints.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvNormalizedTuple_update",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.RVResidueNormalizedPoints",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/RVResidueNormalizedPoints.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvCharacterPair_ground",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistDefinable",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistDefinable.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvCharacterTwist_definableOver",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistDefinable",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistDefinable.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvCharacterPair_qf",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistFormulas",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistFormulas.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvCharacterPair_formula",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistFormulas",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistFormulas.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.RVCharacterPair",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistPairs",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistPairs.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvCharacterPair_function",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistPairs",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistPairs.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvCharacterPair_term",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistTerms",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistTerms.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvCharacterPair_equal",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistTerms",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistTerms.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvCharacterPair_relation",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistTerms",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistTerms.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.valueCharacterTwistHom",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwists",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwists.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.valueCharacterTwistHom_apply",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwists",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwists.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.valueCharacterTwistHom_value",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwists",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwists.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.valueCharacterTwistEquiv",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwists",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwists.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.valueCharacterTwistEquiv_value",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwists",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwists.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.valueCharacterTwistEquiv_fixed",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwists",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwists.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwist",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwists",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwists.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwist_value",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwists",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwists.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwist_fixes_ground",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwists",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwists.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero_fixes_ground",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistsGround",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistsGround.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero_rv",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistsGround",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistsGround.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero_le",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistsGround",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistsGround.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero_units",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistsGround",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistsGround.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.rvCharacterResidueScalar",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistsNormalized",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistsNormalized.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwist_formula",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistsNormalized",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistsNormalized.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero_normalized",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistsNormalized",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistsNormalized.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.gammaGroundNormalizedRelation_character_invariant",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistsNormalized",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistsNormalized.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero_zero",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistsResidue",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistsResidue.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero_residue",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistsResidue",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistsResidue.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero_inK",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistsResidue",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistsResidue.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero_addK",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistsResidue",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistsResidue.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero_negK",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistsResidue",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistsResidue.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.unitsEquivExtendZero",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistsWithZero",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistsWithZero.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.unitsEquivExtendZero_coe",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistsWithZero",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistsWithZero.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.unitsEquivExtendZero_zero",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistsWithZero",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistsWithZero.lean"
+  },
+  {
+    "kind": "def",
+    "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistsWithZero",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistsWithZero.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero_coe",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistsWithZero",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistsWithZero.lean"
+  },
+  {
+    "kind": "theorem",
+    "name": "DiamondIntegral.Section3.rvOriginalGroundCharacterTwistZero_value",
+    "provider": "FubiniTheorems.Prerequisites.Grothendieck.ValueCharacterTwistsWithZero",
+    "source_path": "FubiniTheorems/Prerequisites/Grothendieck/ValueCharacterTwistsWithZero.lean"
   }
 ]
