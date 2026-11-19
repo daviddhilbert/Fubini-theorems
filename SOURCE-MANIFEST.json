@@ -35029,8 +35029,8 @@
   "providers": {
     "shared_provider_commit": "88bb3386f616779bfd87eb453d8a7c899ad63961",
     "qe_shared_commit": "173708265d7959e031bf9552ee884501fc21f2cb",
-    "fubini_special_provider": "423c767a84b709487da7e798f70f0639545db1ac",
-    "fubini_integration_provider": "ab4c0e8b15e1e21b0b4fce57eed764be76020e06"
+    "fubini_special_provider": "932a5075ad91a825d4b8c1bf1396b2063e44fe40",
+    "fubini_integration_provider": "5a69a5e4f57045f123fdd593889a0005e7b4e16f"
   },
   "inherited_declaration_providers": {
     "DiamondIntegral.Section5.GammaQE.finite_laws_of_flat_graph": "special_transformations",
