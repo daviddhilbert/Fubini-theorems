@@ -375,6 +375,12 @@
       "step": "Integrals of lifts of mixed degree",
       "declarations": [
         {
+          "name": "DiamondIntegral.Section5.nativeWeakRVObjectLift_finite",
+          "file": "FubiniTheorems/Fubini/NativeWeakRVObjects.lean",
+          "line": 35,
+          "source_sha256": "fe8621f86bc673c9b203e0272f73b20f51d2bca6333851682eb7786918208bf8"
+        },
+        {
           "name": "DiamondIntegral.Section5.nativeVFBoundedValue_weak_lift",
           "file": "FubiniTheorems/Fubini/NativeWeakLiftValues.lean",
           "line": 81,
@@ -392,6 +398,18 @@
       "section": "paper/sections/mixed.tex",
       "step": "Thickening of vanishing labels",
       "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.thickAt_valid",
+          "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+          "line": 532,
+          "source_sha256": "8f7aea2504617ef956cb6a046e74810d6dba4f3691fdef6c62a73543a4e8519d"
+        },
+        {
+          "name": "DiamondIntegral.Section5.thickRel_predicate",
+          "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+          "line": 353,
+          "source_sha256": "8f7aea2504617ef956cb6a046e74810d6dba4f3691fdef6c62a73543a4e8519d"
+        },
         {
           "name": "DiamondIntegral.Section5.thickAt",
           "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
@@ -866,11 +884,11 @@
   "paper_sha256": {
     "paper/fubini-theorems.tex": "ea4f870d6ec8d9f57b2021821af1c5ed2f8de1f5ec9df07528a3980473622163",
     "paper/sections/bounded.tex": "b474f495b17a59d7ed2c9a09b56f63c0f156c50129a5afb9e3890c442c8e5429",
-    "paper/sections/complex.tex": "f36f201320ba2e2ccbd410f08946c575b490b4827ffefe4a82a79b3586efcdbf",
+    "paper/sections/complex.tex": "e943bfad7a72329e39f926283d03f76a942a03a24574e0ca05280a41c6bf5df7",
     "paper/sections/decomposition.tex": "5dc02ec0deed7449b7b2f81f53d2fa92269375cbe99b0290f790d62d0dc9f84c",
     "paper/sections/geometric.tex": "25df48990c156e3982b2e29f106e62652b78f41d0b0bdaf25dcfd2bf48ab73a2",
-    "paper/sections/inflated.tex": "9b39ea8ea09615cd4d74f1dca54bef124e3df5633d2be9ce2a3b356aa64075cd",
-    "paper/sections/mixed.tex": "71f025321de650cfe65f22a2dee36e5abbb83f7bfa00d1dd1e821d9331f38df8",
+    "paper/sections/inflated.tex": "d7c724e2a3f5a204641c2b62afd629a55ba5b8e3bad46be4c4a860f68f720d81",
+    "paper/sections/mixed.tex": "6f3ee34337d0b7a9b721827a1cb5316c5d064e9e2a2f2c6eaed0da86f79560d6",
     "paper/sections/setup.tex": "654850e4259abea5df1bb57bd49d92ba6fe19a614d5f8aac108bdab1d6c53cbc"
   },
   "review_notes": [

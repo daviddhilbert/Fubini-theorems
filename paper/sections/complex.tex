@@ -12,7 +12,7 @@ $a/N\in\Q$ is definable over $\mathbb S$ as the unique solution of
 $N\gamma=a\,v(t)$.
 
 \begin{rem}[The ambient model]\label{rem:ambient}
-Such an ambient model exists. For every language and every regular cardinal
+Such an ambient model exists. For every small language and every regular cardinal
 $\kappa$, every nonempty structure has a $\kappa$-saturated, strongly
 $\kappa$-homogeneous elementary extension; see \cite[Section 4.3]{Marker}.
 No hypothesis beyond ZFC is needed. One step is an ultrapower indexed by
@@ -25,8 +25,10 @@ $\kappa$-homogeneity follows by a back-and-forth argument.
 Apply this to $\widetilde{\C}$ with $\kappa$ the successor of its
 cardinality. In the resulting model $\mathbb U$ the field $F$ is small and
 generates a ground as in Section~\ref{sec:setup}, whose Gamma parameters are
-definable over $F$ and whose group $\Gamma_0=\Q$ is nontrivial.
-Since $\widetilde{\C}\preceq\mathbb U$, restriction of $F$-definable residue
+definable over $F$ and whose parameter group is nontrivial (it contains
+$v(t)=1$; indeed $\Q\subseteq\Gamma_0$ by the paragraph above).
+Since $\widetilde{\C}\preceq\mathbb U$, after eliminating the Gamma
+parameters definable over $F$, restriction of $F$-definable residue
 sets, bijections and value-fibre relations from $\mathbb U$ to
 $\widetilde{\C}$ induces an isomorphism between the rings $\sggk\RES$ over
 $F$ computed in the two models; its inverse is extension of the defining
@@ -255,11 +257,11 @@ on which it is already defined by Section~\ref{sec:retract}.
 
 \begin{cor}[Inflated-family volume]\label{cor:inflated:vol}
 Let $\mathcal A\subseteq\Gamma^n\times K^m\times\RV_\infty^s$ be
-$F$-definable with finite RV fibres over $\Gamma^n\times K^m$, and let
-$(E_a)_a$ and $(v_a)_a$ be as in Theorem~\ref{thm:inflated} for the ground
-$\mathbb S=F$. Then
+$F$-definable with finite RV fibres over $\Gamma^n\times K^m$. There are
+$(E_a)_a$ and $(v_a)_a$ as in Theorem~\ref{thm:inflated} for the ground
+$\mathbb S=F$ such that
 \[
- \Vol([A_\gamma])=\Theta(v_a)\qquad\text{for every }\gamma\in E_a\cap\Q^n,
+ \Vol([A_\gamma])=\Theta(v_a)\qquad\text{for every }\gamma\in E_a\cap\Gamma_0^n,
 \]
 and
 \[
@@ -268,12 +270,14 @@ and
    \quad\text{in }\gmv,
 \]
 where $[\G_m]=[\A^1]-1$, with the trivial action on $\A^1$.
+In particular the first formula holds for every $\gamma\in E_a\cap\Q^n$,
+since $\Q\subseteq\Gamma_0$ by the beginning of this section; this
+inclusion is not part of the formalization.
 \end{cor}
 
 \begin{proof}
-By \eqref{eq:gamma-control} with no RV parameters, $\Gamma_0=\Q$ here, so
-Theorem~\ref{thm:inflated}(2) applies to every $\gamma\in E_a\cap\Q^n$.
-It remains to apply the ring homomorphism $\Theta$ to
+Take the data of Theorem~\ref{thm:inflated}; part (2) applies to every
+$\gamma\in E_a\cap\Gamma_0^n$. It remains to apply the ring homomorphism $\Theta$ to
 Theorem~\ref{thm:inflated} and to compute $\Theta(g)$. The class
 $g=[\G_m]$ is the class of the value fibre $0^\sharp$. In the construction
 of $\Theta_{\mathrm{raw}}$ its Kummer coordinate is the identity, with level

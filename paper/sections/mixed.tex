@@ -27,7 +27,11 @@ Since $\rv(x_j)=\infty$ precisely when $x_j=0$, the lift is the disjoint
 union over $I$ of copies of $\mathbb L\bm U_I$, with the coordinates
 outside $I$ equal to zero. Conversely, a finite tagged disjoint union of
 objects of degrees $k_1,\ldots,k_m$ has a presentation in degree at most
-$\max_j k_j$, obtained by adding zero labels. Put
+$\max_j k_j$, obtained by adding zero labels; its exact strata are the
+given summands, and padding by zero coordinates identifies the lifts. This
+reindexing is how statements for representatives in $\RV[*]$ follow from
+statements for presentations; the formalization works with presentations
+throughout and does not state the reindexing separately. Put
 \begin{align}
  \mathbb E_{\mathrm b}^{\mathbb T}([\bm U])
    &=\sum_I\mathbb E_{\mathrm b}^{\mathbb T}([\bm U_I])\quad\text{in }R(\mathbb T),
@@ -96,7 +100,8 @@ $\mathbb T$, and let $1\leq i\leq k$.
 \item The thickening $\theta_i\bm U$ is a presentation in degree at most $k$
 over $\mathbb T$. It is obtained from the defining formulas of $\bm U$ by a
 fixed first-order operation, uniformly in parameters, and a bound for its
-label fibres depends only on a bound for those of $\bm U$. All labels of
+label fibres depends only on a bound for those of $\bm U$ and a fixed
+bound for those of $\bm{\mathbb A}_{\RES}$. All labels of
 $\theta\bm U$ are nonzero, so $\theta\bm U\in\RV[k]$.
 \item $\mathbb E_{\mathrm g}^{\mathbb T}([\theta_i\bm U])
        =\mathbb E_{\mathrm g}^{\mathbb T}([\bm U])$; hence
@@ -152,7 +157,8 @@ in position $i$ is a bijection onto the second summand. Both maps are
 definable over $\mathbb S$, so $\mathbb L_Z\theta_i\bm U\in\VF_*$. Since
 $\mathbb E_{\mathrm g}^{\mathbb S}\circ\int$ is a ring homomorphism and
 $\mathbb E_{\mathrm g}^{\mathbb S}(\int[\mathbb L\bm{\mathbb A}_{\RES}])
-=\mathbb E_{\mathrm g}^{\mathbb S}(\int[\mathcal O])=1$, the two pieces
+=\mathbb E_{\mathrm g}^{\mathbb S}([\bm{\mathbb A}_{\RES}])
+=L^{-1}\widetilde{\mathbb E}_{\mathrm g}([\bm{\mathbb A}_{\RES}])=L^{-1}L=1$, the two pieces
 retain their geometric values.
 \end{proof}
 
@@ -257,6 +263,8 @@ thickening is needed because a vanishing label changes the degree in which
 its stratum is normalized; the bounded value is insensitive to labels.
 Over the original ground, Lemma~\ref{lem:mixed:lift} shows that the value
 \eqref{mixed:geometric:value} is the geometric value of the integral of the
-lift, so the hypothesis of Theorem~\ref{thm:mixed}(2) is intrinsic whenever
-the fibre integral is available.
+lift. Hence the hypothesis of Theorem~\ref{thm:mixed}(2) is intrinsic
+whenever $\mathbb S_b$ is itself a ground in the sense of
+Section~\ref{sec:setup}, so that Lemma~\ref{lem:mixed:lift} applies over
+it; the formalization proves that lemma over the original ground only.
 \end{rem}
