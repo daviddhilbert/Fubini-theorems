@@ -11,6 +11,29 @@ language $\lan{}{RV}{}$ over $\mathbb S$. In particular, each
 $a/N\in\Q$ is definable over $\mathbb S$ as the unique solution of
 $N\gamma=a\,v(t)$.
 
+\begin{rem}[The ambient model]\label{rem:ambient}
+Such an ambient model exists. For every language and every regular cardinal
+$\kappa$, every nonempty structure has a $\kappa$-saturated, strongly
+$\kappa$-homogeneous elementary extension; see \cite[Section 4.3]{Marker}.
+No hypothesis beyond ZFC is needed. One step is an ultrapower indexed by
+finite sets of conditions: by \L o\'s's theorem it realizes every finitely
+satisfiable type over the given structure and extends every partial
+elementary map of it to an elementary map into the ultrapower. Iterate such
+steps along $\kappa$, taking unions of elementary chains at limit stages.
+Regularity of $\kappa$ gives $\kappa$-saturation of the union, and strong
+$\kappa$-homogeneity follows by a back-and-forth argument.
+Apply this to $\widetilde{\C}$ with $\kappa$ the successor of its
+cardinality. In the resulting model $\mathbb U$ the field $F$ is small and
+generates a ground as in Section~\ref{sec:setup}, whose Gamma parameters are
+definable over $F$ and whose group $\Gamma_0=\Q$ is nontrivial.
+Since $\widetilde{\C}\preceq\mathbb U$, restriction of $F$-definable residue
+sets, bijections and value-fibre relations from $\mathbb U$ to
+$\widetilde{\C}$ induces an isomorphism between the rings $\sggk\RES$ over
+$F$ computed in the two models; its inverse is extension of the defining
+formulas. The comparison below is constructed with the Kummer coordinates
+of $\widetilde{\C}$ and is transported along this isomorphism.
+\end{rem}
+
 \begin{rem}[The finite Kummer actions]\label{puiseux:kummer:action}
 There are natural identifications
 \[
@@ -229,6 +252,35 @@ The motivic volume operator is
 Here $\bb E_b$ is applied after the quotient by $(\bm P-1)$,
 on which it is already defined by Section~\ref{sec:retract}.
 \end{nota}
+
+\begin{cor}[Inflated-family volume]\label{cor:inflated:vol}
+Let $\mathcal A\subseteq\Gamma^n\times K^m\times\RV_\infty^s$ be
+$F$-definable with finite RV fibres over $\Gamma^n\times K^m$, and let
+$(E_a)_a$ and $(v_a)_a$ be as in Theorem~\ref{thm:inflated} for the ground
+$\mathbb S=F$. Then
+\[
+ \Vol([A_\gamma])=\Theta(v_a)\qquad\text{for every }\gamma\in E_a\cap\Q^n,
+\]
+and
+\[
+ \Vol([A^{\mathrm{inf}}])
+   =[\G_m]^n\sum_a\chi_{\mathrm b}(E_a)\,\Theta(v_a)
+   \quad\text{in }\gmv,
+\]
+where $[\G_m]=[\A^1]-1$, with the trivial action on $\A^1$.
+\end{cor}
+
+\begin{proof}
+By \eqref{eq:gamma-control} with no RV parameters, $\Gamma_0=\Q$ here, so
+Theorem~\ref{thm:inflated}(2) applies to every $\gamma\in E_a\cap\Q^n$.
+It remains to apply the ring homomorphism $\Theta$ to
+Theorem~\ref{thm:inflated} and to compute $\Theta(g)$. The class
+$g=[\G_m]$ is the class of the value fibre $0^\sharp$. In the construction
+of $\Theta_{\mathrm{raw}}$ its Kummer coordinate is the identity, with level
+$N=1$, so $0^\sharp$ is sent to the punctured affine line
+$\A^1\setminus\{0\}$ with the trivial action. Its class is
+$[\A^1]-[\{0\}]=[\A^1]-1$.
+\end{proof}
 
 \begin{cor}\label{cor:global:vanishing}
 Let $F=\C((t))$ and let $f:A\to B$ be a morphism of

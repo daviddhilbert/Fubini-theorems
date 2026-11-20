@@ -1,0 +1,262 @@
+Theorem~\ref{fubini} and Proposition~\ref{prop:geometric:fubini} allow
+fibre representatives in $\RV[*]$, that is, finite disjoint unions of
+objects of several degrees. Their proofs above fix one label degree for
+each representative, with nonzero labels. In this section we treat the
+general case. The bounded case needs no new idea; the geometric case
+needs a padding of the vanishing labels, since the geometric value of a
+summand of degree $k$ is normalized by $L^{-k}$.
+
+\begin{defn}\label{defn:mixed:presentation}
+Let $\mathbb T$ be a parameter base and $k\geq0$. A presentation in
+degree at most $k$ is a pair $\bm U=(U,p)$, where
+$U\subseteq\RV_\infty^a$ is $\mathbb T$-definable and
+\[
+ p:U\longrightarrow\RV_\infty^k
+\]
+is $\mathbb T$-definable and finite-to-one. For $I\subseteq\{1,\ldots,k\}$,
+the exact stratum
+\[
+ U_I=\{u\in U:\ p_j(u)\neq\infty\ \Longleftrightarrow\ j\in I\},
+\]
+with the label $(p_j)_{j\in I}$, is an object $\bm U_I\in\RV[|I|]$.
+The lift of $\bm U$ is
+\[
+ \mathbb L\bm U=\{(x,u)\in K^k\times U:\ \rv(x)=p(u)\}.
+\]
+Since $\rv(x_j)=\infty$ precisely when $x_j=0$, the lift is the disjoint
+union over $I$ of copies of $\mathbb L\bm U_I$, with the coordinates
+outside $I$ equal to zero. Conversely, a finite tagged disjoint union of
+objects of degrees $k_1,\ldots,k_m$ has a presentation in degree at most
+$\max_j k_j$, obtained by adding zero labels. Put
+\begin{align}
+ \mathbb E_{\mathrm b}^{\mathbb T}([\bm U])
+   &=\sum_I\mathbb E_{\mathrm b}^{\mathbb T}([\bm U_I])\quad\text{in }R(\mathbb T),
+ \label{mixed:bounded:value}\\
+ \mathbb E_{\mathrm g}^{\mathbb T}([\bm U])
+   &=\sum_I L^{-|I|}\,\widetilde{\mathbb E}_{\mathrm g}^{\mathbb T}([\bm U_I])
+   \quad\text{in }R_g(\mathbb T).
+ \label{mixed:geometric:value}
+\end{align}
+Thus each exact stratum is normalized in its own degree.
+\end{defn}
+
+The bounded value \eqref{mixed:bounded:value} is the bounded value of the
+underlying RV set $U$: as in the proof of Theorem~\ref{fubini}, the bounded
+retraction does not depend on the finite-to-one label. If all labels of
+$\bm U$ are nonzero, then $\bm U=\bm U_{\{1,\ldots,k\}}$ is an object of
+$\RV[k]$, and both values are the values of Section~\ref{sec:setup}.
+
+\begin{lem}\label{lem:mixed:lift}
+Let $\bm U$ be an $\mathbb S$-definable presentation in degree at most $k$.
+Then $\mathbb L\bm U\in\VF_*$ and
+\[
+ \mathbb E_{\mathrm b}^{\mathbb S}\!\left(\int[\mathbb L\bm U]\right)
+   =\mathbb E_{\mathrm b}^{\mathbb S}([\bm U]),
+ \qquad
+ \mathbb E_{\mathrm g}^{\mathbb S}\!\left(\int[\mathbb L\bm U]\right)
+   =\mathbb E_{\mathrm g}^{\mathbb S}([\bm U]).
+\]
+\end{lem}
+
+\begin{proof}
+The set $\mathbb L\bm U$ is an RV pullback: membership of $(x,u)$
+depends on $x$ only through $\rv(x)$. Its RV fibres are finite since $p$
+is finite-to-one. Partition it according to the set $I$ of nonzero VF
+coordinates. The piece indexed by $I$ is definably bijective, by deleting
+the zero coordinates, to $\mathbb L\bm U_I$, and its key
+$(\rv(x),u)\mapsto u$ identifies its RV data with $U_I$. Hence its integral
+is the class of $\bm U_I$ modulo the special relation. Applying the two
+retractions and adding over $I$ gives \eqref{mixed:bounded:value} and
+\eqref{mixed:geometric:value}.
+\end{proof}
+
+Let $\bm{\mathbb A}_{\RES}\in\RES[1]$ be the disjoint union of $\G_m$ and the
+degree-one point, as in the proof of Proposition~\ref{prop:geometric:fubini}.
+Its unnormalized geometric value is $g+1=L$, and its lift is definably
+bijective to $\mathcal O$.
+
+\begin{defn}\label{defn:thickening}
+Let $\bm U=(U,p)$ be a presentation in degree at most $k$, and let
+$1\leq i\leq k$. Put $U^{\neq}=\{u\in U:p_i(u)\neq\infty\}$ and
+$U^{=}=\{u\in U:p_i(u)=\infty\}$. The thickening of $\bm U$ at $i$ is
+the tagged disjoint union
+\[
+ \theta_i\bm U=U^{\neq}\ \sqcup\ \bigl(U^{=}\times\bm{\mathbb A}_{\RES}\bigr),
+\]
+with the label $p$ on the first summand, and with the label of $(u,w)$ on
+the second summand obtained from $p(u)$ by replacing its $i$th coordinate
+$\infty$ by the label of $w$. Put
+$\theta\bm U=\theta_k\cdots\theta_1\bm U$.
+\end{defn}
+
+\begin{lem}\label{lem:thickening}
+Let $\bm U$ be a presentation in degree at most $k$ over a parameter base
+$\mathbb T$, and let $1\leq i\leq k$.
+\begin{enumerate}
+\item The thickening $\theta_i\bm U$ is a presentation in degree at most $k$
+over $\mathbb T$. It is obtained from the defining formulas of $\bm U$ by a
+fixed first-order operation, uniformly in parameters, and a bound for its
+label fibres depends only on a bound for those of $\bm U$. All labels of
+$\theta\bm U$ are nonzero, so $\theta\bm U\in\RV[k]$.
+\item $\mathbb E_{\mathrm g}^{\mathbb T}([\theta_i\bm U])
+       =\mathbb E_{\mathrm g}^{\mathbb T}([\bm U])$; hence
+$\mathbb E_{\mathrm g}^{\mathbb T}([\theta\bm U])
+       =\mathbb E_{\mathrm g}^{\mathbb T}([\bm U])$.
+\item Let $Z\subseteq K^d\times\RV_\infty^q$ be $\mathbb S$-definable and let
+$(\bm U_c)_{c\in Z}$ be an $\mathbb S$-definable family of presentations in
+degree at most $k$ whose total lift
+\[
+ \mathbb L_Z\bm U=\{(c,x,u):c\in Z,\ (x,u)\in\mathbb L\bm U_c\}
+\]
+lies in $\VF_*$. Then $\mathbb L_Z\theta_i\bm U\in\VF_*$ and
+\[
+ \mathbb E_{\mathrm g}^{\mathbb S}\!\left(\int[\mathbb L_Z\theta_i\bm U]\right)
+   =\mathbb E_{\mathrm g}^{\mathbb S}\!\left(\int[\mathbb L_Z\bm U]\right).
+\]
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+For (1), the defining condition of $\theta_i\bm U$ is a disjunction of
+two conditions: either $(u,p(u))$ is a point of $\bm U$ with $p_i(u)\neq\infty$
+and the padding coordinates are zero, or the point obtained by setting
+the $i$th label to $\infty$ lies in $\bm U$ and the padding coordinates
+together with the new $i$th label lie on the label graph of
+$\bm{\mathbb A}_{\RES}$. If $N$ bounds the label fibres of $\bm U$ and $N'$
+those of $\bm{\mathbb A}_{\RES}$, then $N+NN'$ bounds those of
+$\theta_i\bm U$. The label of the second summand at $i$ is nonzero, and
+$\theta_i$ does not change the other labels. Hence $\theta\bm U$ has nonzero
+labels.
+
+For (2), the exact strata of $\theta_i\bm U$ are
+\[
+ (\theta_i\bm U)_J=\bm U_J\ \sqcup\ \bigl(\bm U_{J\setminus\{i\}}\times
+ \bm{\mathbb A}_{\RES}\bigr)\quad(i\in J),
+ \qquad (\theta_i\bm U)_J=\varnothing\quad(i\notin J).
+\]
+Since $\widetilde{\mathbb E}_{\mathrm g}$ is multiplicative and
+$\widetilde{\mathbb E}_{\mathrm g}([\bm{\mathbb A}_{\RES}])=L$,
+\[
+ \mathbb E_{\mathrm g}([\theta_i\bm U])
+ =\sum_{J\ni i}L^{-|J|}\widetilde{\mathbb E}_{\mathrm g}([\bm U_J])
+  +\sum_{I\not\ni i}L^{-|I|-1}L\,\widetilde{\mathbb E}_{\mathrm g}([\bm U_I])
+ =\mathbb E_{\mathrm g}([\bm U]).
+\]
+
+For (3), partition $\mathbb L_Z\bm U$ according to whether the $i$th lifted
+coordinate $x_i$ vanishes. On the piece $x_i\neq0$, forgetting the zero
+padding coordinates is a bijection onto the first summand of
+$\mathbb L_Z\theta_i\bm U$. On the piece $x_i=0$, take its product with the
+lift of $\bm{\mathbb A}_{\RES}$; reinserting the lifted padding coordinate
+in position $i$ is a bijection onto the second summand. Both maps are
+definable over $\mathbb S$, so $\mathbb L_Z\theta_i\bm U\in\VF_*$. Since
+$\mathbb E_{\mathrm g}^{\mathbb S}\circ\int$ is a ring homomorphism and
+$\mathbb E_{\mathrm g}^{\mathbb S}(\int[\mathbb L\bm{\mathbb A}_{\RES}])
+=\mathbb E_{\mathrm g}^{\mathbb S}(\int[\mathcal O])=1$, the two pieces
+retain their geometric values.
+\end{proof}
+
+\begin{thm}\label{thm:mixed}
+Let $\mathbb S$, $A,A'\in\VF_*$, $f:A\to B$, $f':A'\to B$, $A_b$, $A'_b$ and
+$\mathbb S_b$ be as in Theorem~\ref{fubini}. Suppose that for every
+$b\in B$ there are $k_b,l_b\geq0$, $\mathbb S_b$-definable presentations
+$\bm U_b$ in degree at most $k_b$ and $\bm U'_b$ in degree at most $l_b$, and
+$\mathbb S_b$-definable bijections
+\[
+ A_b\xrightarrow{\ \sim\ }\mathbb L\bm U_b,
+ \qquad
+ A'_b\xrightarrow{\ \sim\ }\mathbb L\bm U'_b .
+\]
+\begin{enumerate}
+\item If
+$\mathbb E_{\mathrm b}^{\mathbb S_b}([\bm U_b])
+ =\mathbb E_{\mathrm b}^{\mathbb S_b}([\bm U'_b])$
+in $R(\mathbb S_b)$ for every $b\in B$, then
+$\mathbb E_{\mathrm b}^{\mathbb S}(\int[A])
+ =\mathbb E_{\mathrm b}^{\mathbb S}(\int[A'])$ in $R(\mathbb S)$.
+\item If
+$\mathbb E_{\mathrm g}^{\mathbb S_b}([\bm U_b])
+ =\mathbb E_{\mathrm g}^{\mathbb S_b}([\bm U'_b])$
+in $R_g(\mathbb S_b)$ for every $b\in B$, then
+$\mathbb E_{\mathrm g}^{\mathbb S}(\int[A])
+ =\mathbb E_{\mathrm g}^{\mathbb S}(\int[A'])$ in $R_g(\mathbb S)$.
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+\emph{The bounded case.} Repeat the proof of Theorem~\ref{fubini} with the
+presentations in place of the representatives. The finite package now
+contains formulas for $\bm U_b$ and $\bm U'_b$ with their labels in
+$\RV_\infty^{k}$ and $\RV_\infty^{l}$, finite-fibre bounds, the complete
+graphs of both lift bijections, and the finite witness of the proof of
+Theorem~\ref{fubini} for the equality of the bounded values of the
+underlying RV sets: monomial charts, Euler certificates and a stabilized
+bijection as in Lemma~\ref{test}. Validity is again first order, so compactness gives a finite
+definable partition of $B$ with one package on each piece. The preparation
+of the VF base retains all RV coordinates, including the vanishing labels.
+The total RV object $\bm W$ has the structure map
+$q(\tau,u)=(s,p_\tau(u))$, now with values in
+$(\RV^\times)^d\times\RV_\infty^k$; its finiteness and the bijection
+$\mathbb L\bm W\to Y$ are proved as before. The relative Gamma calculation
+\eqref{relative:Gamma:push}, the relative torsor identity
+\eqref{fubini:relative:torsor} and the stabilized witnesses concern only the
+bounded values of RV families, which do not depend on the labels. The
+cancellation of the proof of Theorem~\ref{fubini} therefore gives equality
+of the bounded values of the two total objects. By
+Lemma~\ref{lem:mixed:lift} these are the bounded values of the integrals of
+the prepared total spaces. Finite additivity over the base partition, with
+the value $0$ on empty pieces, proves (1).
+
+\emph{The geometric case.} Fix $b$ temporarily. By
+Lemma~\ref{lem:thickening}(2), $\theta\bm U_b\in\RV[k_b]$ and
+$\theta\bm U'_b\in\RV[l_b]$ have the geometric values of $\bm U_b$ and
+$\bm U'_b$, which are equal. By the denominator-clearing step
+\eqref{geometric:fubini:clearing} there is $N\geq k_b,l_b$ such that the
+unnormalized values of
+$\theta\bm U_b\times\bm{\mathbb A}_{\RES}^{\,N-k_b}$ and
+$\theta\bm U'_b\times\bm{\mathbb A}_{\RES}^{\,N-l_b}$ are equal in
+$R(\mathbb S_b)$, and Lemma~\ref{test} supplies a finite stabilized witness
+of this equality. The finite package consists of formulas for the two
+presentations with finite-fibre bounds, the complete graphs of both lift
+bijections, the integer $N$, and this witness for the padded thickenings.
+By Lemma~\ref{lem:thickening}(1) the thickenings are given by fixed
+formulas, with a fibre bound depending only on that of the presentation and
+on one uniform bound for the label fibres of $\bm{\mathbb A}_{\RES}$.
+Validity of a fixed package is first order over the original ground, and
+the packages cover every ambient $b$. Compactness gives a finite definable
+partition $(B_j)_j$ of $B$ with one package on each piece.
+
+Work on one piece $B_j$, and write $\bm U$ and $\bm U'$ for the uniform
+presentations. The lift graphs give $\mathbb S$-definable bijections of
+$f^{-1}(B_j)$ and $(f')^{-1}(B_j)$ with $\mathbb L_{B_j}\bm U$ and
+$\mathbb L_{B_j}\bm U'$. By Lemma~\ref{lem:thickening}(3), applied once for
+every label,
+\[
+ \mathbb E_{\mathrm g}^{\mathbb S}\!\left(\int[\mathbb L_{B_j}\bm U]\right)
+ =\mathbb E_{\mathrm g}^{\mathbb S}\!\left(\int[\mathbb L_{B_j}\theta\bm U]\right),
+\]
+and similarly for $\bm U'$. The thickened presentations have degrees
+$k_b,l_b$ and nonzero labels. Together with the identity lift graphs, the
+integer $N$ and the stabilized witness, they form a fixed single-degree
+package on $B_j$. The argument after the compactness step in the proof of
+Proposition~\ref{prop:geometric:fubini} applies to it and gives
+\[
+ \mathbb E_{\mathrm g}^{\mathbb S}\!\left(\int[\mathbb L_{B_j}\theta\bm U]\right)
+ =\mathbb E_{\mathrm g}^{\mathbb S}\!\left(\int[\mathbb L_{B_j}\theta\bm U']\right).
+\]
+Combining these equalities, the restrictions of $A$ and $A'$ over $B_j$ have
+equal geometric values. Finite additivity over the pieces, with the value
+$0$ on empty pieces, proves (2).
+\end{proof}
+
+\begin{rem}
+The single-degree hypotheses of Theorem~\ref{fubini} and
+Proposition~\ref{prop:geometric:fubini} are the special cases of
+Theorem~\ref{thm:mixed} with all labels nonzero. In the geometric case the
+thickening is needed because a vanishing label changes the degree in which
+its stratum is normalized; the bounded value is insensitive to labels.
+Over the original ground, Lemma~\ref{lem:mixed:lift} shows that the value
+\eqref{mixed:geometric:value} is the geometric value of the integral of the
+lift, so the hypothesis of Theorem~\ref{thm:mixed}(2) is intrinsic whenever
+the fibre integral is available.
+\end{rem}

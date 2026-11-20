@@ -1,0 +1,271 @@
+In this section $\mathbb S$ is again a $(\VF,\Gamma)$-generated ground with
+$\Gamma_0=\dcl^{\mathrm{eq}}(\mathbb S)\cap\Gamma$ nontrivial, and
+$g=[\G_m]\in R(\mathbb S)$. We consider definable families of objects of
+$\VF_*$ indexed by a value-group parameter and compute the bounded value of
+the corresponding inflated total space.
+
+Let $n,m,s\geq0$ and let
+\[
+ \mathcal A\subseteq\Gamma^n\times K^m\times\RV_\infty^s
+\]
+be $\mathbb S$-definable, such that $\{t:(\gamma,a,t)\in\mathcal A\}$ is
+finite for every $\gamma\in\Gamma^n$ and $a\in K^m$. Write
+$A_\gamma=\{(a,t):(\gamma,a,t)\in\mathcal A\}$ for its rows. If
+$\gamma\in\Gamma_0^n$, then $A_\gamma$ is an $\mathbb S$-definable object of
+$\VF_*$. For arbitrary $\gamma\in\Gamma^n$, let $\mathbb S\langle\gamma\rangle$
+be the ground obtained by adding the coordinates of $\gamma$ to the Gamma
+parameters of $\mathbb S$; it is again $(\VF,\Gamma)$-generated, and
+$A_\gamma$ is an $\mathbb S\langle\gamma\rangle$-definable object of
+$\VF_*$. The inflated family is
+\[
+ A^{\mathrm{inf}}
+   =\{(x,a,t)\in(K^\times)^n\times K^m\times\RV_\infty^s:\
+       (\vv(x),a,t)\in\mathcal A\}.
+\]
+It is an $\mathbb S$-definable object of $\VF_*$: its RV fibre over $(x,a)$
+is the RV fibre of $\mathcal A$ over $(\vv(x),a)$. For an RV family
+$\mathcal U\subseteq\Gamma^n\times\RV_\infty^r$ we use the analogous RV
+inflation
+\[
+ \mathcal U^{\mathrm{inf}}
+   =\{(z,u)\in(\RV^\times)^n\times\RV_\infty^r:\ (\vrv(z),u)\in\mathcal U\}.
+\]
+The bounded value of an RV set is taken with any finite-to-one label, for
+instance a coordinate projection; it does not depend on that choice.
+
+\begin{thm}[Inflated-family Fubini]\label{thm:inflated}
+There are a finite $\mathbb S$-definable partition $(E_a)_{a}$ of $\Gamma^n$
+and classes $v_a\in R(\mathbb S)$ with the following properties.
+\begin{enumerate}
+\item If $A_\gamma=\varnothing$ for some $\gamma\in E_a$, then
+$A_\gamma=\varnothing$ for every $\gamma\in E_a$, and $v_a=0$.
+\item For every $a$ and every $\gamma\in E_a\cap\Gamma_0^n$,
+\[
+ \mathbb E_{\mathrm b}^{\mathbb S}\!\left(\int[A_\gamma]\right)=v_a .
+\]
+\item In $R(\mathbb S)$,
+\begin{equation}\label{inflated:fubini}
+ \mathbb E_{\mathrm b}^{\mathbb S}\!\left(\int[A^{\mathrm{inf}}]\right)
+   =g^n\sum_a\chi_{\mathrm b}(E_a)\,v_a .
+\end{equation}
+\end{enumerate}
+\end{thm}
+
+The factor $g^n$ comes from the additional $n$ valued-field coordinates of
+$A^{\mathrm{inf}}$. For $A_\gamma=X\cap\vv^{-1}(\gamma)$, with
+$X\subseteq(K^\times)^n$, the theorem still concerns the inflated total
+space rather than $X$ itself; compare the tropical motivic Fubini theorem
+\cite[Theorem 3.1.3]{NicaisePayne}. No cancellation of $g^n$ is asserted.
+
+The proof has four steps: uniform representatives over the value-group
+parameter, a relative monomial decomposition, a separate partition of the
+parameter space, and the final assembly.
+
+\medskip
+\noindent\emph{Uniform representatives.}
+
+\begin{lem}\label{lem:inflated:uniform}
+There are finitely many $\mathbb S$-definable RV families
+$\mathcal U_l\subseteq\Gamma^n\times\RV_\infty^{r_l}$, $1\leq l\leq K$, and a
+finite $\mathbb S$-definable partition $(P_l)_l$ of $\Gamma^n$ such that
+$\mathcal U_l$ lies over $P_l$, and:
+\begin{enumerate}
+\item for every $\gamma\in\Gamma^n$, $A_\gamma=\varnothing$ if and only if
+every row $\mathcal U_{l,\gamma}$ is empty;
+\item for every $\gamma\in P_l\cap\Gamma_0^n$,
+$\mathbb E_{\mathrm b}^{\mathbb S}(\int[A_\gamma])
+ =\mathbb E_{\mathrm b}^{\mathbb S}([\mathcal U_{l,\gamma}])$, and
+$\mathcal U_{l',\gamma}=\varnothing$ for $l'\neq l$;
+\item $\mathbb E_{\mathrm b}^{\mathbb S}(\int[A^{\mathrm{inf}}])
+ =\sum_l\mathbb E_{\mathrm b}^{\mathbb S}([\mathcal U_l^{\mathrm{inf}}])$.
+\end{enumerate}
+\end{lem}
+
+\begin{proof}
+Fix $\gamma\in\Gamma^n$. The lifting theorem over the generated ground
+$\mathbb S\langle\gamma\rangle$ gives an
+$\mathbb S\langle\gamma\rangle$-definable presentation in some degree
+at most $k$ in the sense of Definition~\ref{defn:mixed:presentation},
+whose underlying set $D_\gamma\subseteq\RV_\infty^{c+k}$ has its label as
+the last $k$ coordinates, together with a bound for its label fibres and an
+$\mathbb S\langle\gamma\rangle$-definable bijection
+$H_\gamma:A_\gamma\to\mathbb L D_\gamma$ given by its graph.
+
+A set definable over $\mathbb S\langle\gamma\rangle$ is the row at $\gamma$
+of an $\mathbb S$-definable family over $\Gamma^n$: replace the new Gamma
+parameters by variables, keeping the parameters of $\mathbb S$. Here the
+family is a set of actual value-group tuples, defined through the full RV
+preimage of the parameter, so no RV representative of $\gamma$ is chosen.
+Apply this to the formulas for $D_\gamma$ and for the graph of $H_\gamma$.
+For fixed formulas and a fixed bound, validity at a parameter $\gamma'$
+asserts the bound for the label fibres of the row of the first family and
+that the row of the second family is the graph of a bijection from
+$A_{\gamma'}$ onto the lift of that row. It is a first-order condition on
+$\gamma'$ over $\mathbb S$. These conditions cover $\Gamma^n$. Compactness
+gives finitely many data, and a definable disjoint refinement of their
+validity loci gives the partition $(P_l)_l$, with one datum on each $P_l$.
+Let $\mathcal U_l$ be the restriction of its first family to $P_l$.
+
+Property (1) holds because $H_\gamma$ is a bijection and a lift is empty
+exactly when its underlying set is. For $\gamma\in P_l\cap\Gamma_0^n$ the
+datum consists of $\mathbb S$-definable sets, and $H_\gamma$ is an
+$\mathbb S$-definable bijection onto $\mathbb L\mathcal U_{l,\gamma}$, so (2)
+follows from Lemma~\ref{lem:mixed:lift}. For (3), the uniform graphs give an
+$\mathbb S$-definable bijection
+\[
+ A^{\mathrm{inf}}\cap\vv^{-1}(P_l)\ \xrightarrow{\ \sim\ }\ \mathbb L\,
+ \mathcal U_l^{\mathrm{inf}},\qquad
+ (x,a,t)\longmapsto\bigl(x,H_{\vv(x)}(a,t)\bigr),
+\]
+where $\mathcal U_l^{\mathrm{inf}}$ carries the label $(z,y)$, with $y$ the
+label of the datum. Lemma~\ref{lem:mixed:lift} and finite additivity over
+the partition $(\vv^{-1}(P_l))_l$ of $A^{\mathrm{inf}}$ prove (3).
+\end{proof}
+
+\medskip
+\noindent\emph{A relative monomial decomposition.}
+
+\begin{lem}\label{lem:relative:chart}
+Let $X\subseteq(\RV^\times)^n\times(\RV^\times)^r$ be $\mathbb S$-definable,
+with coordinates $(z,u)$, such that membership of $(z,u)$ in $X$ depends on
+$z$ only through $\vrv(z)$. Then $X$ has a finite $\mathbb S$-definable
+partition $(X_i)_i$ with the following data: $N_i\in\GL_r(\Z)$, integers
+$h_i+\ell_i=r$, a nonempty $\mathbb S$-definable set
+$W_i\subseteq(\RV^\times)^{h_i}$ with $\vrv(W_i)=\{\beta_i\}$ for some
+$\beta_i\in\Gamma_0^{h_i}$, and an $\mathbb S$-definable set
+$J_i\subseteq\Gamma^n\times\Gamma^{\ell_i}$, such that, writing
+$h_{N_i}(u)=(w,y)$ with $w\in(\RV^\times)^{h_i}$,
+\begin{equation}\label{relative:monomial:chart}
+ (z,u)\in X_i\quad\Longleftrightarrow\quad
+ w\in W_i\ \text{ and }\ (\vrv(z),\vrv(y))\in J_i .
+\end{equation}
+Moreover, if $(\gamma,\eta)\in J_i$, then $(z,u)\in X$ for some $(z,u)$ with
+$\vrv(z)=\gamma$.
+\end{lem}
+
+\begin{proof}
+Apply Lemma~\ref{coh:decom} to $X$ in $n+r$ coordinates. It gives value-induced
+pieces $X'=X\cap\vrv^{-1}(D)$, matrices $M\in\GL_{n+r}(\Z)$ and
+\[
+ h_M(X')=V\times I^\sharp,\qquad V\subseteq(\RV^\times)^{m},\qquad
+ \vrv(V)=\{\beta\}.
+\]
+Each piece is invariant under multiplication of $z$ by $(\mathbf k^\times)^n$,
+because both $X$ and $D$ depend on $z$ only through its values. Let $B$ be the
+integer matrix formed by the first $m$ rows and the first $n$ columns of $M$.
+An element $c\in(\mathbf k^\times)^n$ acts on the first $m$ coordinates of
+$h_M(z,u)$ by multiplication with $h_B(c)$.
+
+The left kernel $\{y\in\Z^m:yB=0\}$ is a saturated subgroup of $\Z^m$, hence
+a direct summand. Choose $Q\in\GL_m(\Z)$ whose first $h$ rows form a basis of
+it. Then the first $h$ rows of $QB$ vanish and its remaining $p=m-h$ rows
+have trivial left kernel. An integer matrix with trivial left kernel defines
+a monomial map which is surjective on every divisible group; since $\mathbf k$
+is algebraically closed, $\mathbf k^\times$ is divisible. Hence $(\mathbf
+k^\times)^n$ acts on $h_Q(V)$ through the full group $\{1\}^h\times(\mathbf
+k^\times)^p$. Since $h_Q(V)$ has one value tuple, invariance gives
+\[
+ h_Q(V)=W\times\beta_{\mathrm{free}}^\sharp ,
+\]
+where $W$ is the projection of $h_Q(V)$ to its first $h$ coordinates.
+
+The first $h$ rows of $\operatorname{diag}(Q,1)M$ vanish in the $z$
+columns. Their restrictions to the $u$ columns form an $h\times r$ integer
+matrix $R$ with an integer right inverse, since
+$\operatorname{diag}(Q,1)M\in\GL_{n+r}(\Z)$. Rows with an integer right
+inverse extend to a matrix $N\in\GL_r(\Z)$ whose first $h$ rows are $R$.
+Write $h_N(u)=(w,y)$. Then $w$ is the first $h$ coordinates of
+$h_{\operatorname{diag}(Q,1)M}(z,u)$, and the values of all the other
+coordinates of this tuple are integral linear functions of $\vrv(z)$ and
+$\vrv(y)$, because $w$ has the fixed value tuple. Membership in the piece
+is $w\in W$ together with a condition on the values of the remaining
+coordinates. Therefore \eqref{relative:monomial:chart} holds with
+\[
+ J=\{(\vrv(z),\vrv(y)):(z,u)\in X'\},
+\]
+the value image of the piece. It is $\mathbb S$-definable, and no angular
+representative is retained as a parameter. The set $W$ is a definable
+projection, nonempty because $V$ is, and its value tuple is fixed over
+$\mathbb S$. The last assertion holds because $J$ is a value image of a
+subset of $X$.
+\end{proof}
+
+If $X\subseteq(\RV^\times)^n\times\RV_\infty^r$, apply the lemma to each
+zero pattern of the last $r$ coordinates, after deleting the zero coordinates.
+For an RV set as in the lemma and $\gamma\in\Gamma^n$, put
+$X_\gamma=\{u:\exists z\ (\vrv(z)=\gamma,\ (z,u)\in X)\}$ and
+$J_{i,\gamma}=\{\eta:(\gamma,\eta)\in J_i\}$. The coordinate change
+$(z,u)\mapsto(z,h_{N_i}(u))$ maps $X_i$ onto $W_i\times J_i^\sharp$, after a
+permutation of coordinates. The monomial evaluation
+\eqref{eq:bounded-evaluation} therefore gives
+\begin{equation}\label{relative:chart:values}
+ \mathbb E_{\mathrm b}([X])
+   =\sum_i[W_i]\,g^{n+\ell_i}\chi_{\mathrm b}(J_i),
+ \qquad
+ \mathbb E_{\mathrm b}([X_\gamma])
+   =\sum_i[W_i]\,g^{\ell_i}\chi_{\mathrm b}(J_{i,\gamma})
+ \quad(\gamma\in\Gamma_0^n),
+\end{equation}
+where the sums include the pieces of all zero patterns.
+
+\medskip
+\noindent\emph{A separate base partition.}
+The projections of the sets $J_i$ to $\Gamma^n$ need not form a partition.
+For example, in the constant family $\mathcal U_\gamma=\{1,2\rv(t),3\rv(t)\}$
+over a ground containing $t$ with $\vv(t)\neq0$, the pieces at internal values
+$0$ and $\vv(t)$ both project onto the whole parameter space. We therefore
+construct the partition of the parameter space separately.
+
+Let $J\subseteq\Gamma^n\times\Gamma^\ell$ be $\mathbb S$-definable and put
+$e(\gamma)=\chi_{\mathrm b}(J_\gamma)$, the bounded Euler characteristic of
+the slice. It is the integral over the last $\ell$ coordinates of the
+indicator of $J$. By the Gamma fibre-integration formula of
+Section~\ref{sec:setup}, together with its independence of the order of
+coordinates, $e$ is an integer function on $\Gamma^n$ with finite range and
+$\mathbb S$-definable level sets, and
+\begin{equation}\label{gamma:projection:formula}
+ \chi_{\mathrm b}(J)=\sum_{c}c\,\chi_{\mathrm b}(\{\gamma:e(\gamma)=c\}).
+\end{equation}
+If $J_\gamma=\varnothing$, then $e(\gamma)=0$.
+
+\begin{proof}[Proof of Theorem~\ref{thm:inflated}]
+Take $\mathcal U_l$ and $P_l$ from Lemma~\ref{lem:inflated:uniform}. Each
+$X^{(l)}=\mathcal U_l^{\mathrm{inf}}$ satisfies the hypothesis of
+Lemma~\ref{lem:relative:chart}, on every zero pattern of its last $r_l$
+coordinates; its row at $\gamma$ is $\mathcal U_{l,\gamma}$. Index all the
+resulting charts by pairs $(l,i)$, with data $W_{li}$, $\ell_{li}$ and
+$J_{li}$. Let $(E_a)_a$ be the common finite refinement of the level sets of
+all the functions $e_{li}(\gamma)=\chi_{\mathrm b}(J_{li,\gamma})$ and of the
+sets $\{\gamma:\mathcal U_{l,\gamma}\neq\varnothing\}$. Write $e_{li,a}$ for
+the value of $e_{li}$ on $E_a$, and put
+\[
+ c_{li}=[W_{li}]\,g^{\ell_{li}},\qquad
+ v_a=\sum_{l,i}e_{li,a}\,c_{li}\qquad\text{in }R(\mathbb S).
+\]
+
+For (3), Lemma~\ref{lem:inflated:uniform}(3), the first formula of
+\eqref{relative:chart:values} and \eqref{gamma:projection:formula} give
+\[
+ \mathbb E_{\mathrm b}\!\left(\int[A^{\mathrm{inf}}]\right)
+ =\sum_{l,i}[W_{li}]\,g^{n+\ell_{li}}\chi_{\mathrm b}(J_{li})
+ =g^n\sum_{l,i}c_{li}\sum_ae_{li,a}\chi_{\mathrm b}(E_a)
+ =g^n\sum_a\chi_{\mathrm b}(E_a)\,v_a .
+\]
+For (2), let $\gamma\in E_a\cap\Gamma_0^n$. By
+Lemma~\ref{lem:inflated:uniform}(2) and the second formula of
+\eqref{relative:chart:values},
+\[
+ \mathbb E_{\mathrm b}\!\left(\int[A_\gamma]\right)
+ =\sum_l\mathbb E_{\mathrm b}([\mathcal U_{l,\gamma}])
+ =\sum_{l,i}c_{li}\,\chi_{\mathrm b}(J_{li,\gamma})
+ =v_a .
+\]
+For (1), suppose that $A_{\gamma_0}=\varnothing$ for some $\gamma_0\in E_a$.
+Then every row $\mathcal U_{l,\gamma_0}$ is empty. Since $E_a$ refines the
+sets $\{\gamma:\mathcal U_{l,\gamma}\neq\varnothing\}$, every row
+$\mathcal U_{l,\gamma}$ with $\gamma\in E_a$ is empty, and hence
+$A_\gamma=\varnothing$. By the last assertion of
+Lemma~\ref{lem:relative:chart}, each $J_{li}$ lies over
+$\{\gamma:\mathcal U_{l,\gamma}\neq\varnothing\}$, so its slice at $\gamma_0$
+is empty and $e_{li,a}=0$. Thus $v_a=0$.
+\end{proof}

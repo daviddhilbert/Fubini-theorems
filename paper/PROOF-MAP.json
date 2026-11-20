@@ -7,7 +7,13 @@
     "The relative Gamma calculation follows unary endpoint preparation and induction on those trees.",
     "Complete witness graphs are fixed before VF preparation.",
     "Geometric denominator clearing never cancels the affine class before localization.",
-    "Variety fibres range over every ambient point in the exact generated parameter base."
+    "Variety fibres range over every ambient point in the exact generated parameter base.",
+    "Mixed-degree representatives are presented with labels in RV_infinity^k; each exact stratum is normalized in its own degree.",
+    "Geometric mixed-degree Fubini thickens each vanishing label by the affine padding object before compactness and reduces to the single-degree fixed witness.",
+    "Inflated-family representatives are chosen over the ground with the Gamma parameter adjoined, promoted to Gamma families and uniformized by compactness.",
+    "Relative charts use the saturated left kernel, divisibility of residue units and extension of right-invertible rows; the value set is the value image of the piece.",
+    "The base partition uses Gamma fibre integration and coordinate-order independence, not a polyhedral decomposition.",
+    "The torus class is sent to [A^1]-1 by the comparison; the factor g^n is retained."
   ],
   "steps": [
     {
@@ -317,6 +323,402 @@
       ]
     },
     {
+      "section": "paper/sections/mixed.tex",
+      "step": "Presentations in degree at most k and their stratum values",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.NativeWeakRVObject",
+          "file": "FubiniTheorems/Fubini/NativeWeakRVObjects.lean",
+          "line": 24,
+          "source_sha256": "fe8621f86bc673c9b203e0272f73b20f51d2bca6333851682eb7786918208bf8"
+        },
+        {
+          "name": "DiamondIntegral.Section5.nativeWeakRVObjectLift",
+          "file": "FubiniTheorems/Fubini/NativeWeakRVObjects.lean",
+          "line": 30,
+          "source_sha256": "fe8621f86bc673c9b203e0272f73b20f51d2bca6333851682eb7786918208bf8"
+        },
+        {
+          "name": "DiamondIntegral.Section5.weakStratumObject",
+          "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+          "line": 160,
+          "source_sha256": "8f7aea2504617ef956cb6a046e74810d6dba4f3691fdef6c62a73543a4e8519d"
+        },
+        {
+          "name": "DiamondIntegral.Section5.nativeRVSetValue_weak_eq_sum_strata",
+          "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+          "line": 226,
+          "source_sha256": "8f7aea2504617ef956cb6a046e74810d6dba4f3691fdef6c62a73543a4e8519d"
+        },
+        {
+          "name": "DiamondIntegral.Section5.nativeWeakGeometricValue",
+          "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+          "line": 108,
+          "source_sha256": "8f7aea2504617ef956cb6a046e74810d6dba4f3691fdef6c62a73543a4e8519d"
+        },
+        {
+          "name": "DiamondIntegral.Section5.nativeWeakGeometricValue_eq_sum_strata",
+          "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+          "line": 214,
+          "source_sha256": "8f7aea2504617ef956cb6a046e74810d6dba4f3691fdef6c62a73543a4e8519d"
+        },
+        {
+          "name": "DiamondIntegral.Section5.nativeWeakGeometricValue_toWeak",
+          "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+          "line": 119,
+          "source_sha256": "8f7aea2504617ef956cb6a046e74810d6dba4f3691fdef6c62a73543a4e8519d"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/mixed.tex",
+      "step": "Integrals of lifts of mixed degree",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.nativeVFBoundedValue_weak_lift",
+          "file": "FubiniTheorems/Fubini/NativeWeakLiftValues.lean",
+          "line": 81,
+          "source_sha256": "4432f7b1b7d3ef0fe1a7a0a7c66a71058c54af0e9af05e14eeebb8bf45ff5a42"
+        },
+        {
+          "name": "DiamondIntegral.Section5.nativeVFGeometricValue_weak_lift",
+          "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+          "line": 2067,
+          "source_sha256": "8f7aea2504617ef956cb6a046e74810d6dba4f3691fdef6c62a73543a4e8519d"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/mixed.tex",
+      "step": "Thickening of vanishing labels",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.thickAt",
+          "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+          "line": 453,
+          "source_sha256": "8f7aea2504617ef956cb6a046e74810d6dba4f3691fdef6c62a73543a4e8519d"
+        },
+        {
+          "name": "DiamondIntegral.Section5.thickFull_strict",
+          "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+          "line": 664,
+          "source_sha256": "8f7aea2504617ef956cb6a046e74810d6dba4f3691fdef6c62a73543a4e8519d"
+        },
+        {
+          "name": "DiamondIntegral.Section5.rowWeakValue_thickAt",
+          "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+          "line": 1057,
+          "source_sha256": "8f7aea2504617ef956cb6a046e74810d6dba4f3691fdef6c62a73543a4e8519d"
+        },
+        {
+          "name": "DiamondIntegral.Section5.thickFull_row_value",
+          "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+          "line": 1107,
+          "source_sha256": "8f7aea2504617ef956cb6a046e74810d6dba4f3691fdef6c62a73543a4e8519d"
+        },
+        {
+          "name": "DiamondIntegral.Section5.nativeVFGeometricValue_padLift",
+          "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+          "line": 1568,
+          "source_sha256": "8f7aea2504617ef956cb6a046e74810d6dba4f3691fdef6c62a73543a4e8519d"
+        },
+        {
+          "name": "DiamondIntegral.Section5.thickAt_vf_step",
+          "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+          "line": 1574,
+          "source_sha256": "8f7aea2504617ef956cb6a046e74810d6dba4f3691fdef6c62a73543a4e8519d"
+        },
+        {
+          "name": "DiamondIntegral.Section5.thickSeq_vf",
+          "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+          "line": 1657,
+          "source_sha256": "8f7aea2504617ef956cb6a046e74810d6dba4f3691fdef6c62a73543a4e8519d"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/mixed.tex",
+      "step": "Bounded Fubini for fibre representatives in RV[*]",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.NativeBoundedWeakVFFibreLiftEquality",
+          "file": "FubiniTheorems/Fubini/NativeWeakVFMapUniformity.lean",
+          "line": 22,
+          "source_sha256": "29ebacd354245c7fe65ef454a3e463e81ddf4cd09844b540eb627524fbbe49c3"
+        },
+        {
+          "name": "DiamondIntegral.Section5.native_weak_vf_map_whole_witness_partition",
+          "file": "FubiniTheorems/Fubini/NativeWeakVFMapPartitions.lean",
+          "line": 21,
+          "source_sha256": "c96d69e0e8555723e0950bab39e638442ef5588b25fab7347e77cd29ca41ead8"
+        },
+        {
+          "name": "DiamondIntegral.Section5.native_vf_fixed_whole_witness_fubini_weak",
+          "file": "FubiniTheorems/Fubini/NativeWeakFixedWitnessVFFubini.lean",
+          "line": 25,
+          "source_sha256": "17d0aee6df2f05d51adfde5d0d592a0c2e9d03a2f32a4cc664a0b91a5428e4fa"
+        },
+        {
+          "name": "DiamondIntegral.Section5.nativeBoundedWeakVFFubini",
+          "file": "FubiniTheorems/Fubini/NativeWeakVFFubini.lean",
+          "line": 24,
+          "source_sha256": "b9ebce88be0e2c94cdffa4aab61bad8108931e9cdcf3a7b54ab718e72cad7b7e"
+        },
+        {
+          "name": "DiamondIntegral.Section5.bounded_weak_fubini_discharged",
+          "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+          "line": 55,
+          "source_sha256": "8f7aea2504617ef956cb6a046e74810d6dba4f3691fdef6c62a73543a4e8519d"
+        },
+        {
+          "name": "DiamondIntegral.Section5.NativeBoundedVFFibreLiftEquality.toWeak",
+          "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+          "line": 2129,
+          "source_sha256": "8f7aea2504617ef956cb6a046e74810d6dba4f3691fdef6c62a73543a4e8519d"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/mixed.tex",
+      "step": "Geometric Fubini for fibre representatives in RV[*]",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.NativeGeometricWeakVFFibreLiftEquality",
+          "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+          "line": 1853,
+          "source_sha256": "8f7aea2504617ef956cb6a046e74810d6dba4f3691fdef6c62a73543a4e8519d"
+        },
+        {
+          "name": "DiamondIntegral.Section5.native_geometric_weak_vf_lift_schema_at_parameter",
+          "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+          "line": 1789,
+          "source_sha256": "8f7aea2504617ef956cb6a046e74810d6dba4f3691fdef6c62a73543a4e8519d"
+        },
+        {
+          "name": "DiamondIntegral.Section5.native_geometric_weak_vf_map_whole_witness_partition",
+          "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+          "line": 1893,
+          "source_sha256": "8f7aea2504617ef956cb6a046e74810d6dba4f3691fdef6c62a73543a4e8519d"
+        },
+        {
+          "name": "DiamondIntegral.Section5.nativeVFGeometricValue_map_fixed_weak_witness",
+          "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+          "line": 1945,
+          "source_sha256": "8f7aea2504617ef956cb6a046e74810d6dba4f3691fdef6c62a73543a4e8519d"
+        },
+        {
+          "name": "DiamondIntegral.Section5.nativeGeometricWeakVFFubini",
+          "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+          "line": 2004,
+          "source_sha256": "8f7aea2504617ef956cb6a046e74810d6dba4f3691fdef6c62a73543a4e8519d"
+        },
+        {
+          "name": "DiamondIntegral.Section5.geometric_weak_fubini_discharged",
+          "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+          "line": 2048,
+          "source_sha256": "8f7aea2504617ef956cb6a046e74810d6dba4f3691fdef6c62a73543a4e8519d"
+        },
+        {
+          "name": "DiamondIntegral.Section5.NativeGeometricVFFibreLiftEquality.toWeak",
+          "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+          "line": 1873,
+          "source_sha256": "8f7aea2504617ef956cb6a046e74810d6dba4f3691fdef6c62a73543a4e8519d"
+        },
+        {
+          "name": "DiamondIntegral.Section5.nativeGeometricVFFubini_via_weak",
+          "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+          "line": 2149,
+          "source_sha256": "8f7aea2504617ef956cb6a046e74810d6dba4f3691fdef6c62a73543a4e8519d"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/inflated.tex",
+      "step": "Gamma families, rows and inflations",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.GammaVFFamily",
+          "file": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean",
+          "line": 296,
+          "source_sha256": "d4994f54230f053ecc031961b1faa40caa3b9165f8afc314a10ea14627015088"
+        },
+        {
+          "name": "DiamondIntegral.Section5.GammaVFFamily.fibreAt",
+          "file": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean",
+          "line": 318,
+          "source_sha256": "d4994f54230f053ecc031961b1faa40caa3b9165f8afc314a10ea14627015088"
+        },
+        {
+          "name": "DiamondIntegral.Section5.GammaVFFamily.inflated",
+          "file": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean",
+          "line": 368,
+          "source_sha256": "d4994f54230f053ecc031961b1faa40caa3b9165f8afc314a10ea14627015088"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/inflated.tex",
+      "step": "Uniform representatives over value-group parameters",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.native_arbitrary_weak_rv_lift_exists",
+          "file": "FubiniTheorems/Fubini/NativeArbitraryWeakRVPresentation.lean",
+          "line": 23,
+          "source_sha256": "d83ebdfbbc8db61374c61a3e42cd9ad015ace28c722510d915c59c80113b302a"
+        },
+        {
+          "name": "DiamondIntegral.Section3.GammaGroundDefSet.exists_gamma_family",
+          "file": "FubiniTheorems/Fubini/InflatedGammaCodePromotion.lean",
+          "line": 115,
+          "source_sha256": "3b7d5b63ce429c75d3fa732d2db9d1a3351c617d8fb4698e5af4033c0eb8e44a"
+        },
+        {
+          "name": "DiamondIntegral.Section5.GammaVFFamily.exists_valid_datum",
+          "file": "FubiniTheorems/Fubini/InflatedGammaWeakLiftSchemata.lean",
+          "line": 229,
+          "source_sha256": "bb15c665264acd98d1da9ce688f694dd14a3a17cb81b591949defefb6c62bc96"
+        },
+        {
+          "name": "DiamondIntegral.Section5.GammaVFFamily.uniform_lift_catalog",
+          "file": "FubiniTheorems/Fubini/InflatedGammaWeakLiftSchemata.lean",
+          "line": 341,
+          "source_sha256": "bb15c665264acd98d1da9ce688f694dd14a3a17cb81b591949defefb6c62bc96"
+        },
+        {
+          "name": "DiamondIntegral.Section5.GammaVFFamily.row_empty_iff",
+          "file": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean",
+          "line": 408,
+          "source_sha256": "3623ee11974dd95e5666673a36517b0317d14c31ad5d4579dcf5444492f8336d"
+        },
+        {
+          "name": "DiamondIntegral.Section5.GammaVFFamily.uniform_representatives",
+          "file": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean",
+          "line": 482,
+          "source_sha256": "3623ee11974dd95e5666673a36517b0317d14c31ad5d4579dcf5444492f8336d"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/inflated.tex",
+      "step": "Relative monomial charts",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.inflated_left_kernel_block",
+          "file": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean",
+          "line": 238,
+          "source_sha256": "41fff4ed11f8568027c878745960866a17088aeb8ddbcacf7ccf8ae98cd4f1ea"
+        },
+        {
+          "name": "DiamondIntegral.Section5.inflatedMonomial_surjective_of_left_kernel",
+          "file": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean",
+          "line": 320,
+          "source_sha256": "41fff4ed11f8568027c878745960866a17088aeb8ddbcacf7ccf8ae98cd4f1ea"
+        },
+        {
+          "name": "DiamondIntegral.Section5.inflated_rows_extend_of_right_inverse",
+          "file": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean",
+          "line": 152,
+          "source_sha256": "41fff4ed11f8568027c878745960866a17088aeb8ddbcacf7ccf8ae98cd4f1ea"
+        },
+        {
+          "name": "DiamondIntegral.Section5.inflated_relative_block_chart",
+          "file": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean",
+          "line": 378,
+          "source_sha256": "41fff4ed11f8568027c878745960866a17088aeb8ddbcacf7ccf8ae98cd4f1ea"
+        },
+        {
+          "name": "DiamondIntegral.Section5.RelativeMonomialChart",
+          "file": "FubiniTheorems/Fubini/InflatedRelativeMonomialDecomposition.lean",
+          "line": 115,
+          "source_sha256": "e5d4179cc03f52bd575d7d49b725803f46ca1fed88da691c7ac68a255624b3fe"
+        },
+        {
+          "name": "DiamondIntegral.Section5.relative_monomial_decomposition",
+          "file": "FubiniTheorems/Fubini/InflatedRelativeMonomialDecomposition.lean",
+          "line": 287,
+          "source_sha256": "e5d4179cc03f52bd575d7d49b725803f46ca1fed88da691c7ac68a255624b3fe"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/inflated.tex",
+      "step": "Values of relative charts and their supports",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.RelativeMonomialChart.native_value",
+          "file": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean",
+          "line": 345,
+          "source_sha256": "80154c96b16beb49db8d9b06fa8c6334e013c9f8106a4c5ad9ca8834b7637354"
+        },
+        {
+          "name": "DiamondIntegral.Section5.RelativeMonomialChart.fibre_value",
+          "file": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean",
+          "line": 355,
+          "source_sha256": "80154c96b16beb49db8d9b06fa8c6334e013c9f8106a4c5ad9ca8834b7637354"
+        },
+        {
+          "name": "DiamondIntegral.Section5.inflatedStratum",
+          "file": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean",
+          "line": 615,
+          "source_sha256": "80154c96b16beb49db8d9b06fa8c6334e013c9f8106a4c5ad9ca8834b7637354"
+        },
+        {
+          "name": "DiamondIntegral.Section5.inflated_relative_monomial_values",
+          "file": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean",
+          "line": 763,
+          "source_sha256": "80154c96b16beb49db8d9b06fa8c6334e013c9f8106a4c5ad9ca8834b7637354"
+        },
+        {
+          "name": "DiamondIntegral.Section5.inflatedFubini_chart_support",
+          "file": "FubiniTheorems/Fubini/InflatedFamilyFubini.lean",
+          "line": 56,
+          "source_sha256": "8495a144e8197d7e8822f46b8d45f4a49a2d26afe7e6723b23da902f9f2ee5ca"
+        },
+        {
+          "name": "DiamondIntegral.Section5.inflatedFubini_relative_values",
+          "file": "FubiniTheorems/Fubini/InflatedFamilyFubini.lean",
+          "line": 95,
+          "source_sha256": "8495a144e8197d7e8822f46b8d45f4a49a2d26afe7e6723b23da902f9f2ee5ca"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/inflated.tex",
+      "step": "Separate base partition by Gamma fibre integration",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section4.GammaPrefixIntegration.integratePrefix_fibre",
+          "file": "FubiniTheorems/Prerequisites/Euler/GammaPrefixIntegration.lean",
+          "line": 43,
+          "source_sha256": "712cbd7e4cb8dd599570dc9330632762062b02c538d6cf899933297f3be872c4"
+        },
+        {
+          "name": "DiamondIntegral.Section5.gamma_common_level_partition",
+          "file": "FubiniTheorems/Fubini/InflatedGammaBasePartition.lean",
+          "line": 76,
+          "source_sha256": "df844869a795cf073fbf14aba96690e65b18657b8662b1349454c2ecac8f7b8a"
+        },
+        {
+          "name": "DiamondIntegral.Section5.inflated_gamma_base_partition",
+          "file": "FubiniTheorems/Fubini/InflatedGammaBasePartition.lean",
+          "line": 190,
+          "source_sha256": "df844869a795cf073fbf14aba96690e65b18657b8662b1349454c2ecac8f7b8a"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/inflated.tex",
+      "step": "Inflated-family Fubini assembly",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.inflated_family_fubini",
+          "file": "FubiniTheorems/Fubini/InflatedFamilyFubini.lean",
+          "line": 235,
+          "source_sha256": "8495a144e8197d7e8822f46b8d45f4a49a2d26afe7e6723b23da902f9f2ee5ca"
+        }
+      ]
+    },
+    {
       "section": "paper/sections/complex.tex",
       "step": "Finite Kummer RV actions",
       "declarations": [
@@ -331,6 +733,48 @@
           "file": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxInducedRV.lean",
           "line": 69,
           "source_sha256": "f4ed4310fbc1755407eac0963dc0d39f4dc8b407cdc466eb821d4f39888f7be7"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/complex.tex",
+      "step": "The saturated ambient and transport of the comparison",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.MonsterModels.exists_saturated_homogeneous_extension",
+          "file": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean",
+          "line": 819,
+          "source_sha256": "bf664ae2bf47db68c83a7490c30efa2649303ed201788dc4bbb84dfa4a588369"
+        },
+        {
+          "name": "DiamondIntegral.Section5.PuiseuxOriginal.exists_puiseux_ambient",
+          "file": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean",
+          "line": 1037,
+          "source_sha256": "bf664ae2bf47db68c83a7490c30efa2649303ed201788dc4bbb84dfa4a588369"
+        },
+        {
+          "name": "DiamondIntegral.Section5.PuiseuxOriginal.PuiseuxAmbient",
+          "file": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean",
+          "line": 1049,
+          "source_sha256": "bf664ae2bf47db68c83a7490c30efa2649303ed201788dc4bbb84dfa4a588369"
+        },
+        {
+          "name": "DiamondIntegral.Section5.elementaryRESReducedRestrictionEquiv",
+          "file": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean",
+          "line": 362,
+          "source_sha256": "9dd759fe79216d6bf7127d43295f9ced1f7b6313e5c719df0daa9064d2da0477"
+        },
+        {
+          "name": "DiamondIntegral.Section5.eliminateRealGammaRES_bijective",
+          "file": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean",
+          "line": 402,
+          "source_sha256": "9dd759fe79216d6bf7127d43295f9ced1f7b6313e5c719df0daa9064d2da0477"
+        },
+        {
+          "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientPuiseuxComparison_bijective",
+          "file": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean",
+          "line": 444,
+          "source_sha256": "9dd759fe79216d6bf7127d43295f9ced1f7b6313e5c719df0daa9064d2da0477"
         }
       ]
     },
@@ -360,6 +804,42 @@
     },
     {
       "section": "paper/sections/complex.tex",
+      "step": "Inflated-family volume",
+      "declarations": [
+        {
+          "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientBoundedVFVolume",
+          "file": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxAmbientVFFubiniVanishing.lean",
+          "line": 26,
+          "source_sha256": "18bc32096a9ffaa136854298c27defc8fd17d9b988873e358a5214046b940de6"
+        },
+        {
+          "name": "DiamondIntegral.Section5.PuiseuxOriginal.modifiedTorusClass",
+          "file": "FubiniTheorems/Fubini/InflatedFamilyFubiniVol.lean",
+          "line": 83,
+          "source_sha256": "d6322b5e358840e95779ae2d7c952cb3054032d3fdd67661ebd5fa59c7ac9193"
+        },
+        {
+          "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientPuiseuxComparison_nativeTorusClass",
+          "file": "FubiniTheorems/Fubini/InflatedFamilyFubiniVol.lean",
+          "line": 149,
+          "source_sha256": "d6322b5e358840e95779ae2d7c952cb3054032d3fdd67661ebd5fa59c7ac9193"
+        },
+        {
+          "name": "DiamondIntegral.Section5.PuiseuxOriginal.inflated_family_fubini_vol",
+          "file": "FubiniTheorems/Fubini/InflatedFamilyFubiniVol.lean",
+          "line": 171,
+          "source_sha256": "d6322b5e358840e95779ae2d7c952cb3054032d3fdd67661ebd5fa59c7ac9193"
+        },
+        {
+          "name": "DiamondIntegral.Section5.PuiseuxOriginal.puiseux_inflated_family_fubini_vol",
+          "file": "FubiniTheorems/Fubini/InflatedFamilyFubiniVol.lean",
+          "line": 209,
+          "source_sha256": "d6322b5e358840e95779ae2d7c952cb3054032d3fdd67661ebd5fa59c7ac9193"
+        }
+      ]
+    },
+    {
+      "section": "paper/sections/complex.tex",
       "step": "Actual variety charts and intrinsic fibres",
       "declarations": [
         {
@@ -384,21 +864,23 @@
     }
   ],
   "paper_sha256": {
-    "paper/fubini-theorems.tex": "85e1a5be6490bc57db6ed0b1ec3f4be47e3c302488d8bdbc5d9de37b2a730fed",
-    "paper/sections/bounded.tex": "8ffbb3b1e5b09af45da43966c667c139a02dca45ae6c13b21530bb7cf550f137",
-    "paper/sections/complex.tex": "ac9d31150871db95e6c573927ad0a94af8b199bd865d10515f924b9e323e3b84",
+    "paper/fubini-theorems.tex": "ea4f870d6ec8d9f57b2021821af1c5ed2f8de1f5ec9df07528a3980473622163",
+    "paper/sections/bounded.tex": "b474f495b17a59d7ed2c9a09b56f63c0f156c50129a5afb9e3890c442c8e5429",
+    "paper/sections/complex.tex": "f36f201320ba2e2ccbd410f08946c575b490b4827ffefe4a82a79b3586efcdbf",
     "paper/sections/decomposition.tex": "5dc02ec0deed7449b7b2f81f53d2fa92269375cbe99b0290f790d62d0dc9f84c",
-    "paper/sections/geometric.tex": "65aa5d8379c4bf59e1c85f4b1d009dabb9c999687874946e030b43be36ac1449",
+    "paper/sections/geometric.tex": "25df48990c156e3982b2e29f106e62652b78f41d0b0bdaf25dcfd2bf48ab73a2",
+    "paper/sections/inflated.tex": "9b39ea8ea09615cd4d74f1dca54bef124e3df5633d2be9ce2a3b356aa64075cd",
+    "paper/sections/mixed.tex": "71f025321de650cfe65f22a2dee36e5abbb83f7bfa00d1dd1e821d9331f38df8",
     "paper/sections/setup.tex": "654850e4259abea5df1bb57bd49d92ba6fe19a614d5f8aac108bdab1d6c53cbc"
   },
   "review_notes": [
-    "Paper statements and proof blocks were read against the cited Lean source routes, including the main fibre hypothesis, original parameter base, finite whole-witness compactness, actual preparation, Euler induction, stabilization, geometric padding, Kummer descent and variety charts.",
+    "Paper statements and proof blocks were read against the cited Lean source routes, including the main fibre hypothesis, original parameter base, finite whole-witness compactness, actual preparation, Euler induction, stabilization, geometric padding, Kummer descent and variety charts. The November 18 additions were read against the mixed-degree, inflated-family, ambient and volume routes.",
     "This correspondence is a manual mathematical audit, not a machine verification of prose. Bibliographical prerequisites are cited in the manuscript.",
     "Lean full-type/axiom checks have separate receipts (verification/verify.py and CI); their status is not inferred from this map."
   ],
   "bibliography_review": {
     "references": 9,
-    "scope": "References restored at the mathematical uses; Euler, QE, Newton–Puiseux, compactness and background; Nicaise–Payne is a comparison, not a proof input."
+    "scope": "References restored at the mathematical uses; Euler, QE, Newton–Puiseux, compactness, saturated models and background; Nicaise–Payne is a comparison, not a proof input."
   },
   "compiler_evidence": "verification/verify.py (writes .scratch/verification-status.json); CI workflow lean.yml"
 }

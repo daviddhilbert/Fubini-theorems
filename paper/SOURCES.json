@@ -46,12 +46,27 @@
       "name": "section5-approved-final-corollary.tex",
       "sha256": "dcead32dc41182688a44967d0d964f288062784a25fd26c3e4d3c1a61bb15257",
       "status": "approved and incorporated in the Section 5 review record"
+    },
+    {
+      "name": "section5-approved-inflated-family-fubini.tex",
+      "sha256": "0b494bc7e84ccd1e8e4c9c61657c124a4b99aeca35d02d2f8c43ad53d604d442",
+      "status": "approved (R083-R086, November 13, 2026); Notation 5.15 through Remark 5.16 of the annotated revision, incorporated in Section 6 and Corollary 7.5"
+    },
+    {
+      "name": "diamond-integral-revision-annotated.tex",
+      "sha256": "5d006b61d936dc734e38afc9e4b13eded7aba602989a46c6a863ee89c067a259",
+      "status": "complete annotated revision containing the fragment above; Lemma 5.12 onward used for the November 18 additions"
+    },
+    {
+      "name": "section5-GAP-REPAIRS.md",
+      "sha256": "51139cdf060a4677a94deb3b882d5fb532bd33b506bfbe769f0a7d71c72bbd6b",
+      "status": "November 18, 2026 audit record: Theorem 5.17 and Proposition 5.23 for RV[*] fibres, the inflated-family Fubini theorem and its Vol form, and the saturated Puiseux ambient; incorporated in Sections 5-7"
     }
   ],
   "bibliography_review": [
     {
       "key": "Eisenbud",
-      "use": "Newton\u2013Puiseux theorem, Corollary 13.15; this reference is also named by the checked Puiseux provider.",
+      "use": "Newton–Puiseux theorem, Corollary 13.15; this reference is also named by the checked Puiseux provider.",
       "url": "https://link.springer.com/book/10.1007/978-1-4612-5350-1"
     },
     {
@@ -66,12 +81,12 @@
     },
     {
       "key": "Marker",
-      "use": "Background small-parameter saturation, homogeneity and compactness.",
+      "use": "Background small-parameter saturation, homogeneity and compactness; existence of saturated strongly homogeneous elementary extensions, Section 4.3.",
       "url": "https://homepages.math.uic.edu/~marker/mt-intro.html"
     },
     {
       "key": "NicaisePayne",
-      "use": "Comparison with the tropical motivic Fubini theorem, Theorem 3.1.3; not a proof input.",
+      "use": "Comparison with the tropical motivic Fubini theorem, Theorem 3.1.3, for the relative Gamma calculation and the inflated-family theorem; not a proof input.",
       "url": "https://web.ma.utexas.edu/users/sampayne/pdf/TropicalFubini.pdf"
     },
     {

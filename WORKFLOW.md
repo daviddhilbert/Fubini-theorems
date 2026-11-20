@@ -33,3 +33,11 @@ and state their exact hypotheses. Whole-paper coverage and registration of
 every section are not required unless the author explicitly requests them.
 Consult Palomar's current guidelines and complete its checks for that selection.
 This standing author rule also applies to future formalization projects.
+
+For paper or blueprint edits, run `python3 scripts/check_anchors.py`,
+`python3 scripts/check_blueprint.py`, `leanblueprint web`,
+`python3 scripts/check_blueprint.py --rendered` and
+`python3 scripts/check_paper.py`. After a change of the Lean sources,
+`python3 scripts/check_anchors.py --write` refreshes the anchor lines and
+fingerprints; the proof map must then be reviewed again before its manuscript
+fingerprints are refreshed.

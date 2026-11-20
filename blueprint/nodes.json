@@ -341,5 +341,348 @@
     ],
     "statement": "Let $A,A'$ be finite RV-fibre VF objects over the original ground and let $f:A\\to C$, $f':A'\\to C$ be ground-definable maps to a finite mixed VF/RV base. If at every $z\\in C$ the two fibres have parameter-definable RV lifts with equal bounded RES evaluations, then $I_b([A])=I_b([A'])$. All points of the saturated target are tested, including generic points.",
     "proof": "Apply the native Fubini theorem with the proved value-group preparation theorem and the completed original-ground lifting record."
+  },
+  {
+    "id": "weak-objects",
+    "title": "Presentations in degree at most k",
+    "kind": "definition",
+    "dependencies": [
+      "ground"
+    ],
+    "declarations": [
+      {
+        "name": "DiamondIntegral.Section5.NativeWeakRVObject",
+        "file": "FubiniTheorems/Fubini/NativeWeakRVObjects.lean",
+        "line": 24
+      },
+      {
+        "name": "DiamondIntegral.Section5.nativeWeakRVObjectLift",
+        "file": "FubiniTheorems/Fubini/NativeWeakRVObjects.lean",
+        "line": 30
+      }
+    ],
+    "statement": "A presentation in degree at most $k$ over a parameter base is a definable RV set $U$ with a definable finite-to-one label $p:U\\to\\mathrm{RV}_\\infty^k$; labels may vanish. Its lift is $\\{(x,u):\\rv(x)=p(u)\\}$, and its zero VF coordinates are retained. For $I\\subseteq\\{1,\\ldots,k\\}$, the exact stratum on which precisely the labels in $I$ are nonzero is an object of $\\mathrm{RV}[|I|]$. This is the paper's $\\mathrm{RV}[*]$ convention.",
+    "proof": "The structure stores the arity, the domain, the label map and finiteness of its fibres. The lift is a ground-definable set with finite RV fibres."
+  },
+  {
+    "id": "weak-values",
+    "title": "Values of a presentation",
+    "kind": "definition",
+    "dependencies": [
+      "weak-objects",
+      "integral"
+    ],
+    "declarations": [
+      {
+        "name": "DiamondIntegral.Section5.nativeWeakGeometricValue",
+        "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+        "line": 108
+      },
+      {
+        "name": "DiamondIntegral.Section5.nativeWeakGeometricValue_eq_sum_strata",
+        "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+        "line": 214
+      },
+      {
+        "name": "DiamondIntegral.Section5.nativeVFGeometricValue_weak_lift",
+        "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+        "line": 2067
+      }
+    ],
+    "statement": "The bounded value of a presentation is the bounded value of its underlying RV set, the sum of the values of its exact strata. Its geometric value is $\\sum_I L^{-|I|}\\widetilde{\\mathbb E}_g(U_I)$: each exact stratum is normalized in its own degree. Over the original ground both are the values of the integral of the lift, and on single-degree objects they are the usual values.",
+    "proof": "The lift is an RV pullback, partitioned by the zero pattern of its VF coordinates; the piece with nonzero coordinates $I$ is the lift of $U_I$ with the other coordinates zero. A single-degree object has only the full stratum."
+  },
+  {
+    "id": "thickening",
+    "title": "Thickening of vanishing labels",
+    "kind": "lemma",
+    "dependencies": [
+      "weak-values"
+    ],
+    "declarations": [
+      {
+        "name": "DiamondIntegral.Section5.thickAt",
+        "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+        "line": 453
+      },
+      {
+        "name": "DiamondIntegral.Section5.thickFull_row_value",
+        "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+        "line": 1107
+      },
+      {
+        "name": "DiamondIntegral.Section5.thickSeq_vf",
+        "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+        "line": 1657
+      }
+    ],
+    "statement": "Replacing a vanishing label, on its zero stratum, by a point of $\\mathbb A_{\\mathrm{RES}}=\\mathbb G_m\\sqcup\\mathrm{pt}$ with its nonzero label is a first-order operation on the original-ground formulas. After all labels are thickened, the labels are nonzero and the geometric value is unchanged. Over an original-ground parameter set, the geometric value of the integral of the lift family is unchanged as well.",
+    "proof": "On strata, $U_I$ becomes $U_I\\times\\mathbb A_{\\mathrm{RES}}$ in degree $|I|+1$, and $\\widetilde{\\mathbb E}_g(\\mathbb A_{\\mathrm{RES}})=L$. On lifts, the zero stratum of the coordinate is replaced by its product with $\\mathcal O^\\times\\sqcup(1+\\mathcal M)$, whose integral has geometric value $1$."
+  },
+  {
+    "id": "weak-bounded",
+    "title": "Bounded Fubini with RV[*] fibres",
+    "kind": "theorem",
+    "dependencies": [
+      "weak-values",
+      "lifting",
+      "linear",
+      "catalog",
+      "preparation",
+      "relative-gamma",
+      "res-witness",
+      "preimages",
+      "additivity"
+    ],
+    "declarations": [
+      {
+        "name": "DiamondIntegral.Section5.nativeBoundedWeakVFFubini",
+        "file": "FubiniTheorems/Fubini/NativeWeakVFFubini.lean",
+        "line": 24
+      },
+      {
+        "name": "DiamondIntegral.Section5.bounded_weak_fubini_discharged",
+        "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+        "line": 55
+      }
+    ],
+    "statement": "Let $A,A'$ be finite RV-fibre VF objects over the original ground and let $f:A\\to C$, $f':A'\\to C$ be ground-definable maps. Suppose that at every $z\\in C$ the two fibres are definably bijective, over the ground with $z$ adjoined, to lifts of presentations in degrees at most $k$ and $l$ whose underlying RV sets have equal bounded values. Then the bounded values of $A$ and $A'$ agree.",
+    "proof": "The proof of bounded Fubini applies with vanishing labels retained: whole witnesses with labels in $\\mathrm{RV}_\\infty$, compactness, preparation, the relative Gamma push and stabilized RES witnesses. Bounded values do not depend on labels. Single-degree hypotheses are a special case."
+  },
+  {
+    "id": "geometric-fixed",
+    "title": "Geometric equality on one witness piece",
+    "kind": "lemma",
+    "dependencies": [
+      "preparation",
+      "relative-gamma",
+      "res-witness"
+    ],
+    "declarations": [
+      {
+        "name": "DiamondIntegral.Section5.nativeGroundGeometricRetraction_eq_iff_common_degree",
+        "file": "FubiniTheorems/Fubini/NativeGeometricPadding.lean",
+        "line": 103
+      },
+      {
+        "name": "DiamondIntegral.Section5.native_vf_fixed_geometric_whole_witness_fubini",
+        "file": "FubiniTheorems/Fubini/NativeFixedGeometricWitnessVFFubini.lean",
+        "line": 30
+      }
+    ],
+    "statement": "Equality of normalized geometric values is equivalent to equality after padding to a common degree. If a single-degree geometric whole witness, consisting of both RV schemas, both lift graphs, a common degree and a stabilized RES certificate for the padded objects, is valid on a ground-definable target piece, then the geometric values of the two source preimages agree.",
+    "proof": "Denominators are cleared by a power of $L$ without cancellation before localization. Affine padding, retained RV coordinates and base zero strata give a common total degree, and the relative Gamma calculation with the geometric Euler characteristic gives equality."
+  },
+  {
+    "id": "weak-geometric",
+    "title": "Geometric Fubini with RV[*] fibres",
+    "kind": "theorem",
+    "dependencies": [
+      "thickening",
+      "geometric-fixed",
+      "lifting",
+      "linear",
+      "catalog",
+      "preimages",
+      "additivity"
+    ],
+    "declarations": [
+      {
+        "name": "DiamondIntegral.Section5.nativeGeometricWeakVFFubini",
+        "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+        "line": 2004
+      },
+      {
+        "name": "DiamondIntegral.Section5.geometric_weak_fubini_discharged",
+        "file": "FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean",
+        "line": 2048
+      }
+    ],
+    "statement": "With $A,A',f,f'$ as above, suppose that at every $z\\in C$ the two fibres are definably bijective to lifts of presentations whose stratumwise normalized geometric values agree in the affine-localized RES target over the ground with $z$ adjoined. Then the geometric values of $A$ and $A'$ agree.",
+    "proof": "Thicken all vanishing labels, clear denominators to a common degree, and fix complete witnesses, including both lift graphs, before preparation. Compactness gives a finite target partition; on each piece the thickened presentations with identity lift graphs form a single-degree witness. Finite additivity assembles the pieces."
+  },
+  {
+    "id": "gamma-family",
+    "title": "Value-group families and their inflation",
+    "kind": "definition",
+    "dependencies": [
+      "objects"
+    ],
+    "declarations": [
+      {
+        "name": "DiamondIntegral.Section5.GammaVFFamily",
+        "file": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean",
+        "line": 296
+      },
+      {
+        "name": "DiamondIntegral.Section5.GammaVFFamily.inflated",
+        "file": "FubiniTheorems/Fubini/InflatedGammaFamilyRows.lean",
+        "line": 368
+      }
+    ],
+    "statement": "A family $\\mathcal A\\subseteq\\Gamma^n\\times\\mathrm{VF}^m\\times\\mathrm{RV}^s$ definable over the original ground has finite RV fibres over $\\Gamma^n\\times\\mathrm{VF}^m$. Its row $A_\\gamma$ is an object over the ground when every coordinate of $\\gamma$ is definable there. Its inflation is $A^{\\mathrm{inf}}=\\{(x,a,t):x\\in(\\mathrm{VF}^\\times)^n,\\ (v(x),a,t)\\in\\mathcal A\\}$.",
+    "proof": "Definability of the rows and of the inflation is proved through full RV code preimages of the value-group coordinates; no representative is named."
+  },
+  {
+    "id": "uniform-reps",
+    "title": "Uniform representatives over value-group parameters",
+    "kind": "lemma",
+    "dependencies": [
+      "gamma-family",
+      "lifting",
+      "weak-values"
+    ],
+    "declarations": [
+      {
+        "name": "DiamondIntegral.Section5.GammaVFFamily.uniform_representatives",
+        "file": "FubiniTheorems/Fubini/InflatedGammaUniformRepresentatives.lean",
+        "line": 482
+      }
+    ],
+    "statement": "There are finitely many original-ground RV families $\\mathcal U_l\\subseteq\\Gamma^n\\times\\mathrm{RV}^{r_l}$ over a definable partition $(P_l)$ of $\\Gamma^n$ with three properties. A row of $\\mathcal A$ is empty exactly when all rows of the $\\mathcal U_l$ are. At a definable $\\gamma\\in P_l$, the bounded value of $A_\\gamma$ is that of the row of $\\mathcal U_l$. The bounded value of $A^{\\mathrm{inf}}$ is the sum of those of the RV inflations of the $\\mathcal U_l$.",
+    "proof": "At each $\\gamma$, choose a lift over the ground with $\\gamma$ adjoined, promote its formulas to value-group families, and use compactness for the first-order validity of a datum. Actual bijections give both value identities."
+  },
+  {
+    "id": "relative-chart",
+    "title": "Relative monomial charts",
+    "kind": "lemma",
+    "dependencies": [
+      "monomial"
+    ],
+    "declarations": [
+      {
+        "name": "DiamondIntegral.Section5.inflated_relative_block_chart",
+        "file": "FubiniTheorems/Fubini/InflatedIntegerBlockReduction.lean",
+        "line": 378
+      },
+      {
+        "name": "DiamondIntegral.Section5.relative_monomial_decomposition",
+        "file": "FubiniTheorems/Fubini/InflatedRelativeMonomialDecomposition.lean",
+        "line": 287
+      }
+    ],
+    "statement": "Let an original-ground $X\\subseteq(\\mathrm{RV}^\\times)^n\\times(\\mathrm{RV}^\\times)^r$ depend on $z$ only through $\\operatorname{vrv}(z)$. Then $X$ has a finite definable partition into charts. Each chart has $N\\in\\mathrm{GL}_r(\\mathbb Z)$ acting on $u$ alone, a nonempty residue set $W$ with one definable value tuple, and a value set $J\\subseteq\\Gamma^n\\times\\Gamma^\\ell$: $(z,u)$ lies in the chart if and only if the fixed coordinates of $Nu$ lie in $W$ and $(\\operatorname{vrv}z,\\operatorname{vrv}(Nu)_{\\mathrm{free}})\\in J$.",
+    "proof": "Apply the monomial decomposition, reduce the $z$ block by its saturated left kernel, use divisibility of residue units, and extend the right-invertible rows to $N$. The value set is the value image of the piece."
+  },
+  {
+    "id": "relative-values",
+    "title": "Values of relative charts",
+    "kind": "lemma",
+    "dependencies": [
+      "relative-chart"
+    ],
+    "declarations": [
+      {
+        "name": "DiamondIntegral.Section5.inflated_relative_monomial_values",
+        "file": "FubiniTheorems/Fubini/InflatedRelativeMonomialValues.lean",
+        "line": 763
+      }
+    ],
+    "statement": "The bounded value of $X$ is $\\sum_i[W_i]g^{n+\\ell_i}\\chi_b(J_i)$, and for a definable $\\gamma$ the bounded value of its row is $\\sum_i[W_i]g^{\\ell_i}\\chi_b(J_{i,\\gamma})$. Zero coordinates are treated stratum by stratum, and each $J_i$ lies over the support of $X$.",
+    "proof": "The coordinate change maps each chart onto $W_i\\times J_i^\\sharp$ after a permutation; apply the monomial evaluation of the bounded retraction."
+  },
+  {
+    "id": "base-partition",
+    "title": "A separate base partition",
+    "kind": "lemma",
+    "dependencies": [
+      "ground"
+    ],
+    "declarations": [
+      {
+        "name": "DiamondIntegral.Section5.inflated_gamma_base_partition",
+        "file": "FubiniTheorems/Fubini/InflatedGammaBasePartition.lean",
+        "line": 190
+      }
+    ],
+    "statement": "For finitely many definable $J_i\\subseteq\\Gamma^n\\times\\Gamma^{\\ell_i}$ and definable $D_k\\subseteq\\Gamma^n$ there is a finite definable partition $(E_a)$ of $\\Gamma^n$ refining the $D_k$, on which every slice Euler characteristic $\\chi_b(J_{i,\\gamma})$ is a constant $e_{ia}$, zero for empty slices. Moreover $\\chi_b(J_i)=\\sum_a e_{ia}\\chi_b(E_a)$.",
+    "proof": "The slice Euler characteristic is the prefix integral of the indicator of $J_i$, a finite-range integer family with definable level sets. Gamma fibre integration and independence of the coordinate order give the sum formula."
+  },
+  {
+    "id": "inflated",
+    "title": "Inflated-family Fubini",
+    "kind": "theorem",
+    "dependencies": [
+      "uniform-reps",
+      "relative-values",
+      "base-partition",
+      "integral"
+    ],
+    "declarations": [
+      {
+        "name": "DiamondIntegral.Section5.inflated_family_fubini",
+        "file": "FubiniTheorems/Fubini/InflatedFamilyFubini.lean",
+        "line": 235
+      }
+    ],
+    "statement": "There are a finite definable partition $(E_a)$ of $\\Gamma^n$ and classes $v_a$ in the RES quotient over the ground with three properties. Empty rows fill whole pieces, on which $v_a=0$. The bounded value of $A_\\gamma$ is $v_a$ for every definable $\\gamma\\in E_a$. The bounded value of $A^{\\mathrm{inf}}$ is $g^n\\sum_a\\chi_b(E_a)v_a$, where $g=[\\mathbb G_m]$.",
+    "proof": "Take uniform representatives, relative charts of their inflations, and a base partition refining their supports and the level sets of the slice Euler characteristics. Put $v_a=\\sum_{l,i}e_{li,a}[W_{li}]g^{\\ell_{li}}$ and assemble."
+  },
+  {
+    "id": "ambient",
+    "title": "The saturated Puiseux ambient",
+    "kind": "lemma",
+    "dependencies": [
+      "ground"
+    ],
+    "declarations": [
+      {
+        "name": "DiamondIntegral.Section5.MonsterModels.exists_saturated_homogeneous_extension",
+        "file": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean",
+        "line": 819
+      },
+      {
+        "name": "DiamondIntegral.Section5.PuiseuxOriginal.exists_puiseux_ambient",
+        "file": "FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean",
+        "line": 1037
+      }
+    ],
+    "statement": "For every language and every regular cardinal $\\kappa$, every nonempty structure has a $\\kappa$-saturated, strongly $\\kappa$-homogeneous elementary extension. Consequently the concrete Puiseux model has an elementary extension with a ground generated by the Laurent coefficients, as required by the volume and the variety corollary.",
+    "proof": "Iterate an ultrapower step indexed by finite sets of conditions along $\\kappa$, taking directed colimits of elementary embeddings. The theorem of {\\L}o\\'s realizes types and extends partial elementary maps; regularity gives saturation, and back-and-forth gives strong homogeneity."
+  },
+  {
+    "id": "theta",
+    "title": "The comparison in an ambient",
+    "kind": "lemma",
+    "dependencies": [
+      "ambient"
+    ],
+    "declarations": [
+      {
+        "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientPuiseuxComparison_bijective",
+        "file": "FubiniTheorems/Decomposition/ElementaryRESExtension.lean",
+        "line": 444
+      },
+      {
+        "name": "DiamondIntegral.Section5.PuiseuxOriginal.ambientPuiseuxComparison_nativeTorusClass",
+        "file": "FubiniTheorems/Fubini/InflatedFamilyFubiniVol.lean",
+        "line": 149
+      }
+    ],
+    "statement": "In every elementary ambient of the Puiseux model, the comparison $\\Theta$ from the RES quotient over the Laurent coefficients to $K_0^{\\widehat\\mu}(\\mathrm{Var}_{\\mathbb C})$ is a ring isomorphism, and $\\Theta(g)=[\\mathbb A^1]-1$.",
+    "proof": "Elimination of real-definable Gamma names and the elementary restriction to the Puiseux model are inverted by extension of formulas, and the concrete comparison is bijective. The torus class is followed through these maps to the punctured affine line with the trivial action."
+  },
+  {
+    "id": "inflated-vol",
+    "title": "Inflated-family volume",
+    "kind": "theorem",
+    "dependencies": [
+      "inflated",
+      "theta"
+    ],
+    "declarations": [
+      {
+        "name": "DiamondIntegral.Section5.PuiseuxOriginal.inflated_family_fubini_vol",
+        "file": "FubiniTheorems/Fubini/InflatedFamilyFubiniVol.lean",
+        "line": 171
+      },
+      {
+        "name": "DiamondIntegral.Section5.PuiseuxOriginal.puiseux_inflated_family_fubini_vol",
+        "file": "FubiniTheorems/Fubini/InflatedFamilyFubiniVol.lean",
+        "line": 209
+      }
+    ],
+    "statement": "Over $\\mathbb C((t))$, with $\\mathrm{Vol}=\\Theta\\circ\\mathbb E_b\\circ\\int$, the same partition satisfies $\\mathrm{Vol}(A_\\gamma)=\\Theta(v_a)$ at every $\\gamma\\in E_a$ with ground-definable, that is rational, coordinates, and $\\mathrm{Vol}(A^{\\mathrm{inf}})=[\\mathbb G_m]^n\\sum_a\\chi_b(E_a)\\Theta(v_a)$. The statement is instantiated in the constructed ambient.",
+    "proof": "Apply the ring homomorphism $\\Theta$ to the inflated-family theorem and use $\\Theta(g)=[\\mathbb G_m]$."
   }
 ]

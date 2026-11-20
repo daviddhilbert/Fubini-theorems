@@ -5,7 +5,15 @@
 Lean formalization of the active results of Section 5 of Forey and Yin's
 *Bounded integral and motivic Milnor fiber*, including the monomial decomposition,
 canonical Puiseux-model comparison, bounded and geometric Fubini theorems,
-and the variety corollary, with all of their local prerequisites.
+the inflated-family Fubini theorem, and the variety corollary, with all of
+their local prerequisites.
+
+The [mathematical paper](paper/fubini-theorems.tex) is available as a
+[compiled PDF](output/pdf/fubini-theorems.pdf). Its proof steps follow the
+checked Lean routes; [the separate proof map](paper/PROOF-MAP.json) records
+32 steps and 109 declaration anchors. The [Lean blueprint](blueprint/README.md)
+has 33 selected nodes with 50 source links; after rendering, open
+`blueprint/web/index.html` for the statements and clickable dependency graph.
 
 The proof implementation is independent of the diamond-integral package.
 It uses exact revisions of hilbert-mathlib, ACVF-QE, special-transformations,
@@ -40,6 +48,11 @@ Original names are retained so existing mathematical clients keep compiling.
 | Theorem 5.17: bounded Fubini | `bounded_fubini_discharged` | [Section5DischargedInputs](FubiniTheorems/Fubini/Section5DischargedInputs.lean) |
 | Geometric Fubini | `geometric_fubini_discharged` | [Section5DischargedInputs](FubiniTheorems/Fubini/Section5DischargedInputs.lean) |
 | Variety corollary | `PuiseuxOriginal.corollary_global_vanishing_discharged` | [VarietyCorollaryDischarged](FubiniTheorems/Corollaries/VarietyCorollaryDischarged.lean) |
+| Theorem 5.17 for RV[*] fibres | `bounded_weak_fubini_discharged` | [WeakDegreeFubiniDischarged](FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean) |
+| Geometric Fubini for RV[*] fibres | `geometric_weak_fubini_discharged` | [WeakDegreeFubiniDischarged](FubiniTheorems/Fubini/WeakDegreeFubiniDischarged.lean) |
+| Inflated-family Fubini | `inflated_family_fubini` | [InflatedFamilyFubini](FubiniTheorems/Fubini/InflatedFamilyFubini.lean) |
+| Inflated-family volume | `PuiseuxOriginal.inflated_family_fubini_vol` | [InflatedFamilyFubiniVol](FubiniTheorems/Fubini/InflatedFamilyFubiniVol.lean) |
+| Saturated Puiseux ambient | `PuiseuxOriginal.exists_puiseux_ambient` | [PuiseuxMonsterAmbient](FubiniTheorems/Comparison/PuiseuxModels/PuiseuxMonsterAmbient.lean) |
 
 The source statements retain their actual model, base and parameter hypotheses.
 The public contract verifier checks their full types together with all
@@ -52,6 +65,17 @@ lake exe cache get
 lake build FubiniTheorems
 python3 verification/verify.py
 ```
+
+The paper and blueprint checks need only Python:
+
+```sh
+python3 scripts/check_anchors.py
+python3 scripts/check_blueprint.py
+python3 scripts/check_paper.py --verified-types
+```
+
+The last check uses the receipt written by `verification/verify.py`. The
+blueprint workflow also renders the blueprint with `leanblueprint`.
 
 Lean 4.35.0 and Mathlib 56a005855ea17e0b0958f73ec801ae140b0a1679 are pinned.
 CI compiles the library, checks all source fingerprints, and compares the
