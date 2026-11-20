@@ -34,13 +34,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    outputs:
+      pages: ${{ steps.pages.outcome }}
     steps:
       - uses: actions/checkout@v5
         with:
           persist-credentials: false
           fetch-depth: 0
       - uses: actions/configure-pages@v5
+        id: pages
         if: github.ref == 'refs/heads/main'
+        continue-on-error: true
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
@@ -65,12 +69,12 @@ jobs:
           name: fubini-blueprint
           path: blueprint/web
       - uses: actions/upload-pages-artifact@v4
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main' && steps.pages.outcome == 'success'
         with:
           path: blueprint/web
 
   deploy:
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && needs.build.outputs.pages == 'success'
     needs: build
     runs-on: ubuntu-latest
     timeout-minutes: 10
