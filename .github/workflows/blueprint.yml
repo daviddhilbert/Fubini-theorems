@@ -2,7 +2,7 @@ name: Fubini blueprint
 
 on:
   push:
-    branches: [main, codex/palomar-blueprint]
+    branches: [main]
     paths:
       - "blueprint/**"
       - "FubiniTheorems/**"
@@ -12,6 +12,8 @@ on:
       - "lake-manifest.json"
       - "SOURCE-MANIFEST.json"
       - "verification/public-contract.json"
+      - "scripts/check_anchors.py"
+      - "scripts/lean_anchors.py"
       - "scripts/check_blueprint.py"
       - "scripts/check_paper.py"
       - "paper/**"
@@ -36,6 +38,7 @@ jobs:
       - uses: actions/checkout@v5
         with:
           persist-credentials: false
+          fetch-depth: 0
       - uses: actions/configure-pages@v5
         if: github.ref == 'refs/heads/main'
       - uses: actions/setup-python@v6
@@ -50,6 +53,7 @@ jobs:
       - name: Render and validate the blueprint
         run: |
           python -m pip install -r blueprint/requirements.txt
+          python scripts/check_anchors.py
           python scripts/check_blueprint.py
           leanblueprint web
           python scripts/check_blueprint.py --rendered

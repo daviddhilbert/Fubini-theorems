@@ -3,15 +3,15 @@ This blueprint follows the proof of Theorem 5.17 of Forey and Yin,
 \emph{Bounded integral and motivic Milnor fiber},
 \href{https://arxiv.org/abs/1910.12764v2}{arXiv:1910.12764v2}.
 It records selected mathematical dependencies, not the full expression-level
-Lean dependency graph. The only intended Palomar headline is bounded Fubini.
+Lean dependency graph.
 
-Source links are fixed at the checked module revision
-\texttt{58506df2ed62eafc66d3cb00be8ee24c57597449}.
-The local library build (13,021 jobs) and all 10,566 unchanged full public
-signature and axiom comparisons passed. The
-\href{https://github.com/daviddhilbert/Fubini-theorems/blob/58506df2ed62eafc66d3cb00be8ee24c57597449/palomar/module-verification.json}{source/type receipt}
-records that evidence. Independent Challenge, Comparator and kernel checks
-are recorded separately in the Palomar preparation status.
+Source links are fixed at the checked library revision
+\texttt{f14caef6822b4600e74cefaf93905ca94c758fe6}.
+The library build (13,134 jobs) and all 11,195 unchanged full public
+signature and axiom comparisons passed; only \texttt{propext},
+\texttt{Classical.choice} and \texttt{Quot.sound} occur. The
+\href{https://github.com/daviddhilbert/Fubini-theorems/blob/f14caef6822b4600e74cefaf93905ca94c758fe6/verification/public-contract.json}{public contract}
+records the checked signatures and axiom inventories.
 
 The language names RV inversion and has a single absorbing RV zero.
 Mathlib's multiplicative valuation order reverses the paper's additive order.
@@ -255,5 +255,5 @@ Let $A,A'$ be finite RV-fibre VF objects over the original ground and let $f:A\t
 
 \begin{proof}
 \uses{ground, linear, lifting, integral, fibre, native}
-Apply the native Fubini theorem with the proved value-group preparation theorem and completed original-ground lifting record. This is the only selected Palomar result. Geometric Fubini, Puiseux comparisons and the variety corollary remain in the library but are not separate challenge claims.
+Apply the native Fubini theorem with the proved value-group preparation theorem and the completed original-ground lifting record.
 \end{proof}

@@ -11,14 +11,7 @@ def check(rendered=False):
     for name,digest in receipt['sha256'].items():
         path=ROOT/name
         assert path.is_file(),f'Missing proof input: {name}'
-        actual = path.read_bytes()
-        extension = receipt.get('statement_library_extension') if name == 'lakefile.toml' else None
-        if extension:
-            assert hashlib.sha256(actual).hexdigest() == extension['lakefile_sha256'], 'Statement-library configuration changed'
-            suffix = extension['suffix'].encode()
-            assert actual.endswith(suffix), 'Invalid statement-library extension'
-            actual = actual[:-len(suffix)]
-        assert hashlib.sha256(actual).hexdigest()==digest,f'Proof input changed: {name}; review and refresh blueprint evidence'
+        assert hashlib.sha256(path.read_bytes()).hexdigest()==digest,f'Proof input changed: {name}; review and refresh blueprint evidence'
     assert ({str(p.relative_to(ROOT)).replace('\\','/') for p in (ROOT/'FubiniTheorems').rglob('*.lean')} | {'FubiniTheorems.lean'})=={p for p in receipt['sha256'] if p.endswith('.lean')}
     nodes=json.loads((BP/'nodes.json').read_text(encoding='utf-8'))
     ids={n['id'] for n in nodes};assert len(ids)==len(nodes),'Duplicate graph labels'

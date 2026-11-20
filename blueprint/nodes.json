@@ -8,7 +8,7 @@
       {
         "name": "DiamondIntegral.Section3.GammaGroundContext",
         "file": "FubiniTheorems/Prerequisites/Grothendieck/GammaGroundContext.lean",
-        "line": 28
+        "line": 22
       }
     ],
     "statement": "Work in a canonical tagged RV model of ACVF of equicharacteristic zero. The ground context records an uncountable cardinal $\\kappa$, $\\kappa$-saturation and strong homogeneity, a VF-generated real substructure, and a subgroup of the value group containing the values of its RV elements. Both parameter parts have cardinality less than $\\kappa$. The complete Gamma ground is nontrivial; nontriviality is not required already in its VF-generated real part.",
@@ -25,7 +25,7 @@
       {
         "name": "DiamondIntegral.Section3.GammaGroundFiniteVFObject",
         "file": "FubiniTheorems/Prerequisites/Grothendieck/GammaGroundFiniteVFObjects.lean",
-        "line": 26
+        "line": 20
       }
     ],
     "statement": "An object is a ground-definable subset of $\\mathrm{VF}^{n}\\times\\mathrm{RV}^{r}$ whose RV fibre over each VF tuple is finite. The VF and RV arities may be zero. This finiteness condition does not impose valuative boundedness on the VF coordinates. Morphisms used in the theorem are ground-definable maps to a common, arbitrary finite mixed VF/RV base.",
@@ -42,7 +42,7 @@
       {
         "name": "DiamondIntegral.Section5.GammaQE.gamma_piecewise_rational_affine",
         "file": "FubiniTheorems/Decomposition/GammaQEFiniteLaws.lean",
-        "line": 31
+        "line": 25
       }
     ],
     "statement": "The value-group piecewise rational-affine input used by the bounded evaluation is supplied by a theorem. The public Fubini result does not take that preparation principle as an additional mathematical assumption.",
@@ -59,7 +59,7 @@
       {
         "name": "DiamondIntegral.Section5.completed18GroundLiftInput",
         "file": "FubiniTheorems/Fubini/Completed18GroundLiftInput.lean",
-        "line": 52
+        "line": 46
       }
     ],
     "statement": "Construct the unmeasured lifting input, including the lift-class equation, surjectivity and kernel, over the original VF/Gamma ground. These fields are proved inputs to the integral, rather than a hypothesis assuming the Fubini conclusion.",
@@ -78,12 +78,12 @@
       {
         "name": "DiamondIntegral.Section5.nativeVFBoundedValue",
         "file": "FubiniTheorems/Fubini/NativeVFIntegral.lean",
-        "line": 88
+        "line": 82
       },
       {
         "name": "DiamondIntegral.Section5.section5BoundedVFIntegral",
         "file": "FubiniTheorems/Fubini/Section5DischargedInputs.lean",
-        "line": 33
+        "line": 27
       }
     ],
     "statement": "The invariant of a VF class is the composite of unmeasured VF integration, the ordinary RV normalization and bounded Euler reduction to the dimension-free RES ring. Write this composite as $I_b$. It is a ring homomorphism on the VF Grothendieck ring. The subscript refers to bounded value-group Euler characteristic; this is the unmeasured Section 5 invariant.",
@@ -101,7 +101,7 @@
       {
         "name": "DiamondIntegral.Section5.NativeBoundedVFFibreLiftEquality",
         "file": "FubiniTheorems/Fubini/NativeVFMapWitnessUniformity.lean",
-        "line": 32
+        "line": 26
       }
     ],
     "statement": "For each point $z$ of the mixed target, adjoin its coordinates to the real parameter set and keep the Gamma parameters fixed. Require RV objects $U_z,V_z$, definable over that parameter base, and actual definable bijections from the two VF fibres onto their lifts. Require equality of the two bounded RV evaluations in the same intrinsic parameter-relative RES ring.",
@@ -118,7 +118,7 @@
       {
         "name": "DiamondIntegral.Section5.native_vf_map_finite_whole_witness_catalog",
         "file": "FubiniTheorems/Fubini/NativeVFMapWitnessUniformity.lean",
-        "line": 53
+        "line": 47
       }
     ],
     "statement": "The pointwise fibre hypothesis yields finitely many formula-coded packages covering the target. A package includes both RV objects, both whole lifting graphs and the certificate of bounded RES equality. All formula codes remain over the original ground.",
@@ -135,7 +135,7 @@
       {
         "name": "DiamondIntegral.Section5.native_vf_map_whole_witness_partition",
         "file": "FubiniTheorems/Fubini/NativeVFMapWitnessPartitions.lean",
-        "line": 31
+        "line": 25
       }
     ],
     "statement": "Refine the finite witness cover into a finite disjoint ground-definable partition of the target. Every nonempty piece has one whole witness package valid at all its points. Empty pieces are explicitly permitted.",
@@ -153,7 +153,7 @@
       {
         "name": "DiamondIntegral.Section5.monomial_decomposition_5_12",
         "file": "FubiniTheorems/Decomposition/MonomialMatrixForm.lean",
-        "line": 102
+        "line": 96
       }
     ],
     "statement": "A nonzero RV set has a finite partition induced by value-support pieces. A unimodular integer monomial change of coordinates identifies each piece with $V\\times I^\\sharp$, where $V$ has one value tuple and $I$ is a Gamma-definable set. All pieces remain definable over the original ground.",
@@ -170,7 +170,7 @@
       {
         "name": "DiamondIntegral.Section5.RESFiniteWitness.res_finite_stabilized_equality",
         "file": "FubiniTheorems/Comparison/RESFiniteWitness.lean",
-        "line": 94
+        "line": 88
       }
     ],
     "statement": "Equality of two positive RES classes in the reduced ungraded ring is witnessed by one common positive stabilizer, finitely many oriented value-torsor relations with RES coefficients, and an actual definable bijection between the resulting tagged sums.",
@@ -187,12 +187,12 @@
       {
         "name": "DiamondIntegral.Section5.finite_cylindrical_euler_certificate",
         "file": "FubiniTheorems/Decomposition/CylindricalEulerCertificates.lean",
-        "line": 118
+        "line": 112
       },
       {
         "name": "DiamondIntegral.Section5.original_euler_certificate_exists",
         "file": "FubiniTheorems/Decomposition/OriginalEulerCertificateExistence.lean",
-        "line": 60
+        "line": 54
       }
     ],
     "statement": "A Gamma-definable fibre admits a finite disjoint cylindrical decomposition with original-language formulas for its endpoint graphs and validity. Its bounded Euler integer is the sum of shape values, using factors $1,-1,0,1$ for graphs, bands, open rays and lines.",
@@ -210,12 +210,12 @@
       {
         "name": "DiamondIntegral.Section5.native_cylinder_fubini",
         "file": "FubiniTheorems/Fubini/NativeCylinderFubini.lean",
-        "line": 29
+        "line": 23
       },
       {
         "name": "DiamondIntegral.Section5.native_relative_gamma_fubini_partition",
         "file": "FubiniTheorems/Fubini/NativeRelativeGammaFubini.lean",
-        "line": 30
+        "line": 24
       }
     ],
     "statement": "For an RV base $X$, a definable family $J_x\\subseteq\\Gamma^r$, and its full RV lift $Y$, the bounded value is $\\mathbb E_b[Y]=g^r\\sum_e e\\mathbb E_b[X_e]$, where $X_e=\\{x:\\chi_b(J_x)=e\\}$ and $g=[\\mathbf k^\\times]$. The sum and the level-set partition are finite.",
@@ -234,7 +234,7 @@
       {
         "name": "DiamondIntegral.Section5.prepare_native_vf_lift_RV_data",
         "file": "FubiniTheorems/Fubini/NativeVFLiftRVPreparation.lean",
-        "line": 62
+        "line": 56
       }
     ],
     "statement": "One genuine special-bijection preparation makes the two RV representative domains, their full label graphs, the base predicate, and the complete stabilized evaluation witness depend on the VF base only through its prepared RV key. Every old RV parameter is retained.",
@@ -254,12 +254,12 @@
       {
         "name": "DiamondIntegral.Section5.native_vf_fixed_whole_witness_fubini",
         "file": "FubiniTheorems/Fubini/NativeFixedWitnessVFFubini.lean",
-        "line": 34
+        "line": 28
       },
       {
         "name": "DiamondIntegral.Section5.nativeVFBoundedValue_map_fixed_whole_witness",
         "file": "FubiniTheorems/Fubini/NativeWitnessVFMapTotals.lean",
-        "line": 63
+        "line": 57
       }
     ],
     "statement": "If one whole witness is valid on a ground-definable target piece, the bounded invariants of the two source preimages agree.",
@@ -277,7 +277,7 @@
       {
         "name": "DiamondIntegral.Section5.nativeMap_preimage_partition",
         "file": "FubiniTheorems/Fubini/NativeMapBasePartitions.lean",
-        "line": 51
+        "line": 45
       }
     ],
     "statement": "The inverse images of a finite disjoint partition of the common target give a disjoint covering partition of each source, over the same ground.",
@@ -294,7 +294,7 @@
       {
         "name": "DiamondIntegral.Section5.nativeVFClass_finite_partition",
         "file": "FubiniTheorems/Fubini/NativeVFPullbackValues.lean",
-        "line": 41
+        "line": 35
       }
     ],
     "statement": "For a finite disjoint definable partition $A=\\coprod_i A_i$, the VF Grothendieck class satisfies $[A]=\\sum_i[A_i]$. Applying $I_b$ preserves this finite sum.",
@@ -314,7 +314,7 @@
       {
         "name": "DiamondIntegral.Section5.nativeBoundedVFFubini",
         "file": "FubiniTheorems/Fubini/NativeVFFubini.lean",
-        "line": 44
+        "line": 38
       }
     ],
     "statement": "Given the value-group preparation and unmeasured lifting inputs, pointwise bounded lift equality of two ground-definable maps to the same mixed target implies equality of the bounded invariants of their sources.",
@@ -336,10 +336,10 @@
       {
         "name": "DiamondIntegral.Section5.bounded_fubini_discharged",
         "file": "FubiniTheorems/Fubini/Section5DischargedInputs.lean",
-        "line": 39
+        "line": 33
       }
     ],
     "statement": "Let $A,A'$ be finite RV-fibre VF objects over the original ground and let $f:A\\to C$, $f':A'\\to C$ be ground-definable maps to a finite mixed VF/RV base. If at every $z\\in C$ the two fibres have parameter-definable RV lifts with equal bounded RES evaluations, then $I_b([A])=I_b([A'])$. All points of the saturated target are tested, including generic points.",
-    "proof": "Apply the native Fubini theorem with the proved value-group preparation theorem and completed original-ground lifting record. This is the only selected Palomar result. Geometric Fubini, Puiseux comparisons and the variety corollary remain in the library but are not separate challenge claims."
+    "proof": "Apply the native Fubini theorem with the proved value-group preparation theorem and the completed original-ground lifting record."
   }
 ]
