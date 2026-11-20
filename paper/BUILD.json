@@ -7,19 +7,19 @@
   "undefined_references": 0,
   "pages": 23,
   "references": 9,
-  "pdf_sha256": "85f7054c96ef2462ecb959785cf69575a112ab923355b80ccfa4c9763c79287e",
+  "pdf_sha256": "a2824ab0c0746e7505725da8a8b5023a33f260484a7920bc5ec1cadd806c4e24",
   "reproducible": "Two builds with the recorded SOURCE_DATE_EPOCH give byte-identical PDFs.",
   "source_sha256": {
     "paper/fubini-theorems.tex": "ea4f870d6ec8d9f57b2021821af1c5ed2f8de1f5ec9df07528a3980473622163",
-    "paper/sections/bounded.tex": "b474f495b17a59d7ed2c9a09b56f63c0f156c50129a5afb9e3890c442c8e5429",
+    "paper/sections/bounded.tex": "4a1c337f789c529df8319046463e5567b9d09ab07ee613d7044da7768bc0fa17",
     "paper/sections/complex.tex": "e943bfad7a72329e39f926283d03f76a942a03a24574e0ca05280a41c6bf5df7",
     "paper/sections/decomposition.tex": "5dc02ec0deed7449b7b2f81f53d2fa92269375cbe99b0290f790d62d0dc9f84c",
     "paper/sections/geometric.tex": "25df48990c156e3982b2e29f106e62652b78f41d0b0bdaf25dcfd2bf48ab73a2",
     "paper/sections/inflated.tex": "d7c724e2a3f5a204641c2b62afd629a55ba5b8e3bad46be4c4a860f68f720d81",
     "paper/sections/mixed.tex": "6f3ee34337d0b7a9b721827a1cb5316c5d064e9e2a2f2c6eaed0da86f79560d6",
-    "paper/sections/setup.tex": "654850e4259abea5df1bb57bd49d92ba6fe19a614d5f8aac108bdab1d6c53cbc"
+    "paper/sections/setup.tex": "bc5fe9c76df378f1331f3bf614b038a04296ffd1485a3759b2c1d8c92ce8953c"
   },
-  "layout_review": "All 23 pages rendered to PNG; the pages changed by the November 20 faithfulness corrections (13, 22) were visually inspected at full page size. No overlap or clipping observed.",
+  "layout_review": "All 23 pages rendered to PNG; the pages changed by the November 20 faithfulness corrections (13, 22) and the real-points convention (page 2) were visually inspected at full page size. No overlap or clipping observed.",
   "proof_map": "paper/PROOF-MAP.json",
   "source_type_receipt": "verification/verify.py (.scratch/verification-status.json); 11,195 public types and axiom inventories unchanged"
 }
