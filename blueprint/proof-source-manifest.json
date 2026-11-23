@@ -1,7 +1,7 @@
 {
-  "proof_revision": "f14caef6822b4600e74cefaf93905ca94c758fe6",
-  "source_checkout": "f14caef6822b4600e74cefaf93905ca94c758fe6",
-  "verification_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/f14caef6822b4600e74cefaf93905ca94c758fe6/verification/public-contract.json",
+  "proof_revision": "5b547c1ab198c59ca380993afb3a779579696a80",
+  "source_checkout": "5b547c1ab198c59ca380993afb3a779579696a80",
+  "verification_url": "https://github.com/daviddhilbert/Fubini-theorems/blob/5b547c1ab198c59ca380993afb3a779579696a80/verification/public-contract.json",
   "evidence": "Library build passed (13,134 jobs); all 11,195 full public types and exact axiom inventories are unchanged (only propext, Classical.choice and Quot.sound). The Lean sources of this release are byte-identical to the linked revision.",
   "sha256": {
     "FubiniTheorems/Comparison.lean": "4a7f74eb68204054192972d3c8077528ba8a500f6c6fa46a95f05035dc8b2173",

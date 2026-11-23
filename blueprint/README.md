@@ -10,10 +10,10 @@ inflated-family Fubini theorem, the saturated Puiseux ambient and the
 inflated-family motivic volume. This is a selected mathematical dependency
 graph, not the complete expression-level graph of the library.
 
-The source links are pinned to `f14caef6822b4600e74cefaf93905ca94c758fe6`,
+The source links are pinned to `5b547c1ab198c59ca380993afb3a779579696a80`,
 whose Lean sources are byte-identical to those of this release. The library
 build (13,134 jobs) and all 11,195 public type/axiom checks of
-[the public contract](https://github.com/daviddhilbert/Fubini-theorems/blob/f14caef6822b4600e74cefaf93905ca94c758fe6/verification/public-contract.json)
+[the public contract](https://github.com/daviddhilbert/Fubini-theorems/blob/5b547c1ab198c59ca380993afb3a779579696a80/verification/public-contract.json)
 passed. `proof-source-manifest.json` fingerprints the proof sources, pins and
 contract used here. Documentation validation is separate from Lean compilation.
 
