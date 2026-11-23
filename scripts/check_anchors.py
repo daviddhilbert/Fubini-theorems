@@ -55,22 +55,36 @@ def main():
     contract = {d['name'] for d in json.loads((ROOT / 'verification/public-contract.json').read_text())['declarations']}
     errors = []
 
+    providers = lean_anchors.provider_index()
+
     def anchor(declaration, where, fingerprint):
         name = declaration['name']
-        if name not in index:
+        if name in index:
+            file, line = index[name]
+            root, provider = ROOT, None
+        elif name in providers:
+            # implementation owned by hilbert-mathlib behind a compatibility import
+            file, line = providers[name]
+            root, provider = lean_anchors.provider_root(), lean_anchors.PROVIDER
+        else:
             errors.append(f'{where}: no declaration {name} in the library')
             return
-        file, line = index[name]
         if args.write:
             declaration['file'], declaration['line'] = file, line
+            if provider:
+                declaration['provider'] = provider
+            else:
+                declaration.pop('provider', None)
             if fingerprint:
-                declaration['source_sha256'] = digest(ROOT / file)
+                declaration['source_sha256'] = digest(root / file)
+        if declaration.get('provider') != provider:
+            errors.append(f'{where}: {name} provider should be {provider or "this library"}')
         if (declaration['file'], declaration['line']) != (file, line):
             errors.append(f'{where}: {name} is declared at {file}:{line}, '
                           f'not {declaration["file"]}:{declaration["line"]}')
-        elif not lean_anchors.line_matches(ROOT, file, line, name):
+        elif not lean_anchors.line_matches(root, file, line, name):
             errors.append(f'{where}: line {file}:{line} does not declare {name}')
-        if fingerprint and declaration.get('source_sha256') != digest(ROOT / file):
+        if fingerprint and declaration.get('source_sha256') != digest(root / file):
             errors.append(f'{where}: stale fingerprint for {file}')
         if name not in contract:
             errors.append(f'{where}: {name} is outside the public contract')
@@ -89,7 +103,10 @@ def main():
     for node in nodes:
         for declaration in node['declarations']:
             anchor(declaration, f'blueprint node {node["id"]}', False)
-            registry[declaration['name']] = f'{declaration["file"]}#L{declaration["line"]}'
+            target = f'{declaration["file"]}#L{declaration["line"]}'
+            if declaration.get('provider') == lean_anchors.PROVIDER:
+                target = lean_anchors.provider_url() + target
+            registry[declaration['name']] = target
 
     receipt = json.loads(RECEIPT.read_text(encoding='utf-8'))
     inputs = library_files() + PROOF_INPUTS

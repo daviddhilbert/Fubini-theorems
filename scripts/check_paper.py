@@ -9,6 +9,10 @@ import hashlib
 import json
 from pathlib import Path
 import re
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import lean_anchors  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -37,7 +41,7 @@ def main():
     for step in record['steps']:
         assert (ROOT / step['section']).is_file()
         for declaration in step['declarations']:
-            file = ROOT / declaration['file']
+            file = lean_anchors.source_root(declaration, ROOT) / declaration['file']
             assert digest(file) == declaration['source_sha256'], f'Stale proof source: {file}'
             line = file.read_text().splitlines()[declaration['line'] - 1]
             short = re.escape(declaration['name'].rsplit('.', 1)[-1])

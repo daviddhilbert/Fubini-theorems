@@ -7,6 +7,7 @@ the 1-based line on which its keyword occurs. It is used to re-anchor and to
 check the source links of the paper's proof map and of the blueprint.
 """
 from pathlib import Path
+import json
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -95,3 +96,34 @@ def line_matches(root, file, line, name):
         r'^\s*(?:@\[[^\]]*\]\s*)*(?:(?:private|protected|noncomputable)\s+)*'
         r'(?:theorem|lemma|def|abbrev|structure|class|inductive)\s+(?:[\w.]+\.)?'
         + short + r'(?![\w.\'])', text) is not None
+
+
+PROVIDER = 'hilbert-mathlib'
+
+
+def provider_root(root=ROOT):
+    """The pinned hilbert-mathlib checkout (Lake's package directory, or a plain
+    clone at the pinned revision in the blueprint workflow)."""
+    return root / '.lake/packages/hilbert-mathlib'
+
+
+def provider_url(root=ROOT):
+    revision = json.loads((root / 'SHARED-FOUNDATION.json').read_text())['revision']
+    return 'https://github.com/daviddhilbert/hilbert-mathlib/blob/' + revision + '/'
+
+
+def provider_index(root=ROOT):
+    """Return {full_name: (provider_file, line)} for the hilbert-mathlib sources behind
+    this library's compatibility imports (SHARED-FOUNDATION.json)."""
+    result = {}
+    for module in json.loads((root / 'SHARED-FOUNDATION.json').read_text())['modules']:
+        path = provider_root(root) / module['target_path']
+        if path.is_file():
+            for name, line in declarations(path).items():
+                result.setdefault(name, (module['target_path'], line))
+    return result
+
+
+def source_root(declaration, root=ROOT):
+    """Directory holding the file of an anchor (the provider for provider anchors)."""
+    return provider_root(root) if declaration.get('provider') == PROVIDER else root

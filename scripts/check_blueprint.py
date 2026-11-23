@@ -19,7 +19,8 @@ def check(rendered=False):
     for n in nodes:
         assert set(n['dependencies'])<=ids,f'Unknown dependency in {n["id"]}'
         for d in n['declarations']:
-            line=(ROOT/d['file']).read_text(encoding='utf-8-sig').splitlines()[d['line']-1]
+            src=(ROOT/'.lake/packages/hilbert-mathlib' if d.get('provider')=='hilbert-mathlib' else ROOT)/d['file']
+            line=src.read_text(encoding='utf-8-sig').splitlines()[d['line']-1]
             short=re.escape(d['name'].split('.')[-1])
             assert re.match(r'^(?:noncomputable\s+)?(?:theorem|lemma|def|abbrev|structure)\s+'+short+r'\b',line),f'Stale declaration anchor: {d}'
             declarations[d['name']]=d['file']+'#L'+str(d['line'])

@@ -70,15 +70,17 @@
       "declarations": [
         {
           "name": "DiamondIntegral.Section3.smith_basis_coordinate_values_finite",
-          "file": "FubiniTheorems/Prerequisites/Grothendieck/CharacterFiniteValues.lean",
-          "line": 58,
-          "source_sha256": "38debde623aed902cf0e336b17833cd2eb9970f3c0e214842c698027c9712476"
+          "file": "HilbertMathlib/Foundation/FiniteCoordinates/CharacterFiniteValues.lean",
+          "line": 62,
+          "source_sha256": "29aaed8d0f71f75838c9cad13d633504ac1b4a08c1a28d086041a49a7e3760e0",
+          "provider": "hilbert-mathlib"
         },
         {
           "name": "DiamondIntegral.Section3.exists_monomial_residue_coordinates",
-          "file": "FubiniTheorems/Prerequisites/Grothendieck/MonomialResidueCoordinates.lean",
-          "line": 31,
-          "source_sha256": "3f47e4f93e282ad383f8dea3ae4c0cd029105171ee56b404e7e5fe0e28417c1a"
+          "file": "HilbertMathlib/Foundation/FiniteCoordinates/MonomialResidueCoordinates.lean",
+          "line": 35,
+          "source_sha256": "71479740febaf6b61fb85c594e76bbf8cc1e6280c1e9695fc843ddfe52ee974e",
+          "provider": "hilbert-mathlib"
         }
       ]
     },
